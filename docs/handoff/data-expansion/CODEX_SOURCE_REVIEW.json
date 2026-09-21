@@ -1,0 +1,209 @@
+﻿{
+    "reviewDate":  "2026-09-19",
+    "reviewer":  "Codex technical/source review only",
+    "verdict":  "CHANGES_REQUIRED",
+    "businessApproval":  false,
+    "scope":  "29 registered source URLs opened via web tool; 24 card structure; selected implementation changes; no build or E2E in this review",
+    "sourceResults":  [
+                          {
+                              "sourceId":  "residence-2026",
+                              "url":  "https://xaydungchinhsach.chinhphu.vn/mot-so-diem-moi-co-ban-cua-luat-cu-tru-sua-doi-va-thong-tu-116-2026-tt-bca-119260714094901372.htm",
+                              "result":  "SUPPORTS_REVIEWED_CORE_CLAIMS",
+                              "note":  "Da mo va doi chieu noi dung cot loi; khong phe duyet nghiep vu/toa do."
+                          },
+                          {
+                              "sourceId":  "temporary-residence-2026",
+                              "url":  "https://xaydungchinhsach.chinhphu.vn/quy-dinh-dang-ky-tam-tru-119260720101630132.htm",
+                              "result":  "SUPPORTS_REVIEWED_CORE_CLAIMS",
+                              "note":  "Da mo va doi chieu noi dung cot loi; khong phe duyet nghiep vu/toa do."
+                          },
+                          {
+                              "sourceId":  "ward-2025",
+                              "url":  "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+                              "result":  "SUPPORTS_REVIEWED_CORE_CLAIMS",
+                              "note":  "Da mo va doi chieu noi dung cot loi; khong phe duyet nghiep vu/toa do."
+                          },
+                          {
+                              "sourceId":  "residence-law-2020",
+                              "url":  "https://vanban.chinhphu.vn/?pageid=27160\u0026docid=202166",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "dvc-thuong-tru-bca",
+                              "url":  "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26284",
+                              "result":  "CONFIRMED_TOPIC_MISMATCH",
+                              "note":  "Xem R1/R2 trong CODEX_REVIEW.md."
+                          },
+                          {
+                              "sourceId":  "vneid-dvc-guide",
+                              "url":  "https://dichvucong.gov.vn/p/home/dvc-huong-dan-dang-nhap-vneid.html",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "dvc-bca-lookup",
+                              "url":  "https://dichvucong.bocongan.gov.vn/bocongan/tracuu",
+                              "result":  "PARTIAL_SUPPORT",
+                              "note":  "Ho tro nhap ma ho so de tra cuu; chua chung minh huong dan bo sung va ngay cong bo."
+                          },
+                          {
+                              "sourceId":  "tt-50-bgddt-chuyen-truong",
+                              "url":  "https://vanban.chinhphu.vn/?pageid=27160\u0026docid=204856",
+                              "result":  "CONFIRMED_TOPIC_MISMATCH",
+                              "note":  "Xem R1/R2 trong CODEX_REVIEW.md."
+                          },
+                          {
+                              "sourceId":  "nq-hoc-phi-danang",
+                              "url":  "https://danang.gov.vn/chinh-quyen/chi-tiet?id=56123\u0026_c=3",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "bhxh-danang-bhyt",
+                              "url":  "https://danang.baohiemxahoi.gov.vn/tintuc/Pages/dich-vu-cong.aspx?ItemID=13840",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "danang-phan-loai-rac",
+                              "url":  "https://danang.gov.vn/chinh-quyen/chi-tiet?id=51294\u0026_c=3",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "public-center-2025",
+                              "url":  "https://thangan.danang.gov.vn/chi-tiet-tin/group/156/nid/18559/dia-chi-tru-so-va-trung-tam-phuc-vu-hanh-chinh-cong-94-don-vi-cap-xa-cua-tp-da-nang-moi",
+                              "result":  "SUPPORTS_REVIEWED_CORE_CLAIMS",
+                              "note":  "Da mo va doi chieu noi dung cot loi; khong phe duyet nghiep vu/toa do."
+                          },
+                          {
+                              "sourceId":  "cong-an-lien-chieu-2025",
+                              "url":  "https://congan.danang.gov.vn/chi-tiet-tin?id=28491",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "tram-y-te-lien-chieu",
+                              "url":  "https://soytedanang.gov.vn/danh-ba-cac-tram-y-te-tuyen-xa-phuong",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "to-cong-nghe-so-lien-chieu",
+                              "url":  "https://thanhdoan.danang.gov.vn/hoat-dong-doan/thanh-nien-lien-chieu-ra-quan-to-cong-nghe-so-cong-dong",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "dh-bach-khoa-danang",
+                              "url":  "https://dut.udn.vn/Gioi-thieu/Thong-tin-chung",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "cd-kinh-te-ke-hoach",
+                              "url":  "https://cep.edu.vn/gioi-thieu/tong-quan-ve-truong.html",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "thpt-nguyen-trai",
+                              "url":  "https://thptnguyentrai.danang.edu.vn/gioi-thieu",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "thcs-nguyen-luong-bang",
+                              "url":  "https://thcsnguyenluongbang.danang.edu.vn/gioi-thieu",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "thong-tin-hoc-lieu-bach-khoa",
+                              "url":  "https://lic.dut.udn.vn/gioi-thieu-chung",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "tt-vh-tt-cong-nhan",
+                              "url":  "https://congdoandanang.org.vn/thiet-che-cong-doan-kcn-hoa-khanh",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "di-tich-b1-hong-phuoc",
+                              "url":  "https://baodanang.vn/van-hoa-the-thao/202307/can-cu-lom-b1-hong-phuoc-dia-chi-do-giao-duc-truyen-thong-3950412/",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "huyen-thoai-ngon-den-dau",
+                              "url":  "https://cadn.com.vn/ngon-den-dau-huyen-thoai-trong-long-can-cu-lom-b1-hong-phuoc-post281245.html",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "dinh-lang-thanh-vinh",
+                              "url":  "https://baodanang.vn/van-hoa-the-thao/202209/bao-ton-cac-dinh-lang-co-o-lien-chieu-3924156/",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "doi-song-cong-nhan-hoa-khanh",
+                              "url":  "https://laodong.vn/cong-doan/goc-van-hoa-va-doi-song-cong-nhan-kcn-hoa-khanh-da-nang-1245678.ldo",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "ocop-ngoc-oanh-food",
+                              "url":  "https://socongthuong.danang.gov.vn/san-pham-ocop-da-nang-ngu-coc-granola-ngoc-oanh",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "tuyen-duong-cds-thanh-nien",
+                              "url":  "https://thanhdoan.danang.gov.vn/tin-tuc-su-kien/mo-hinh-tuyen-duong-thanh-nien-chuyen-doi-so-lien-chieu",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "nd-23-2015-nd-cp",
+                              "url":  "https://vanban.chinhphu.vn/?pageid=27160\u0026docid=179267",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          },
+                          {
+                              "sourceId":  "dvc-chung-thuc-danang",
+                              "url":  "https://dichvucong.danang.gov.vn/thu-tuc-hanh-chinh/chi-tiet?maThuTuc=1.002235",
+                              "result":  "TOOL_INACCESSIBLE_NOT_A_404_DETERMINATION",
+                              "note":  "Khong mo duoc bang cong cu web trong lan review; can bang chung hoac nguon thay the. Khong ket luan URL gia."
+                          }
+                      ],
+    "snapshot":  [
+                     {
+                         "sha256":  "ECC1B80ECEDD0B0BED3DEA46AF1E80CB9DD95E98648C7E96B40DB6C78DBD07C4",
+                         "path":  "web/content/sourced-demo/cards.json"
+                     },
+                     {
+                         "sha256":  "4A576CC697CD4F7BC4563C6319BA0A3A0436C633E674984C9558B478AD512122",
+                         "path":  "research/data-expansion/sources.json"
+                     },
+                     {
+                         "sha256":  "6203173C3320415514CCD781E76D4096D09FD79EDB51AEF1347E9B29470475B2",
+                         "path":  "research/data-expansion/claim-map.json"
+                     },
+                     {
+                         "sha256":  "4C19B040A9D2E318F1459F50AB5DDF799D96720023F86D9879130073BB2C35F7",
+                         "path":  "web/src/components/CitizenServiceView.tsx"
+                     }
+                 ],
+    "checks":  {
+                   "lint":  "PASS",
+                   "typecheck":  "PASS",
+                   "contentValidation":  "PASS",
+                   "e2e":  "NOT_RUN",
+                   "unit":  "74/74 PASS",
+                   "build":  "NOT_RUN"
+               }
+}

@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #0f172a;
+  background-color: #dcfce7;
+  background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)),
+    url('/coastal-bg.jpg');
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Yêu cầu bắt buộc từ MOBILE_FIRST.md: Responsive theo % */
+.page-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+/* Đảm bảo cỡ chữ ô nhập tối thiểu 16px trên di động để chống Safari auto-zoom */
+input, select, textarea {
+  font-size: 16px;
+}
+
+/* Hiệu ứng Liquid Glass / Glassmorphism chuẩn PWA hiện đại & nhẹ nhàng */
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+}
+
+.liquid-glass-subtle {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.75);
+}
+
+.liquid-glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 2px 14px -2px rgba(15, 23, 42, 0.04), inset 0 1px 0 0 rgba(255, 255, 255, 0.95);
+}
+
+.liquid-glass-accent {
+  background: rgba(240, 249, 255, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(186, 230, 253, 0.8);
+  box-shadow: 0 4px 16px -2px rgba(2, 132, 199, 0.06), inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+}
+
+.card-frame {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem; /* Hạn chế bo góc quá lớn - 12px chuẩn kiến trúc PWA */
+  box-shadow: 0 2px 8px -2px rgba(15, 23, 42, 0.04);
+}
+
+.responsive-container {
+  width: 92%;
+  margin-inline: auto;
+  max-width: 75rem;
+}
+
+/* Chuẩn Grid quốc tế: Căn đều 100%, thẻ cùng hàng luôn bằng nhau tuyệt đối */
+.responsive-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.responsive-card {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 48rem) {
+  .responsive-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 75rem) {
+  .responsive-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Vùng chạm tối thiểu 2.75rem x 2.75rem (44px) */
+.touch-target {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cỡ chữ nội dung từ 1rem (16px) */
+.body-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Print stylesheet cho Phiếu chuẩn bị hành trang */
+@media print {
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  header, footer, nav, .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .responsive-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .responsive-card {
+    width: 100% !important;
+    box-shadow: none !important;
+    border: 1px solid #000000 !important;
+  }
+}
+
+/* Ẩn hoàn toàn Next.js dev indicator / portal để xuất ảnh overlay sạch 100% */
+nextjs-portal,
+[data-nextjs-toast],
+[data-nextjs-dev-indicator],
+#__next-build-watcher {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Ẩn thanh cuộn xấu nhưng vẫn cho phép vuốt mượt mà trên di động chuẩn quốc tế */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* Community reading preferences and accessible controls. */
+html.large-text { font-size: 20px; }
+html.large-text body :is(div, p, li, label, input, select, textarea, button, a, h1, h2, h3, h4, span) { overflow-wrap: anywhere; }
+html.large-text body [class*="text-["] { font-size: 1rem; }
+body :is(button, select, input:not([type="checkbox"]):not([type="radio"]), a.touch-target) { min-height: 44px; }
+body button { min-width: 44px; }
+body :is(button, a, input, select):focus-visible { outline: 3px solid #0f766e; outline-offset: 3px; }
+@media (max-width: 1023px) { html.large-text main { padding-bottom: 14rem; } }

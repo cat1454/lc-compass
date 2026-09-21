@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <!-- Background Civic Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Compass Gold / Bronze Gradient -->
+    <linearGradient id="goldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+
+    <!-- Compass Teal / Cyan Gradient -->
+    <linearGradient id="tealGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="tealGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+
+    <!-- Coastal Wave Gradient -->
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0EA5E9" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow for Badge -->
+    <filter id="logoShadow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0284C7" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base Badge (Civic App Icon standard) -->
+  <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#bgGrad)" filter="url(#logoShadow)" />
+  <rect x="6.75" y="6.75" width="106.5" height="106.5" rx="25.25" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.3" />
+
+  <!-- Outer Compass Ring (Subtle Guiding Ring) -->
+  <circle cx="60" cy="60" r="38" stroke="#38BDF8" stroke-width="2" stroke-opacity="0.25" stroke-dasharray="2 6" />
+  <circle cx="60" cy="60" r="44" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.15" />
+
+  <!-- 4 Cardinal Mini Ticks -->
+  <line x1="60" y1="12" x2="60" y2="18" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="108" y1="60" x2="102" y2="60" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-opacity="0.7" />
+  <line x1="60" y1="108" x2="60" y2="102" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-opacity="0.7" />
+  <line x1="12" y1="60" x2="18" y2="60" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-opacity="0.7" />
+
+  <!-- Coastal Wave / Bay of Lien Chieu (Dynamic curve at bottom of emblem) -->
+  <path d="M22 82 C34 76, 50 88, 64 78 C76 70, 92 76, 98 84 C88 94, 70 98, 48 96 C36 94, 26 88, 22 82 Z" fill="url(#waveGrad)" opacity="0.35" />
+
+  <!-- 4-Point Civic Compass Star (Central Icon) -->
+  <!-- North Arrow (Gold / Highlight) -->
+  <polygon points="60,60 60,20 54,60" fill="url(#goldGrad1)" />
+  <polygon points="60,60 60,20 66,60" fill="url(#goldGrad2)" />
+
+  <!-- South Arrow (Muted Cyan) -->
+  <polygon points="60,60 60,94 65,60" fill="url(#tealGrad1)" />
+  <polygon points="60,60 60,94 55,60" fill="url(#tealGrad2)" />
+
+  <!-- East Arrow -->
+  <polygon points="60,60 94,60 60,65" fill="url(#tealGrad1)" />
+  <polygon points="60,60 94,60 60,55" fill="url(#tealGrad2)" />
+
+  <!-- West Arrow -->
+  <polygon points="60,60 26,60 60,55" fill="url(#tealGrad1)" />
+  <polygon points="60,60 26,60 60,65" fill="url(#tealGrad2)" />
+
+  <!-- Secondary Diagonal Facets (8-Point Elegance) -->
+  <polygon points="60,60 78,42 60,54" fill="#FDE047" opacity="0.7" />
+  <polygon points="60,60 78,78 66,60" fill="#38BDF8" opacity="0.5" />
+  <polygon points="60,60 42,78 60,66" fill="#0284C7" opacity="0.5" />
+  <polygon points="60,60 42,42 54,60" fill="#F59E0B" opacity="0.6" />
+
+  <!-- Central Pivot Pin / Core (Metallic Ring) -->
+  <circle cx="60" cy="60" r="6" fill="#0F172A" />
+  <circle cx="60" cy="60" r="4.5" fill="#FFFFFF" />
+  <circle cx="60" cy="60" r="2.5" fill="#F59E0B" />
+</svg>

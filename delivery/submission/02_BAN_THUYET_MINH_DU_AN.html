@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bản Thuyết Minh Dự Án - LC Compass (Liên Chiểu 2026)</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 15mm 20mm 25mm; /* Tiêu chuẩn thể thức văn bản hành chính Việt Nam */
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 13pt;
+      line-height: 1.45;
+      color: #111827;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .document-container {
+      max-width: 210mm;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 25mm 20mm 25mm 30mm;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Header thể thức Đoàn TNCS Hồ Chí Minh */
+    .header-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    .header-table td {
+      vertical-align: top;
+      text-align: center;
+      padding: 0;
+    }
+
+    .header-left {
+      width: 50%;
+      font-size: 11pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #047857;
+    }
+
+    .header-left .sub-org {
+      font-size: 11pt;
+      font-weight: bold;
+      color: #1f2937;
+    }
+
+    .header-right {
+      width: 50%;
+      font-size: 11pt;
+      font-weight: bold;
+    }
+
+    .motto {
+      font-size: 12pt;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .sub-motto {
+      font-size: 11pt;
+      font-weight: bold;
+      margin-top: 2px;
+    }
+
+    .divider-line {
+      width: 120px;
+      height: 1px;
+      background: #374151;
+      margin: 6px auto 10px auto;
+    }
+
+    .doc-title {
+      text-align: center;
+      margin: 20px 0 15px 0;
+    }
+
+    .doc-title h1 {
+      font-size: 17pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #065f46;
+      margin: 0 0 6px 0;
+      letter-spacing: 0.5px;
+    }
+
+    .doc-title h2 {
+      font-size: 13pt;
+      font-weight: bold;
+      color: #1f2937;
+      margin: 0 0 4px 0;
+      text-transform: uppercase;
+    }
+
+    .doc-title .theme-tag {
+      display: inline-block;
+      font-style: italic;
+      color: #047857;
+      font-size: 12pt;
+      font-weight: bold;
+      background: #ecfdf5;
+      padding: 4px 14px;
+      border-radius: 20px;
+      border: 1px solid #a7f3d0;
+      margin-top: 6px;
+    }
+
+    .meta-box {
+      background: #f8fafc;
+      border-left: 4px solid #059669;
+      padding: 10px 14px;
+      margin: 15px 0 18px 0;
+      font-size: 11.5pt;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .meta-box p {
+      margin: 3px 0;
+    }
+
+    h3.section-heading {
+      font-size: 13pt;
+      font-weight: bold;
+      color: #065f46;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid #059669;
+      padding-bottom: 3px;
+      margin-top: 18px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: justify;
+      margin: 0 0 8px 0;
+      text-indent: 1.5em;
+    }
+
+    p.no-indent {
+      text-indent: 0;
+    }
+
+    ul, ol {
+      margin: 4px 0 10px 20px;
+      padding-left: 10px;
+    }
+
+    li {
+      margin-bottom: 4px;
+      text-align: justify;
+    }
+
+    .table-custom {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 16px 0;
+      font-size: 11pt;
+    }
+
+    .table-custom th, .table-custom td {
+      border: 1px solid #cbd5e1;
+      padding: 7px 10px;
+      text-align: left;
+    }
+
+    .table-custom th {
+      background-color: #f1f5f9;
+      font-weight: bold;
+      color: #1e293b;
+      text-align: center;
+    }
+
+    .badge-pill {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 9.5pt;
+      font-weight: bold;
+      border-radius: 12px;
+      background: #e0f2fe;
+      color: #0369a1;
+      border: 1px solid #bae6fd;
+    }
+
+    .badge-green {
+      background: #dcfce7;
+      color: #15803d;
+      border-color: #bbf7d0;
+    }
+
+    .highlight-card {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 12px 0;
+    }
+
+    .highlight-card h4 {
+      margin: 0 0 6px 0;
+      color: #166534;
+      font-size: 12pt;
+    }
+
+    .signature-section {
+      width: 100%;
+      margin-top: 30px;
+      page-break-inside: avoid;
+    }
+
+    .signature-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .signature-table td {
+      width: 50%;
+      vertical-align: top;
+      text-align: center;
+      font-size: 12pt;
+    }
+
+    .signature-space {
+      height: 70px;
+    }
+
+    /* Ngắt trang khi in */
+    .page-break {
+      page-break-after: always;
+      break-after: page;
+    }
+
+    @media print {
+      body { font-size: 12pt; line-height: 1.2; }
+      .page-break { display: none; }
+      p { margin: 4pt 0; }
+      ul, ol { margin: 4pt 0; }
+      h3.section-heading { margin-top: 8pt; margin-bottom: 4pt; break-after: avoid; }
+      .table-custom { margin: 6pt 0; }
+      .table-custom th, .table-custom td { padding: 4px 6px; }
+      .highlight-card { padding: 6px 10px; margin: 6pt 0; }
+      .signature-section { margin-top: 12pt; }
+      body {
+        background: transparent;
+        padding: 0;
+      }
+      .document-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    .print-bar {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #065f46;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      cursor: pointer;
+      font-family: sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 9999;
+      border: none;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .print-bar:hover {
+      background: #047857;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="print-bar no-print" onclick="window.print()">
+    🖨️ In / Xuất file PDF Bản thuyết minh (A4)
+  </button>
+
+  <div class="document-container">
+
+    <!-- TRANG 1 -->
+    <table class="header-table">
+      <tr>
+        <td class="header-left">
+          THÀNH ĐOÀN ĐÀ NẴNG<br>
+          <span class="sub-org">BCH ĐOÀN PHƯỜNG LIÊN CHIỂU</span><br>
+          <div class="divider-line"></div>
+          <span style="font-weight: normal; font-size: 10pt;">***</span>
+        </td>
+        <td class="header-right">
+          <span class="motto">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</span><br>
+          <span class="sub-motto">Độc lập – Tự do – Hạnh phúc</span><br>
+          <div class="divider-line"></div>
+          <span style="font-weight: normal; font-style: italic; font-size: 10.5pt;">Liên Chiểu, ngày 21 tháng 09 năm 2026</span>
+        </td>
+      </tr>
+    </table>
+
+    <div class="doc-title">
+      <h1>BẢN THUYẾT MINH Ý TƯỞNG DỰ ÁN</h1>
+      <h2>CUỘC THI Ý TƯỞNG SÁNG TẠO CHUYỂN ĐỔI SỐ THANH NIÊN LIÊN CHIỂU 2026</h2>
+      <div class="theme-tag">Chủ đề: "THANH NIÊN LIÊN CHIỂU – SÁNG TẠO VÌ CUỘC SỐNG"</div>
+    </div>
+
+    <div class="meta-box">
+      <p><strong>• Tên ý tưởng/dự án:</strong> <strong>LC COMPASS – LA BÀN LIÊN CHIỂU</strong></p>
+      <p><strong>• Khẩu hiệu cốt lõi:</strong> <em>"Đúng nguồn – Rõ nơi – Biết bước tiếp theo"</em></p>
+      <p><strong>• Đơn vị đề xuất:</strong> Nhóm Thanh niên Sáng tạo Phường Liên Chiểu</p>
+      <p><strong>• Lĩnh vực tham gia:</strong> Chuyển đổi số & Cải cách hành chính – Đời sống cộng đồng</p>
+      <p><strong>• Địa chỉ chạy thử nghiệm (Prototype):</strong> <a href="https://lc-compass-xi.vercel.app" target="_blank" style="color: #047857; font-weight: bold;">https://lc-compass-xi.vercel.app</a></p>
+    </div>
+
+    <h3 class="section-heading">1. VẤN ĐỀ THỰC TẾ CẦN GIẢI QUYẾT (PAIN POINTS)</h3>
+    <p><strong>1.1. Nghịch lý thông tin sai lệch trong thời đại bùng nổ dữ liệu (Data Overload):</strong> Trong thời đại hiện nay, lượng dữ liệu (data) ngày càng nhiều, người dân có thể dễ dàng tìm kiếm hàng nghìn kết quả trên Google, mạng xã hội hoặc các diễn đàn trực tuyến chỉ sau vài giây. Tuy nhiên, <em>thời đại data càng ngày càng nhiều lại dẫn đến việc người dân rất dễ tiếp cận phải những thông tin sai lệch</em>: các văn bản quy phạm pháp luật trích dẫn đã hết hiệu lực thi hành; địa chỉ trụ sở, số điện thoại cơ quan hành chính đã thay đổi hoặc không có người trực; các bài viết chia sẻ kinh nghiệm cá nhân không chính xác về thành phần hồ sơ hoặc bị dẫn dắt bởi các dịch vụ "cò mồi" thu phí không chính thức. Người dân đứng trước một "ma trận" dữ liệu nhưng lại thiếu một công cụ xác thực để biết chắc chắn thông tin nào là đúng nguồn, còn hiệu lực và áp dụng đúng cho địa bàn của mình.</p>
+    
+    <p><strong>1.2. Bối cảnh thực tế tại Phường Liên Chiểu năm 2026:</strong></p>
+    <ul>
+      <li><strong>Thay đổi thông tin sau sắp xếp địa giới (Nghị quyết 1659/NQ-UBTVQH15):</strong> Trụ sở và phân cấp một số cơ quan có sự điều chỉnh: UBND Phường đặt tại 68 Lạc Long Quân, Công an Phường tại 66 Lạc Long Quân, Trạm Y tế tại 178 Âu Cơ. Một số địa bàn quen thuộc nay thuộc ranh giới phường lân cận (Làng cổ Nam Ô chuyển sang Phường Hải Vân mới; KTX Phía Tây thuộc Phường Hòa Khánh mới). Người dân nếu chỉ dựa vào thói quen hoặc dữ liệu tìm kiếm cũ sẽ rất dễ đi nhầm nơi.</li>
+      <li><strong>Rào cản diễn đạt đời thường và phương ngữ:</strong> Địa bàn tập trung KCN Hòa Khánh và các trường đại học lớn, thu hút đông đảo người lao động và sinh viên từ các tỉnh Bắc Trung Bộ, Nam Trung Bộ và Xứ Quảng. Khi họ tìm kiếm bằng từ ngữ địa phương đời thường (<em>mô, tê, răng, rứa, nỏ biết, mần răng, hổng biết, nàm tạm chú</em>), các công cụ tìm kiếm hành chính chuẩn tắc thường không nhận diện được ý định.</li>
+      <li><strong>Các tình huống đời sống cần hướng dẫn bổ trợ:</strong> Thuê phòng trọ chỉ thỏa thuận miệng không có hợp đồng văn bản; sinh viên ở ghép đông người; công nhân làm việc ca đêm lệch giờ hành chính; người cao tuổi mắt mờ run tay khó thao tác chạm vuốt; hay nhu cầu nắm bắt điểm sơ tán bão lũ kiên cố (THPT Nguyễn Trãi, THCS Nguyễn Lương Bằng) tại vùng trũng thấp đường Mẹ Suốt khi vào mùa mưa bão.</li>
+    </ul>
+
+    <p><strong>1.3. Vị trí trong hệ sinh thái số hiện hữu:</strong> Thành phố Đà Nẵng đã có nền tảng <em>Danang Smart City</em>, Cổng Dịch vụ công và Zalo <em>Liên Chiểu SmartConnect</em>. LC Compass không thay thế các nền tảng này, mà đóng vai trò là <strong>"Lớp hỗ trợ chuẩn bị ban đầu"</strong>: Giúp người dân lọc bỏ thông tin sai lệch, chuẩn bị đúng thành phần hồ sơ có nguồn kiểm chứng ngay tại nhà, xuất phiếu hướng dẫn tóm tắt, rồi mới mở liên kết chính thức để nộp hồ sơ, hạn chế tối đa việc hồ sơ bị trả về do chuẩn bị sai.</p>
+
+    <h3 class="section-heading">2. MỤC TIÊU CỦA Ý TƯỞNG</h3>
+    <p>Dự án xác định các mục tiêu cụ thể, bám sát tính khả thi:</p>
+    <ul>
+      <li><strong>Mục tiêu trước hạn nộp cuộc thi:</strong> Hoàn thiện prototype chạy được trên điện thoại qua mã QR, thể hiện rõ chu trình: <em>Nhu cầu $\rightarrow$ Làm rõ điều kiện $\rightarrow$ Thẻ thông tin có nguồn kiểm chứng $\rightarrow$ Bước tiếp theo</em>; gồm gói chuẩn bị tạm trú, các hồ sơ địa điểm tiện ích và thẻ khám phá có nguồn xác thực.</li>
+      <li><strong>Mục tiêu thử nghiệm thực tế (Pilot Testing):</strong> Tổ chức thử nghiệm đối chứng trên <strong>12 – 20 người dùng đại diện</strong> (gồm công nhân, sinh viên, người cao tuổi, người mới đến) để đo thời gian tìm đúng bước tiếp theo, tỷ lệ chọn đúng cơ quan tiếp nhận, mức độ hiểu nội dung hướng dẫn và ghi nhận các điểm chưa cải thiện.</li>
+      <li><strong>Kiểm soát chất lượng dữ liệu & an toàn thông tin:</strong> Mọi thẻ thông tin đều có nguồn trích dẫn, ngày rà soát (`reviewed_at`) và người chịu trách nhiệm (`owner`) để chống thông tin lỗi thời. Ứng dụng biết dừng ở phần chưa rõ; không thu thập dữ liệu cá nhân của người dân.</li>
+    </ul>
+
+    <div class="page-break"></div>
+    <!-- TRANG 2 -->
+
+    <h3 class="section-heading">3. NỘI DUNG VÀ GIẢI PHÁP THỰC HIỆN</h3>
+    <p><strong>Vai trò thanh niên:</strong> Đề xuất nhóm thanh niên thu thập nguồn, biên tập hướng dẫn dễ đọc và hỗ trợ người dân dùng thử. Nội dung chuyên môn cần được người có trách nhiệm rà soát trước khi phát hành. Vướng mắc ghi nhận khi dùng thử là căn cứ chọn nội dung cần bổ sung.</p>
+
+    <p>LC Compass là ứng dụng Web trên điện thoại di động (Mobile-First), mở nhanh bằng mã QR, không cần cài đặt và không cần tài khoản, phân loại thông tin qua 3 nhu cầu chính:</p>
+
+    <table class="table-custom">
+      <thead>
+        <tr>
+          <th style="width: 25%;">Lối vào chính</th>
+          <th style="width: 35%;">Đầu ra của hệ thống</th>
+          <th style="width: 40%;">Nội dung thực hiện</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Thủ tục & hướng dẫn</strong><br><em>(Tôi cần làm việc)</em></td>
+          <td>Thẻ việc có bước chuẩn bị, điều cần hỏi cán bộ, nguồn kiểm chứng và liên kết chính thức.</td>
+          <td>Hướng dẫn chuẩn bị giấy tờ hợp lệ (ví dụ: đăng ký tạm trú); cách xử lý khi không có hợp đồng trọ văn bản (Điều 5 NĐ 62/2021); không nhận/nộp hồ sơ thay chính quyền.</td>
+        </tr>
+        <tr>
+          <td><strong>Địa điểm & tiện ích</strong><br><em>(Tôi mới đến)</em></td>
+          <td>Thẻ địa điểm có chức năng, địa bàn hành chính, địa chỉ và ngày rà soát.</td>
+          <td>Định tuyến trụ sở mới (UBND 68 Lạc Long Quân, CA 66 Lạc Long Quân); cảnh báo địa giới đã chuyển sang phường bạn; danh bạ tiện ích đời sống.</td>
+        </tr>
+        <tr>
+          <td><strong>Khám phá Liên Chiểu</strong><br><em>(Tôi muốn tìm hiểu)</em></td>
+          <td>Thẻ địa điểm / câu chuyện văn hóa có nguồn kiểm chứng, gắn đúng địa bàn.</td>
+          <td>Giới thiệu các địa danh, di tích, sản phẩm đặc trưng địa phương (như Làng nghề Nước mắm Nam Ô) có nguồn xác thực, không tự sinh tour thời gian thực.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>3.1. Tiếp nhận nhu cầu và dung lỗi ngôn ngữ đời thường:</strong><br>
+    Người dùng có thể chọn nhanh nhu cầu từ danh mục hoặc nhập câu hỏi tự nhiên. Hệ thống tích hợp bộ từ điển chuẩn hóa phương ngữ (nhận diện tiếng Nghệ Tĩnh, Xứ Quảng, Nam Bộ) và bộ sửa lỗi gõ phím, lỗi chính tả thường gặp của người lớn tuổi (<em>tạm chú $\rightarrow$ tạm trú, ch/tr, s/x, viết tắt CCCD, BHYT</em>).</p>
+
+    <p><strong>3.2. Quy tắc và nội dung đã rà soát quyết định thẻ xuất ra:</strong><br>
+    AI chỉ đóng vai trò là lớp nhận diện cách diễn đạt tự nhiên và phân loại ý định. Nội dung hiển thị trên thẻ hoàn toàn do các quy tắc và dữ liệu đã được rà soát quyết định. Nếu AI không phản hồi hoặc người dùng không muốn dùng AI, các nút bấm danh mục nhu cầu thủ công vẫn hoạt động bình thường.</p>
+
+    <p><strong>3.3. Cơ chế minh bạch khi thiếu dữ liệu (Biết dừng ở phần chưa rõ):</strong><br>
+    Để tránh việc AI tạo ra thông tin sai lệch (hallucination), nếu câu hỏi chưa có dữ liệu chính thức hoặc nằm ngoài phạm vi thẩm định, hệ thống <strong>không tự suy đoán câu trả lời</strong>, mà hiển thị thông báo chưa có dữ liệu và kích hoạt:
+    - Nút gọi Tổng đài Dịch vụ công 1022 Đà Nẵng (`0236 1022`) và đầu mối cơ quan phường.
+    - Tùy chọn in/lưu <strong>Phiếu ghi nhận vướng mắc khổ A5</strong> tóm tắt câu hỏi để người dân mang theo hỏi cán bộ chuyên môn.</p>
+
+    <p><strong>3.4. Hỗ trợ đa phương thức:</strong><br>
+    - Tích hợp nút Micro thu âm giọng nói (Web Speech API) cho người ngại gõ chữ.
+    - Tích hợp nút Loa đọc to từng bước (Text-to-Speech) cho người mắt yếu.
+    - Tích hợp chức năng xuất <strong>Phiếu hướng dẫn khổ A5</strong> có ô vuông $\square$ để người dân tự tích chọn các giấy tờ đã chuẩn bị hoặc mang theo khi đi làm việc.</p>
+
+    <p><strong>3.5. Bảo vệ quyền riêng tư (Privacy-by-design):</strong><br>
+    Hệ thống không tạo cơ sở dữ liệu công dân (No citizen DB). Tích hợp bộ lọc PII phía trình duyệt tự động che mờ số CCCD và số điện thoại trước khi xử lý. Trạng thái trên phiếu là người dùng tự đánh dấu cho bản thân, không phải trạng thái hồ sơ của chính quyền.</p>
+
+    <div class="page-break"></div>
+    <!-- TRANG 3 -->
+
+    <h3 class="section-heading">4. ĐIỂM SÁNG TẠO ĐỀ XUẤT</h3>
+    <p>Dự án tập trung vào đổi mới cách tổ chức dữ liệu và phương thức hỗ trợ tại cơ sở:</p>
+
+    <table class="table-custom">
+      <thead>
+        <tr>
+          <th style="width: 25%;">Tiêu chí</th>
+          <th style="width: 35%;">Cách tiếp cận thông thường</th>
+          <th style="width: 40%;">Cách làm đề xuất của LC Compass</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Cách tổ chức dữ liệu</strong></td>
+          <td>Tổ chức theo cơ cấu cơ quan quản lý (phòng ban, thẩm quyền hành chính).</td>
+          <td><span class="badge-pill badge-green">Tổ chức theo nhu cầu đời thường</span> (Life-events), học hỏi từ các mô hình quốc tế như LifeSG và GoBusiness.</td>
+        </tr>
+        <tr>
+          <td><strong>Kiểm soát dữ liệu sai lệch</strong></td>
+          <td>Thông tin phân tán trên mạng dễ bị sai lệch, hết hiệu lực, thiếu căn cứ.</td>
+          <td><span class="badge-pill badge-green">Dữ liệu có phiên bản, có người rà soát</span> (`owner`), ngày rà soát (`reviewed_at`) và hạn rà soát (`review_due`).</td>
+        </tr>
+        <tr>
+          <td><strong>Ứng xử khi thiếu dữ liệu</strong></td>
+          <td>Chatbot AI dễ sinh ảo giác tự bịa quy định, hoặc báo lỗi chung chung.</td>
+          <td><span class="badge-pill badge-green">Biết dừng ở phần chưa rõ</span>: Thừa nhận chưa có dữ liệu, xuất phiếu câu hỏi A5 và chuyển sang Tổng đài 1022.</td>
+        </tr>
+        <tr>
+          <td><strong>Phương thức hỗ trợ</strong></td>
+          <td>Chỉ có giao diện màn hình cảm ứng, yêu cầu tự thao tác.</td>
+          <td><span class="badge-pill badge-green">Phiếu hành động mang theo</span>: Xuất phiếu A5 có ô tích vuông $\square$ để theo dõi các bước thực hiện.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="section-heading">5. ĐỐI TƯỢNG HƯỞNG LỢI</h3>
+    <p><strong>5.1. Người thụ hưởng trực tiếp:</strong>
+    - <em>Người dân và thanh niên địa phương:</em> Tiếp cận nguồn thông tin chuẩn xác, tránh bị dẫn dụ bởi các thông tin sai lệch trên mạng xã hội; nắm rõ địa chỉ và chính sách miễn giảm lệ phí sau sáp nhập.
+    - <em>Người mới đến (Công nhân và sinh viên):</em> Được hướng dẫn rõ ràng về thủ tục tạm trú, chỗ ở hợp pháp, và các tiện ích đời sống quanh khu trọ.
+    - <em>Người cao tuổi và người ít dùng công nghệ:</em> Sử dụng công cụ cùng người hỗ trợ, nghe đọc to hoặc cầm phiếu giấy A5 đi làm việc.
+    - <em>Bà con vùng trũng thấp đường Mẹ Suốt:</em> Tiếp cận nhanh danh sách điểm sơ tán bão lũ kiên cố và đầu mối liên hệ khẩn cấp trong mùa mưa bão.</p>
+
+    <p><strong>5.2. Người thụ hưởng gián tiếp:</strong>
+    - <em>Cán bộ cơ sở tại Bộ phận Một cửa:</em> Tiếp nhận hồ sơ được công dân chuẩn bị đúng và đủ hơn ngay từ đầu, giảm áp lực giải thích thủ tục lặp lại.
+    - <em>Tổ công nghệ số cộng đồng và Đoàn thanh niên:</em> Có công cụ hỗ trợ trực quan, nội dung đã được xác thực khi đi tuyên truyền tại địa bàn.</p>
+
+    <h3 class="section-heading">6. KHẢ NĂNG ÁP DỤNG THỰC TẾ & MINH CHỨNG TRIỂN KHAI</h3>
+    <p><strong>6.1. Minh chứng thiết kế và không gian tình huống:</strong><br>
+    Nhóm đã xây dựng bộ 10.000 trường hợp giả định (User stories) dựa trên ma trận: <em>100 mục tiêu $\times$ 10 hoàn cảnh $\times$ 10 trạng thái giấy tờ</em> để kiểm thử thuật toán điều hướng và rà soát các nhánh rẽ thông tin.</p>
+
+    <p><strong>6.2. Trạng thái sản phẩm thực tế (Prototype):</strong><br>
+    - Bản thử nghiệm đã được triển khai và truy cập công khai tại: <a href="https://lc-compass-xi.vercel.app" target="_blank" style="color: #047857; font-weight: bold;">https://lc-compass-xi.vercel.app</a>.
+    - Hoạt động ổn định trên các trình duyệt di động phổ biến qua mã QR.
+    - Đã tích hợp 24 thẻ thủ tục hành chính dân sinh có nguồn trích dẫn, cùng danh bạ 1.661 địa điểm công cộng, tiện ích đời sống trên địa bàn.
+    - Hoàn thành các bài kiểm thử kỹ thuật tự động (152 unit tests, 52 Playwright E2E tests, 0 lỗi TypeScript).</p>
+
+    <div class="page-break"></div>
+    <!-- TRANG 4 -->
+
+    <p><strong>6.3. Kế hoạch kiểm thử người dùng thật (User Testing):</strong><br>
+    Nhóm đề xuất xin ý kiến Đoàn phường để tìm kênh tiếp cận (thông qua mạng lưới khu dân cư hoặc tổ công nhân tự quản khu nhà trọ nếu được kết nối) để thử nghiệm trực tiếp trên <strong>12 – 20 người dùng</strong>, đo thời gian thực hiện tác vụ và ghi nhận các lỗi thực tế để tiếp tục hoàn thiện.</p>
+
+    <h3 class="section-heading">7. DỰ KIẾN KINH PHÍ THỰC HIỆN</h3>
+    <p>Dự toán được lập dựa trên nguyên tắc trần lập kế hoạch thực tế, phân định rõ giữa chi phí tiền mặt và ngày công đóng góp:</p>
+
+    <p class="no-indent"><strong>7.1. Dự trù tiền mặt cho giai đoạn thử nghiệm:</strong></p>
+    <table class="table-custom">
+      <thead>
+        <tr>
+          <th style="width: 8%;">STT</th>
+          <th style="width: 45%;">Hạng mục công việc dự kiến</th>
+          <th style="width: 22%;">Dự toán (VNĐ)</th>
+          <th style="width: 25%;">Căn cứ tính toán</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center;">1</td>
+          <td>Hạ tầng web và lưu trữ dữ liệu nhỏ phục vụ thử nghiệm</td>
+          <td style="text-align: right; font-weight: bold;">150.000 đ</td>
+          <td>Duy trì dịch vụ điện toán đám mây gói nhỏ</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">2</td>
+          <td>Hạn mức thử nghiệm API nhận diện ngôn ngữ (nếu bật AI)</td>
+          <td style="text-align: right; font-weight: bold;">250.000 đ</td>
+          <td>Hạn mức gọi API thử nghiệm có kiểm soát</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">3</td>
+          <td>In ấn bảng mã QR, phiếu hướng dẫn A5 và tài liệu thử nghiệm</td>
+          <td style="text-align: right; font-weight: bold;">200.000 đ</td>
+          <td>In ấn bảng mica QR và mẫu phiếu thử</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">4</td>
+          <td>Chi phí đi lại, dữ liệu di động, tổ chức các buổi thử nhỏ</td>
+          <td style="text-align: right; font-weight: bold;">200.000 đ</td>
+          <td>Hỗ trợ di chuyển và kết nối mạng thực địa</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">5</td>
+          <td>Quỹ dự phòng phát sinh</td>
+          <td style="text-align: right; font-weight: bold;">200.000 đ</td>
+          <td>Xử lý các chi phí phát sinh trong thử nghiệm</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center; font-weight: bold;">TỔNG TRẦN KINH PHÍ THỬ NGHIỆM TIỀN MẶT</td>
+          <td style="text-align: right; font-weight: bold; color: #047857; font-size: 12pt;">1.000.000 đ</td>
+          <td><em>(Một triệu đồng chẵn)</em></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>7.2. Đóng góp ngày công và chi phí vận hành sau thí điểm:</strong><br>
+    - <em>Ngày công tình nguyện:</em> Ước tính toàn nhóm đóng góp khoảng <strong>70 – 100 giờ công</strong> cho công tác khảo sát, biên tập nội dung, lập trình, kiểm thử và xây dựng hồ sơ. Đây là sự đóng góp hiện vật của nhóm tác giả, được ghi nhận rõ ràng.<br>
+    - <em>Vận hành dài hạn:</em> Sau giai đoạn thử nghiệm, nhóm sẽ đo lường số giờ cần thiết để cập nhật dữ liệu hàng tuần và chi phí hạ tầng thực tế trước khi đề xuất phương án duy trì dài hạn.</p>
+
+    <h3 class="section-heading">8. HIỆU QUẢ DỰ KIẾN MANG LẠI</h3>
+    <p><strong>8.1. Hiệu quả đo đếm được qua thử nghiệm:</strong><br>
+    - Xác định tỷ lệ người dùng chọn đúng cơ quan tiếp nhận ngay trong lần tra cứu đầu tiên.<br>
+    - Đo lường mức độ giảm thời gian tìm kiếm thông tin của người dân so với việc tự tìm kiếm trên các kênh phân tán.<br>
+    - Đánh giá tỷ lệ người dùng hiểu đúng các giấy tờ cần mang theo thông qua phiếu hướng dẫn A5.</p>
+
+    <p><strong>8.2. Hiệu quả xã hội:</strong><br>
+    - Giảm thiểu rủi ro người dân làm theo các thông tin sai lệch, lỗi thời trên internet.<br>
+    - Cung cấp kênh chuẩn bị hồ sơ minh bạch, giúp người dân nắm rõ quy định và các chính sách miễn giảm lệ phí hiện hành.</p>
+
+    <div class="page-break"></div>
+    <!-- TRANG 5 -->
+
+    <h3 class="section-heading">9. KHẢ NĂNG NHÂN RỘNG & LỘ TRÌNH THỰC HIỆN</h3>
+    <p><strong>9.1. Phương thức đóng gói và chuyển giao:</strong><br>
+    Dự án được xây dựng trên cấu trúc dữ liệu mở và có thể đóng gói chuyển giao trọn gói:
+    - Bộ schema chuẩn cho các thẻ thông tin dân sinh và mẫu phiếu in A5.
+    - Bộ mã nguồn web siêu nhẹ, dễ dàng nhúng vào Cổng thông tin hoặc Trang Zalo của địa phương.
+    - Quy trình rà soát nội dung: Bổ nhiệm người chịu trách nhiệm (`owner`), quy định chu kỳ thẩm định (`review_due`) và biên bản xác minh nguồn.</p>
+
+    <p><strong>9.2. Lộ trình triển khai:</strong><br>
+    - <em>Giai đoạn chuẩn bị (Trước 23/09/2026):</em> Hoàn thiện hồ sơ thuyết minh, kiểm thử prototype chạy thật và chuẩn bị nội dung bảo vệ trước Ban Giám khảo.<br>
+    - <em>Giai đoạn thí điểm bước đầu (Tháng 10/2026):</em> Đề xuất xin ý kiến Ban Thường vụ Đoàn phường để triển khai thử nghiệm trên 12–20 người dùng tại 01 điểm nhằm đo lường số giờ công và phản hồi thực tế.<br>
+    - <em>Giai đoạn xem xét nhân rộng (Sau khi có kết quả thí điểm):</em> Chỉ khi kết quả tại điểm thứ nhất chứng minh được hiệu quả rõ ràng và đo được chi phí duy trì, nhóm mới tham mưu nhân rộng sang điểm thứ hai và các chi đoàn khác trên địa bàn.</p>
+
+    <h3 class="section-heading">10. KẾT LUẬN VÀ ĐỀ NGHỊ</h3>
+    <p>LC Compass được xây dựng với mục tiêu mang lại một công cụ chuẩn bị thông tin thiết thực, minh bạch cho người dân trong thời đại bùng nổ dữ liệu. Nhóm tác giả kính mong Ban Tổ chức, Ban Giám khảo xem xét, đánh giá và góp ý để dự án được hoàn thiện tốt hơn./.</p>
+
+    <div class="signature-section">
+      <table class="signature-table">
+        <tr>
+          <td>
+            <strong>XÁC NHẬN CỦA CHI ĐOÀN CƠ SỞ</strong><br>
+            <em>(Ký, ghi rõ họ tên)</em>
+            <div class="signature-space"></div>
+          </td>
+          <td>
+            <strong>ĐẠI DIỆN NHÓM TÁC GIẢ DỰ ÁN</strong><br>
+            <em>(Ký và ghi rõ họ tên)</em>
+            <div class="signature-space"></div>
+            <em>[Ký và ghi rõ họ tên]</em>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+</html>

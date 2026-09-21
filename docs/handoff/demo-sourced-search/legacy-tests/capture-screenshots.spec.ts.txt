@@ -1,0 +1,132 @@
+import { test } from "@playwright/test";
+
+test.describe("Chụp ảnh nghiệm thu trực quan Gói 04A (Trang Người dân)", () => {
+  test("Chụp ảnh Desktop 1440x900", async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await page.goto("http://localhost:3000/services");
+    await page.waitForLoadState("networkidle");
+
+    // Chụp màn hình đầu tiên (viewport)
+    await page.screenshot({
+      path: "tests/screenshots/desktop-services-viewport.png",
+      fullPage: false,
+    });
+
+    // Chụp toàn trang desktop
+    await page.screenshot({
+      path: "tests/screenshots/desktop-services-full.png",
+      fullPage: true,
+    });
+
+    // Tương tác bấm phân nhánh
+    await page.getByRole("button", { name: /Chưa có hợp đồng văn bản/i }).click();
+    await page.waitForTimeout(300);
+
+    // Chụp trạng thái sau khi phân nhánh
+    await page.screenshot({
+      path: "tests/screenshots/desktop-services-branched.png",
+      fullPage: true,
+    });
+  });
+
+  test("Chụp ảnh Mobile 375x812 (iPhone view)", async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 812 });
+    await page.goto("http://localhost:3000/services");
+    await page.waitForLoadState("networkidle");
+
+    // Chụp màn hình đầu tiên (viewport)
+    await page.screenshot({
+      path: "tests/screenshots/mobile-services-viewport.png",
+      fullPage: false,
+    });
+
+    // Chụp toàn trang mobile
+    await page.screenshot({
+      path: "tests/screenshots/mobile-services-full.png",
+      fullPage: true,
+    });
+  });
+});
+
+test.describe("Chụp ảnh nghiệm thu trực quan Gói 04B (Người mới đến)", () => {
+  test("Chụp ảnh Desktop 1440x900", async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    
+    // Trang danh sách
+    await page.goto("http://localhost:3000/places");
+    await page.waitForLoadState("networkidle");
+    await page.screenshot({
+      path: "tests/screenshots/desktop-places-full.png",
+      fullPage: true,
+    });
+
+    // Trang chi tiết
+    await page.goto("http://localhost:3000/cards/place-ca-lienchieu");
+    await page.waitForLoadState("networkidle");
+    await page.screenshot({
+      path: "tests/screenshots/desktop-place-detail.png",
+      fullPage: true,
+    });
+  });
+
+  test("Chụp ảnh Mobile 375x812 (iPhone view)", async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 812 });
+    
+    // Trang danh sách
+    await page.goto("http://localhost:3000/places");
+    await page.waitForLoadState("networkidle");
+    await page.screenshot({
+      path: "tests/screenshots/mobile-places-full.png",
+      fullPage: true,
+    });
+
+    // Trang chi tiết
+    await page.goto("http://localhost:3000/cards/place-ca-lienchieu");
+    await page.waitForLoadState("networkidle");
+    await page.screenshot({
+      path: "tests/screenshots/mobile-place-detail.png",
+    });
+  });
+});
+
+test.describe("Chụp ảnh nghiệm thu trực quan Gói 04C (Khám phá)", () => {
+  test("Chụp ảnh Desktop 1440x900", async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
+    
+    // Trang danh sách
+    await page.goto("http://localhost:3000/discover");
+    await page.waitForLoadState("networkidle");
+    await page.screenshot({
+      path: "tests/screenshots/desktop-discover-full.png",
+      fullPage: true,
+    });
+
+    // Trang chi tiết
+    await page.goto("http://localhost:3000/cards/discover-dinh-hoamy");
+    await page.waitForLoadState("networkidle");
+    await page.screenshot({
+      path: "tests/screenshots/desktop-discover-detail.png",
+      fullPage: true,
+    });
+  });
+
+  test("Chụp ảnh Mobile 375x812 (iPhone view)", async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 812 });
+    
+    // Trang danh sách
+    await page.goto("http://localhost:3000/discover");
+    await page.waitForLoadState("networkidle");
+    await page.screenshot({
+      path: "tests/screenshots/mobile-discover-full.png",
+      fullPage: true,
+    });
+
+    // Trang chi tiết
+    await page.goto("http://localhost:3000/cards/discover-dinh-hoamy");
+    await page.waitForLoadState("networkidle");
+    await page.screenshot({
+      path: "tests/screenshots/mobile-discover-detail.png",
+      fullPage: true,
+    });
+  });
+});

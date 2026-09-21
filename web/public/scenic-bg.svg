@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice" fill="none">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BAE6FD" />
+      <stop offset="40%" stop-color="#E0F2FE" />
+      <stop offset="100%" stop-color="#F0F9FF" />
+    </linearGradient>
+    <linearGradient id="mountainFar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="mountainMid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="mountainNear" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0369A1" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#075985" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="seaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="360" fill="url(#skyGrad)" />
+
+  <!-- Sun Glow -->
+  <circle cx="950" cy="110" r="140" fill="#FEF08A" opacity="0.3" filter="blur(30px)" />
+  <circle cx="950" cy="110" r="45" fill="#FEF9C3" opacity="0.6" />
+
+  <!-- Far Mountains (Hải Vân range) -->
+  <path d="M0 220 Q180 140 380 190 T750 170 T1050 130 T1200 160 L1200 360 L0 360 Z" fill="url(#mountainFar)" />
+
+  <!-- Mid Mountains -->
+  <path d="M400 230 Q580 160 780 210 T1100 180 T1200 195 L1200 360 L400 360 Z" fill="url(#mountainMid)" />
+
+  <!-- Near Coastline & Promontory -->
+  <path d="M680 250 Q850 190 1020 230 T1200 210 L1200 360 L680 360 Z" fill="url(#mountainNear)" />
+
+  <!-- Bay Waters -->
+  <path d="M0 265 C250 250 500 270 850 260 C1000 255 1120 262 1200 265 L1200 360 L0 360 Z" fill="url(#seaGrad)" opacity="0.85" />
+
+  <!-- Soft Mist/Fog at water line -->
+  <rect y="250" width="1200" height="25" fill="#E0F2FE" opacity="0.3" />
+
+  <!-- Distant City Skyline Silhouette (Da Nang & Lien Chieu) -->
+  <g fill="#0369A1" opacity="0.35">
+    <rect x="760" y="235" width="8" height="25" rx="1" />
+    <rect x="772" y="225" width="12" height="35" rx="1" />
+    <rect x="788" y="230" width="10" height="30" rx="1" />
+    <rect x="804" y="240" width="14" height="20" rx="1" />
+    <rect x="822" y="220" width="16" height="40" rx="1" />
+    <rect x="842" y="232" width="12" height="28" rx="1" />
+    <rect x="860" y="238" width="20" height="22" rx="1" />
+  </g>
+</svg>

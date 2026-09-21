@@ -1,0 +1,225 @@
+[
+  {
+    "id": "service-chuan-bi-tam-tru",
+    "type": "SERVICE",
+    "title": "Chuẩn bị thông tin đăng ký tạm trú",
+    "version": "1.0.0",
+    "intentIds": [
+      "cu_tru-01"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Người dân và người mới đến phường Liên Chiểu"
+    ],
+    "exclusions": [
+      "Đây là hướng dẫn chuẩn bị thông tin, chưa phải checklist hồ sơ đầy đủ đã được phường duyệt. Địa chỉ, giờ làm việc và điện thoại của cơ quan tiếp nhận cư trú tại phường: chưa xác minh.",
+      "Không nhập số định danh, mật khẩu hoặc hồ sơ cá nhân vào bản demo."
+    ],
+    "sources": [
+      {
+        "id": "residence-2026",
+        "url": "https://xaydungchinhsach.chinhphu.vn/mot-so-diem-moi-co-ban-cua-luat-cu-tru-sua-doi-va-thong-tu-116-2026-tt-bca-119260714094901372.htm",
+        "title": "Điểm mới về cư trú và Thông tư 116/2026/TT-BCA",
+        "publisher": "Báo điện tử Chính phủ",
+        "sourceDate": "2026-07-14",
+        "fetchedAt": "2026-09-19T00:00:00+07:00",
+        "relevantExcerpt": "các thông tin cơ bản […] không yêu cầu công dân nộp lại giấy tờ […] Mỗi hồ sơ được cấp một mã số"
+      },
+      {
+        "id": "temporary-residence-2026",
+        "url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-dang-ky-tam-tru-119260720101630132.htm",
+        "title": "Quy định đăng ký tạm trú",
+        "publisher": "Báo điện tử Chính phủ",
+        "sourceDate": "2026-07-21",
+        "fetchedAt": "2026-09-19T00:00:00+07:00",
+        "relevantExcerpt": "có thể thực hiện đăng ký tạm trú thông qua cơ quan, tổ chức quản lý trực tiếp chỗ ở đó"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên"
+      }
+    ],
+    "review": {
+      "status": "review",
+      "owner": "Nhóm biên tập LC Compass",
+      "reviewDue": "2026-10-19",
+      "notes": "Thu thập nguồn ngày 19/09/2026; chưa có người rà soát nghiệp vụ. Hạn do nhóm đặt để kiểm tra lại, không phải ngày hết hiệu lực pháp luật."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "tạm trú",
+      "thuê trọ",
+      "người mới đến",
+      "cư trú",
+      "VNeID",
+      "ký túc xá"
+    ],
+    "body": {
+      "summary": "Các việc cần chuẩn bị trước khi liên hệ cơ quan đăng ký cư trú; biên tập từ hướng dẫn Chính phủ tháng 7/2026.",
+      "questions": [],
+      "steps": [
+        {
+          "id": "prepare",
+          "stepNumber": 1,
+          "stepType": "procedural",
+          "title": "Chuẩn bị thông tin cơ bản",
+          "description": "Khi nộp trực tiếp, cung cấp thông tin cơ bản và điều kiện đăng ký cư trú để cán bộ khai thác cơ sở dữ liệu, tạo hồ sơ.",
+          "requiredDocs": [],
+          "claimIds": [
+            "prepare-info"
+          ],
+          "branches": []
+        },
+        {
+          "id": "shared",
+          "stepNumber": 2,
+          "stepType": "procedural",
+          "title": "Đối chiếu thông tin đã có",
+          "description": "Thông tin, giấy tờ đã được kết nối, chia sẻ và khai thác từ cơ sở dữ liệu hoặc VNeID thì không phải nộp hay xuất trình lại.",
+          "requiredDocs": [],
+          "claimIds": [
+            "shared-info"
+          ],
+          "branches": []
+        },
+        {
+          "id": "dorm",
+          "stepNumber": 3,
+          "stepType": "procedural",
+          "title": "Nếu đang ở ký túc xá",
+          "description": "Sinh viên ở tập trung trong ký túc xá có thể đăng ký qua đơn vị trực tiếp quản lý chỗ ở.",
+          "requiredDocs": [],
+          "claimIds": [
+            "dorm-info"
+          ],
+          "branches": []
+        },
+        {
+          "id": "follow",
+          "stepNumber": 4,
+          "stepType": "procedural",
+          "title": "Giữ mã hồ sơ",
+          "description": "Mỗi hồ sơ được cấp mã để theo dõi tiến độ. Bản demo không tra cứu tiến độ hồ sơ cá nhân.",
+          "requiredDocs": [],
+          "claimIds": [
+            "tracking-info"
+          ],
+          "branches": []
+        }
+      ],
+      "unknownOption": {
+        "label": "Tôi chưa rõ",
+        "guidance": "Mở nguồn bên dưới để đối chiếu trường hợp của mình; các tình huống chưa rõ cần hỏi cơ quan đăng ký cư trú."
+      },
+      "missingQuestions": [],
+      "claimsWithSources": [
+        {
+          "id": "prepare-info",
+          "claim": "Khi nộp trực tiếp, cung cấp thông tin cơ bản và điều kiện đăng ký cư trú để cán bộ khai thác cơ sở dữ liệu, tạo hồ sơ.",
+          "sourceId": "residence-2026"
+        },
+        {
+          "id": "shared-info",
+          "claim": "Thông tin, giấy tờ đã được kết nối, chia sẻ và khai thác từ cơ sở dữ liệu hoặc VNeID thì không phải nộp hay xuất trình lại.",
+          "sourceId": "residence-2026"
+        },
+        {
+          "id": "dorm-info",
+          "claim": "Sinh viên ở tập trung trong ký túc xá có thể đăng ký qua đơn vị trực tiếp quản lý chỗ ở.",
+          "sourceId": "temporary-residence-2026"
+        },
+        {
+          "id": "tracking-info",
+          "claim": "Mỗi hồ sơ được cấp mã để theo dõi tiến độ. Bản demo không tra cứu tiến độ hồ sơ cá nhân.",
+          "sourceId": "residence-2026"
+        },
+        {
+          "id": "ward-boundary",
+          "claim": "Phường Liên Chiểu gồm Hòa Khánh Bắc cũ và phần còn lại của Hòa Liên sau điều chỉnh sang Hải Vân; không phải toàn bộ quận Liên Chiểu cũ.",
+          "sourceId": "ward-2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "place-trung-tam-hanh-chinh-lien-chieu",
+    "type": "PLACE",
+    "title": "Trung tâm Phục vụ hành chính công phường Liên Chiểu",
+    "version": "1.0.0",
+    "intentIds": [
+      "dia_diem-01"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Người dân và người mới đến phường Liên Chiểu"
+    ],
+    "exclusions": [
+      "Địa chỉ theo công bố tháng 7/2025, chờ địa phương rà soát lại. Không suy ra đây là nơi tiếp nhận hồ sơ tạm trú."
+    ],
+    "sources": [
+      {
+        "id": "public-center-2025",
+        "url": "https://thangan.danang.gov.vn/chi-tiet-tin/group/156/nid/18559/dia-chi-tru-so-va-trung-tam-phuc-vu-hanh-chinh-cong-94-don-vi-cap-xa-cua-tp-da-nang-moi",
+        "title": "Địa chỉ trụ sở và trung tâm phục vụ hành chính công 94 đơn vị cấp xã",
+        "publisher": "Trang thông tin điện tử xã Thăng An, TP. Đà Nẵng (đăng lại Báo Đà Nẵng)",
+        "sourceDate": "2025-07-14",
+        "fetchedAt": "2026-09-19T00:00:00+07:00",
+        "relevantExcerpt": "Trung tâm Phục vụ hành chính công tại số 68 đường Lạc Long Quân, phường Liên Chiểu."
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên"
+      }
+    ],
+    "review": {
+      "status": "review",
+      "owner": "Nhóm biên tập LC Compass",
+      "reviewDue": "2026-10-19",
+      "notes": "Thu thập nguồn ngày 19/09/2026; chưa có người rà soát nghiệp vụ. Hạn do nhóm đặt để kiểm tra lại, không phải ngày hết hiệu lực pháp luật."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "một cửa",
+      "hành chính công",
+      "UBND",
+      "68 Lạc Long Quân"
+    ],
+    "body": {
+      "function": "Địa điểm Trung tâm Phục vụ hành chính công và trụ sở UBND phường được nêu trong danh sách công bố địa chỉ của thành phố.",
+      "address": "68 đường Lạc Long Quân, phường Liên Chiểu, TP. Đà Nẵng",
+      "jurisdictionDetail": "Danh sách công bố ghi rõ phường Liên Chiểu sau sắp xếp năm 2025.",
+      "openingHours": "Chưa xác minh",
+      "contactPhone": "Chưa xác minh",
+      "claimsWithSources": [
+        {
+          "id": "center-address",
+          "claim": "Công bố địa chỉ đặt trụ sở UBND và Trung tâm Phục vụ hành chính công phường tại 68 Lạc Long Quân.",
+          "sourceId": "public-center-2025"
+        },
+        {
+          "id": "ward-boundary",
+          "claim": "Phường Liên Chiểu gồm Hòa Khánh Bắc cũ và phần còn lại của Hòa Liên sau điều chỉnh sang Hải Vân; không phải toàn bộ quận Liên Chiểu cũ.",
+          "sourceId": "ward-2025"
+        }
+      ]
+    }
+  }
+]

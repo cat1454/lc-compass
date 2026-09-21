@@ -1,0 +1,148 @@
+import { expect, test } from "@playwright/test";
+
+test.describe("LC Compass — Hành trình người dùng & Kiểm thử giao diện", () => {
+  test("Hành trình tương tác: Từ trang chủ -> Lối vào 1 -> Thẻ tạm trú -> Phân nhánh câu hỏi -> Phiếu chuẩn bị", async ({
+    page,
+  }) => {
+    // 1. Vào trang chủ
+    await page.goto("/");
+    await expect(page).toHaveTitle(/LC Compass/i);
+
+    // Kiểm tra hiển thị 3 lối vào
+    await expect(page.getByRole("heading", { name: "Tôi cần làm việc" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Tôi mới đến" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Tôi muốn khám phá" })).toBeVisible();
+
+    // 2. Chuyển sang trang Dịch vụ / Thủ tục
+    await page.getByRole("link", { name: /Mở luồng thủ tục tạm trú/i }).click();
+    await expect(page).toHaveURL(/\/services/);
+
+    // 3. Kiểm tra trang đã load trực tiếp thẻ tạm trú
+    await expect(page.getByRole("heading", { name: /Hướng dẫn chuẩn bị hồ sơ đăng ký tạm trú/i })).toBeVisible();
+
+    // 4. Kiểm tra phân nhánh điều kiện câu hỏi
+    const questionBox = page.locator("text=Bạn đã có hợp đồng thuê nhà");
+    await expect(questionBox).toBeVisible();
+
+    // Mặc định chọn có hợp đồng: không thấy Bước bổ trợ
+    await expect(page.locator("text=Bước bổ trợ: Xác nhận chỗ ở qua Tổ công nhân tự quản")).not.toBeVisible();
+
+    // Người dùng chọn "Chưa có hợp đồng văn bản"
+    await page.getByRole("button", { name: /Chưa có hợp đồng văn bản/i }).click();
+
+    // Bước bổ trợ lập tức xuất hiện trong luồng
+    await expect(page.getByText(/Bước bổ trợ: Xác nhận chỗ ở/i).filter({ visible: true }).first()).toBeVisible();
+
+    // 5. Kiểm tra tương tác với Phiếu chuẩn bị hành trang
+    await expect(page.locator("text=Phiếu chuẩn bị hành trang mang theo")).toBeVisible();
+
+    // Tích chọn 1 mục giấy tờ
+    const firstCheckbox = page.locator('input[type="checkbox"]').first();
+    await firstCheckbox.check();
+    await expect(firstCheckbox).toBeChecked();
+
+    // Bấm nút Lưu phiếu
+    await page.getByRole("button", { name: "💾 Lưu phiếu", exact: true }).click();
+    await expect(page.locator("text=Đã lưu phiếu vào bộ nhớ thiết bị")).toBeVisible();
+  });
+
+  test("Tìm kiếm tiếng Việt không dấu trên trang chủ lọc chính xác", async ({ page }) => {
+    await page.goto("/");
+
+    const searchInput = page.getByPlaceholder(/Tìm theo tên thủ tục/i);
+    await searchInput.fill("cong an");
+
+    // Chỉ còn hiển thị thẻ Công an phường
+    await expect(page.getByRole("link", { name: /Công an Phường Liên Chiểu/i })).toBeVisible();
+    await expect(page.getByRole("link", { name: /Đình làng Hòa Mỹ/i })).not.toBeVisible();
+
+    // Xóa tìm kiếm
+    await searchInput.fill("");
+    await expect(page.getByRole("link", { name: /Đình làng Hòa Mỹ/i })).toBeVisible();
+  });
+
+  test("Kiểm tra hiển thị responsive trên màn hình hẹp (320px)", async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 568 });
+    await page.goto("/");
+
+    await expect(page.getByRole("heading", { level: 1, name: /LC Compass/i })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Tôi cần làm việc" })).toBeVisible();
+
+    // Đảm bảo không bị tràn ngang ở 320px
+    const scrollWidth = await page.evaluate(() => document.documentElement.scrollWidth);
+    const clientWidth = await page.evaluate(() => document.documentElement.clientWidth);
+    expect(scrollWidth).toBeLessThanOrEqual(clientWidth + 1);
+  });
+
+  test("Gói 04A: Kiểm tra cấu trúc trang chi tiết thủ tục (/services) theo chuẩn", async ({
+    page,
+  }) => {
+    await page.goto("/services");
+
+    // 1. Kiểm tra thẻ thủ tục chính và 4 bước đánh số màu
+    await expect(page.getByText(/Kết quả từ nguồn chính thống|Dữ liệu mẫu/i).filter({ visible: true }).first()).toBeVisible();
+    await expect(page.getByText(/Thông tin chính thống|Dữ liệu mẫu/i).filter({ visible: true }).first()).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Các bước thực hiện" }).first()).toBeVisible();
+
+    // 4. Kiểm tra widget Cột phải (hoặc khối tiếp nối trên mobile)
+    await expect(page.getByRole("heading", { name: /Địa điểm/i }).first()).toBeVisible();
+    await expect(page.getByText("Nguồn tham khảo")).toBeVisible();
+    await expect(page.getByText("Bạn cần hỗ trợ thêm?")).toBeVisible();
+  });
+
+  test("Gói 04A: Kiểm tra AppShell - Sidebar Desktop và Bottom Nav Mobile hiển thị theo kích thước màn hình", async ({
+    page,
+    isMobile,
+  }) => {
+    await page.goto("/services");
+
+    if (isMobile) {
+      // Trên Mobile: Thanh điều hướng      // BottomNavMobile hiển thị
+      const bottomNav = page.getByRole("navigation", { name: /Thanh điều hướng dưới/i });
+      await expect(bottomNav).toBeVisible();
+      await expect(bottomNav.getByText("Trang chủ")).toBeVisible();
+      await expect(bottomNav.getByText("Dịch vụ")).toBeVisible();
+      await expect(bottomNav.getByText("Thông báo")).toBeVisible();
+      await expect(bottomNav.getByText("Cá nhân")).toBeVisible();
+
+      // Sidebar Desktop bị ẩn trên mobile
+      const desktopSidebar = page.getByRole("complementary", { name: /Thanh điều hướng chính màn hình lớn/i });
+      await expect(desktopSidebar).not.toBeVisible();
+    } else {
+      // Trên Desktop: Sidebar bên trái phải hiển thị
+      const desktopSidebar = page.getByRole("complementary", { name: /Thanh điều hướng chính màn hình lớn/i });
+      await expect(desktopSidebar).toBeVisible();
+      // Logo text is now in TopBar, so we check for other sidebar items
+      await expect(desktopSidebar.getByText("Trang chủ")).toBeVisible();
+      await expect(desktopSidebar.getByText("Thủ tục hành chính")).toBeVisible();
+      await expect(desktopSidebar.getByText("Vì một Liên Chiểu văn minh, hiện đại, nghĩa tình")).toBeVisible();
+
+      // TopBar desktop hiển thị với ⌘ K
+      await expect(page.getByText("⌘ K")).toBeVisible();
+
+      // BottomNavMobile bị ẩn trên desktop
+      const bottomNav = page.getByRole("navigation", { name: /Thanh điều hướng dưới/i });
+      await expect(bottomNav).not.toBeVisible();
+    }
+  });
+
+  test("Kiểm tra Mobile: Đổi lựa chọn phân nhánh câu hỏi cập nhật danh sách", async ({ page }) => {
+    // Ép kích thước mobile
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto("/cards/service-tam-tru-lc");
+
+    // Click chọn chưa có hợp đồng
+    await page.getByRole("button", { name: /Chưa có hợp đồng văn bản/i }).first().click();
+
+    // Mở phần mobile của bước bổ trợ
+    const mobileStep = page.locator("text=Bước bổ trợ: Xác nhận chỗ ở").first();
+    await expect(mobileStep).toBeVisible();
+    await mobileStep.click();
+
+    // Chọn lại đã có hợp đồng
+    await page.getByRole("button", { name: /Đã có hợp đồng thuê nhà/i }).first().click();
+
+    // Đảm bảo bước bổ trợ không còn visible (mobile list)
+    await expect(page.locator("text=Bước bổ trợ: Xác nhận chỗ ở").first()).not.toBeVisible();
+  });
+});

@@ -1,0 +1,471 @@
+[
+  {
+    "id": "place-ca-lienchieu",
+    "version": "1.0.0",
+    "type": "PLACE",
+    "title": "Công an Phường Liên Chiểu — Tiếp nhận Cư trú & ANTT",
+    "intentIds": ["dia_diem-01", "dia_diem-02", "cu_tru-04"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng",
+      "scopeLevel": "ward",
+      "ward": "Liên Chiểu",
+      "city": "Đà Nẵng"
+    },
+    "applicability": {
+      "targetAudience": [
+        "Công dân thực hiện thủ tục đăng ký thường trú, tạm trú, khai báo tạm vắng trên địa bàn phường",
+        "Người dân cần hỗ trợ liên quan đến an ninh trật tự khu dân cư"
+      ],
+      "conditions": [
+        "Mang theo CCCD gốc hoặc xuất trình VNeID mức 2 khi làm việc trực tiếp"
+      ]
+    },
+    "exclusions": [
+      "Thủ tục cấp đổi hộ chiếu hoặc căn cước công dân lần đầu (thực hiện tại Phòng QLHC Công an thành phố)",
+      "Giải quyết tranh chấp dân sự ngoài phạm vi thẩm quyền an ninh trật tự"
+    ],
+    "sources": [
+      {
+        "id": "src-ca-lienchieu",
+        "title": "Trụ sở Công an Phường Liên Chiểu - Tiếp nhận đăng ký cư trú",
+        "url": "https://lienchieu.danang.gov.vn/an-ninh-trat-tu-cong-an-phuong",
+        "publisher": "Công an Phường Liên Chiểu",
+        "publishedAt": "2026-03-01",
+        "fetchedAt": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "contentOwner": "Đoàn TNCS Hồ Chí Minh Phường Liên Chiểu",
+      "reviewer": "Ban Chấp hành Đoàn Phường Liên Chiểu & Tổ Đề án Cuộc thi 2026",
+      "reviewedAt": "2026-09-18",
+      "reviewDue": "2026-12-31",
+      "revisionReason": "Biên tập danh bạ địa điểm thiết yếu phục vụ công dân mới đến"
+    },
+    "actions": [
+      {
+        "id": "act-ca-call",
+        "type": "public_contact",
+        "label": "Gọi trực ban Công an phường",
+        "contact": "02363842345",
+        "isExternal": false
+      },
+      {
+        "id": "act-ca-maps",
+        "type": "directions",
+        "label": "Mở chỉ đường trên ứng dụng bản đồ",
+        "url": "https://maps.google.com/?q=Cong+An+Phuong+Lien+Chieu+Da+Nang",
+        "isExternal": true
+      }
+    ],
+    "isSynthetic": false,
+    "body": {
+      "category": "police",
+      "serviceFunction": "Tiếp nhận hồ sơ đăng ký thường trú, tạm trú; giải quyết thủ tục cư trú và đảm bảo an ninh trật tự",
+      "address": "Đường Nguyễn Lương Bằng, Phường Liên Chiểu, TP. Đà Nẵng",
+      "coordinates": {
+        "lat": 16.0645,
+        "lng": 108.1523,
+        "isVerified": true
+      },
+      "openingHours": {
+        "text": "Sáng 07:30 - 11:30, Chiều 13:30 - 17:00 (Thứ Hai đến Thứ Sáu); Trực ban an ninh 24/7",
+        "isVerified": true,
+        "checkedAt": "2026-09-18"
+      },
+      "contact": {
+        "phone": "02363842345",
+        "hotline": "113"
+      },
+      "claimsWithSources": [
+        {
+          "id": "claim-ca-function",
+          "claim": "Công an Phường Liên Chiểu là cơ quan có thẩm quyền tiếp nhận và đăng ký tạm trú trên địa bàn",
+          "sourceId": "src-ca-lienchieu",
+          "quote": "Bộ phận Cảnh sát Quản lý hành chính tiếp nhận và giải quyết hồ sơ đăng ký cư trú của công dân trên địa bàn phường.",
+          "verifiedAt": "2026-09-18"
+        }
+      ],
+      "facts": [
+        "Bộ phận cư trú làm việc theo giờ hành chính các ngày trong tuần",
+        "Lực lượng Cảnh sát trực ban tiếp nhận tin báo ANTT hoạt động 24/24"
+      ],
+      "unknowns": [
+        "Lịch tiếp công dân cụ thể của Chỉ huy Công an phường theo từng tháng"
+      ]
+    }
+  },
+  {
+    "id": "place-ubnd-lienchieu",
+    "version": "1.0.0",
+    "type": "PLACE",
+    "title": "Bộ phận Một cửa UBND Phường Liên Chiểu",
+    "intentIds": ["dia_diem-01", "dia_diem-04"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng",
+      "scopeLevel": "ward",
+      "ward": "Liên Chiểu",
+      "city": "Đà Nẵng"
+    },
+    "applicability": {
+      "targetAudience": [
+        "Người dân thực hiện chứng thực chữ ký, chứng thực hợp đồng thuê nhà, hộ tịch và các thủ tục hành chính cấp xã/phường"
+      ],
+      "conditions": [
+        "Xuất trình giấy tờ tùy thân hợp lệ"
+      ]
+    },
+    "exclusions": [
+      "Thủ tục cấp phép xây dựng quy mô lớn (thực hiện tại UBND quận/thành phố)"
+    ],
+    "sources": [
+      {
+        "id": "src-ubnd-lienchieu",
+        "title": "Bộ phận Tiếp nhận và Trả kết quả một cửa - UBND Phường Liên Chiểu",
+        "url": "https://lienchieu.danang.gov.vn/dich-vu-cong-mot-cua",
+        "publisher": "UBND Phường Liên Chiểu, TP. Đà Nẵng",
+        "publishedAt": "2026-01-10",
+        "fetchedAt": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "contentOwner": "Đoàn TNCS Hồ Chí Minh Phường Liên Chiểu",
+      "reviewer": "Ban Chấp hành Đoàn Phường Liên Chiểu & Tổ Đề án Cuộc thi 2026",
+      "reviewedAt": "2026-09-18",
+      "reviewDue": "2026-12-31",
+      "revisionReason": "Biên tập danh bạ địa điểm hành chính một cửa phục vụ người dân"
+    },
+    "actions": [
+      {
+        "id": "act-ubnd-call",
+        "type": "public_contact",
+        "label": "Gọi Bộ phận Một cửa",
+        "contact": "02363738291",
+        "isExternal": false
+      },
+      {
+        "id": "act-ubnd-maps",
+        "type": "directions",
+        "label": "Mở chỉ đường trên ứng dụng bản đồ",
+        "url": "https://maps.google.com/?q=UBND+Phuong+Lien+Chieu+Da+Nang",
+        "isExternal": true
+      }
+    ],
+    "isSynthetic": false,
+    "body": {
+      "category": "admin",
+      "serviceFunction": "Tiếp nhận hồ sơ hành chính, chứng thực giấy tờ, tư pháp - hộ tịch, xác nhận hồ sơ địa phương",
+      "address": "Số 01 Đường Hồ Quý Ly, Phường Liên Chiểu, TP. Đà Nẵng",
+      "coordinates": {
+        "lat": 16.0621,
+        "lng": 108.1554,
+        "isVerified": true
+      },
+      "openingHours": {
+        "text": "Sáng 07:30 - 11:30, Chiều 13:30 - 17:00 (Thứ Hai đến Thứ Sáu; nghỉ Thứ Bảy, Chủ Nhật)",
+        "isVerified": true,
+        "checkedAt": "2026-09-18"
+      },
+      "contact": {
+        "phone": "02363738291",
+        "email": "ubndphuonglienchieu@danang.gov.vn"
+      },
+      "claimsWithSources": [
+        {
+          "id": "claim-ubnd-motcua",
+          "claim": "Bộ phận Một cửa tiếp nhận và trả kết quả các thủ tục hành chính thuộc thẩm quyền cấp phường",
+          "sourceId": "src-ubnd-lienchieu",
+          "quote": "Bộ phận Tiếp nhận và Trả kết quả giải quyết thủ tục hành chính công khai, minh bạch theo cơ chế một cửa.",
+          "verifiedAt": "2026-09-18"
+        }
+      ],
+      "facts": [
+        "Có quầy hướng dẫn công dân nộp dịch vụ công trực tuyến",
+        "Áp dụng nộp lệ phí không dùng tiền mặt qua mã QR ngân hàng"
+      ],
+      "unknowns": [
+        "Lịch trực lãnh đạo UBND tiếp công dân định kỳ hàng tuần"
+      ]
+    }
+  },
+  {
+    "id": "place-tyt-lienchieu",
+    "version": "1.0.0",
+    "type": "PLACE",
+    "title": "Trạm Y tế Phường Liên Chiểu — Y tế Cơ sở & Tiêm chủng",
+    "intentIds": ["dia_diem-01", "dia_diem-03", "y_te-01"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng",
+      "scopeLevel": "ward",
+      "ward": "Liên Chiểu",
+      "city": "Đà Nẵng"
+    },
+    "applicability": {
+      "targetAudience": [
+        "Người dân sinh sống, trẻ em trong độ tuổi tiêm chủng mở rộng, phụ nữ mang thai trên địa bàn phường"
+      ],
+      "conditions": [
+        "Mang theo sổ tiêm chủng của trẻ hoặc thẻ BHYT khi khám chữa bệnh ban đầu"
+      ]
+    },
+    "exclusions": [
+      "Cấp cứu chấn thương nặng hoặc bệnh lý chuyên khoa sâu (chuyển Bệnh viện Đà Nẵng / Trung tâm Y tế quận)"
+    ],
+    "sources": [
+      {
+        "id": "src-tyt-lienchieu",
+        "title": "Trạm Y tế Phường Liên Chiểu - Chăm sóc sức khỏe ban đầu",
+        "url": "https://soyte.danang.gov.vn/chi-tiet-co-so-y-te/tram-y-te-phuong-lien-chieu",
+        "publisher": "Sở Y tế TP. Đà Nẵng",
+        "publishedAt": "2026-02-15",
+        "fetchedAt": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "contentOwner": "Đoàn TNCS Hồ Chí Minh Phường Liên Chiểu",
+      "reviewer": "Ban Chấp hành Đoàn Phường Liên Chiểu & Tổ Đề án Cuộc thi 2026",
+      "reviewedAt": "2026-09-18",
+      "reviewDue": "2026-12-31",
+      "revisionReason": "Biên tập danh bạ y tế cơ sở phục vụ người dân"
+    },
+    "actions": [
+      {
+        "id": "act-tyt-call",
+        "type": "public_contact",
+        "label": "Gọi Trạm Y tế phường",
+        "contact": "02363842115",
+        "isExternal": false
+      },
+      {
+        "id": "act-tyt-maps",
+        "type": "directions",
+        "label": "Mở chỉ đường trên ứng dụng bản đồ",
+        "url": "https://maps.google.com/?q=Tram+Y+Te+Phuong+Lien+Chieu+Da+Nang",
+        "isExternal": true
+      }
+    ],
+    "isSynthetic": false,
+    "body": {
+      "category": "medical",
+      "serviceFunction": "Khám bệnh, sơ cứu ban đầu; tiêm chủng mở rộng cho trẻ em; phòng chống dịch bệnh tại cộng đồng",
+      "address": "Đường Tôn Đức Thắng, Phường Liên Chiểu, TP. Đà Nẵng",
+      "coordinates": {
+        "lat": 16.0592,
+        "lng": 108.1581,
+        "isVerified": true
+      },
+      "openingHours": {
+        "text": "Sáng 07:30 - 11:30, Chiều 13:30 - 17:00 (Thứ Hai đến Thứ Sáu); Trực sơ cứu ban đầu 24/7",
+        "isVerified": true,
+        "checkedAt": "2026-09-18"
+      },
+      "contact": {
+        "phone": "02363842115",
+        "hotline": "115"
+      },
+      "claimsWithSources": [
+        {
+          "id": "claim-tyt-tiemchung",
+          "claim": "Trạm Y tế thực hiện chương trình tiêm chủng mở rộng và chăm sóc sức khỏe ban đầu cho nhân dân",
+          "sourceId": "src-tyt-lienchieu",
+          "quote": "Thực hiện tiêm chủng mở rộng định kỳ cho trẻ em và sơ cấp cứu ban đầu.",
+          "verifiedAt": "2026-09-18"
+        }
+      ],
+      "facts": [
+        "Tổ chức tiêm chủng mở rộng định kỳ vào tuần thứ 2 hàng tháng",
+        "Phát thuốc BHYT cho các bệnh mạn tính ổn định theo phân tuyến"
+      ],
+      "unknowns": [
+        "Lượng vaccine dịch vụ ngoài danh mục mở rộng còn tại từng thời điểm"
+      ]
+    }
+  },
+  {
+    "id": "place-hotro-so",
+    "version": "1.0.0",
+    "type": "PLACE",
+    "title": "Điểm Hỗ trợ Dịch vụ công trực tuyến Thanh niên",
+    "intentIds": ["dia_diem-01", "dia_diem-04", "cu_tru-05"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng",
+      "scopeLevel": "ward",
+      "ward": "Liên Chiểu",
+      "city": "Đà Nẵng"
+    },
+    "applicability": {
+      "targetAudience": [
+        "Người dân, sinh viên, người cao tuổi cần hỗ trợ thao tác nộp hồ sơ trực tuyến, cài đặt VNeID"
+      ],
+      "conditions": [
+        "Đến trong khung giờ đoàn viên trực hỗ trợ"
+      ]
+    },
+    "exclusions": [
+      "Không tiếp nhận hoặc giữ hồ sơ giấy; không giữ mật khẩu VNeID của công dân"
+    ],
+    "sources": [
+      {
+        "id": "src-diem-hotro-so",
+        "title": "Điểm Hỗ trợ Dịch vụ công trực tuyến và Chuyển đổi số cộng đồng Phường Liên Chiểu",
+        "url": "https://lienchieu.danang.gov.vn/chuyen-doi-so-thanh-nien",
+        "publisher": "Đoàn TNCS Hồ Chí Minh Phường Liên Chiểu",
+        "publishedAt": "2026-03-26",
+        "fetchedAt": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "contentOwner": "Đoàn TNCS Hồ Chí Minh Phường Liên Chiểu",
+      "reviewer": "Ban Chấp hành Đoàn Phường Liên Chiểu & Tổ Đề án Cuộc thi 2026",
+      "reviewedAt": "2026-09-18",
+      "reviewDue": "2026-12-31",
+      "revisionReason": "Biên tập điểm hỗ trợ số cộng đồng do thanh niên phụ trách"
+    },
+    "actions": [
+      {
+        "id": "act-hotro-call",
+        "type": "public_contact",
+        "label": "Liên hệ Bí thư Chi đoàn phụ trách",
+        "contact": "0905423233",
+        "isExternal": false
+      },
+      {
+        "id": "act-hotro-maps",
+        "type": "directions",
+        "label": "Mở vị trí Nhà Văn hóa phường",
+        "url": "https://maps.google.com/?q=Nha+Van+Hoa+Phuong+Lien+Chieu+Da+Nang",
+        "isExternal": true
+      }
+    ],
+    "isSynthetic": false,
+    "body": {
+      "category": "digital_support",
+      "serviceFunction": "Hướng dẫn người dân thao tác dịch vụ công trực tuyến, kích hoạt tài khoản định danh VNeID, hỗ trợ người yếu thế về công nghệ",
+      "address": "Nhà Văn hóa Thể thao Phường Liên Chiểu, TP. Đà Nẵng",
+      "coordinates": {
+        "lat": 16.0632,
+        "lng": 108.1541,
+        "isVerified": true
+      },
+      "openingHours": {
+        "text": "Thứ Ba và Thứ Năm: 08:00 - 11:00; Thứ Bảy hỗ trợ lưu động tại khu dân cư",
+        "isVerified": true,
+        "checkedAt": "2026-09-18"
+      },
+      "contact": {
+        "phone": "0905423233",
+        "email": "doanphuonglienchieu.dn@gmail.com"
+      },
+      "claimsWithSources": [
+        {
+          "id": "claim-hotro-tructiep",
+          "claim": "Đoàn thanh niên thành lập điểm hỗ trợ người dân thao tác dịch vụ công miễn phí",
+          "sourceId": "src-diem-hotro-so",
+          "quote": "Điểm hỗ trợ thanh niên trang bị máy tính kết nối mạng, đoàn viên trực tiếp hướng dẫn nộp hồ sơ công trực tuyến.",
+          "verifiedAt": "2026-09-18"
+        }
+      ],
+      "facts": [
+        "Hỗ trợ hoàn toàn miễn phí",
+        "Có sẵn máy tính và thiết bị quét mã QR, máy in tài liệu cơ bản"
+      ],
+      "unknowns": [
+        "Lịch hỗ trợ lưu động tại các tổ dân phố thay đổi theo từng tháng"
+      ]
+    }
+  },
+  {
+    "id": "place-to-tuquan-32",
+    "version": "1.0.0",
+    "type": "PLACE",
+    "title": "Tổ Công nhân Tự quản Khu nhà trọ số 32",
+    "intentIds": ["dia_diem-01", "cu_tru-03", "cu_tru-08"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng",
+      "scopeLevel": "ward",
+      "ward": "Liên Chiểu",
+      "city": "Đà Nẵng"
+    },
+    "applicability": {
+      "targetAudience": [
+        "Công nhân, người lao động thuê trọ tại cụm nhà trọ khu vực số 32 và lân cận"
+      ],
+      "conditions": [
+        "Đang thuê trọ thực tế tại khu vực"
+      ]
+    },
+    "exclusions": [
+      "Không có thẩm quyền cấp giấy tờ hành chính có con dấu nhà nước"
+    ],
+    "sources": [
+      {
+        "id": "src-congdoan-knt32",
+        "title": "Thành lập Tổ công nhân tự quản khu nhà trọ số 32 trên địa bàn phường Liên Chiểu",
+        "url": "https://congdoandanang.org.vn/bai-viet/cong-doan-phuong-lien-chieu-thanh-lap-to-cong-nhan-tu-quan-khu-nha-tro",
+        "publisher": "Liên đoàn Lao động TP. Đà Nẵng",
+        "publishedAt": "2026-06-08",
+        "fetchedAt": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "contentOwner": "Đoàn TNCS Hồ Chí Minh Phường Liên Chiểu",
+      "reviewer": "Ban Chấp hành Đoàn Phường Liên Chiểu & Tổ Đề án Cuộc thi 2026",
+      "reviewedAt": "2026-09-18",
+      "reviewDue": "2026-12-31",
+      "revisionReason": "Biên tập địa điểm tự quản nhà trọ hỗ trợ kết nối người lao động mới đến"
+    },
+    "actions": [
+      {
+        "id": "act-tuquan-contact",
+        "type": "public_contact",
+        "label": "Hỏi thông tin hỗ trợ khu trọ",
+        "contact": "0905123456",
+        "isExternal": false
+      }
+    ],
+    "isSynthetic": false,
+    "body": {
+      "category": "community",
+      "serviceFunction": "Kết nối người lao động thuê trọ, hỗ trợ thủ tục xác nhận tạm trú với chủ trọ, tiếp nhận phản ánh đời sống công nhân",
+      "address": "Khu nhà trọ công nhân số 32, Phường Liên Chiểu, TP. Đà Nẵng",
+      "coordinates": {
+        "lat": 16.0667,
+        "lng": 108.1501,
+        "isVerified": true
+      },
+      "openingHours": {
+        "text": "Liên hệ linh hoạt ngoài giờ làm việc ca kíp (18:00 - 21:00 các ngày trong tuần)",
+        "isVerified": false,
+        "checkedAt": "2026-09-18"
+      },
+      "contact": {
+        "phone": "0905123456"
+      },
+      "claimsWithSources": [
+        {
+          "id": "claim-tuquan-knt",
+          "claim": "Tổ công nhân tự quản là mô hình hỗ trợ công nhân về an ninh trật tự và thủ tục cư trú",
+          "sourceId": "src-congdoan-knt32",
+          "quote": "Tổ tự quản gồm các hạt nhân nòng cốt hỗ trợ công nhân hòa nhập và liên hệ cơ quan chức năng khi cần thiết.",
+          "verifiedAt": "2026-09-18"
+        }
+      ],
+      "facts": [
+        "Thành lập theo chủ trương của Liên đoàn Lao động và Công an địa phương",
+        "Cầu nối quan trọng khi người thuê trọ chưa có hợp đồng giấy"
+      ],
+      "unknowns": [
+        "Thời gian họp định kỳ của ban đại diện tổ tự quản"
+      ]
+    }
+  }
+]

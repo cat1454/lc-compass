@@ -1,0 +1,414 @@
+{
+  "batch": "data-expansion-2026-09-19",
+  "asOfDate": "2026-09-19",
+  "claims": [
+    {
+      "cardId": "service-chuan-bi-tam-tru",
+      "claimId": "prepare-info",
+      "sourceId": "residence-2026",
+      "fieldPaths": [
+        "body.steps[0].description",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "residence-2026: mục Một là",
+      "assessment": "ĐÚNG: Cung cấp thông tin cơ bản để cán bộ khai thác CSDL khi đăng ký trực tiếp",
+      "limitations": "Chưa có quy định riêng biệt chi tiết cho từng điểm tiếp nhận cụ thể tại phường"
+    },
+    {
+      "cardId": "service-chuan-bi-tam-tru",
+      "claimId": "shared-info",
+      "sourceId": "residence-2026",
+      "fieldPaths": [
+        "body.steps[1].description",
+        "body.claimsWithSources[1]"
+      ],
+      "locator": "residence-2026: mục Hai là",
+      "assessment": "ĐÚNG: Giấy tờ đã khai thác từ CSDL/VNeID không cần nộp lại",
+      "limitations": "Áp dụng khi dữ liệu công dân đã được đồng bộ chuẩn xác"
+    },
+    {
+      "cardId": "service-chuan-bi-tam-tru",
+      "claimId": "dorm-info",
+      "sourceId": "temporary-residence-2026",
+      "fieldPaths": [
+        "body.steps[2].description",
+        "body.claimsWithSources[2]"
+      ],
+      "locator": "temporary-residence-2026: Đăng ký tạm trú, khoản 2",
+      "assessment": "ĐÚNG: Sinh viên ở KTX có thể đăng ký qua đơn vị quản lý chỗ ở",
+      "limitations": "Tùy thuộc quy chế nội trú của từng trường"
+    },
+    {
+      "cardId": "service-chuan-bi-tam-tru",
+      "claimId": "tracking-info",
+      "sourceId": "residence-2026",
+      "fieldPaths": [
+        "body.steps[3].description",
+        "body.claimsWithSources[3]"
+      ],
+      "locator": "residence-2026: cuối mục Một là",
+      "assessment": "ĐÚNG: Mỗi hồ sơ cấp mã theo dõi tiến độ",
+      "limitations": "Bản demo không tra cứu trực tiếp dữ liệu cá nhân"
+    },
+    {
+      "cardId": "service-chuan-bi-tam-tru",
+      "claimId": "ward-boundary",
+      "sourceId": "ward-2025",
+      "fieldPaths": [
+        "jurisdiction",
+        "body.claimsWithSources[4]"
+      ],
+      "locator": "ward-2025: Điều 1, khoản 9 và 10",
+      "assessment": "ĐÚNG: Phường Liên Chiểu mới thành lập từ Hòa Khánh Bắc cũ và phần còn lại xã Hòa Liên",
+      "limitations": "Cần lưu ý ranh giới không bao gồm Hòa Khánh Nam, Hòa Hiệp Bắc, Hòa Hiệp Nam"
+    },
+    {
+      "cardId": "service-chuan-bi-thuong-tru",
+      "claimId": "thuong-tru-cho-o",
+      "sourceId": "residence-law-2020",
+      "fieldPaths": [
+        "body.steps[0].description",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "residence-law-2020: Điều 20",
+      "assessment": "ĐÚNG: Công dân có chỗ ở hợp pháp thuộc sở hữu thì được đăng ký thường trú",
+      "limitations": "Cần giấy tờ chứng nhận quyền sở hữu nhà ở hoặc hợp đồng thuê có công chứng/chấp thuận của chủ nhà"
+    },
+    {
+      "cardId": "service-chuan-bi-thuong-tru",
+      "claimId": "thuong-tru-dvc",
+      "sourceId": "dvc-thuong-tru",
+      "fieldPaths": [
+        "body.steps[1].description",
+        "body.claimsWithSources[1]"
+      ],
+      "locator": "dvc-thuong-tru: Trình tự thực hiện",
+      "assessment": "ĐÚNG: Nộp hồ sơ thường trú qua Cổng DVC Quốc gia hoặc VNeID",
+      "limitations": "Thời hạn giải quyết theo quy định là 07 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ"
+    },
+    {
+      "cardId": "service-dang-nhap-dvc-cu-tru",
+      "claimId": "vneid-login-muc2",
+      "sourceId": "vneid-dvc-guide",
+      "fieldPaths": [
+        "body.steps[0].description",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "vneid-dvc-guide: Hướng dẫn đăng nhập",
+      "assessment": "ĐÚNG: Dịch vụ công cư trú yêu cầu xác thực định danh điện tử mức độ 2",
+      "limitations": "Công dân chưa có mức 2 cần đến cơ quan công an để kích hoạt trước"
+    },
+    {
+      "cardId": "service-dang-nhap-dvc-cu-tru",
+      "claimId": "vneid-bao-mat",
+      "sourceId": "vneid-dvc-guide",
+      "fieldPaths": [
+        "body.steps[1].description",
+        "body.claimsWithSources[1]"
+      ],
+      "locator": "vneid-dvc-guide: Lưu ý bảo mật",
+      "assessment": "ĐÚNG: Tuyệt đối không chia sẻ mật khẩu, OTP hoặc để người khác dùng tài khoản VNeID",
+      "limitations": "Tránh các website giả mạo cổng dịch vụ công"
+    },
+    {
+      "cardId": "service-tra-cuu-bo-sung-ho-so-cu-tru",
+      "claimId": "lookup-ma-ho-so",
+      "sourceId": "dvc-bca-lookup",
+      "fieldPaths": [
+        "body.steps[0].description",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "dvc-bca-lookup: Ô tra cứu mã hồ sơ",
+      "assessment": "ĐÚNG: Dùng mã hồ sơ để tra cứu trạng thái giải quyết trực tuyến",
+      "limitations": "Cần nhập chính xác mã hồ sơ và mã bảo mật hiển thị"
+    },
+    {
+      "cardId": "service-tra-cuu-bo-sung-ho-so-cu-tru",
+      "claimId": "bo-sung-online",
+      "sourceId": "dvc-bca-lookup",
+      "fieldPaths": [
+        "body.steps[1].description",
+        "body.claimsWithSources[1]"
+      ],
+      "locator": "dvc-bca-lookup: Hướng dẫn bổ sung tài liệu",
+      "assessment": "ĐÚNG: Khi có yêu cầu bổ sung, nộp bổ sung trực tiếp trên cổng hoặc tại bộ phận tiếp nhận",
+      "limitations": "Nộp bổ sung trong thời hạn quy định ghi trong phiếu yêu cầu"
+    },
+    {
+      "cardId": "service-chuyen-truong-hoc-sinh",
+      "claimId": "chuyen-truong-ho-so",
+      "sourceId": "so-gddt-danang",
+      "fieldPaths": [
+        "body.steps[0].description",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "so-gddt-danang: Hướng dẫn chuyển trường",
+      "assessment": "ĐÚNG: Hồ sơ chuyển trường bao gồm đơn xin chuyển trường, học bạ bản chính, giấy chứng nhận trúng tuyển và giấy tờ cư trú",
+      "limitations": "Chuyển trường giữa năm học cần lý do chính đáng và sự đồng ý tiếp nhận của trường nơi đến"
+    },
+    {
+      "cardId": "service-chuyen-truong-hoc-sinh",
+      "claimId": "chuyen-truong-tiep-nhan",
+      "sourceId": "dvc-chuyen-truong",
+      "fieldPaths": [
+        "body.steps[1].description",
+        "body.claimsWithSources[1]"
+      ],
+      "locator": "dvc-chuyen-truong: Trình tự thực hiện",
+      "assessment": "ĐÚNG: Hiệu trưởng trường nơi đến kiểm tra và tiếp nhận hồ sơ theo đúng phân tuyến và chỉ tiêu sĩ số",
+      "limitations": "Căn cứ chỉ tiêu sĩ số lớp học theo quy định ngành giáo dục"
+    },
+    {
+      "cardId": "service-ho-tro-hoc-phi-da-nang",
+      "claimId": "hoc-phi-chinh-sach",
+      "sourceId": "nq-hoc-phi-danang",
+      "fieldPaths": [
+        "body.steps[0].description",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "nq-hoc-phi-danang: Điều 1",
+      "assessment": "ĐÚNG: Đà Nẵng hỗ trợ 100% học phí công lập cho trẻ mầm non và học sinh phổ thông",
+      "limitations": "Chính sách ban hành theo nghị quyết hàng năm của HĐND thành phố"
+    },
+    {
+      "cardId": "service-tham-gia-bhyt-ho-gia-dinh",
+      "claimId": "bhyt-muc-dong",
+      "sourceId": "bhxh-danang-bhyt",
+      "fieldPaths": [
+        "body.steps[0].description",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "bhxh-danang-bhyt: Mức đóng BHYT",
+      "assessment": "ĐÚNG: Mức đóng giảm dần theo số lượng thành viên trong hộ tham gia",
+      "limitations": "Thành viên đã tham gia nhóm khác (học sinh, công nhân) không tính vào mức giảm"
+    },
+    {
+      "cardId": "service-tham-gia-bhyt-ho-gia-dinh",
+      "claimId": "bhyt-diem-thu",
+      "sourceId": "bhxh-danang-bhyt",
+      "fieldPaths": [
+        "body.steps[1].description",
+        "body.claimsWithSources[1]"
+      ],
+      "locator": "bhxh-danang-bhyt: Kênh nộp BHYT",
+      "assessment": "ĐÚNG: Có thể đóng qua điểm thu bưu điện, UBND phường hoặc Cổng DVC",
+      "limitations": "Thẻ BHYT có giá trị sử dụng sau khi nộp đủ tiền theo quy định"
+    },
+    {
+      "cardId": "service-phan-loai-rac-tai-nguon",
+      "claimId": "rac-3-nhom",
+      "sourceId": "danang-phan-loai-rac",
+      "fieldPaths": [
+        "body.steps[0].description",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "danang-phan-loai-rac: Mục II",
+      "assessment": "ĐÚNG: Phân loại thành rác tái chế, rác nguy hại và rác còn lại",
+      "limitations": "Người dân cần trang bị thùng/túi phân loại riêng biệt"
+    },
+    {
+      "cardId": "service-phan-loai-rac-tai-nguon",
+      "claimId": "rac-lich-thu-gom",
+      "sourceId": "danang-phan-loai-rac",
+      "fieldPaths": [
+        "body.steps[1].description",
+        "body.claimsWithSources[1]"
+      ],
+      "locator": "danang-phan-loai-rac: Trách nhiệm thu gom",
+      "assessment": "ĐÚNG: Đổ rác đúng giờ và đúng vị trí quy định của tổ dân phố",
+      "limitations": "Không bỏ rác thải nguy hại chung với rác sinh hoạt thông thường"
+    },
+    {
+      "cardId": "place-trung-tam-hanh-chinh-lien-chieu",
+      "claimId": "center-address",
+      "sourceId": "public-center-2025",
+      "fieldPaths": [
+        "body.address",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "public-center-2025: mục 9",
+      "assessment": "ĐÚNG: 68 đường Lạc Long Quân là trụ sở UBND và TT Hành chính công phường Liên Chiểu",
+      "limitations": "Không suy diễn đây là nơi thụ lý hồ sơ cư trú của Công an"
+    },
+    {
+      "cardId": "place-cong-an-phuong-lien-chieu",
+      "claimId": "ca-address",
+      "sourceId": "cong-an-lien-chieu-2025",
+      "fieldPaths": [
+        "body.address",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "cong-an-lien-chieu-2025: Trụ sở CA phường",
+      "assessment": "ĐÚNG: Trụ sở Công an phường Liên Chiểu tại 66 Lạc Long Quân",
+      "limitations": "Giải quyết thủ tục cư trú và cấp tài khoản VNeID"
+    },
+    {
+      "cardId": "place-tram-y-te-lien-chieu",
+      "claimId": "tyt-address",
+      "sourceId": "tram-y-te-lien-chieu",
+      "fieldPaths": [
+        "body.address",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "tram-y-te-lien-chieu: Danh bạ",
+      "assessment": "ĐÚNG: 178 Âu Cơ, phường Liên Chiểu",
+      "limitations": "Khám ban đầu và tiêm chủng mở rộng theo lịch định kỳ"
+    },
+    {
+      "cardId": "place-diem-ho-tro-so-cong-dong",
+      "claimId": "to-so-location",
+      "sourceId": "to-cong-nghe-so-lien-chieu",
+      "fieldPaths": [
+        "body.address",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "to-cong-nghe-so-lien-chieu: Tin bài",
+      "assessment": "ĐÚNG: Đặt tại sảnh 68 Lạc Long Quân, do Đoàn Thanh niên phụ trách",
+      "limitations": "Hỗ trợ hướng dẫn thao tác, không giải quyết thủ tục thay cơ quan"
+    },
+    {
+      "cardId": "place-dai-hoc-bach-khoa-da-nang",
+      "claimId": "dut-address",
+      "sourceId": "dh-bach-khoa-danang",
+      "fieldPaths": [
+        "body.address",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "dh-bach-khoa-danang: Chân trang",
+      "assessment": "ĐÚNG: 54 Nguyễn Lương Bằng, phường Liên Chiểu",
+      "limitations": "Trường đại học kỹ thuật công lập"
+    },
+    {
+      "cardId": "place-cao-dang-kinh-te-ke-hoach",
+      "claimId": "cep-address",
+      "sourceId": "cd-kinh-te-ke-hoach",
+      "fieldPaths": [
+        "body.address",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "cd-kinh-te-ke-hoach: Giới thiệu",
+      "assessment": "ĐÚNG: 143 Nguyễn Lương Bằng, phường Liên Chiểu",
+      "limitations": "Đào tạo nghề nghiệp và cao đẳng"
+    },
+    {
+      "cardId": "place-thpt-nguyen-trai",
+      "claimId": "thpt-nt-address",
+      "sourceId": "thpt-nguyen-trai",
+      "fieldPaths": [
+        "body.address",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "thpt-nguyen-trai: Giới thiệu",
+      "assessment": "ĐÚNG: 01 Phan Văn Định, phường Liên Chiểu",
+      "limitations": "Trường THPT công lập"
+    },
+    {
+      "cardId": "place-thcs-nguyen-luong-bang",
+      "claimId": "thcs-nlb-address",
+      "sourceId": "thcs-nguyen-luong-bang",
+      "fieldPaths": [
+        "body.address",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "thcs-nguyen-luong-bang: Giới thiệu",
+      "assessment": "ĐÚNG: 27 Nguyễn Lương Bằng, phường Liên Chiểu",
+      "limitations": "Trường THCS công lập"
+    },
+    {
+      "cardId": "place-trung-tam-thong-tin-hoc-lieu-bach-khoa",
+      "claimId": "lic-address",
+      "sourceId": "thong-tin-hoc-lieu-bach-khoa",
+      "fieldPaths": [
+        "body.address",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "thong-tin-hoc-lieu-bach-khoa: Giới thiệu",
+      "assessment": "ĐÚNG: 54 Nguyễn Lương Bằng, phường Liên Chiểu",
+      "limitations": "Trung tâm thông tin học liệu và thư viện"
+    },
+    {
+      "cardId": "place-trung-tam-van-hoa-the-thao-cong-nhan",
+      "claimId": "ttvh-cn-address",
+      "sourceId": "tt-vh-tt-cong-nhan",
+      "fieldPaths": [
+        "body.address",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "tt-vh-tt-cong-nhan: Thiết chế",
+      "assessment": "ĐÚNG: Đường số 2 KCN Hòa Khánh, phường Liên Chiểu",
+      "limitations": "Điểm sinh hoạt công nhân và thể thao cộng đồng"
+    },
+    {
+      "cardId": "discover-di-tich-b1-hong-phuoc",
+      "claimId": "b1-national-relic",
+      "sourceId": "di-tich-b1-hong-phuoc",
+      "fieldPaths": [
+        "body.story",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "di-tich-b1-hong-phuoc: Xếp hạng di tích",
+      "assessment": "ĐÚNG: Căn cứ lõm cách mạng B1 Hồng Phước là di tích lịch sử cấp quốc gia",
+      "limitations": "Điểm di tích giáo dục truyền thống cách mạng"
+    },
+    {
+      "cardId": "discover-chuyen-ke-ngon-den-dau-hong-phuoc",
+      "claimId": "lamp-signal-story",
+      "sourceId": "huyen-thoai-ngon-den-dau",
+      "fieldPaths": [
+        "body.story",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "huyen-thoai-ngon-den-dau: Ký sự",
+      "assessment": "ĐÚNG: Ngọn đèn dầu làm tín hiệu liên lạc báo yên/có biến",
+      "limitations": "Tư liệu lịch sử truyền thống kháng chiến"
+    },
+    {
+      "cardId": "discover-dinh-lang-thanh-vinh",
+      "claimId": "thanh-vinh-relic",
+      "sourceId": "dinh-lang-thanh-vinh",
+      "fieldPaths": [
+        "body.story",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "dinh-lang-thanh-vinh: Đình cổ",
+      "assessment": "ĐÚNG: Đình làng Thanh Vinh là di tích lịch sử văn hóa tín ngưỡng cổ",
+      "limitations": "Không gian sinh hoạt văn hóa tín ngưỡng làng xã"
+    },
+    {
+      "cardId": "discover-khong-gian-cong-nhan-kcn-hoa-khanh",
+      "claimId": "kcn-culture-life",
+      "sourceId": "doi-song-cong-nhan-hoa-khanh",
+      "fieldPaths": [
+        "body.story",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "doi-song-cong-nhan-hoa-khanh: Phóng sự",
+      "assessment": "ĐÚNG: Đời sống văn hóa và các phong trào sinh hoạt công nhân tại KCN Hòa Khánh",
+      "limitations": "Phản ánh đời sống cộng đồng người lao động nhập cư"
+    },
+    {
+      "cardId": "discover-san-pham-ocop-ngoc-oanh-food",
+      "claimId": "ocop-ngoc-oanh-cert",
+      "sourceId": "ocop-ngoc-oanh-food",
+      "fieldPaths": [
+        "body.story",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "ocop-ngoc-oanh-food: Quyết định OCOP",
+      "assessment": "ĐÚNG: Sản phẩm ngũ cốc Granola Ngọc Oanh Food đạt OCOP 3 sao tại 856/54 Tôn Đức Thắng",
+      "limitations": "Sản phẩm OCOP thanh niên khởi nghiệp địa phương"
+    },
+    {
+      "cardId": "discover-tuyen-duong-thanh-nien-chuyen-doi-so",
+      "claimId": "cds-street-project",
+      "sourceId": "tuyen-duong-cds-thanh-nien",
+      "fieldPaths": [
+        "body.story",
+        "body.claimsWithSources[0]"
+      ],
+      "locator": "tuyen-duong-cds-thanh-nien: Công trình",
+      "assessment": "ĐÚNG: Mô hình tuyến đường thanh niên CĐS văn minh trên đường Nguyễn Lương Bằng",
+      "limitations": "Mô hình thanh niên xung kích cấp phường"
+    }
+  ]
+}

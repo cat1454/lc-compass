@@ -1,0 +1,218 @@
+[
+  {
+    "candidateId": "candidate-01",
+    "type": "SERVICE",
+    "researchTopic": "Chuẩn bị đăng ký tạm trú",
+    "suggestedIntentId": "cu_tru-01",
+    "existingCardId": "service-chuan-bi-tam-tru",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-02",
+    "type": "SERVICE",
+    "researchTopic": "Chuẩn bị chuyển sang thường trú",
+    "suggestedIntentId": "cu_tru-09",
+    "existingCardId": "service-chuan-bi-thuong-tru",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-03",
+    "type": "SERVICE",
+    "researchTopic": "Kênh chính thức và hỗ trợ đăng nhập cư trú",
+    "suggestedIntentId": "cu_tru-05",
+    "existingCardId": "service-dang-nhap-dvc-cu-tru",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-04",
+    "type": "SERVICE",
+    "researchTopic": "Tra cứu và làm rõ yêu cầu bổ sung hồ sơ cư trú",
+    "suggestedIntentId": "cu_tru-06",
+    "existingCardId": "service-tra-cuu-bo-sung-ho-so-cu-tru",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-05",
+    "type": "SERVICE",
+    "researchTopic": "Hướng dẫn chuyển trường",
+    "suggestedIntentId": "hoc_tap-03",
+    "existingCardId": "service-chuyen-truong-hoc-sinh",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-06",
+    "type": "SERVICE",
+    "researchTopic": "Tìm hướng dẫn hỗ trợ học phí",
+    "suggestedIntentId": "hoc_tap-05",
+    "existingCardId": "service-ho-tro-hoc-phi-da-nang",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-07",
+    "type": "SERVICE",
+    "researchTopic": "Tìm thông tin tham gia bảo hiểm y tế",
+    "suggestedIntentId": "y_te-04",
+    "existingCardId": "service-tham-gia-bhyt-ho-gia-dinh",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-08",
+    "type": "SERVICE",
+    "researchTopic": "Hộ tịch hoặc chứng thực: nghiên cứu nguồn, chờ intent phù hợp (thay thế bằng Phân loại rác tại nguồn)",
+    "suggestedIntentId": "moi_truong-02",
+    "existingCardId": "service-phan-loai-rac-tai-nguon",
+    "status": "draft_held_and_substituted",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-09",
+    "type": "PLACE",
+    "researchTopic": "Trung tâm Phục vụ hành chính công phường",
+    "suggestedIntentId": "dia_diem-01",
+    "existingCardId": "place-trung-tam-hanh-chinh-lien-chieu",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-10",
+    "type": "PLACE",
+    "researchTopic": "Công an phụ trách cư trú của phường",
+    "suggestedIntentId": "dia_diem-02",
+    "existingCardId": "place-cong-an-phuong-lien-chieu",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-11",
+    "type": "PLACE",
+    "researchTopic": "Trạm y tế phục vụ phường",
+    "suggestedIntentId": "dia_diem-03",
+    "existingCardId": "place-tram-y-te-lien-chieu",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-12",
+    "type": "PLACE",
+    "researchTopic": "Điểm hỗ trợ kỹ năng số có người phụ trách",
+    "suggestedIntentId": "dia_diem-04",
+    "existingCardId": "place-diem-ho-tro-so-cong-dong",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-13",
+    "type": "PLACE",
+    "researchTopic": "Cơ sở đại học hoặc cao đẳng trong phường (ĐH Bách khoa)",
+    "suggestedIntentId": "dia_diem-05",
+    "existingCardId": "place-dai-hoc-bach-khoa-da-nang",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-14",
+    "type": "PLACE",
+    "researchTopic": "Cơ sở đào tạo nghề trong phường (CĐ Kinh tế - Kế hoạch)",
+    "suggestedIntentId": "hoc_tap-06",
+    "existingCardId": "place-cao-dang-kinh-te-ke-hoach",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-15",
+    "type": "PLACE",
+    "researchTopic": "Trường THPT trong phường (THPT Nguyễn Trãi)",
+    "suggestedIntentId": "dia_diem-10",
+    "existingCardId": "place-thpt-nguyen-trai",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-16",
+    "type": "PLACE",
+    "researchTopic": "Trường THCS trong phường (THCS Nguyễn Lương Bằng)",
+    "suggestedIntentId": "dia_diem-10",
+    "existingCardId": "place-thcs-nguyen-luong-bang",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-17",
+    "type": "PLACE",
+    "researchTopic": "Thư viện hoặc điểm đọc cộng đồng (Trung tâm Thông tin - Học liệu ĐH Bách khoa)",
+    "suggestedIntentId": "van_hoa-08",
+    "existingCardId": "place-trung-tam-thong-tin-hoc-lieu-bach-khoa",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-18",
+    "type": "PLACE",
+    "researchTopic": "Điểm sinh hoạt văn hóa thể thao cộng đồng (TT VHTT Công nhân KCN Hòa Khánh)",
+    "suggestedIntentId": "dia_diem-05",
+    "existingCardId": "place-trung-tam-van-hoa-the-thao-cong-nhan",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-19",
+    "type": "DISCOVER",
+    "researchTopic": "Di tích địa phương có địa giới hiện hành rõ (Căn cứ lõm B1 Hồng Phước)",
+    "suggestedIntentId": "van_hoa-04",
+    "existingCardId": "discover-di-tich-b1-hong-phuoc",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-20",
+    "type": "DISCOVER",
+    "researchTopic": "Câu chuyện lịch sử của địa phương (Huyền thoại ngọn đèn dầu Hồng Phước)",
+    "suggestedIntentId": "van_hoa-02",
+    "existingCardId": "discover-chuyen-ke-ngon-den-dau-hong-phuoc",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-21",
+    "type": "DISCOVER",
+    "researchTopic": "Sinh hoạt văn hóa truyền thống có nguồn (Đình làng Thanh Vinh)",
+    "suggestedIntentId": "van_hoa-04",
+    "existingCardId": "discover-dinh-lang-thanh-vinh",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-22",
+    "type": "DISCOVER",
+    "researchTopic": "Không gian cộng đồng có câu chuyện giới thiệu (Đời sống công nhân KCN Hòa Khánh)",
+    "suggestedIntentId": "van_hoa-01",
+    "existingCardId": "discover-khong-gian-cong-nhan-kcn-hoa-khanh",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-23",
+    "type": "DISCOVER",
+    "researchTopic": "Sản phẩm OCOP có chứng nhận đối chiếu được (Granola Ngọc Oanh Food)",
+    "suggestedIntentId": "van_hoa-05",
+    "existingCardId": "discover-san-pham-ocop-ngoc-oanh-food",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  },
+  {
+    "candidateId": "candidate-24",
+    "type": "DISCOVER",
+    "researchTopic": "Sản phẩm hoặc hoạt động thanh niên có nguồn (Tuyến đường thanh niên CĐS)",
+    "suggestedIntentId": "van_hoa-10",
+    "existingCardId": "discover-tuyen-duong-thanh-nien-chuyen-doi-so",
+    "status": "integrated",
+    "evidenceStatus": "VERIFIED_IN_THIS_BATCH"
+  }
+]

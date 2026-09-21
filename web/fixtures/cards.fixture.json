@@ -1,0 +1,466 @@
+[
+  {
+    "id": "service-tam-tru-valid",
+    "version": "1.0.0",
+    "type": "SERVICE",
+    "title": "[Mô phỏng] Chuẩn bị hồ sơ đăng ký tạm trú tại phường Liên Chiểu",
+    "intentIds": ["residence_temporary_registration", "renting_new_arrival"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Công dân đến sinh sống, làm việc, học tập tại phường Liên Chiểu",
+      "Người thuê nhà trọ hoặc ở cùng người thân trên địa bàn phường"
+    ],
+    "exclusions": [
+      "Trường hợp công dân đăng ký thường trú (hộ khẩu gốc)",
+      "Trường hợp yếu tố tranh chấp chỗ ở hoặc yếu tố nước ngoài (chuyển cơ quan cấp trên)"
+    ],
+    "sources": [
+      {
+        "id": "src-dvcqg",
+        "url": "https://dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html",
+        "title": "Thủ tục đăng ký tạm trú - Cổng Dịch vụ công Quốc gia",
+        "publisher": "Văn phòng Chính phủ / Bộ Công an",
+        "relevantExcerpt": "Thời hạn giải quyết trong 03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.",
+        "sourceDate": "2026-01-15",
+        "fetchedAt": "2026-09-18"
+      },
+      {
+        "id": "src-congdoan-lc",
+        "url": "https://congdoandanang.org.vn/bai-viet/cong-doan-phuong-lien-chieu-thanh-lap-to-cong-nhan-tu-quan-khu-nha-tro",
+        "title": "Tổ công nhân tự quản khu nhà trọ số 32 trên địa bàn phường Liên Chiểu",
+        "publisher": "Liên đoàn Lao động TP. Đà Nẵng",
+        "sourceDate": "2026-06-08",
+        "fetchedAt": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "Tổ công tác thanh niên số Liên Chiểu",
+      "reviewer": "Người rà soát giả lập A",
+      "reviewedAt": "2026-09-18",
+      "reviewDue": "2026-12-31",
+      "notes": "Dữ liệu fixture mô phỏng để kiểm thử định tuyến và hợp đồng dữ liệu"
+    },
+    "actions": [
+      {
+        "id": "act-portal",
+        "type": "external_link",
+        "label": "Mở cổng Dịch vụ công Quản lý Cư trú",
+        "url": "https://dichvucong.bocongan.gov.vn",
+        "fallback": "Liên hệ trực tiếp Công an phường Liên Chiểu"
+      },
+      {
+        "id": "act-print",
+        "type": "checklist_action",
+        "label": "Tạo phiếu ghi nhớ giấy tờ cần mang theo"
+      }
+    ],
+    "body": {
+      "summary": "Hướng dẫn các giấy tờ cần thiết và các bước tự chuẩn bị trước khi nộp hồ sơ đăng ký tạm trú.",
+      "questions": [
+        {
+          "id": "q-housing-contract",
+          "prompt": "Bạn đã có hợp đồng thuê trọ bằng văn bản có chữ ký của chủ nhà chưa?",
+          "options": [
+            { "value": "has_contract", "label": "Đã có hợp đồng thuê nhà" },
+            { "value": "no_contract", "label": "Chưa có hợp đồng bằng văn bản" }
+          ],
+          "unknownOption": {
+            "value": "unknown",
+            "label": "Tôi chưa rõ / Cần chủ nhà hướng dẫn",
+            "guidance": "Hãy liên hệ tổ công nhân tự quản hoặc tổ trưởng dân phố để được hỗ trợ mẫu xác nhận."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "step-1",
+          "stepNumber": 1,
+          "stepType": "procedural",
+          "title": "Chuẩn bị giấy tờ tùy thân và tài liệu chỗ ở hợp pháp",
+          "description": "Căn cước công dân gắn chip hoặc tài khoản VNeID mức 2; Hợp đồng thuê nhà trọ có chữ ký chủ nhà.",
+          "requiredDocs": ["CCCD gắn chip", "Hợp đồng thuê nhà/xác nhận chỗ ở"],
+          "claimIds": ["claim-1"],
+          "branches": [
+            {
+              "condition": {
+                "questionId": "q-housing-contract",
+                "equals": "no_contract"
+              },
+              "nextStepId": "step-support-contract",
+              "label": "Chưa có hợp đồng thuê: Cần xin xác nhận từ tổ tự quản"
+            }
+          ],
+          "nextStepId": "step-2"
+        },
+        {
+          "id": "step-support-contract",
+          "stepNumber": 2,
+          "stepType": "procedural",
+          "title": "Bổ sung xác nhận chỗ ở qua tổ công nhân tự quản",
+          "description": "Liên hệ tổ công nhân tự quản khu nhà trọ hoặc chủ trọ để được cấp văn bản xác nhận chỗ ở hợp pháp.",
+          "requiredDocs": ["Giấy xác nhận tạm trú của chủ nhà/tổ tự quản"],
+          "claimIds": ["claim-2"],
+          "branches": [],
+          "nextStepId": "step-2"
+        },
+        {
+          "id": "step-2",
+          "stepNumber": 3,
+          "stepType": "procedural",
+          "title": "Khai báo thông tin trên Cổng Dịch vụ công hoặc gặp CSKV",
+          "description": "Khai trực tuyến trên cổng Bộ Công an hoặc đến Công an phường trong giờ hành chính.",
+          "requiredDocs": [],
+          "claimIds": ["claim-2"],
+          "branches": [],
+          "nextStepId": "step-3"
+        },
+        {
+          "id": "step-3",
+          "stepNumber": 4,
+          "stepType": "procedural",
+          "title": "Nhận kết quả xác nhận tạm trú",
+          "description": "Sau tối đa 03 ngày làm việc, kết quả được cập nhật trên VNeID hoặc nhận giấy thông báo kết quả cư trú.",
+          "requiredDocs": [],
+          "claimIds": ["claim-1"],
+          "branches": []
+        }
+      ],
+      "unknownOption": {
+        "label": "Tôi chưa có hợp đồng thuê nhà hoặc chủ trọ chưa đăng ký",
+        "guidance": "Hãy liên hệ tổ trưởng tổ dân phố hoặc tổ công nhân tự quản khu nhà trọ để được hướng dẫn bổ sung giấy tờ xác nhận chỗ ở hợp pháp."
+      },
+      "missingQuestions": [
+        "Bạn đã có hợp đồng thuê trọ bằng văn bản chưa?",
+        "Chủ trọ có cư trú cùng địa bàn không?"
+      ],
+      "claimsWithSources": [
+        {
+          "id": "claim-1",
+          "claim": "Thời hạn giải quyết thủ tục tạm trú là 03 ngày làm việc khi hồ sơ đầy đủ",
+          "sourceId": "src-dvcqg"
+        },
+        {
+          "id": "claim-2",
+          "claim": "Địa bàn phường Liên Chiểu có các tổ tự quản khu nhà trọ hỗ trợ kết nối thông tin công nhân",
+          "sourceId": "src-congdoan-lc"
+        }
+      ]
+    },
+    "isSynthetic": true
+  },
+  {
+    "id": "place-ubnd-valid",
+    "version": "1.0.0",
+    "type": "PLACE",
+    "title": "[Mô phỏng] Bộ phận Một cửa UBND phường Liên Chiểu",
+    "intentIds": ["administrative_services", "civil_status_records"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Công dân cư trú trên địa bàn phường Liên Chiểu thực hiện thủ tục hành chính cấp phường"
+    ],
+    "exclusions": [
+      "Các thủ tục cư trú (do Công an phường phụ trách)",
+      "Các thủ tục thẩm quyền cấp quận/thành phố"
+    ],
+    "sources": [
+      {
+        "id": "src-danang-portal",
+        "url": "https://cttdt.danangportal.gov.vn/vi/web/dng/w/phat-huy-hieu-qua-phan-cap-uy-quyen",
+        "title": "Cổng thông tin điện tử thành phố Đà Nẵng",
+        "publisher": "UBND TP. Đà Nẵng",
+        "sourceDate": "2026-03-10",
+        "fetchedAt": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "Tổ công tác thanh niên số Liên Chiểu",
+      "reviewer": "Người rà soát giả lập A",
+      "reviewedAt": "2026-09-18",
+      "reviewDue": "2026-12-31",
+      "notes": "Hồ sơ địa điểm mô phỏng phục vụ test lối vào Tôi mới đến"
+    },
+    "actions": [
+      {
+        "id": "act-phone",
+        "type": "phone",
+        "label": "Gọi tổng đài thông tin DVC 1022 Đà Nẵng",
+        "contact": "02361022"
+      }
+    ],
+    "body": {
+      "function": "Tiếp nhận, giải quyết và trả kết quả các thủ tục hành chính, chứng thực, hộ tịch cấp phường.",
+      "address": "Khu đô thị Trung Nam, phường Liên Chiểu, TP. Đà Nẵng",
+      "jurisdictionDetail": "Trụ sở hành chính phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.068,
+        "lng": 108.152
+      },
+      "openingHours": "Thứ 2 - Thứ 6: Sáng 07:30 - 11:30, Chiều 13:30 - 17:00",
+      "contactPhone": "02361022",
+      "claimsWithSources": [
+        {
+          "id": "claim-place-1",
+          "claim": "Bộ phận Một cửa cấp phường thực hiện tiếp nhận dịch vụ công theo phân cấp ủy quyền",
+          "sourceId": "src-danang-portal"
+        }
+      ]
+    },
+    "isSynthetic": true
+  },
+  {
+    "id": "discover-van-hoa-valid",
+    "version": "1.0.0",
+    "type": "DISCOVER",
+    "title": "[Mô phỏng] Không gian sinh hoạt văn hóa và di sản thanh niên Liên Chiểu",
+    "intentIds": ["discover_culture", "local_heritage"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Đoàn viên, thanh niên, học sinh, sinh viên và khách tham quan địa phương"
+    ],
+    "exclusions": [
+      "Không phục vụ đặt tour thương mại hay dịch vụ có thu phí trái phép"
+    ],
+    "sources": [
+      {
+        "id": "src-doan-lc",
+        "url": "https://doanphuonglienchieu.dn.gov.vn/van-hoa-thanh-nien",
+        "title": "Phong trào văn hóa thanh niên Liên Chiểu",
+        "publisher": "Đoàn TNCS Hồ Chí Minh phường Liên Chiểu",
+        "sourceDate": "2026-05-19",
+        "fetchedAt": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "Tổ công tác thanh niên số Liên Chiểu",
+      "reviewer": "Người rà soát giả lập B",
+      "reviewedAt": "2026-09-18",
+      "reviewDue": "2026-12-31",
+      "notes": "Thẻ khám phá văn hóa mô phỏng"
+    },
+    "actions": [
+      {
+        "id": "act-visit",
+        "type": "in_person",
+        "label": "Đến tham quan và giao lưu tại Trung tâm Văn hóa Thể thao phường"
+      }
+    ],
+    "body": {
+      "story": "Không gian văn hóa truyền thống kết hợp chuyển đổi số, nơi trưng bày các mô hình sáng tạo của thanh niên phường Liên Chiểu.",
+      "locality": "Khu đô thị Trung Nam, phường Liên Chiểu, TP. Đà Nẵng",
+      "authorOrSource": "Biên tập viên giả lập",
+      "mediaRights": "Bản quyền thuộc Tổ công tác thanh niên số Liên Chiểu, sử dụng phi thương mại",
+      "claimsWithSources": [
+        {
+          "id": "claim-discover-1",
+          "claim": "Các hoạt động văn hóa thanh niên được tổ chức định kỳ gắn liền với đời sống khu dân cư",
+          "sourceId": "src-doan-lc"
+        }
+      ]
+    },
+    "isSynthetic": true
+  },
+  {
+    "id": "service-expired-fixture",
+    "version": "1.0.0",
+    "type": "SERVICE",
+    "title": "[Mô phỏng - Hết hạn] Quy định thủ tục cư trú niên độ 2024",
+    "intentIds": ["residence_old_procedure"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": ["Mẫu kiểm thử tình huống dữ liệu quá hạn"],
+    "exclusions": [],
+    "sources": [
+      {
+        "id": "src-old",
+        "url": "https://dichvucong.gov.vn/old-archive",
+        "title": "Lưu trữ quy định cũ",
+        "publisher": "Cơ quan lưu trữ",
+        "sourceDate": "2024-01-01",
+        "fetchedAt": "2024-01-02"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "Bộ phận dữ liệu",
+      "reviewer": "Người rà soát giả lập A",
+      "reviewedAt": "2024-01-02",
+      "reviewDue": "2024-06-30",
+      "notes": "Fixture mô phỏng thẻ quá hạn (reviewDue < hiện tại)"
+    },
+    "actions": [],
+    "body": {
+      "summary": "Quy định đã cũ, cần rà soát cập nhật văn bản mới.",
+      "questions": [],
+      "steps": [
+        {
+          "id": "step-old",
+          "stepNumber": 1,
+          "stepType": "procedural",
+          "title": "Bước nộp hồ sơ mẫu 2024",
+          "description": "Nội dung cũ",
+          "requiredDocs": [],
+          "claimIds": ["claim-old-1"],
+          "branches": []
+        }
+      ],
+      "unknownOption": {
+        "label": "Không rõ",
+        "guidance": "Quy định đã hết hạn rà soát, vui lòng tra cứu văn bản hiện hành."
+      },
+      "missingQuestions": [],
+      "claimsWithSources": [
+        {
+          "id": "claim-old-1",
+          "claim": "Khẳng định mẫu quy định cũ",
+          "sourceId": "src-old"
+        }
+      ]
+    },
+    "isSynthetic": true
+  },
+  {
+    "id": "place-withdrawn-fixture",
+    "version": "1.0.0",
+    "type": "PLACE",
+    "title": "[Mô phỏng - Bị rút] Điểm tư vấn tạm ngừng hoạt động",
+    "intentIds": ["withdrawn_service_point"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": ["Mẫu kiểm thử tình huống điểm dịch vụ bị thu hồi hoặc đóng cửa"],
+    "exclusions": [],
+    "sources": [
+      {
+        "id": "src-notice",
+        "url": "https://danang.gov.vn/thong-bao-dong-cua",
+        "title": "Thông báo tạm dừng hoạt động",
+        "publisher": "UBND địa phương",
+        "sourceDate": "2026-02-01",
+        "fetchedAt": "2026-02-02"
+      }
+    ],
+    "review": {
+      "status": "withdrawn",
+      "owner": "Bộ phận quản lý địa bàn",
+      "reviewer": "Người rà soát giả lập A",
+      "reviewedAt": "2026-02-02",
+      "reviewDue": "2026-12-31",
+      "notes": "Fixture mô phỏng thẻ bị rút (status: withdrawn)"
+    },
+    "actions": [],
+    "body": {
+      "function": "Điểm tư vấn cũ đã giải thể.",
+      "address": "Địa chỉ cũ",
+      "jurisdictionDetail": "Đã ngừng hoạt động",
+      "openingHours": "Không rõ giờ",
+      "claimsWithSources": []
+    },
+    "isSynthetic": true
+  },
+  {
+    "id": "service-draft-fixture",
+    "version": "1.0.0",
+    "type": "SERVICE",
+    "title": "[Mô phỏng - Nháp] Hướng dẫn thủ tục đang soạn thảo",
+    "intentIds": ["draft_procedure"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": ["Mẫu kiểm thử thẻ bản nháp chưa duyệt"],
+    "exclusions": [],
+    "sources": [
+      {
+        "id": "src-draft",
+        "url": "https://dichvucong.gov.vn/draft-source",
+        "title": "Nguồn sơ bộ",
+        "publisher": "Ban soạn thảo",
+        "sourceDate": "2026-09-01",
+        "fetchedAt": "2026-09-02"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "owner": "Nhóm nghiên cứu trẻ",
+      "reviewDue": "2026-12-31",
+      "notes": "Thẻ draft chưa có reviewer và reviewedAt"
+    },
+    "actions": [],
+    "body": {
+      "summary": "Nội dung đang trong quá trình thu thập thông tin và lấy ý kiến.",
+      "questions": [],
+      "steps": [
+        {
+          "id": "step-draft-1",
+          "stepNumber": 1,
+          "stepType": "ui_guidance",
+          "title": "Khảo sát nhu cầu",
+          "description": "Lấy ý kiến thanh niên",
+          "requiredDocs": [],
+          "claimIds": [],
+          "branches": []
+        }
+      ],
+      "unknownOption": {
+        "label": "Chưa có thông tin",
+        "guidance": "Nội dung đang soạn thảo, chưa thể áp dụng."
+      },
+      "missingQuestions": [],
+      "claimsWithSources": []
+    },
+    "isSynthetic": true
+  },
+  {
+    "id": "place-wrong-jurisdiction-fixture",
+    "version": "1.0.0",
+    "type": "PLACE",
+    "title": "[Mô phỏng - Sai địa bàn] Điểm hành chính ngoài phạm vi phường",
+    "intentIds": ["out_of_jurisdiction_point"],
+    "jurisdiction": {
+      "id": "ngoai-dia-ban",
+      "label": "Khu vực ngoài phường Liên Chiểu"
+    },
+    "applicability": ["Mẫu kiểm thử tình huống xử lý yêu cầu ngoài phạm vi địa bàn"],
+    "exclusions": ["Không thuộc thẩm quyền phường Liên Chiểu"],
+    "sources": [
+      {
+        "id": "src-external",
+        "url": "https://danang.gov.vn/dia-ban-khac",
+        "title": "Cổng thông tin địa bàn ngoài",
+        "publisher": "Đơn vị ngoài",
+        "sourceDate": "2026-01-01",
+        "fetchedAt": "2026-01-02"
+      }
+    ],
+    "review": {
+      "status": "draft",
+      "owner": "Bộ phận địa bàn",
+      "reviewDue": "2026-12-31",
+      "notes": "Fixture mô phỏng ngoài địa bàn"
+    },
+    "actions": [],
+    "body": {
+      "function": "Trụ sở ngoài địa giới hành chính phường Liên Chiểu",
+      "address": "Tuyến đường giáp ranh",
+      "jurisdictionDetail": "Ngoài địa bàn",
+      "openingHours": "Không rõ giờ",
+      "claimsWithSources": []
+    },
+    "isSynthetic": true
+  }
+]

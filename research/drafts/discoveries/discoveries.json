@@ -1,0 +1,168 @@
+[
+  {
+    "id": "discover-dinh-hoamy",
+    "version": "1.0.0",
+    "type": "DISCOVER",
+    "title": "Đình làng Hòa Mỹ — Di sản Kiến trúc & Lễ hội Truyền thống",
+    "intentIds": ["van_hoa-01", "van_hoa-02", "van_hoa-04"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng",
+      "scopeLevel": "ward",
+      "ward": "Liên Chiểu",
+      "city": "Đà Nẵng"
+    },
+    "applicability": {
+      "targetAudience": [
+        "Người mới đến, sinh viên, người dân và du khách muốn tìm hiểu lịch sử, văn hóa truyền thống phường Liên Chiểu"
+      ],
+      "conditions": [
+        "Tham quan trang nghiêm, tuân thủ nội quy di tích"
+      ]
+    },
+    "exclusions": [
+      "Không tổ chức hoạt động thương mại hoặc lễ hội tự phát ngoài kế hoạch của ban quản lý di tích"
+    ],
+    "sources": [
+      {
+        "id": "src-dinh-hoamy",
+        "title": "Di tích lịch sử - văn hóa Đình làng Hòa Mỹ, phường Liên Chiểu",
+        "url": "https://danangfantasticity.com/di-tich-dinh-lang-hoa-my-da-nang",
+        "publisher": "Trung tâm Xúc tiến Du lịch Đà Nẵng",
+        "publishedAt": "2025-11-20",
+        "fetchedAt": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "contentOwner": "Đoàn TNCS Hồ Chí Minh Phường Liên Chiểu",
+      "reviewer": "Ban Chấp hành Đoàn Phường Liên Chiểu & Tổ Đề án Cuộc thi 2026",
+      "reviewedAt": "2026-09-18",
+      "reviewDue": "2026-12-31",
+      "revisionReason": "Biên tập thẻ khám phá văn hóa lịch sử địa phương"
+    },
+    "actions": [
+      {
+        "id": "act-dinh-maps",
+        "type": "directions",
+        "label": "Mở vị trí Đình Hòa Mỹ trên bản đồ",
+        "url": "https://maps.google.com/?q=Dinh+Lang+Hoa+My+Da+Nang",
+        "isExternal": true
+      }
+    ],
+    "isSynthetic": false,
+    "body": {
+      "summary": "Đình làng Hòa Mỹ là một trong những ngôi đình cổ tiêu biểu tại khu vực Liên Chiểu, lưu giữ dấu ấn khai hoang lập nghiệp của các bậc tiền hiền và lễ hội truyền thống hàng năm.",
+      "culturalSignificance": "Biểu tượng gắn kết cộng đồng cư dân Hòa Mỹ - Liên Chiểu; nơi diễn ra lễ hội đình làng vào dịp đầu xuân với các nghi thức tế lễ cổ truyền và trò chơi dân gian.",
+      "location": {
+        "address": "Khu dân cư Hòa Mỹ, Phường Liên Chiểu, TP. Đà Nẵng",
+        "inWard": true
+      },
+      "image": {
+        "url": "/images/discover/dinh-hoa-my.jpg",
+        "caption": "Không gian cổ kính Đình làng Hòa Mỹ",
+        "attribution": "Cổng thông tin Du lịch Đà Nẵng / Tư liệu văn hóa địa phương",
+        "license": "Public educational use"
+      },
+      "claimsWithSources": [
+        {
+          "id": "claim-dinh-history",
+          "claim": "Đình làng Hòa Mỹ là di tích lịch sử văn hóa cấp thành phố ghi nhận công đức tiền nhân",
+          "sourceId": "src-dinh-hoamy",
+          "quote": "Đình làng Hòa Mỹ lưu giữ kiến trúc ba gian hai chái truyền thống và là trung tâm sinh hoạt văn hóa tín ngưỡng của làng.",
+          "verifiedAt": "2026-09-18"
+        }
+      ],
+      "facts": [
+        "Nằm ngay trên địa bàn phường Liên Chiểu, giao thông thuận tiện",
+        "Mở cửa miễn phí cho người dân và thanh thiếu nhi tham quan, tìm hiểu lịch sử"
+      ],
+      "unknowns": [
+        "Lịch chi tiết các ngày rằm và mùng một do ban khánh tiết làng tổ chức tế lễ riêng"
+      ]
+    }
+  },
+  {
+    "id": "discover-lang-nghe-note",
+    "version": "1.0.0",
+    "type": "DISCOVER",
+    "title": "Chỉ dẫn Khám phá Văn hóa Làng nghề & Ẩm thực Ven Biển Liên Chiểu",
+    "intentIds": ["van_hoa-01", "van_hoa-03", "van_hoa-06"],
+    "jurisdiction": {
+      "id": "phuong-lien-chieu",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng",
+      "scopeLevel": "ward",
+      "ward": "Liên Chiểu",
+      "city": "Đà Nẵng"
+    },
+    "applicability": {
+      "targetAudience": [
+        "Người mới đến phường Liên Chiểu muốn tìm hiểu các sản phẩm đặc trưng địa phương và chỉ dẫn trải nghiệm đúng ranh giới"
+      ],
+      "conditions": [
+        "Tìm hiểu thông tin nguồn gốc sản phẩm từ các cơ sở uy tín"
+      ]
+    },
+    "exclusions": [
+      "Không quảng cáo hoặc bảo chứng thương mại cho cơ sở kinh doanh cụ thể nào"
+    ],
+    "sources": [
+      {
+        "id": "src-dvc-bca",
+        "title": "Thông tin tổng quan địa bàn và phát triển kinh tế biển Liên Chiểu",
+        "url": "https://lienchieu.danang.gov.vn/van-hoa-xa-hoi",
+        "publisher": "UBND Phường Liên Chiểu",
+        "publishedAt": "2026-01-01",
+        "fetchedAt": "2026-09-18"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "contentOwner": "Đoàn TNCS Hồ Chí Minh Phường Liên Chiểu",
+      "reviewer": "Ban Chấp hành Đoàn Phường Liên Chiểu & Tổ Đề án Cuộc thi 2026",
+      "reviewedAt": "2026-09-18",
+      "reviewDue": "2026-12-31",
+      "revisionReason": "Biên tập chỉ dẫn văn hóa làng nghề và ranh giới địa bàn"
+    },
+    "actions": [
+      {
+        "id": "act-langnghe-info",
+        "type": "external_link",
+        "label": "Xem cổng thông tin văn hóa - xã hội địa phương",
+        "url": "https://lienchieu.danang.gov.vn",
+        "isExternal": true
+      }
+    ],
+    "isSynthetic": false,
+    "body": {
+      "summary": "Khu vực Liên Chiểu nổi bật với truyền thống đánh bắt ven bờ, các món gỏi cá đặc sản và các sản phẩm mắm truyền thống. Thẻ này cung cấp chỉ dẫn chuẩn xác về ranh giới địa bàn.",
+      "culturalSignificance": "Gắn liền với đời sống ngư dân vùng vịnh Đà Nẵng, hình thành nét ẩm thực đậm đà bản sắc miền Trung.",
+      "location": {
+        "address": "Tuyến đường Nguyễn Tất Thành ven vịnh Đà Nẵng, Phường Liên Chiểu",
+        "inWard": true
+      },
+      "image": {
+        "url": "/images/discover/am-thuc-bien.jpg",
+        "caption": "Ẩm thực ven biển Liên Chiểu",
+        "attribution": "Ảnh tư liệu xúc tiến du lịch",
+        "license": "Public educational use"
+      },
+      "claimsWithSources": [
+        {
+          "id": "claim-amthuc-lien-chieu",
+          "claim": "Ẩm thực ven biển là nét văn hóa đặc trưng của cư dân vùng vịnh Liên Chiểu",
+          "sourceId": "src-dvc-bca",
+          "quote": "Phát triển dịch vụ gắn với thế mạnh bờ biển và nét ẩm thực truyền thống địa phương.",
+          "verifiedAt": "2026-09-18"
+        }
+      ],
+      "facts": [
+        "Làng nghề nước mắm Nam Ô truyền thống nằm tại phường Hòa Hiệp Nam (tiếp giáp phía Bắc, ngoài địa giới phường Liên Chiểu); du khách cần lưu ý tránh nhầm lẫn địa giới",
+        "Các món đặc sản như gỏi cá Nam Ô và hải sản tươi sống được phục vụ phổ biến dọc trục đường Nguyễn Tất Thành thuộc phường Liên Chiểu"
+      ],
+      "unknowns": [
+        "Mức giá cụ thể của các cơ sở kinh doanh tư nhân (cần tự tham khảo tại chỗ)"
+      ]
+    }
+  }
+]

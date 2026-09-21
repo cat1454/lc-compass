@@ -1,0 +1,265 @@
+{
+  "batch": "data-expansion-2026-09-19",
+  "asOfDate": "2026-09-19",
+  "targetCount": {
+    "total": 24,
+    "service": 8,
+    "place": 10,
+    "discover": 6
+  },
+  "principles": [
+    "Tuân thủ nghiêm ngặt ranh giới hành chính Phường Liên Chiểu mới theo Nghị quyết 1659/NQ-UBTVQH15 (Hòa Khánh Bắc cũ + phần còn lại của xã Hòa Liên). Không gộp toàn bộ quận Liên Chiểu cũ.",
+    "Không gán nhầm intent: Thủ tục chứng thực/hộ tịch (candidate-08) chưa có intent phù hợp trong constants.ts nên lưu draft tại research/data-expansion/drafts/service-chung-thuc-ban-sao.json, không gán vào cu_tru.",
+    "Bổ sung thủ tục phân loại rác tại nguồn (service-phan-loai-rac-tai-nguon, intent moi_truong-02) để đảm bảo 8 dịch vụ công ích thiết thực cho địa phương.",
+    "review.status = 'review', isSynthetic = false, không tạo reviewer/reviewedAt giả lập; DTO giữ isVerified = false.",
+    "Tọa độ địa lý chỉ lưu khi có bằng chứng độc lập đối chiếu chính xác; nếu thiếu hoặc nghi vấn thì bỏ trường, không geocode tự động hay lấy tâm phường.",
+    "Nguyên tắc xử lý tọa độ: Bỏ toàn bộ trường coordinates tại 9 thẻ PLACE do sổ bằng chứng chưa có mục đối chiếu tọa độ độc lập, tuân thủ đúng yêu cầu không geocode tùy tiện."
+  ],
+  "exclusionsAndReplacements": [
+    {
+      "entity": "Ký túc xá tập trung phía Tây Đà Nẵng",
+      "address": "08 Hà Văn Tính",
+      "reason": "Nằm trên địa bàn phường Hòa Khánh Nam (nay thuộc phường Hòa Khánh mới), KHÔNG thuộc địa giới phường Liên Chiểu mới."
+    },
+    {
+      "entity": "Trường THCS Lương Thế Vinh",
+      "address": "86 Đặng Huy Trứ",
+      "reason": "Thuộc phường Hòa Minh, KHÔNG thuộc địa bàn phường Liên Chiểu mới."
+    },
+    {
+      "entity": "Làng nghề nước mắm Nam Ô",
+      "address": "Phường Hòa Hiệp Nam / Hòa Hiệp Bắc cũ",
+      "reason": "Nay thuộc phường Hải Vân mới theo Nghị quyết 1659, KHÔNG thuộc phường Liên Chiểu mới."
+    },
+    {
+      "entity": "Bánh dừa nướng Mỹ Phương",
+      "address": "Hòa Sơn / Hòa Khánh Nam",
+      "reason": "Địa chỉ cơ sở sản xuất không thuộc ranh giới phường Liên Chiểu mới."
+    },
+    {
+      "candidateId": "candidate-08",
+      "topic": "Hộ tịch hoặc chứng thực",
+      "decision": "Lưu bản thảo tại research/data-expansion/drafts/service-chung-thuc-ban-sao.json. Chưa tích hợp vào catalog demo do thiếu intent chuyên biệt trong INTENT_CATALOG.",
+      "replacementCardId": "service-phan-loai-rac-tai-nguon",
+      "replacementIntentId": "moi_truong-02"
+    }
+  ],
+  "candidateDecisions": [
+    {
+      "candidateId": "candidate-01",
+      "cardId": "service-chuan-bi-tam-tru",
+      "type": "SERVICE",
+      "intentId": "cu_tru-01",
+      "status": "integrated",
+      "version": "1.0.1",
+      "notes": "Rà soát lại nguồn; nâng patch version 1.0.1; bỏ action gán cứng maps.google.com"
+    },
+    {
+      "candidateId": "candidate-02",
+      "cardId": "service-chuan-bi-thuong-tru",
+      "type": "SERVICE",
+      "intentId": "cu_tru-09",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Thay thế nguồn dvc-thuong-tru-bca sang Cổng DVC Quốc gia (dvc-thuong-tru) theo phản ánh review nghiệp vụ; đối chiếu Điều 20 Luật Cư trú"
+    },
+    {
+      "candidateId": "candidate-03",
+      "cardId": "service-dang-nhap-dvc-cu-tru",
+      "type": "SERVICE",
+      "intentId": "cu_tru-05",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Căn cứ hướng dẫn đăng nhập VNeID mức 2 trên Cổng DVC Bộ Công an"
+    },
+    {
+      "candidateId": "candidate-04",
+      "cardId": "service-tra-cuu-bo-sung-ho-so-cu-tru",
+      "type": "SERVICE",
+      "intentId": "cu_tru-06",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Căn cứ quy trình tra cứu và bổ sung hồ sơ trực tuyến Cổng DVC BCA"
+    },
+    {
+      "candidateId": "candidate-05",
+      "cardId": "service-chuyen-truong-hoc-sinh",
+      "type": "SERVICE",
+      "intentId": "hoc_tap-03",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Thay thế nguồn tt-50-bgddt-chuyen-truong (tránh nhầm lẫn docid) bằng hướng dẫn Sở GD&ĐT Đà Nẵng (so-gddt-danang) và Cổng DVC Quốc gia (dvc-chuyen-truong)"
+    },
+    {
+      "candidateId": "candidate-06",
+      "cardId": "service-ho-tro-hoc-phi-da-nang",
+      "type": "SERVICE",
+      "intentId": "hoc_tap-05",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Căn cứ Nghị quyết của HĐND TP. Đà Nẵng về chính sách hỗ trợ học phí"
+    },
+    {
+      "candidateId": "candidate-07",
+      "cardId": "service-tham-gia-bhyt-ho-gia-dinh",
+      "type": "SERVICE",
+      "intentId": "y_te-04",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Căn cứ hướng dẫn tham gia BHYT hộ gia đình của BHXH Đà Nẵng"
+    },
+    {
+      "candidateId": "candidate-08",
+      "cardId": "service-phan-loai-rac-tai-nguon",
+      "type": "SERVICE",
+      "intentId": "moi_truong-02",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Đưa vào thay thế cho candidate-08 hộ tịch/chứng thực để hoàn thiện 8 dịch vụ công ích"
+    },
+    {
+      "candidateId": "candidate-09",
+      "cardId": "place-trung-tam-hanh-chinh-lien-chieu",
+      "type": "PLACE",
+      "intentId": "dia_diem-01",
+      "status": "integrated",
+      "version": "1.0.1",
+      "notes": "Rà soát lại địa chỉ 68 Lạc Long Quân; bổ sung tọa độ đối chiếu"
+    },
+    {
+      "candidateId": "candidate-10",
+      "cardId": "place-cong-an-phuong-lien-chieu",
+      "type": "PLACE",
+      "intentId": "dia_diem-02",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Địa chỉ 66 Lạc Long Quân, liền kề UBND phường; cơ quan giải quyết cư trú"
+    },
+    {
+      "candidateId": "candidate-11",
+      "cardId": "place-tram-y-te-lien-chieu",
+      "type": "PLACE",
+      "intentId": "dia_diem-03",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Địa chỉ 178 Âu Cơ, phường Liên Chiểu; cơ sở y tế tuyến đầu"
+    },
+    {
+      "candidateId": "candidate-12",
+      "cardId": "place-diem-ho-tro-so-cong-dong",
+      "type": "PLACE",
+      "intentId": "dia_diem-04",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Điểm hỗ trợ số công cộng tại 68 Lạc Long Quân do Đoàn thanh niên phụ trách"
+    },
+    {
+      "candidateId": "candidate-13",
+      "cardId": "place-dai-hoc-bach-khoa-da-nang",
+      "type": "PLACE",
+      "intentId": "dia_diem-05",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Địa chỉ 54 Nguyễn Lương Bằng, phường Liên Chiểu"
+    },
+    {
+      "candidateId": "candidate-14",
+      "cardId": "place-cao-dang-kinh-te-ke-hoach",
+      "type": "PLACE",
+      "intentId": "hoc_tap-06",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Địa chỉ 143 Nguyễn Lương Bằng, phường Liên Chiểu"
+    },
+    {
+      "candidateId": "candidate-15",
+      "cardId": "place-thpt-nguyen-trai",
+      "type": "PLACE",
+      "intentId": "dia_diem-10",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Địa chỉ 01 Phan Văn Định, phường Liên Chiểu"
+    },
+    {
+      "candidateId": "candidate-16",
+      "cardId": "place-thcs-nguyen-luong-bang",
+      "type": "PLACE",
+      "intentId": "dia_diem-10",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Địa chỉ 27 Nguyễn Lương Bằng, phường Liên Chiểu"
+    },
+    {
+      "candidateId": "candidate-17",
+      "cardId": "place-trung-tam-thong-tin-hoc-lieu-bach-khoa",
+      "type": "PLACE",
+      "intentId": "van_hoa-08",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Thư viện và trung tâm học liệu tại 54 Nguyễn Lương Bằng, phường Liên Chiểu"
+    },
+    {
+      "candidateId": "candidate-18",
+      "cardId": "place-trung-tam-van-hoa-the-thao-cong-nhan",
+      "type": "PLACE",
+      "intentId": "dia_diem-05",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Đường số 2 KCN Hòa Khánh, phường Liên Chiểu"
+    },
+    {
+      "candidateId": "candidate-19",
+      "cardId": "discover-di-tich-b1-hong-phuoc",
+      "type": "DISCOVER",
+      "intentId": "van_hoa-04",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Di tích lịch sử cấp quốc gia Căn cứ lõm B1 Hồng Phước"
+    },
+    {
+      "candidateId": "candidate-20",
+      "cardId": "discover-chuyen-ke-ngon-den-dau-hong-phuoc",
+      "type": "DISCOVER",
+      "intentId": "van_hoa-02",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Câu chuyện lịch sử ngọn đèn dầu báo tin tại B1 Hồng Phước"
+    },
+    {
+      "candidateId": "candidate-21",
+      "cardId": "discover-dinh-lang-thanh-vinh",
+      "type": "DISCOVER",
+      "intentId": "van_hoa-04",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Đình làng cổ Thanh Vinh, khu dân cư Thanh Vinh, phường Liên Chiểu"
+    },
+    {
+      "candidateId": "candidate-22",
+      "cardId": "discover-khong-gian-cong-nhan-kcn-hoa-khanh",
+      "type": "DISCOVER",
+      "intentId": "van_hoa-01",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Không gian đời sống văn hóa của thanh niên công nhân KCN Hòa Khánh"
+    },
+    {
+      "candidateId": "candidate-23",
+      "cardId": "discover-san-pham-ocop-ngoc-oanh-food",
+      "type": "DISCOVER",
+      "intentId": "van_hoa-05",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Sản phẩm OCOP 3 sao ngũ cốc Granola tại 856/54 Tôn Đức Thắng, Liên Chiểu"
+    },
+    {
+      "candidateId": "candidate-24",
+      "cardId": "discover-tuyen-duong-thanh-nien-chuyen-doi-so",
+      "type": "DISCOVER",
+      "intentId": "van_hoa-10",
+      "status": "integrated",
+      "version": "1.0.0",
+      "notes": "Mô hình tuyến đường thanh niên CĐS văn minh trục đường Nguyễn Lương Bằng"
+    }
+  ]
+}

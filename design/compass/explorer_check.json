@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "console_page_errors": [],
+  "tested": [
+    "initial case",
+    "stale source",
+    "AI outage",
+    "urgent",
+    "unsupported goal",
+    "public place without proxy consent",
+    "public discovery without proxy consent",
+    "case 10000 and wrap",
+    "selector cardinality",
+    "mobile overflow"
+  ],
+  "limit": "Design explorer only; no live civic services, source verification, or LLM tested."
+}

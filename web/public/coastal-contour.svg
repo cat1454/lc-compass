@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" fill="none">
+  <defs>
+    <!-- Gradient cho các đường đồng mức Hải Vân & Vịnh Liên Chiểu -->
+    <linearGradient id="contourTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.16" />
+      <stop offset="50%" stop-color="#0d9488" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.10" />
+    </linearGradient>
+    <linearGradient id="waveCyan" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.10" />
+      <stop offset="70%" stop-color="#0d9488" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0.12" />
+    </linearGradient>
+    <linearGradient id="softGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0.02" />
+    </linearGradient>
+  </defs>
+
+  <!-- Mảng màu sáng tán xạ nhẹ góc trên phải (Hải Vân Promontory) -->
+  <circle cx="1350" cy="180" r="380" fill="#0284c7" opacity="0.04" filter="blur(60px)" />
+  <!-- Mảng màu sáng tán xạ nhẹ góc dưới trái (Vịnh Liên Chiểu) -->
+  <circle cx="200" cy="950" r="420" fill="#0d9488" opacity="0.04" filter="blur(70px)" />
+
+  <!-- HỆ THỐNG ĐƯỜNG ĐỒNG MỨC ĐÈO HẢI VÂN (TOPOGRAPHIC CONTOUR - GÓC TRÊN BÊN PHẢI) -->
+  <g stroke="url(#contourTeal)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1600 40 C1460 30, 1380 90, 1310 160 C1240 230, 1260 320, 1340 380 C1420 440, 1530 430, 1600 490" />
+    <path d="M1600 90 C1480 80, 1410 135, 1355 195 C1295 260, 1310 335, 1380 385 C1450 430, 1540 435, 1600 520" />
+    <path d="M1600 140 C1510 130, 1445 175, 1400 230 C1350 285, 1360 345, 1420 385 C1475 425, 1550 435, 1600 550" />
+    <path d="M1600 190 C1540 180, 1485 215, 1450 260 C1410 310, 1415 355, 1465 385 C1505 415, 1560 435, 1600 580" />
+    <path d="M1600 240 C1560 235, 1520 260, 1495 295 C1470 330, 1475 365, 1510 385 C1540 405, 1575 435, 1600 610" />
+
+    <!-- Các tầng cao hơn của sườn núi -->
+    <path d="M1300 0 C1240 60, 1220 150, 1270 230 C1320 300, 1280 400, 1200 460 C1130 520, 1140 620, 1240 680 C1340 730, 1470 710, 1600 760" stroke-dasharray="8 6" opacity="0.7" />
+    <path d="M1240 0 C1180 60, 1160 160, 1210 245 C1260 320, 1220 425, 1140 485 C1070 545, 1080 645, 1180 710 C1290 765, 1430 750, 1600 810" />
+    <path d="M1180 0 C1120 65, 1100 170, 1155 260 C1205 340, 1160 450, 1080 515 C1010 570, 1020 675, 1125 740 C1240 800, 1390 790, 1600 860" />
+  </g>
+
+  <!-- HỆ THỐNG SÓNG BIỂN VỊNH LIÊN CHIỂU (COASTAL OCEAN WAVES - TRẢI RỘNG TỪ BỜ TÂY SANG TRUNG TÂM) -->
+  <g stroke="url(#waveCyan)" stroke-width="1.3" stroke-linecap="round">
+    <path d="M-100 350 C180 320, 360 420, 620 380 C880 340, 1040 430, 1320 390 C1460 370, 1580 400, 1700 380" />
+    <path d="M-100 400 C160 375, 340 470, 600 430 C860 390, 1020 480, 1300 440 C1450 420, 1570 450, 1700 430" opacity="0.8" />
+    <path d="M-100 450 C140 430, 320 520, 580 480 C840 440, 1000 530, 1280 490 C1440 470, 1560 500, 1700 480" stroke-dasharray="12 8" opacity="0.6" />
+
+    <!-- Sóng vịnh tầng giữa -->
+    <path d="M-50 680 C240 640, 420 740, 720 700 C1020 660, 1180 750, 1480 710 C1580 695, 1680 720, 1750 710" />
+    <path d="M-50 730 C220 695, 400 790, 700 750 C1000 710, 1160 800, 1460 760 C1560 745, 1660 770, 1750 760" opacity="0.85" />
+    <path d="M-50 780 C200 750, 380 840, 680 800 C980 760, 1140 850, 1440 810 C1550 795, 1650 820, 1750 810" opacity="0.7" />
+
+    <!-- Sóng vịnh & Bãi cát Nam Ô tầng dưới -->
+    <path d="M0 980 C280 940, 480 1050, 800 1000 C1120 950, 1300 1060, 1620 1010" />
+    <path d="M0 1030 C260 995, 460 1100, 780 1050 C1100 1000, 1280 1110, 1620 1060" opacity="0.8" />
+    <path d="M0 1080 C240 1050, 440 1150, 760 1100 C1080 1050, 1260 1160, 1620 1110" opacity="0.6" stroke-dasharray="14 10" />
+  </g>
+
+  <!-- ĐƯỜNG ĐỒNG MỨC ĐỒI NÚI PHÍA TÂY (PHƯỚC LÝ - HÒA KHÁNH NAM) -->
+  <g stroke="url(#contourTeal)" stroke-width="1.1" stroke-linecap="round" opacity="0.75">
+    <path d="M-60 850 C60 830, 130 890, 160 970 C190 1060, 130 1140, 40 1180 L-60 1200" />
+    <path d="M-60 800 C80 780, 170 850, 210 950 C250 1060, 180 1160, 80 1200" />
+    <path d="M-60 750 C100 730, 210 810, 260 930 C310 1060, 230 1180, 120 1200" stroke-dasharray="6 6" />
+  </g>
+
+  <!-- TỌA ĐỘ VÀ KÝ HIỆU LA BÀN HẢI ĐĂNG LIÊN CHIỂU TINH TẾ -->
+  <g opacity="0.3" fill="#0369a1" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="2">
+    <text x="70" y="140">16°04'N  108°08'E — VỊNH LIÊN CHIỂU</text>
+    <text x="1350" y="1140" text-anchor="end">HẢI VÂN QUAN — ĐÀ NẴNG 2026</text>
+  </g>
+
+  <!-- BIỂU TƯỢNG LA BÀN CHÌM TINH TẾ (COMPASS ROSE WATERMARK) -->
+  <g transform="translate(1420, 1040)" opacity="0.25" stroke="#0284c7" stroke-width="1.2">
+    <circle cx="0" cy="0" r="36" fill="none" stroke-dasharray="4 3" />
+    <circle cx="0" cy="0" r="22" fill="none" />
+    <line x1="0" y1="-44" x2="0" y2="44" />
+    <line x1="-44" y1="0" x2="44" y2="0" />
+    <polygon points="0,-40 -4,-22 0,-26 4,-22" fill="#0284c7" />
+    <polygon points="40,0 22,-4 26,0 22,4" fill="#0284c7" />
+    <polygon points="0,40 -4,22 0,26 4,22" fill="#0284c7" />
+    <polygon points="-40,0 -22,-4 -26,0 -22,4" fill="#0284c7" />
+  </g>
+</svg>

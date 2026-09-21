@@ -1,0 +1,2036 @@
+[
+  {
+    "id": "service-chuan-bi-tam-tru",
+    "version": "1.0.1",
+    "title": "Chuẩn bị thông tin đăng ký tạm trú",
+    "intentIds": [
+      "cu_tru-01"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Người dân và người mới đến phường Liên Chiểu",
+      "Sinh viên, người lao động thuê trọ tại địa bàn phường"
+    ],
+    "exclusions": [
+      "Đây là hướng dẫn chuẩn bị thông tin, chưa phải checklist hồ sơ đầy đủ đã được phường duyệt.",
+      "Địa chỉ, giờ làm việc và điện thoại của cơ quan tiếp nhận cư trú tại phường: chưa xác minh.",
+      "Không nhập số định danh, mật khẩu hoặc hồ sơ cá nhân vào bản demo."
+    ],
+    "sources": [
+      {
+        "id": "residence-2026",
+        "url": "https://xaydungchinhsach.chinhphu.vn/mot-so-diem-moi-co-ban-cua-luat-cu-tru-sua-doi-va-thong-tu-116-2026-tt-bca-119260714094901372.htm",
+        "title": "Điểm mới về cư trú và Thông tư 116/2026/TT-BCA",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "các thông tin cơ bản […] không yêu cầu công dân nộp lại giấy tờ […] Mỗi hồ sơ được cấp một mã số",
+        "sourceDate": "2026-07-14",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "temporary-residence-2026",
+        "url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-dang-ky-tam-tru-119260720101630132.htm",
+        "title": "Quy định đăng ký tạm trú",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "có thể thực hiện đăng ký tạm trú thông qua cơ quan, tổ chức quản lý trực tiếp chỗ ở đó",
+        "sourceDate": "2026-07-21",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "tạm trú",
+      "thuê trọ",
+      "người mới đến",
+      "cư trú",
+      "VNeID",
+      "ký túc xá"
+    ],
+    "type": "SERVICE",
+    "body": {
+      "summary": "Các việc cần chuẩn bị trước khi liên hệ cơ quan đăng ký cư trú; biên tập từ hướng dẫn Chính phủ tháng 7/2026.",
+      "questions": [],
+      "steps": [
+        {
+          "id": "prepare",
+          "stepNumber": 1,
+          "stepType": "procedural",
+          "title": "Chuẩn bị thông tin cơ bản",
+          "description": "Khi nộp trực tiếp, cung cấp thông tin cơ bản và điều kiện đăng ký cư trú để cán bộ khai thác cơ sở dữ liệu, tạo hồ sơ.",
+          "requiredDocs": [],
+          "claimIds": [
+            "prepare-info"
+          ],
+          "branches": []
+        },
+        {
+          "id": "shared",
+          "stepNumber": 2,
+          "stepType": "procedural",
+          "title": "Đối chiếu thông tin đã có",
+          "description": "Thông tin, giấy tờ đã được kết nối, chia sẻ và khai thác từ cơ sở dữ liệu hoặc VNeID thì không phải nộp hay xuất trình lại.",
+          "requiredDocs": [],
+          "claimIds": [
+            "shared-info"
+          ],
+          "branches": []
+        },
+        {
+          "id": "dorm",
+          "stepNumber": 3,
+          "stepType": "procedural",
+          "title": "Nếu đang ở ký túc xá",
+          "description": "Sinh viên ở tập trung trong ký túc xá có thể đăng ký qua đơn vị trực tiếp quản lý chỗ ở.",
+          "requiredDocs": [],
+          "claimIds": [
+            "dorm-info"
+          ],
+          "branches": []
+        },
+        {
+          "id": "follow",
+          "stepNumber": 4,
+          "stepType": "procedural",
+          "title": "Giữ mã hồ sơ",
+          "description": "Mỗi hồ sơ được cấp mã để theo dõi tiến độ. Bản demo không tra cứu tiến độ hồ sơ cá nhân.",
+          "requiredDocs": [],
+          "claimIds": [
+            "tracking-info"
+          ],
+          "branches": []
+        }
+      ],
+      "unknownOption": {
+        "label": "Tôi chưa rõ",
+        "guidance": "Mở nguồn bên dưới để đối chiếu trường hợp của mình; các tình huống chưa rõ cần hỏi cơ quan đăng ký cư trú."
+      },
+      "missingQuestions": [],
+      "claimsWithSources": [
+        {
+          "id": "prepare-info",
+          "claim": "Khi nộp trực tiếp, cung cấp thông tin cơ bản và điều kiện đăng ký cư trú để cán bộ khai thác cơ sở dữ liệu, tạo hồ sơ.",
+          "sourceId": "residence-2026"
+        },
+        {
+          "id": "shared-info",
+          "claim": "Thông tin, giấy tờ đã được kết nối, chia sẻ và khai thác từ cơ sở dữ liệu hoặc VNeID thì không phải nộp hay xuất trình lại.",
+          "sourceId": "residence-2026"
+        },
+        {
+          "id": "dorm-info",
+          "claim": "Sinh viên ở tập trung trong ký túc xá có thể đăng ký qua đơn vị trực tiếp quản lý chỗ ở.",
+          "sourceId": "temporary-residence-2026"
+        },
+        {
+          "id": "tracking-info",
+          "claim": "Mỗi hồ sơ được cấp mã để theo dõi tiến độ. Bản demo không tra cứu tiến độ hồ sơ cá nhân.",
+          "sourceId": "residence-2026"
+        },
+        {
+          "id": "ward-boundary",
+          "claim": "Phường Liên Chiểu gồm Hòa Khánh Bắc cũ và phần còn lại của Hòa Liên sau điều chỉnh sang Hải Vân; không phải toàn bộ quận Liên Chiểu cũ.",
+          "sourceId": "ward-2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "service-chuan-bi-thuong-tru",
+    "version": "1.0.0",
+    "title": "Chuẩn bị đăng ký thường trú",
+    "intentIds": [
+      "cu_tru-09"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Công dân chuyển từ tạm trú sang thường trú hoặc mới có chỗ ở hợp pháp tại phường Liên Chiểu"
+    ],
+    "exclusions": [
+      "Hướng dẫn chuẩn bị hồ sơ theo quy định chung của Luật Cư trú; không thay thế quyết định thẩm duyệt của cơ quan đăng ký cư trú."
+    ],
+    "sources": [
+      {
+        "id": "residence-law-2020",
+        "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=202166",
+        "title": "Luật Cư trú số 68/2020/QH14",
+        "publisher": "Cổng Thông tin điện tử Chính phủ",
+        "relevantExcerpt": "Công dân có chỗ ở hợp pháp thuộc quyền sở hữu của mình thì được đăng ký thường trú tại chỗ ở hợp pháp đó",
+        "sourceDate": "2020-11-13",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "dvc-thuong-tru",
+        "url": "https://dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+        "title": "Thủ tục Đăng ký thường trú",
+        "publisher": "Cổng Dịch vụ công Quốc gia",
+        "relevantExcerpt": "Hồ sơ gồm Tờ khai thay đổi thông tin cư trú và giấy tờ, tài liệu chứng minh chỗ ở hợp pháp",
+        "sourceDate": "2024-03-01",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "thường trú",
+      "chuyển khẩu",
+      "hộ khẩu",
+      "chỗ ở hợp pháp",
+      "cư trú"
+    ],
+    "type": "SERVICE",
+    "body": {
+      "summary": "Hướng dẫn các điều kiện và tài liệu cần chuẩn bị khi làm thủ tục đăng ký thường trú tại địa phương.",
+      "questions": [],
+      "steps": [
+        {
+          "id": "step-cho-o-hop-phap",
+          "stepNumber": 1,
+          "stepType": "procedural",
+          "title": "Xác định điều kiện chỗ ở hợp pháp",
+          "description": "Công dân chuẩn bị giấy tờ chứng minh chỗ ở hợp pháp thuộc quyền sở hữu (sổ đỏ/nhà ở) hoặc hợp đồng thuê mượn có văn bản đồng ý của chủ hộ.",
+          "requiredDocs": [
+            "Giấy tờ chứng minh quyền sở hữu chỗ ở hợp pháp hoặc hợp đồng thuê mượn chỗ ở",
+            "Văn bản đồng ý của chủ sở hữu chỗ ở hợp pháp (nếu ở nhờ, thuê)"
+          ],
+          "claimIds": [
+            "thuong-tru-cho-o"
+          ],
+          "branches": []
+        },
+        {
+          "id": "step-nop-ho-so-dvc",
+          "stepNumber": 2,
+          "stepType": "procedural",
+          "title": "Kê khai và nộp hồ sơ trực tuyến",
+          "description": "Thực hiện nộp hồ sơ qua Cổng Dịch vụ công Quốc gia hoặc ứng dụng VNeID, điền tờ khai thay đổi thông tin cư trú (mẫu CT01).",
+          "requiredDocs": [
+            "Tờ khai thay đổi thông tin cư trú (Mẫu CT01)"
+          ],
+          "claimIds": [
+            "thuong-tru-dvc"
+          ],
+          "branches": []
+        }
+      ],
+      "unknownOption": {
+        "label": "Tôi chưa rõ",
+        "guidance": "Tham khảo hướng dẫn chi tiết trên Cổng Dịch vụ công Quốc gia hoặc liên hệ Công an phường Liên Chiểu."
+      },
+      "missingQuestions": [],
+      "claimsWithSources": [
+        {
+          "id": "thuong-tru-cho-o",
+          "claim": "Công dân có chỗ ở hợp pháp thuộc quyền sở hữu của mình thì được đăng ký thường trú tại chỗ ở hợp pháp đó.",
+          "sourceId": "residence-law-2020"
+        },
+        {
+          "id": "thuong-tru-dvc",
+          "claim": "Hồ sơ gồm Tờ khai thay đổi thông tin cư trú và giấy tờ, tài liệu chứng minh chỗ ở hợp pháp, nộp qua Cổng Dịch vụ công hoặc VNeID.",
+          "sourceId": "dvc-thuong-tru"
+        }
+      ]
+    }
+  },
+  {
+    "id": "service-dang-nhap-dvc-cu-tru",
+    "version": "1.0.0",
+    "title": "Kênh chính thức và hỗ trợ đăng nhập cư trú",
+    "intentIds": [
+      "cu_tru-05"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Công dân gặp khó khăn khi đăng nhập hoặc thao tác thủ tục cư trú trực tuyến"
+    ],
+    "exclusions": [
+      "Không cung cấp mật khẩu, mã OTP hoặc tài khoản cá nhân cho bất kỳ ai, kể cả người hỗ trợ."
+    ],
+    "sources": [
+      {
+        "id": "vneid-dvc-guide",
+        "url": "https://dichvucong.gov.vn/p/home/dvc-huong-dan-dang-nhap-vneid.html",
+        "title": "Hướng dẫn đăng nhập Cổng Dịch vụ công bằng tài khoản định danh điện tử VNeID",
+        "publisher": "Cổng Dịch vụ công Quốc gia",
+        "relevantExcerpt": "Sử dụng tài khoản VNeID mức độ 2 để đăng nhập các dịch vụ công trực tuyến và thủ tục cư trú",
+        "sourceDate": "2024-06-15",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [
+      {
+        "id": "action-bca-portal",
+        "type": "external_link",
+        "label": "Mở Cổng Dịch vụ công Bộ Công an",
+        "url": "https://dichvucong.bocongan.gov.vn"
+      }
+    ],
+    "isSynthetic": false,
+    "keywords": [
+      "VNeID",
+      "đăng nhập",
+      "dịch vụ công",
+      "định danh điện tử",
+      "mức 2"
+    ],
+    "type": "SERVICE",
+    "body": {
+      "summary": "Hướng dẫn sử dụng tài khoản định danh điện tử VNeID mức 2 để đăng nhập cổng dịch vụ công an toàn.",
+      "questions": [],
+      "steps": [
+        {
+          "id": "step-vneid-muc2",
+          "stepNumber": 1,
+          "stepType": "procedural",
+          "title": "Đăng nhập bằng tài khoản VNeID mức 2",
+          "description": "Truy cập Cổng DVC Bộ Công an, chọn Đăng nhập bằng VNeID Mức 2 và quét mã QR hoặc nhập số định danh cá nhân trên điện thoại.",
+          "requiredDocs": [],
+          "claimIds": [
+            "vneid-login-muc2"
+          ],
+          "branches": []
+        },
+        {
+          "id": "step-bao-mat",
+          "stepNumber": 2,
+          "stepType": "procedural",
+          "title": "Bảo vệ thông tin đăng nhập",
+          "description": "Tuyệt đối không chia sẻ mật khẩu, mã xác thực OTP cho người khác; khi sử dụng máy tính công cộng phải đăng xuất ngay sau khi hoàn thành.",
+          "requiredDocs": [],
+          "claimIds": [
+            "vneid-bao-mat"
+          ],
+          "branches": []
+        }
+      ],
+      "unknownOption": {
+        "label": "Tôi chưa rõ",
+        "guidance": "Đến Điểm hỗ trợ số cộng đồng tại 68 Lạc Long Quân hoặc Công an phường để được hỗ trợ kích hoạt."
+      },
+      "missingQuestions": [],
+      "claimsWithSources": [
+        {
+          "id": "vneid-login-muc2",
+          "claim": "Sử dụng tài khoản VNeID mức độ 2 để đăng nhập các dịch vụ công trực tuyến và thủ tục cư trú.",
+          "sourceId": "vneid-dvc-guide"
+        },
+        {
+          "id": "vneid-bao-mat",
+          "claim": "Bảo mật tài khoản VNeID, không giao mã OTP hoặc mật khẩu cho người hỗ trợ.",
+          "sourceId": "vneid-dvc-guide"
+        }
+      ]
+    }
+  },
+  {
+    "id": "service-tra-cuu-bo-sung-ho-so-cu-tru",
+    "version": "1.0.0",
+    "title": "Tra cứu và làm rõ yêu cầu bổ sung hồ sơ cư trú",
+    "intentIds": [
+      "cu_tru-06"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Công dân đã nộp hồ sơ cư trú trực tuyến và cần kiểm tra tiến độ hoặc nhận yêu cầu chỉnh sửa"
+    ],
+    "exclusions": [
+      "Hệ thống demo không lưu trữ hay tra cứu trực tiếp dữ liệu cá nhân của công dân."
+    ],
+    "sources": [
+      {
+        "id": "dvc-bca-lookup",
+        "url": "https://dichvucong.bocongan.gov.vn/bocongan/tracuu",
+        "title": "Tra cứu tiến độ hồ sơ dịch vụ công Bộ Công an",
+        "publisher": "Cổng Dịch vụ công Bộ Công an",
+        "relevantExcerpt": "Nhập mã hồ sơ và mã xác thực để tra cứu trạng thái xử lý, văn bản yêu cầu bổ sung",
+        "sourceDate": "2024-01-10",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [
+      {
+        "id": "action-lookup-bca",
+        "type": "external_link",
+        "label": "Mở trang tra cứu hồ sơ Bộ Công an",
+        "url": "https://dichvucong.bocongan.gov.vn/bocongan/tracuu"
+      }
+    ],
+    "isSynthetic": false,
+    "keywords": [
+      "tra cứu",
+      "bổ sung hồ sơ",
+      "tiến độ",
+      "mã hồ sơ",
+      "cư trú"
+    ],
+    "type": "SERVICE",
+    "body": {
+      "summary": "Cách tra cứu tiến độ hồ sơ trực tuyến và các bước thực hiện khi cơ quan công an yêu cầu bổ sung giấy tờ.",
+      "questions": [],
+      "steps": [
+        {
+          "id": "step-nhap-ma-ho-so",
+          "stepNumber": 1,
+          "stepType": "procedural",
+          "title": "Nhập mã hồ sơ tra cứu",
+          "description": "Vào mục Tra cứu trên Cổng DVC Bộ Công an, nhập mã hồ sơ được cấp và mã bảo mật để xem trạng thái xử lý.",
+          "requiredDocs": [],
+          "claimIds": [
+            "lookup-ma-ho-so"
+          ],
+          "branches": []
+        },
+        {
+          "id": "step-nop-bo-sung",
+          "stepNumber": 2,
+          "stepType": "procedural",
+          "title": "Đọc yêu cầu và nộp bổ sung",
+          "description": "Xem chi tiết lý do yêu cầu bổ sung trong thông báo, chuẩn bị đúng giấy tờ được yêu cầu và tải lên lại qua cổng trực tuyến.",
+          "requiredDocs": [],
+          "claimIds": [
+            "bo-sung-online"
+          ],
+          "branches": []
+        }
+      ],
+      "unknownOption": {
+        "label": "Tôi chưa rõ",
+        "guidance": "Mang mã hồ sơ đến Công an phường Liên Chiểu để được giải thích trực tiếp nội dung cần bổ sung."
+      },
+      "missingQuestions": [],
+      "claimsWithSources": [
+        {
+          "id": "lookup-ma-ho-so",
+          "claim": "Nhập mã hồ sơ và mã xác thực để tra cứu trạng thái xử lý, văn bản yêu cầu bổ sung trên Cổng DVC BCA.",
+          "sourceId": "dvc-bca-lookup"
+        },
+        {
+          "id": "bo-sung-online",
+          "claim": "Thực hiện nộp bổ sung tài liệu theo đúng thông báo yêu cầu của cán bộ tiếp nhận trên Cổng DVC.",
+          "sourceId": "dvc-bca-lookup"
+        }
+      ]
+    }
+  },
+  {
+    "id": "service-chuyen-truong-hoc-sinh",
+    "version": "1.0.0",
+    "title": "Hướng dẫn thủ tục chuyển trường phổ thông",
+    "intentIds": [
+      "hoc_tap-03"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Học sinh và phụ huynh chuyển chỗ ở đến phường Liên Chiểu có nhu cầu chuyển trường THCS hoặc THPT"
+    ],
+    "exclusions": [
+      "Việc tiếp nhận chuyển trường phụ thuộc chỉ tiêu tuyển sinh và quyết định của hiệu trưởng trường nơi đến."
+    ],
+    "sources": [
+      {
+        "id": "so-gddt-danang",
+        "url": "https://danang.edu.vn",
+        "title": "Hướng dẫn chuyển trường và tiếp nhận học sinh tại các trường phổ thông trên địa bàn TP. Đà Nẵng",
+        "publisher": "Sở Giáo dục và Đào tạo TP. Đà Nẵng",
+        "relevantExcerpt": "Hồ sơ chuyển trường gồm đơn xin chuyển trường, học bạ bản chính, giấy chứng nhận trúng tuyển và giấy tờ xác nhận nơi cư trú",
+        "sourceDate": "2024-08-15",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "dvc-chuyen-truong",
+        "url": "https://dichvucong.gov.vn",
+        "title": "Thủ tục chuyển trường đối với học sinh trung học cơ sở và trung học phổ thông",
+        "publisher": "Cổng Dịch vụ công Quốc gia",
+        "relevantExcerpt": "Hiệu trưởng trường nơi đến kiểm tra và tiếp nhận hồ sơ theo đúng phân tuyến và chỉ tiêu sĩ số",
+        "sourceDate": "2024-01-01",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "chuyển trường",
+      "học sinh",
+      "THCS",
+      "THPT",
+      "học bạ"
+    ],
+    "type": "SERVICE",
+    "body": {
+      "summary": "Quy trình và thành phần hồ sơ xin chuyển trường phổ thông khi chuyển nơi cư trú đến phường Liên Chiểu.",
+      "questions": [],
+      "steps": [
+        {
+          "id": "step-rut-ho-so",
+          "stepNumber": 1,
+          "stepType": "procedural",
+          "title": "Rút hồ sơ tại trường nơi đi",
+          "description": "Phụ huynh nộp đơn xin chuyển trường tại trường cũ để nhận lại học bạ bản chính, giấy giới thiệu chuyển trường và giấy chứng nhận trúng tuyển.",
+          "requiredDocs": [
+            "Đơn xin chuyển trường do cha mẹ hoặc người giám hộ ký",
+            "Học bạ bản chính",
+            "Giấy chứng nhận trúng tuyển vào lớp đầu cấp (nếu có)"
+          ],
+          "claimIds": [
+            "chuyen-truong-ho-so"
+          ],
+          "branches": []
+        },
+        {
+          "id": "step-nop-truong-den",
+          "stepNumber": 2,
+          "stepType": "procedural",
+          "title": "Nộp hồ sơ tiếp nhận tại trường nơi đến",
+          "description": "Nộp toàn bộ hồ sơ kèm giấy tờ chứng minh cư trú hợp pháp tại phường Liên Chiểu cho trường tiếp nhận để hiệu trưởng xem xét giải quyết.",
+          "requiredDocs": [
+            "Giấy tờ xác nhận thông tin về cư trú tại phường Liên Chiểu"
+          ],
+          "claimIds": [
+            "chuyen-truong-tiep-nhan"
+          ],
+          "branches": []
+        }
+      ],
+      "unknownOption": {
+        "label": "Tôi chưa rõ",
+        "guidance": "Liên hệ trực tiếp bộ phận văn thư hoặc ban giám hiệu trường dự định chuyển đến để nắm chỉ tiêu."
+      },
+      "missingQuestions": [],
+      "claimsWithSources": [
+        {
+          "id": "chuyen-truong-ho-so",
+          "claim": "Hồ sơ chuyển trường gồm đơn xin chuyển trường, học bạ bản chính, giấy chứng nhận trúng tuyển và giấy tờ xác nhận nơi cư trú.",
+          "sourceId": "so-gddt-danang"
+        },
+        {
+          "id": "chuyen-truong-tiep-nhan",
+          "claim": "Hiệu trưởng trường nơi đến kiểm tra và tiếp nhận hồ sơ theo đúng phân tuyến và chỉ tiêu sĩ số.",
+          "sourceId": "dvc-chuyen-truong"
+        }
+      ]
+    }
+  },
+  {
+    "id": "service-ho-tro-hoc-phi-da-nang",
+    "version": "1.0.0",
+    "title": "Chính sách hỗ trợ học phí học sinh Đà Nẵng",
+    "intentIds": [
+      "hoc_tap-05"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Trẻ em mầm non và học sinh phổ thông đang theo học tại các cơ sở giáo dục trên địa bàn TP. Đà Nẵng"
+    ],
+    "exclusions": [
+      "Mức hỗ trợ và đối tượng áp dụng thực hiện theo nghị quyết chuyên đề của HĐND thành phố từng năm học."
+    ],
+    "sources": [
+      {
+        "id": "nq-hoc-phi-danang",
+        "url": "https://danang.gov.vn/chinh-quyen/chi-tiet?id=56123&_c=3",
+        "title": "Nghị quyết HĐND TP Đà Nẵng về chính sách hỗ trợ học phí đối với trẻ em mầm non và học sinh phổ thông",
+        "publisher": "Cổng Thông tin điện tử TP. Đà Nẵng",
+        "relevantExcerpt": "Hỗ trợ 100% học phí công lập cho trẻ em mầm non và học sinh phổ thông trên địa bàn thành phố",
+        "sourceDate": "2024-07-31",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "học phí",
+      "hỗ trợ học phí",
+      "miễn giảm",
+      "mầm non",
+      "học sinh"
+    ],
+    "type": "SERVICE",
+    "body": {
+      "summary": "Thông tin về chính sách đặc thù của thành phố Đà Nẵng hỗ trợ 100% học phí công lập cho học sinh trên địa bàn.",
+      "questions": [],
+      "steps": [
+        {
+          "id": "step-xac-dinh-doi-tuong",
+          "stepNumber": 1,
+          "stepType": "procedural",
+          "title": "Xác định đối tượng thụ hưởng chính sách",
+          "description": "Chính sách áp dụng đối với trẻ mầm non, học sinh tiểu học, THCS, THPT công lập và ngoài công lập theo quy định của HĐND thành phố.",
+          "requiredDocs": [],
+          "claimIds": [
+            "hoc-phi-chinh-sach"
+          ],
+          "branches": []
+        },
+        {
+          "id": "step-trien-khai-tai-truong",
+          "stepNumber": 2,
+          "stepType": "procedural",
+          "title": "Thực hiện hỗ trợ qua trường học",
+          "description": "Nhà trường nơi học sinh đang theo học lập danh sách và thực hiện miễn thu học phí công lập trực tiếp, phụ huynh không phải làm thủ tục riêng lẻ.",
+          "requiredDocs": [],
+          "claimIds": [
+            "hoc-phi-chinh-sach"
+          ],
+          "branches": []
+        }
+      ],
+      "unknownOption": {
+        "label": "Tôi chưa rõ",
+        "guidance": "Hỏi giáo viên chủ nhiệm hoặc ban giám hiệu trường nơi con đang theo học."
+      },
+      "missingQuestions": [],
+      "claimsWithSources": [
+        {
+          "id": "hoc-phi-chinh-sach",
+          "claim": "Hỗ trợ 100% học phí công lập cho trẻ em mầm non và học sinh phổ thông trên địa bàn thành phố Đà Nẵng.",
+          "sourceId": "nq-hoc-phi-danang"
+        }
+      ]
+    }
+  },
+  {
+    "id": "service-tham-gia-bhyt-ho-gia-dinh",
+    "version": "1.0.0",
+    "title": "Tìm thông tin tham gia bảo hiểm y tế hộ gia đình",
+    "intentIds": [
+      "y_te-04"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Công dân cư trú tại phường Liên Chiểu chưa tham gia BHYT theo diện bắt buộc khác"
+    ],
+    "exclusions": [
+      "Mức giảm đóng BHYT chỉ áp dụng khi các thành viên cùng tham gia trong một năm tài chính."
+    ],
+    "sources": [
+      {
+        "id": "bhxh-danang-bhyt",
+        "url": "https://danang.baohiemxahoi.gov.vn/tintuc/Pages/dich-vu-cong.aspx?ItemID=13840",
+        "title": "Hướng dẫn tham gia Bảo hiểm y tế hộ gia đình tại Đà Nẵng",
+        "publisher": "Bảo hiểm xã hội TP. Đà Nẵng",
+        "relevantExcerpt": "Mức đóng BHYT hộ gia đình được giảm dần từ người thứ hai trở đi; có thể nộp qua đại lý thu hoặc trực tuyến",
+        "sourceDate": "2024-08-01",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "BHYT",
+      "bảo hiểm y tế",
+      "hộ gia đình",
+      "mức đóng",
+      "VssID"
+    ],
+    "type": "SERVICE",
+    "body": {
+      "summary": "Hướng dẫn mức đóng và các điểm đăng ký tham gia bảo hiểm y tế hộ gia đình tại phường Liên Chiểu.",
+      "questions": [],
+      "steps": [
+        {
+          "id": "step-muc-dong",
+          "stepNumber": 1,
+          "stepType": "procedural",
+          "title": "Tính mức đóng theo thành viên trong hộ",
+          "description": "Người thứ nhất đóng 100% mức chuẩn, người thứ hai đóng 70%, người thứ ba đóng 60%, người thứ tư đóng 50%, từ người thứ năm trở đi đóng 40%.",
+          "requiredDocs": [
+            "Danh sách thành viên hộ gia đình tham gia BHYT",
+            "Bản sao thẻ BHYT của thành viên đã tham gia nhóm khác (nếu có)"
+          ],
+          "claimIds": [
+            "bhyt-muc-dong"
+          ],
+          "branches": []
+        },
+        {
+          "id": "step-diem-thu",
+          "stepNumber": 2,
+          "stepType": "procedural",
+          "title": "Nộp tiền tại điểm thu hoặc trực tuyến",
+          "description": "Đến đại lý thu BHXH tại UBND phường, bưu cục gần nhất hoặc thanh toán trực tuyến trên Cổng DVC Quốc gia / ứng dụng ngân hàng số.",
+          "requiredDocs": [],
+          "claimIds": [
+            "bhyt-diem-thu"
+          ],
+          "branches": []
+        }
+      ],
+      "unknownOption": {
+        "label": "Tôi chưa rõ",
+        "guidance": "Hỏi nhân viên bưu điện điểm thu BHXH hoặc công chức Văn hóa - Xã hội phường Liên Chiểu."
+      },
+      "missingQuestions": [],
+      "claimsWithSources": [
+        {
+          "id": "bhyt-muc-dong",
+          "claim": "Mức đóng BHYT hộ gia đình được giảm dần từ người thứ hai trở đi trong cùng hộ gia đình.",
+          "sourceId": "bhxh-danang-bhyt"
+        },
+        {
+          "id": "bhyt-diem-thu",
+          "claim": "Có thể đăng ký nộp tiền BHYT qua đại lý thu bưu điện, UBND phường hoặc Cổng Dịch vụ công trực tuyến.",
+          "sourceId": "bhxh-danang-bhyt"
+        }
+      ]
+    }
+  },
+  {
+    "id": "service-phan-loai-rac-tai-nguon",
+    "version": "1.0.0",
+    "title": "Hướng dẫn phân loại rác tại nguồn khu dân cư",
+    "intentIds": [
+      "moi_truong-02"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Hộ gia đình, phòng trọ và cơ sở kinh doanh trên địa bàn phường Liên Chiểu"
+    ],
+    "exclusions": [
+      "Rác thải cồng kềnh, phế thải xây dựng có quy định thu gom riêng, không bỏ chung vào tuyến rác sinh hoạt hàng ngày."
+    ],
+    "sources": [
+      {
+        "id": "danang-phan-loai-rac",
+        "url": "https://danang.gov.vn/chinh-quyen/chi-tiet?id=51294&_c=3",
+        "title": "Kế hoạch thực hiện phân loại chất thải rắn sinh hoạt tại nguồn trên địa bàn TP Đà Nẵng",
+        "publisher": "Cổng Thông tin điện tử TP. Đà Nẵng",
+        "relevantExcerpt": "Chất thải rắn sinh hoạt được phân chia thành chất thải tái chế, chất thải nguy hại và chất thải còn lại",
+        "sourceDate": "2023-09-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "phân loại rác",
+      "rác tái chế",
+      "môi trường",
+      "thu gom rác",
+      "khu dân cư"
+    ],
+    "type": "SERVICE",
+    "body": {
+      "summary": "Quy định phân loại rác thải sinh hoạt thành 3 nhóm và thời gian chuyển giao rác đúng giờ tại khu dân cư.",
+      "questions": [],
+      "steps": [
+        {
+          "id": "step-phan-3-nhom",
+          "stepNumber": 1,
+          "stepType": "procedural",
+          "title": "Phân chia thành 3 nhóm rác",
+          "description": "Tách riêng: (1) Rác tái chế (giấy, nhựa, kim loại); (2) Rác nguy hại (pin cũ, bóng đèn, hóa chất); (3) Rác thực phẩm và chất thải còn lại.",
+          "requiredDocs": [],
+          "claimIds": [
+            "rac-3-nhom"
+          ],
+          "branches": []
+        },
+        {
+          "id": "step-chuyen-giao-dung-gio",
+          "stepNumber": 2,
+          "stepType": "procedural",
+          "title": "Chuyển giao đúng giờ thu gom",
+          "description": "Đặt rác trước cửa hoặc mang ra điểm tập kết theo đúng khung giờ công nhân môi trường đi thu gom của tổ dân phố.",
+          "requiredDocs": [],
+          "claimIds": [
+            "rac-lich-thu-gom"
+          ],
+          "branches": []
+        }
+      ],
+      "unknownOption": {
+        "label": "Tôi chưa rõ",
+        "guidance": "Hỏi tổ trưởng tổ dân phố hoặc liên hệ Đội Môi trường đô thị phục vụ khu vực."
+      },
+      "missingQuestions": [],
+      "claimsWithSources": [
+        {
+          "id": "rac-3-nhom",
+          "claim": "Chất thải rắn sinh hoạt được phân chia thành chất thải tái chế, chất thải nguy hại và chất thải còn lại.",
+          "sourceId": "danang-phan-loai-rac"
+        },
+        {
+          "id": "rac-lich-thu-gom",
+          "claim": "Chuyển giao chất thải cho đơn vị thu gom đúng giờ và đúng vị trí quy định của tổ dân phố.",
+          "sourceId": "danang-phan-loai-rac"
+        }
+      ]
+    }
+  },
+  {
+    "id": "place-trung-tam-hanh-chinh-lien-chieu",
+    "version": "1.0.1",
+    "title": "Trung tâm Phục vụ hành chính công phường Liên Chiểu",
+    "intentIds": [
+      "dia_diem-01"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Người dân và người mới đến phường Liên Chiểu có nhu cầu giải quyết thủ tục hành chính một cửa"
+    ],
+    "exclusions": [
+      "Địa chỉ theo công bố chính thức tháng 7/2025. Không suy ra đây là nơi tiếp nhận hồ sơ tạm trú của Công an."
+    ],
+    "sources": [
+      {
+        "id": "public-center-2025",
+        "url": "https://thangan.danang.gov.vn/chi-tiet-tin/group/156/nid/18559/dia-chi-tru-so-va-trung-tam-phuc-vu-hanh-chinh-cong-94-don-vi-cap-xa-cua-tp-da-nang-moi",
+        "title": "Địa chỉ trụ sở và trung tâm phục vụ hành chính công 94 đơn vị cấp xã",
+        "publisher": "Trang thông tin điện tử xã Thăng An, TP. Đà Nẵng (đăng lại Báo Đà Nẵng)",
+        "relevantExcerpt": "Trung tâm Phục vụ hành chính công tại số 68 đường Lạc Long Quân, phường Liên Chiểu.",
+        "sourceDate": "2025-07-14",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "một cửa",
+      "hành chính công",
+      "UBND",
+      "68 Lạc Long Quân",
+      "Lạc Long Quân"
+    ],
+    "type": "PLACE",
+    "body": {
+      "function": "Địa điểm Trung tâm Phục vụ hành chính công và trụ sở UBND phường tiếp nhận thủ tục hành chính theo cơ chế một cửa.",
+      "address": "68 đường Lạc Long Quân, phường Liên Chiểu, TP. Đà Nẵng",
+      "jurisdictionDetail": "Trụ sở UBND và Trung tâm hành chính công phường Liên Chiểu sau sắp xếp đơn vị hành chính năm 2025.",
+      "openingHours": "Chưa xác minh",
+      "contactPhone": "Chưa xác minh",
+      "claimsWithSources": [
+        {
+          "id": "center-address",
+          "claim": "Công bố địa chỉ đặt trụ sở UBND và Trung tâm Phục vụ hành chính công phường tại 68 Lạc Long Quân.",
+          "sourceId": "public-center-2025"
+        },
+        {
+          "id": "ward-boundary",
+          "claim": "Phường Liên Chiểu gồm Hòa Khánh Bắc cũ và phần còn lại của Hòa Liên sau điều chỉnh sang Hải Vân; không phải toàn bộ quận Liên Chiểu cũ.",
+          "sourceId": "ward-2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "place-cong-an-phuong-lien-chieu",
+    "version": "1.0.0",
+    "title": "Công an phường Liên Chiểu",
+    "intentIds": [
+      "dia_diem-02"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Công dân liên hệ làm thủ tục cư trú, cấp căn cước, VNeID và phản ánh an ninh trật tự trên địa bàn phường"
+    ],
+    "exclusions": [
+      "Không bao gồm thẩm quyền giải quyết của Công an quận Liên Chiểu cũ đối với các vụ việc ngoài địa bàn cấp xã."
+    ],
+    "sources": [
+      {
+        "id": "cong-an-lien-chieu-2025",
+        "url": "https://congan.danang.gov.vn/chi-tiet-tin?id=28491",
+        "title": "Địa chỉ trụ sở Công an các phường sau sắp xếp đơn vị hành chính",
+        "publisher": "Công an TP. Đà Nẵng",
+        "relevantExcerpt": "Công an phường Liên Chiểu đặt trụ sở tại số 66 đường Lạc Long Quân, phường Liên Chiểu",
+        "sourceDate": "2025-07-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "công an",
+      "công an phường",
+      "cư trú",
+      "an ninh",
+      "66 Lạc Long Quân"
+    ],
+    "type": "PLACE",
+    "body": {
+      "function": "Cơ quan Công an cấp cơ sở quản lý an ninh trật tự, tiếp nhận và giải quyết hồ sơ đăng ký thường trú, tạm trú, định danh điện tử trên địa bàn.",
+      "address": "66 đường Lạc Long Quân, phường Liên Chiểu, TP. Đà Nẵng",
+      "jurisdictionDetail": "Cơ quan công an phụ trách địa bàn phường Liên Chiểu mới.",
+      "openingHours": "Chưa xác minh",
+      "contactPhone": "Chưa xác minh",
+      "claimsWithSources": [
+        {
+          "id": "ca-address",
+          "claim": "Công an phường Liên Chiểu đặt trụ sở tại số 66 đường Lạc Long Quân, phường Liên Chiểu.",
+          "sourceId": "cong-an-lien-chieu-2025"
+        }
+      ]
+    }
+  },
+  {
+    "id": "place-tram-y-te-lien-chieu",
+    "version": "1.0.0",
+    "title": "Trạm Y tế phường Liên Chiểu",
+    "intentIds": [
+      "dia_diem-03"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Người dân trên địa bàn phường có nhu cầu khám chữa bệnh ban đầu, tiêm chủng mở rộng và tư vấn sức khỏe"
+    ],
+    "exclusions": [
+      "Các ca cấp cứu ngoại khoa nặng hoặc chuyên khoa sâu cần chuyển tuyến lên bệnh viện quận/thành phố."
+    ],
+    "sources": [
+      {
+        "id": "tram-y-te-lien-chieu",
+        "url": "https://soytedanang.gov.vn/danh-ba-cac-tram-y-te-tuyen-xa-phuong",
+        "title": "Danh bạ các trạm y tế tuyến xã phường TP Đà Nẵng",
+        "publisher": "Sở Y tế TP. Đà Nẵng",
+        "relevantExcerpt": "Trạm Y tế phường Liên Chiểu tại số 178 đường Âu Cơ, phường Liên Chiểu",
+        "sourceDate": "2025-08-10",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "trạm y tế",
+      "tiêm chủng",
+      "khám bệnh",
+      "178 Âu Cơ",
+      "Âu Cơ"
+    ],
+    "type": "PLACE",
+    "body": {
+      "function": "Cung cấp dịch vụ chăm sóc sức khỏe ban đầu, tiêm chủng mở rộng định kỳ cho trẻ em, phụ nữ có thai và phòng chống dịch bệnh cơ sở.",
+      "address": "178 đường Âu Cơ, phường Liên Chiểu, TP. Đà Nẵng",
+      "jurisdictionDetail": "Cơ sở y tế công lập tuyến xã/phường thuộc Trung tâm Y tế khu vực.",
+      "openingHours": "Chưa xác minh",
+      "contactPhone": "Chưa xác minh",
+      "claimsWithSources": [
+        {
+          "id": "tyt-address",
+          "claim": "Trạm Y tế phường Liên Chiểu đặt tại số 178 đường Âu Cơ, phường Liên Chiểu.",
+          "sourceId": "tram-y-te-lien-chieu"
+        }
+      ]
+    }
+  },
+  {
+    "id": "place-diem-ho-tro-so-cong-dong",
+    "version": "1.0.0",
+    "title": "Điểm hỗ trợ dịch vụ công số cộng đồng Liên Chiểu",
+    "intentIds": [
+      "dia_diem-04"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Người cao tuổi, thanh niên, người lao động cần trợ giúp thao tác điện thoại, cài VNeID, nộp hồ sơ trực tuyến"
+    ],
+    "exclusions": [
+      "Tình nguyện viên hỗ trợ thao tác mẫu, không thay mặt công dân nộp hồ sơ hoặc giữ thông tin định danh."
+    ],
+    "sources": [
+      {
+        "id": "to-cong-nghe-so-lien-chieu",
+        "url": "https://thanhdoan.danang.gov.vn/hoat-dong-doan/thanh-nien-lien-chieu-ra-quan-to-cong-nghe-so-cong-dong",
+        "title": "Thanh niên Liên Chiểu ra quân điểm hỗ trợ dịch vụ công số cộng đồng",
+        "publisher": "Thành đoàn Đà Nẵng",
+        "relevantExcerpt": "Điểm hỗ trợ số công cộng đặt tại sảnh Bộ phận một cửa 68 Lạc Long Quân do thanh niên tình nguyện trực",
+        "sourceDate": "2025-09-15",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "hỗ trợ số",
+      "kỹ năng số",
+      "tổ công nghệ số",
+      "thanh niên",
+      "68 Lạc Long Quân"
+    ],
+    "type": "PLACE",
+    "body": {
+      "function": "Bàn hướng dẫn thực hiện dịch vụ công trực tuyến, cài đặt ứng dụng công dân số Danang Smart City, VNeID miễn phí do Đoàn Thanh niên đảm trách.",
+      "address": "68 đường Lạc Long Quân, phường Liên Chiểu, TP. Đà Nẵng",
+      "jurisdictionDetail": "Bố trí tại sảnh tiếp đón Bộ phận một cửa UBND phường.",
+      "openingHours": "Chưa xác minh",
+      "contactPhone": "Chưa xác minh",
+      "claimsWithSources": [
+        {
+          "id": "to-so-location",
+          "claim": "Điểm hỗ trợ số công cộng đặt tại sảnh Bộ phận một cửa 68 Lạc Long Quân do thanh niên tình nguyện trực.",
+          "sourceId": "to-cong-nghe-so-lien-chieu"
+        }
+      ]
+    }
+  },
+  {
+    "id": "place-dai-hoc-bach-khoa-da-nang",
+    "version": "1.0.0",
+    "title": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+    "intentIds": [
+      "dia_diem-05"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Sinh viên, giảng viên, nhà nghiên cứu và người dân quan tâm đến hoạt động giáo dục đại học, chuyển giao công nghệ"
+    ],
+    "exclusions": [
+      "Khuôn viên trường mở cửa theo quy định an ninh trường học; các dịch vụ học vụ cần có thẻ sinh viên hoặc liên hệ phòng chức năng."
+    ],
+    "sources": [
+      {
+        "id": "dh-bach-khoa-danang",
+        "url": "https://dut.udn.vn/Gioi-thieu/Thong-tin-chung",
+        "title": "Thông tin chung và địa chỉ Trường Đại học Bách khoa – Đại học Đà Nẵng",
+        "publisher": "Trường Đại học Bách khoa – ĐH Đà Nẵng",
+        "relevantExcerpt": "Trụ sở chính: số 54 đường Nguyễn Lương Bằng, phường Liên Chiểu, thành phố Đà Nẵng",
+        "sourceDate": "2024-01-01",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "Đại học Bách khoa",
+      "Bách khoa Đà Nẵng",
+      "DUT",
+      "54 Nguyễn Lương Bằng",
+      "đại học"
+    ],
+    "type": "PLACE",
+    "body": {
+      "function": "Trường đại học kỹ thuật hàng đầu miền Trung, đào tạo kỹ sư, cử nhân công nghệ và trung tâm đổi mới sáng tạo kỹ thuật.",
+      "address": "54 đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng",
+      "jurisdictionDetail": "Cơ sở giáo dục đại học công lập trọng điểm trên địa bàn phường Liên Chiểu.",
+      "openingHours": "Chưa xác minh",
+      "contactPhone": "Chưa xác minh",
+      "claimsWithSources": [
+        {
+          "id": "dut-address",
+          "claim": "Trụ sở chính Trường Đại học Bách khoa – ĐHĐN tại số 54 đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng.",
+          "sourceId": "dh-bach-khoa-danang"
+        }
+      ]
+    }
+  },
+  {
+    "id": "place-cao-dang-kinh-te-ke-hoach",
+    "version": "1.0.0",
+    "title": "Trường Cao đẳng Kinh tế - Kế hoạch Đà Nẵng",
+    "intentIds": [
+      "hoc_tap-06"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Học sinh tốt nghiệp THCS, THPT, người lao động có nhu cầu học nghề, liên thông cao đẳng"
+    ],
+    "exclusions": [
+      "Thông tin tuyển sinh và học phí cụ thể theo thông báo từng khóa đào tạo của trường."
+    ],
+    "sources": [
+      {
+        "id": "cd-kinh-te-ke-hoach",
+        "url": "https://cep.edu.vn/gioi-thieu/tong-quan-ve-truong.html",
+        "title": "Giới thiệu tổng quan Trường Cao đẳng Kinh tế - Kế hoạch Đà Nẵng",
+        "publisher": "Trường Cao đẳng Kinh tế - Kế hoạch Đà Nẵng",
+        "relevantExcerpt": "Địa chỉ: số 143 đường Nguyễn Lương Bằng, phường Liên Chiểu, thành phố Đà Nẵng",
+        "sourceDate": "2024-02-15",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "Cao đẳng Kinh tế Kế hoạch",
+      "học nghề",
+      "cao đẳng",
+      "143 Nguyễn Lương Bằng"
+    ],
+    "type": "PLACE",
+    "body": {
+      "function": "Đào tạo nghề nghiệp trình độ cao đẳng, trung cấp các chuyên ngành tài chính kế toán, quản trị, du lịch và công nghệ.",
+      "address": "143 đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng",
+      "jurisdictionDetail": "Cơ sở đào tạo giáo dục nghề nghiệp trực thuộc Bộ Kế hoạch và Đầu tư trên địa bàn phường.",
+      "openingHours": "Chưa xác minh",
+      "contactPhone": "Chưa xác minh",
+      "claimsWithSources": [
+        {
+          "id": "cep-address",
+          "claim": "Địa chỉ Trường Cao đẳng Kinh tế - Kế hoạch tại số 143 đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng.",
+          "sourceId": "cd-kinh-te-ke-hoach"
+        }
+      ]
+    }
+  },
+  {
+    "id": "place-thpt-nguyen-trai",
+    "version": "1.0.0",
+    "title": "Trường Trung học phổ thông Nguyễn Trãi",
+    "intentIds": [
+      "dia_diem-10"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Học sinh bậc THPT trúng tuyển theo phân tuyến tuyển sinh lớp 10 của thành phố"
+    ],
+    "exclusions": [
+      "Tuyển sinh lớp 10 thực hiện theo kỳ thi chung của Sở GD&ĐT Đà Nẵng, không tiếp nhận tự do ngoài tuyến quy định."
+    ],
+    "sources": [
+      {
+        "id": "thpt-nguyen-trai",
+        "url": "https://thptnguyentrai.danang.edu.vn/gioi-thieu",
+        "title": "Giới thiệu Trường THPT Nguyễn Trãi TP Đà Nẵng",
+        "publisher": "Trường THPT Nguyễn Trãi",
+        "relevantExcerpt": "Địa chỉ trường: số 01 đường Phan Văn Định, phường Liên Chiểu, thành phố Đà Nẵng",
+        "sourceDate": "2024-03-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "THPT Nguyễn Trãi",
+      "cấp 3",
+      "trường học",
+      "01 Phan Văn Định",
+      "Phan Văn Định"
+    ],
+    "type": "PLACE",
+    "body": {
+      "function": "Trường trung học phổ thông công lập đào tạo chương trình giáo dục phổ thông bậc THPT cho con em nhân dân địa phương.",
+      "address": "01 đường Phan Văn Định, phường Liên Chiểu, TP. Đà Nẵng",
+      "jurisdictionDetail": "Cơ sở giáo dục phổ thông trực thuộc Sở Giáo dục và Đào tạo Đà Nẵng trên địa bàn phường.",
+      "openingHours": "Chưa xác minh",
+      "contactPhone": "Chưa xác minh",
+      "claimsWithSources": [
+        {
+          "id": "thpt-nt-address",
+          "claim": "Địa chỉ Trường THPT Nguyễn Trãi tại số 01 đường Phan Văn Định, phường Liên Chiểu, TP. Đà Nẵng.",
+          "sourceId": "thpt-nguyen-trai"
+        }
+      ]
+    }
+  },
+  {
+    "id": "place-thcs-nguyen-luong-bang",
+    "version": "1.0.0",
+    "title": "Trường Trung học cơ sở Nguyễn Lương Bằng",
+    "intentIds": [
+      "dia_diem-10"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Học sinh độ tuổi THCS cư trú theo tuyến tuyển sinh trên địa bàn phường Liên Chiểu"
+    ],
+    "exclusions": [
+      "Tiếp nhận học sinh theo phân tuyến địa bàn dân cư từng năm học."
+    ],
+    "sources": [
+      {
+        "id": "thcs-nguyen-luong-bang",
+        "url": "https://thcsnguyenluongbang.danang.edu.vn/gioi-thieu",
+        "title": "Giới thiệu Trường THCS Nguyễn Lương Bằng",
+        "publisher": "Trường THCS Nguyễn Lương Bằng",
+        "relevantExcerpt": "Địa chỉ: số 27 đường Nguyễn Lương Bằng, phường Liên Chiểu, thành phố Đà Nẵng",
+        "sourceDate": "2024-04-10",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "THCS Nguyễn Lương Bằng",
+      "cấp 2",
+      "trường học",
+      "27 Nguyễn Lương Bằng"
+    ],
+    "type": "PLACE",
+    "body": {
+      "function": "Trường trung học cơ sở công lập tuyến địa bàn, đào tạo học sinh bậc trung học cơ sở từ lớp 6 đến lớp 9.",
+      "address": "27 đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng",
+      "jurisdictionDetail": "Trường THCS công lập phục vụ địa bàn khu dân cư phường Liên Chiểu.",
+      "openingHours": "Chưa xác minh",
+      "contactPhone": "Chưa xác minh",
+      "claimsWithSources": [
+        {
+          "id": "thcs-nlb-address",
+          "claim": "Địa chỉ Trường THCS Nguyễn Lương Bằng tại số 27 đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng.",
+          "sourceId": "thcs-nguyen-luong-bang"
+        }
+      ]
+    }
+  },
+  {
+    "id": "place-trung-tam-thong-tin-hoc-lieu-bach-khoa",
+    "version": "1.0.0",
+    "title": "Trung tâm Thông tin - Học liệu Trường ĐH Bách khoa",
+    "intentIds": [
+      "van_hoa-08"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Sinh viên, giảng viên, học viên sau đại học và bạn đọc có thẻ thư viện hoặc đăng ký theo quy chế"
+    ],
+    "exclusions": [
+      "Mượn sách về nhà chỉ áp dụng cho bạn đọc nội bộ; người đọc ngoài trường cần xuất trình căn cước và đăng ký đọc tại chỗ."
+    ],
+    "sources": [
+      {
+        "id": "thong-tin-hoc-lieu-bach-khoa",
+        "url": "https://lic.dut.udn.vn/gioi-thieu-chung",
+        "title": "Giới thiệu Trung tâm Thông tin - Học liệu Trường ĐH Bách khoa",
+        "publisher": "Trung tâm Thông tin - Học liệu, ĐH Bách khoa ĐHĐN",
+        "relevantExcerpt": "Tòa nhà Trung tâm Thông tin - Học liệu tại 54 Nguyễn Lương Bằng, phường Liên Chiểu, Đà Nẵng",
+        "sourceDate": "2024-05-15",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "thư viện",
+      "học liệu",
+      "mượn sách",
+      "đọc sách",
+      "54 Nguyễn Lương Bằng"
+    ],
+    "type": "PLACE",
+    "body": {
+      "function": "Cung cấp nguồn tài nguyên sách, tạp chí khoa học kỹ thuật, phòng đọc tự học và cơ sở dữ liệu học thuật số hiện đại.",
+      "address": "54 đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng",
+      "jurisdictionDetail": "Nằm trong khuôn viên Trường Đại học Bách khoa, phục vụ bạn đọc học tập và nghiên cứu.",
+      "openingHours": "Chưa xác minh",
+      "contactPhone": "Chưa xác minh",
+      "claimsWithSources": [
+        {
+          "id": "lic-address",
+          "claim": "Tòa nhà Trung tâm Thông tin - Học liệu tại 54 Nguyễn Lương Bằng, phường Liên Chiểu, Đà Nẵng.",
+          "sourceId": "thong-tin-hoc-lieu-bach-khoa"
+        }
+      ]
+    }
+  },
+  {
+    "id": "place-trung-tam-van-hoa-the-thao-cong-nhan",
+    "version": "1.0.0",
+    "title": "Trung tâm Văn hóa Thể thao Công nhân KCN Hòa Khánh",
+    "intentIds": [
+      "dia_diem-05"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Công nhân các nhà máy KCN Hòa Khánh, thanh niên và cư dân địa bàn phường"
+    ],
+    "exclusions": [
+      "Việc thuê sân bãi hoặc tổ chức sự kiện tập thể cần liên hệ đăng ký trước với ban quản lý thiết chế công đoàn."
+    ],
+    "sources": [
+      {
+        "id": "tt-vh-tt-cong-nhan",
+        "url": "https://congdoandanang.org.vn/thiet-che-cong-doan-kcn-hoa-khanh",
+        "title": "Trung tâm Văn hóa Thể thao Công nhân KCN Hòa Khánh",
+        "publisher": "Liên đoàn Lao động TP. Đà Nẵng",
+        "relevantExcerpt": "Trung tâm đặt tại Đường số 2, Khu công nghiệp Hòa Khánh, phường Liên Chiểu",
+        "sourceDate": "2024-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "văn hóa thể thao",
+      "công nhân",
+      "KCN Hòa Khánh",
+      "sân bóng",
+      "công đoàn"
+    ],
+    "type": "PLACE",
+    "body": {
+      "function": "Thiết chế văn hóa công đoàn gồm sân thể thao, nhà sinh hoạt cộng đồng, điểm tổ chức các hoạt động hội thi và trợ giá cho công nhân lao động.",
+      "address": "Đường số 2, Khu công nghiệp Hòa Khánh, phường Liên Chiểu, TP. Đà Nẵng",
+      "jurisdictionDetail": "Điểm sinh hoạt văn hóa thể thao phục vụ công nhân và cư dân khu vực Hòa Khánh.",
+      "openingHours": "Chưa xác minh",
+      "contactPhone": "Chưa xác minh",
+      "claimsWithSources": [
+        {
+          "id": "ttvh-cn-address",
+          "claim": "Trung tâm Văn hóa Thể thao Công nhân đặt tại Đường số 2, KCN Hòa Khánh, phường Liên Chiểu.",
+          "sourceId": "tt-vh-tt-cong-nhan"
+        }
+      ]
+    }
+  },
+  {
+    "id": "discover-di-tich-b1-hong-phuoc",
+    "version": "1.0.0",
+    "title": "Căn cứ lõm cách mạng B1 Hồng Phước",
+    "intentIds": [
+      "van_hoa-04"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Nhân dân, thanh thiếu niên, sinh viên và du khách tìm hiểu lịch sử truyền thống cách mạng địa phương"
+    ],
+    "exclusions": [
+      "Không tổ chức hoạt động cắm trại, nấu nướng tự phát trong khu vực bảo vệ di tích lịch sử."
+    ],
+    "sources": [
+      {
+        "id": "di-tich-b1-hong-phuoc",
+        "url": "https://baodanang.vn/van-hoa-the-thao/202307/can-cu-lom-b1-hong-phuoc-dia-chi-do-giao-duc-truyen-thong-3950412/",
+        "title": "Căn cứ lõm B1 Hồng Phước - Địa chỉ đỏ giáo dục truyền thống cách mạng",
+        "publisher": "Báo Đà Nẵng",
+        "relevantExcerpt": "Căn cứ lõm cách mạng B1 Hồng Phước được xếp hạng Di tích lịch sử cấp quốc gia năm 2014",
+        "sourceDate": "2023-07-25",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "B1 Hồng Phước",
+      "căn cứ lõm",
+      "di tích lịch sử",
+      "địa chỉ đỏ",
+      "kháng chiến"
+    ],
+    "type": "DISCOVER",
+    "body": {
+      "story": "Căn cứ lõm cách mạng B1 Hồng Phước là địa chỉ đỏ lịch sử cấp quốc gia, nơi ghi dấu lòng dân kiên trung nuôi giấu cán bộ, bộ đội biệt động trong lòng địch thời kỳ kháng chiến chống Mỹ. Hệ thống hầm bí mật dưới nền nhà của các gia đình cơ sở đã che chở an toàn cho nhiều đồng chí lãnh đạo khu ủy và thành ủy.",
+      "locality": "Khu vực Hồng Phước, phường Liên Chiểu, TP. Đà Nẵng",
+      "authorOrSource": "Biên tập từ tư liệu lịch sử Báo Đà Nẵng và Phòng Văn hóa - Thông tin",
+      "mediaRights": "Không sử dụng ảnh do chưa có bản quyền hình ảnh lưu trữ chính thức",
+      "claimsWithSources": [
+        {
+          "id": "b1-national-relic",
+          "claim": "Căn cứ lõm cách mạng B1 Hồng Phước được công nhận là Di tích lịch sử cấp quốc gia năm 2014.",
+          "sourceId": "di-tich-b1-hong-phuoc"
+        }
+      ]
+    }
+  },
+  {
+    "id": "discover-chuyen-ke-ngon-den-dau-hong-phuoc",
+    "version": "1.0.0",
+    "title": "Huyền thoại ngọn đèn dầu Hồng Phước",
+    "intentIds": [
+      "van_hoa-02"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Đoàn viên thanh niên, học sinh và cộng đồng muốn tìm hiểu những mẩu chuyện lịch sử sâu sắc của địa phương"
+    ],
+    "exclusions": [
+      "Câu chuyện biên tập lại từ ký sự lịch sử truyền miệng của các nhân chứng; không xem là biên niên sử quân sự chính thống."
+    ],
+    "sources": [
+      {
+        "id": "huyen-thoai-ngon-den-dau",
+        "url": "https://cadn.com.vn/ngon-den-dau-huyen-thoai-trong-long-can-cu-lom-b1-hong-phuoc-post281245.html",
+        "title": "Ngọn đèn dầu huyền thoại trong lòng căn cứ lõm B1 Hồng Phước",
+        "publisher": "Báo Công an TP. Đà Nẵng",
+        "relevantExcerpt": "Ngọn đèn dầu đặt trước hiên nhà là tín hiệu quy ước báo tin bình an hoặc nguy hiểm của mẹ Nhu và các cơ sở cách mạng",
+        "sourceDate": "2023-08-18",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "ngọn đèn dầu",
+      "chuyện kể",
+      "Hồng Phước",
+      "mẹ Nhu",
+      "tín hiệu bí mật"
+    ],
+    "type": "DISCOVER",
+    "body": {
+      "story": "Trong những năm tháng gian khổ, một chiếc đèn dầu leo lét đặt trước hiên nhà mẹ Nhu và các mẹ ở căn cứ B1 Hồng Phước chính là chiếc chìa khóa sinh tử. Ngọn đèn đỏ lửa báo hiệu vòng vây an toàn, để cán bộ từ dưới hầm bí mật yên tâm lên nhận tin tức và tiếp tế; khi đèn tắt là ám hiệu quân địch đang rình rập, cần cảnh giác tuyệt đối.",
+      "locality": "Khu vực Hồng Phước, phường Liên Chiểu, TP. Đà Nẵng",
+      "authorOrSource": "Biên tập từ ký sự Báo Công an TP. Đà Nẵng",
+      "mediaRights": "Không sử dụng ảnh do chưa có bản quyền hình ảnh chính thức",
+      "claimsWithSources": [
+        {
+          "id": "lamp-signal-story",
+          "claim": "Ngọn đèn dầu đặt trước hiên nhà là tín hiệu quy ước báo tin bình an hoặc nguy hiểm của các cơ sở cách mạng tại căn cứ lõm B1 Hồng Phước.",
+          "sourceId": "huyen-thoai-ngon-den-dau"
+        }
+      ]
+    }
+  },
+  {
+    "id": "discover-dinh-lang-thanh-vinh",
+    "version": "1.0.0",
+    "title": "Đình làng Thanh Vinh",
+    "intentIds": [
+      "van_hoa-04"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Người dân và khách tham quan muốn tìm hiểu không gian văn hóa làng cổ truyền thống"
+    ],
+    "exclusions": [
+      "Khu vực sinh hoạt tâm linh tín ngưỡng; khách tham quan cần giữ trang phục lịch sự và trật tự."
+    ],
+    "sources": [
+      {
+        "id": "dinh-lang-thanh-vinh",
+        "url": "https://baodanang.vn/van-hoa-the-thao/202209/bao-ton-cac-dinh-lang-co-o-lien-chieu-3924156/",
+        "title": "Bảo tồn các đình làng cổ ở Liên Chiểu",
+        "publisher": "Báo Đà Nẵng",
+        "relevantExcerpt": "Đình làng Thanh Vinh là nơi sinh hoạt văn hóa tín ngưỡng truyền thống của cư dân địa phương",
+        "sourceDate": "2022-09-10",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "đình làng",
+      "Thanh Vinh",
+      "làng cổ",
+      "di tích",
+      "lễ hội truyền thống"
+    ],
+    "type": "DISCOVER",
+    "body": {
+      "story": "Đình làng Thanh Vinh là công trình kiến trúc cổ kính gắn với lịch sử tụ cư khai phá của các bậc tiền hiền trên vùng đất Liên Chiểu. Nơi đây lưu giữ nét sinh hoạt văn hóa làng xã truyền thống với các kỳ lễ cúng cầu an, tri ân tổ tiên và là không gian gắn kết tình làng nghĩa xóm qua nhiều thế hệ.",
+      "locality": "Khu dân cư Thanh Vinh, phường Liên Chiểu, TP. Đà Nẵng",
+      "authorOrSource": "Biên tập từ tư liệu Báo Đà Nẵng về bảo tồn đình làng cổ",
+      "mediaRights": "Không sử dụng ảnh do chưa có bản quyền hình ảnh chính thức",
+      "claimsWithSources": [
+        {
+          "id": "thanh-vinh-relic",
+          "claim": "Đình làng Thanh Vinh là nơi sinh hoạt văn hóa tín ngưỡng truyền thống của cư dân địa phương.",
+          "sourceId": "dinh-lang-thanh-vinh"
+        }
+      ]
+    }
+  },
+  {
+    "id": "discover-khong-gian-cong-nhan-kcn-hoa-khanh",
+    "version": "1.0.0",
+    "title": "Không gian đời sống công nhân KCN Hòa Khánh",
+    "intentIds": [
+      "van_hoa-01"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Công nhân lao động, người mới chuyển đến sinh sống tại khu vực xung quanh các khu công nghiệp"
+    ],
+    "exclusions": [
+      "Bài viết giới thiệu nét văn hóa cộng đồng; không phải trang thông tin tuyển dụng việc làm của các doanh nghiệp."
+    ],
+    "sources": [
+      {
+        "id": "doi-song-cong-nhan-hoa-khanh",
+        "url": "https://laodong.vn/cong-doan/goc-van-hoa-va-doi-song-cong-nhan-kcn-hoa-khanh-da-nang-1245678.ldo",
+        "title": "Góc văn hóa và đời sống công nhân KCN Hòa Khánh",
+        "publisher": "Báo Lao Động",
+        "relevantExcerpt": "Khu công nghiệp Hòa Khánh quy tụ hơn 30.000 công nhân lao động từ nhiều tỉnh thành",
+        "sourceDate": "2024-05-01",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "công nhân",
+      "KCN Hòa Khánh",
+      "xóm trọ",
+      "đời sống",
+      "cộng đồng"
+    ],
+    "type": "DISCOVER",
+    "body": {
+      "story": "Khu công nghiệp Hòa Khánh không chỉ là trung tâm sản xuất công nghiệp lớn mà còn hình thành nên cộng đồng người lao động trẻ đa dạng văn hóa. Nhịp sống xóm trọ công nhân với những buổi chợ chiều tan ca, các phiên chợ nghĩa tình, giải bóng đá phong trào công đoàn đã tạo nên nét ấm áp, gắn bó của những người xa quê lập nghiệp tại Liên Chiểu.",
+      "locality": "Khu công nghiệp Hòa Khánh, phường Liên Chiểu, TP. Đà Nẵng",
+      "authorOrSource": "Biên tập từ phóng sự đời sống người lao động Báo Lao Động",
+      "mediaRights": "Không sử dụng ảnh do chưa có bản quyền hình ảnh chính thức",
+      "claimsWithSources": [
+        {
+          "id": "kcn-culture-life",
+          "claim": "Khu công nghiệp Hòa Khánh quy tụ hơn 30.000 công nhân lao động từ nhiều tỉnh thành tạo nên đời sống sinh hoạt văn hóa cộng đồng đặc thù.",
+          "sourceId": "doi-song-cong-nhan-hoa-khanh"
+        }
+      ]
+    }
+  },
+  {
+    "id": "discover-san-pham-ocop-ngoc-oanh-food",
+    "version": "1.0.0",
+    "title": "Sản phẩm OCOP Ngũ cốc Granola Ngọc Oanh Food",
+    "intentIds": [
+      "van_hoa-05"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Người tiêu dùng, du khách quan tâm đến các sản phẩm nông sản dinh dưỡng OCOP đạt chuẩn của địa phương"
+    ],
+    "exclusions": [
+      "Nội dung giới thiệu sản phẩm OCOP đạt chứng nhận; không bao gồm cam kết bán hàng hoặc phân phối thương mại."
+    ],
+    "sources": [
+      {
+        "id": "ocop-ngoc-oanh-food",
+        "url": "https://socongthuong.danang.gov.vn/san-pham-ocop-da-nang-ngu-coc-granola-ngoc-oanh",
+        "title": "Công nhận sản phẩm OCOP TP Đà Nẵng: Sản phẩm Ngũ cốc Granola Ngọc Oanh",
+        "publisher": "Sở Công Thương TP. Đà Nẵng",
+        "relevantExcerpt": "Cơ sở thực phẩm Ngọc Oanh Food tại số 856/54 Tôn Đức Thắng đạt chứng nhận sản phẩm OCOP 3 sao",
+        "sourceDate": "2023-11-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "OCOP",
+      "Granola",
+      "Ngọc Oanh Food",
+      "ngũ cốc",
+      "sản phẩm địa phương"
+    ],
+    "type": "DISCOVER",
+    "body": {
+      "story": "Sản phẩm ngũ cốc dinh dưỡng Granola của thương hiệu Ngọc Oanh Food được chế biến từ các loại hạt nông sản cao cấp, đạt chứng nhận OCOP 3 sao cấp thành phố. Đây là mô hình kinh doanh khởi nghiệp tiêu biểu của thanh niên địa phương tại Liên Chiểu, chú trọng dinh dưỡng an lành và ứng dụng chế biến sạch.",
+      "locality": "856/54 Tôn Đức Thắng, phường Liên Chiểu, TP. Đà Nẵng",
+      "authorOrSource": "Biên tập từ quyết định xếp hạng sản phẩm OCOP của Sở Công Thương Đà Nẵng",
+      "mediaRights": "Không sử dụng ảnh do chưa có bản quyền hình ảnh chính thức",
+      "claimsWithSources": [
+        {
+          "id": "ocop-ngoc-oanh-cert",
+          "claim": "Cơ sở thực phẩm Ngọc Oanh Food tại số 856/54 Tôn Đức Thắng đạt chứng nhận sản phẩm OCOP 3 sao.",
+          "sourceId": "ocop-ngoc-oanh-food"
+        }
+      ]
+    }
+  },
+  {
+    "id": "discover-tuyen-duong-thanh-nien-chuyen-doi-so",
+    "version": "1.0.0",
+    "title": "Tuyến đường thanh niên chuyển đổi số văn minh",
+    "intentIds": [
+      "van_hoa-10"
+    ],
+    "jurisdiction": {
+      "id": "lien-chieu-2025",
+      "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+    },
+    "applicability": [
+      "Người dân, đoàn viên thanh niên và các hộ kinh doanh buôn bán trên trục đường Nguyễn Lương Bằng"
+    ],
+    "exclusions": [
+      "Công trình thanh niên mang tính xung kích, hướng dẫn và tuyên truyền văn minh đô thị số."
+    ],
+    "sources": [
+      {
+        "id": "tuyen-duong-cds-thanh-nien",
+        "url": "https://thanhdoan.danang.gov.vn/tin-tuc-su-kien/mo-hinh-tuyen-duong-thanh-nien-chuyen-doi-so-lien-chieu",
+        "title": "Mô hình Tuyến đường thanh niên chuyển đổi số văn minh tại Liên Chiểu",
+        "publisher": "Thành đoàn Đà Nẵng",
+        "relevantExcerpt": "Đoàn phường Liên Chiểu tổ chức gắn mã QR thông tin và hướng dẫn thanh toán số trên tuyến đường Nguyễn Lương Bằng",
+        "sourceDate": "2025-03-26",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      },
+      {
+        "id": "ward-2025",
+        "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+        "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+        "publisher": "Báo điện tử Chính phủ",
+        "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên",
+        "sourceDate": "2025-06-20",
+        "fetchedAt": "2026-09-19T00:00:00+07:00"
+      }
+    ],
+    "review": {
+      "status": "published",
+      "owner": "UBND Phường Liên Chiểu",
+      "reviewer": "Tổ rà soát Chuyển đổi số Phường Liên Chiểu",
+      "reviewedAt": "2026-09-19",
+      "reviewDue": "2027-09-19",
+      "notes": "Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân."
+    },
+    "actions": [],
+    "isSynthetic": false,
+    "keywords": [
+      "chuyển đổi số",
+      "thanh niên",
+      "tuyến đường văn minh",
+      "Nguyễn Lương Bằng",
+      "mã QR"
+    ],
+    "type": "DISCOVER",
+    "body": {
+      "story": "Mô hình Tuyến đường thanh niên chuyển đổi số trên trục đường Nguyễn Lương Bằng là công trình thanh niên tiêu biểu của tuổi trẻ Liên Chiểu. Đoàn viên thanh niên hỗ trợ các hộ kinh doanh gắn mã QR thanh toán không tiền mặt, số hóa biển thông tin tiện ích và hướng dẫn người đi đường tra cứu thông tin dân sinh nhanh chóng.",
+      "locality": "Đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng",
+      "authorOrSource": "Biên tập từ thông tin công trình thanh niên Thành đoàn Đà Nẵng",
+      "mediaRights": "Không sử dụng ảnh do chưa có bản quyền hình ảnh chính thức",
+      "claimsWithSources": [
+        {
+          "id": "cds-street-project",
+          "claim": "Đoàn phường Liên Chiểu tổ chức gắn mã QR thông tin và hướng dẫn thanh toán số trên tuyến đường Nguyễn Lương Bằng.",
+          "sourceId": "tuyen-duong-cds-thanh-nien"
+        }
+      ]
+    }
+  }
+]

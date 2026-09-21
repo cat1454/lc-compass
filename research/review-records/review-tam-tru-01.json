@@ -1,0 +1,31 @@
+{
+  "recordId": "rec-2026-09-18-01",
+  "reviewDate": "2026-09-18",
+  "reviewer": "Chờ xác nhận cán bộ chuyên trách có thẩm quyền (Hiện lưu hành nội bộ dưới dạng Draft)",
+  "reviewTarget": {
+    "jurisdiction": "Phường Liên Chiểu, TP. Đà Nẵng",
+    "reviewedCards": [
+      "service-tam-tru-lc",
+      "place-ca-lienchieu",
+      "place-ubnd-lienchieu",
+      "place-tyt-lienchieu",
+      "place-hotro-so",
+      "place-to-tuquan-32",
+      "discover-dinh-hoamy",
+      "discover-lang-nghe-note"
+    ]
+  },
+  "checklistCriteria": {
+    "sourceVerification": "Không đạt đối chiếu lại 19/09/2026: nguồn BCA matt=26277 là thị thực điện tử; source ID không tự chứng minh nội dung. Bản ghi này không phê duyệt dữ liệu thật.",
+    "jurisdictionBoundary": "Chưa được người rà soát nghiệp vụ xác nhận. Không dùng kết luận cũ để xuất bản. Bộ demo thật và căn cứ địa bàn mới lưu tại research/sourced-demo.",
+    "proceduralStepsClarity": "Đạt — Có phân nhánh rõ ràng cho trường hợp người thuê trọ chưa có hợp đồng văn bản",
+    "privacyCompliance": "Đạt — Không yêu cầu, không lưu trữ ảnh CCCD, mật khẩu VNeID hay dữ liệu cá nhân nhạy cảm"
+  },
+  "identifiedLimitations": [
+    "Chưa xác nhận người rà soát nội dung thật từ cơ quan chuyên môn; toàn bộ dữ liệu phục vụ thử nghiệm/demo gắn nhãn mô phỏng, chưa phát hành chính thức.",
+    "Số điện thoại tiếp nhận cuộc thi của BCH Đoàn phường (0905423233) không phải là số tổng đài hỗ trợ dịch vụ công; đã chuyển sang đầu mối Tổng đài 1022 Đà Nẵng và trực tiếp tại trụ sở.",
+    "Việc duyệt hồ sơ tạm trú do Công an Phường thực hiện trên hệ thống CSDL Quốc gia về Cư trú; ứng dụng chỉ đóng vai trò hướng dẫn chuẩn bị và cung cấp phiếu hành động.",
+    "Giờ làm việc và số điện thoại bàn có thể thay đổi theo lịch công tác thực tế của từng đơn vị."
+  ],
+  "approvalStatus": "PENDING_REAL_REVIEWER"
+}

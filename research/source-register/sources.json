@@ -1,0 +1,146 @@
+[
+  {
+    "id": "src-dvc-bca",
+    "title": "Thủ tục Đăng ký tạm trú trực tuyến - Cổng Dịch vụ công Bộ Công an",
+    "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26277",
+    "publisher": "Bộ Công an",
+    "publishedAt": "2024-01-01",
+    "fetchedAt": "2026-09-18",
+    "supportedFields": [
+      "Trình tự thực hiện đăng ký tạm trú",
+      "Thành phần hồ sơ: Tờ khai CT01, Giấy tờ chứng minh chỗ ở hợp pháp",
+      "Thời hạn giải quyết: 03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
+      "Lệ phí đăng ký trực tuyến"
+    ],
+    "unverifiedNotes": "Trường hợp vướng mắc khi nộp hồ sơ trực tuyến cần liên hệ trực tiếp Công an phường để được hướng dẫn.",
+    "auditDate": "2026-09-19",
+    "activeInSourcedDemo": false,
+    "auditStatus": "REJECTED_WRONG_PROCEDURE",
+    "auditNote": "URL thuộc thủ tục thị thực điện tử; không hỗ trợ bất kỳ khẳng định tạm trú nào."
+  },
+  {
+    "id": "src-luat-cutru",
+    "title": "Luật Cư trú số 68/2020/QH14",
+    "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-quy-dinh-phap-luat.html",
+    "publisher": "Quốc hội nước CHXHCN Việt Nam",
+    "publishedAt": "2020-11-13",
+    "fetchedAt": "2026-09-18",
+    "supportedFields": [
+      "Điều 27: Điều kiện đăng ký tạm trú",
+      "Điều 28: Hồ sơ, thủ tục đăng ký tạm trú, gia hạn tạm trú"
+    ],
+    "unverifiedNotes": "Quy định khung toàn quốc; việc xác nhận chỗ ở cụ thể tùy thuộc loại hình hợp đồng thuê nhà hoặc giấy bảo lãnh của chủ nhà.",
+    "auditDate": "2026-09-19",
+    "activeInSourcedDemo": false,
+    "auditStatus": "NOT_VERIFIED_FOR_DEMO",
+    "auditNote": "Không tái sử dụng các supportedFields cũ như bằng chứng đã xác minh. Xem research/sourced-demo/README.md."
+  },
+  {
+    "id": "src-ubnd-lienchieu",
+    "title": "Bộ phận Tiếp nhận và Trả kết quả một cửa - UBND Phường Liên Chiểu",
+    "url": "https://lienchieu.danang.gov.vn/dich-vu-cong-mot-cua",
+    "publisher": "UBND Phường Liên Chiểu, TP. Đà Nẵng",
+    "publishedAt": "2026-01-10",
+    "fetchedAt": "2026-09-18",
+    "supportedFields": [
+      "Địa chỉ trụ sở tiếp nhận hồ sơ hành chính",
+      "Thời gian làm việc từ thứ 2 đến thứ 6 (giờ hành chính)",
+      "Đầu mối hướng dẫn dịch vụ công trực tuyến"
+    ],
+    "unverifiedNotes": "Đăng ký cư trú thuộc thẩm quyền Công an phường, bộ phận Một cửa chỉ hỗ trợ hướng dẫn thao tác nộp trên Cổng DVC.",
+    "auditDate": "2026-09-19",
+    "activeInSourcedDemo": false,
+    "auditStatus": "NOT_VERIFIED_FOR_DEMO",
+    "auditNote": "Không tái sử dụng các supportedFields cũ như bằng chứng đã xác minh. Xem research/sourced-demo/README.md."
+  },
+  {
+    "id": "src-ca-lienchieu",
+    "title": "Trụ sở Công an Phường Liên Chiểu - Tiếp nhận đăng ký cư trú",
+    "url": "https://lienchieu.danang.gov.vn/an-ninh-trat-tu-cong-an-phuong",
+    "publisher": "Công an Phường Liên Chiểu",
+    "publishedAt": "2026-03-01",
+    "fetchedAt": "2026-09-18",
+    "supportedFields": [
+      "Địa chỉ trụ sở Công an phường",
+      "Bộ phận Cảnh sát Quản lý hành chính về trật tự xã hội (tiếp nhận tạm trú)",
+      "Số điện thoại trực ban hành chính"
+    ],
+    "unverifiedNotes": "Cần mang theo CCCD gốc và hợp đồng thuê trọ/bản cam kết khi đến làm việc trực tiếp.",
+    "auditDate": "2026-09-19",
+    "activeInSourcedDemo": false,
+    "auditStatus": "NOT_VERIFIED_FOR_DEMO",
+    "auditNote": "Không tái sử dụng các supportedFields cũ như bằng chứng đã xác minh. Xem research/sourced-demo/README.md."
+  },
+  {
+    "id": "src-tyt-lienchieu",
+    "title": "Trạm Y tế Phường Liên Chiểu - Chăm sóc sức khỏe ban đầu",
+    "url": "https://soyte.danang.gov.vn/chi-tiet-co-so-y-te/tram-y-te-phuong-lien-chieu",
+    "publisher": "Sở Y tế TP. Đà Nẵng / Trung tâm Y tế Liên Chiểu",
+    "publishedAt": "2026-02-15",
+    "fetchedAt": "2026-09-18",
+    "supportedFields": [
+      "Địa chỉ Trạm Y tế",
+      "Chức năng: Tiêm chủng mở rộng, khám sơ cấp cứu ban đầu, tư vấn BHYT học sinh - sinh viên",
+      "Số điện thoại trực cấp cứu y tế ban đầu"
+    ],
+    "unverifiedNotes": "Không thực hiện điều trị chuyên sâu; chuyển tuyến bệnh viện quận khi vượt quá khả năng.",
+    "auditDate": "2026-09-19",
+    "activeInSourcedDemo": false,
+    "auditStatus": "NOT_VERIFIED_FOR_DEMO",
+    "auditNote": "Không tái sử dụng các supportedFields cũ như bằng chứng đã xác minh. Xem research/sourced-demo/README.md."
+  },
+  {
+    "id": "src-congdoan-knt32",
+    "title": "Thành lập Tổ công nhân tự quản khu nhà trọ số 32 trên địa bàn phường Liên Chiểu",
+    "url": "https://congdoandanang.org.vn/bai-viet/cong-doan-phuong-lien-chieu-thanh-lap-to-cong-nhan-tu-quan-khu-nha-tro",
+    "publisher": "Liên đoàn Lao động TP. Đà Nẵng / Công đoàn Phường Liên Chiểu",
+    "publishedAt": "2026-06-08",
+    "fetchedAt": "2026-09-18",
+    "supportedFields": [
+      "Mô hình tổ công nhân tự quản tại khu nhà trọ",
+      "Kênh kết nối hỗ trợ người lao động, người thuê trọ mới đến",
+      "Đầu mối tiếp nhận hỗ trợ xác nhận chỗ ở hợp pháp tại khu nhà trọ"
+    ],
+    "unverifiedNotes": "Mô hình thí điểm tại cụm nhà trọ số 32; các khu vực khác cần liên hệ tổ trưởng tổ dân phố tương ứng.",
+    "auditDate": "2026-09-19",
+    "activeInSourcedDemo": false,
+    "auditStatus": "OPENED_LIMITED_SUPPORT",
+    "auditNote": "Bài có thật về tổ tự quản; không hỗ trợ việc xác nhận chỗ ở/hồ sơ tạm trú."
+  },
+  {
+    "id": "src-dinh-hoamy",
+    "title": "Di tích lịch sử - văn hóa Đình làng Hòa Mỹ, phường Liên Chiểu",
+    "url": "https://danangfantasticity.com/di-tich-dinh-lang-hoa-my-da-nang",
+    "publisher": "Trung tâm Xúc tiến Du lịch Đà Nẵng",
+    "publishedAt": "2025-11-20",
+    "fetchedAt": "2026-09-18",
+    "supportedFields": [
+      "Địa chỉ di tích Đình Hòa Mỹ tại địa bàn phường Liên Chiểu",
+      "Lịch sử thành lập làng và kiến trúc đình truyền thống miền Trung",
+      "Lễ hội truyền thống định kỳ"
+    ],
+    "unverifiedNotes": "Mở cửa tham quan miễn phí; cần giữ trang nghiêm khi vào khu vực chính điện.",
+    "auditDate": "2026-09-19",
+    "activeInSourcedDemo": false,
+    "auditStatus": "NOT_VERIFIED_FOR_DEMO",
+    "auditNote": "Không tái sử dụng các supportedFields cũ như bằng chứng đã xác minh. Xem research/sourced-demo/README.md."
+  },
+  {
+    "id": "src-diem-hotro-so",
+    "title": "Điểm Hỗ trợ Dịch vụ công trực tuyến và Chuyển đổi số cộng đồng Phường Liên Chiểu",
+    "url": "https://lienchieu.danang.gov.vn/chuyen-doi-so-thanh-nien",
+    "publisher": "Đoàn TNCS Hồ Chí Minh Phường Liên Chiểu",
+    "publishedAt": "2026-03-26",
+    "fetchedAt": "2026-09-18",
+    "supportedFields": [
+      "Điểm hỗ trợ thanh niên hướng dẫn công dân nộp DVC trực tuyến",
+      "Trang bị máy tính kết nối internet và đoàn viên trực hỗ trợ",
+      "Thời gian hoạt động: Thứ 3 và Thứ 5 hàng tuần (giờ hành chính)"
+    ],
+    "unverifiedNotes": "Đoàn viên chỉ hướng dẫn thao tác, công dân tự nhập mật khẩu và tài khoản VNeID.",
+    "auditDate": "2026-09-19",
+    "activeInSourcedDemo": false,
+    "auditStatus": "NOT_VERIFIED_FOR_DEMO",
+    "auditNote": "Không tái sử dụng các supportedFields cũ như bằng chứng đã xác minh. Xem research/sourced-demo/README.md."
+  }
+]

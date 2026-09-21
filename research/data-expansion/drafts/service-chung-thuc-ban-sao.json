@@ -1,0 +1,103 @@
+{
+  "id": "draft-service-chung-thuc-ban-sao",
+  "type": "SERVICE",
+  "title": "Chứng thực bản sao từ bản chính",
+  "version": "1.0.0",
+  "intentIds": [],
+  "jurisdiction": {
+    "id": "lien-chieu-2025",
+    "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+  },
+  "applicability": [
+    "Công dân có nhu cầu chứng thực bản sao từ bản chính tại UBND phường Liên Chiểu"
+  ],
+  "exclusions": [
+    "Bản thảo nghiên cứu chờ bổ sung intent mapping phù hợp trong constants.ts; KHÔNG gán nhầm intent cu_tru.",
+    "Bản sao không được chứng thực nếu bản chính bị tẩy xóa, sửa chữa, hư hỏng hoặc có nội dung trái pháp luật."
+  ],
+  "sources": [
+    {
+      "id": "nd-23-2015-nd-cp",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=179267",
+      "title": "Nghị định số 23/2015/NĐ-CP về cấp bản sao từ sổ gốc, chứng thực bản sao từ bản chính",
+      "publisher": "Cổng Thông tin điện tử Chính phủ",
+      "sourceDate": "2015-02-16",
+      "fetchedAt": "2026-09-19T00:00:00+07:00",
+      "relevantExcerpt": "Người yêu cầu chứng thực phải xuất trình bản chính giấy tờ, văn bản làm cơ sở để chứng thực bản sao"
+    },
+    {
+      "id": "dvc-chung-thuc-danang",
+      "url": "https://dichvucong.danang.gov.vn/thu-tuc-hanh-chinh/chi-tiet?maThuTuc=1.002235",
+      "title": "Thủ tục Chứng thực bản sao từ bản chính giấy tờ, văn bản do cơ quan có thẩm quyền của Việt Nam cấp hoặc chứng nhận",
+      "publisher": "Cổng Dịch vụ công TP. Đà Nẵng",
+      "sourceDate": "2024-05-10",
+      "fetchedAt": "2026-09-19T00:00:00+07:00",
+      "relevantExcerpt": "Ủy ban nhân dân cấp xã có thẩm quyền và trách nhiệm chứng thực bản sao từ bản chính"
+    }
+  ],
+  "review": {
+    "status": "draft",
+    "owner": "Nhóm biên tập LC Compass",
+    "reviewDue": "2026-10-19",
+    "notes": "Lưu bản thảo kỹ thuật. Không đưa vào catalog demo do INTENT_CATALOG hiện tại chưa có intent riêng cho nhóm thủ tục tư pháp - hộ tịch - chứng thực."
+  },
+  "actions": [],
+  "isSynthetic": false,
+  "keywords": [
+    "chứng thực",
+    "sao y",
+    "bản sao",
+    "bản chính",
+    "hộ tịch"
+  ],
+  "body": {
+    "summary": "Hướng dẫn thủ tục chứng thực bản sao từ bản chính tại UBND phường theo Nghị định 23/2015/NĐ-CP.",
+    "questions": [],
+    "steps": [
+      {
+        "id": "step-xuat-trinh",
+        "stepNumber": 1,
+        "stepType": "procedural",
+        "title": "Xuất trình bản chính và bản sao",
+        "description": "Người yêu cầu chứng thực xuất trình bản chính giấy tờ và bản photocopy cần chứng thực tại Bộ phận Tiếp nhận và Trả kết quả.",
+        "requiredDocs": [
+          "Bản chính giấy tờ, văn bản cần chứng thực",
+          "Bản sao cần chứng thực (hoặc yêu cầu cơ quan photocopy)"
+        ],
+        "claimIds": [
+          "claim-xuat-trinh"
+        ],
+        "branches": []
+      },
+      {
+        "id": "step-kiem-tra-ky-dong-dau",
+        "stepNumber": 2,
+        "stepType": "procedural",
+        "title": "Kiểm tra, đối chiếu và đóng dấu chứng thực",
+        "description": "Người thực hiện chứng thực kiểm tra bản chính, đối chiếu với bản sao, ký và đóng dấu chứng thực.",
+        "requiredDocs": [],
+        "claimIds": [
+          "claim-doi-chieu"
+        ],
+        "branches": []
+      }
+    ],
+    "unknownOption": {
+      "label": "Tôi chưa rõ",
+      "guidance": "Tham khảo Bộ phận Tiếp nhận và Trả kết quả UBND phường Liên Chiểu."
+    },
+    "missingQuestions": [],
+    "claimsWithSources": [
+      {
+        "id": "claim-xuat-trinh",
+        "claim": "Người yêu cầu chứng thực xuất trình bản chính giấy tờ, văn bản làm cơ sở để chứng thực bản sao.",
+        "sourceId": "nd-23-2015-nd-cp"
+      },
+      {
+        "id": "claim-doi-chieu",
+        "claim": "UBND cấp xã có thẩm quyền và trách nhiệm chứng thực bản sao từ bản chính giấy tờ do cơ quan có thẩm quyền cấp.",
+        "sourceId": "dvc-chung-thuc-danang"
+      }
+    ]
+  }
+}

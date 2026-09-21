@@ -1,0 +1,201 @@
+{
+  "id": "service-tam-tru-lc",
+  "version": "1.0.0",
+  "type": "SERVICE",
+  "title": "Hướng dẫn chuẩn bị hồ sơ đăng ký tạm trú tại phường Liên Chiểu",
+  "intentIds": ["cu_tru-01", "cu_tru-02", "cu_tru-04"],
+  "jurisdiction": {
+    "id": "phuong-lien-chieu",
+    "label": "Phường Liên Chiểu, TP. Đà Nẵng"
+  },
+  "applicability": [
+    "Công dân từ địa phương khác đến sinh sống, làm việc, học tập tại phường Liên Chiểu từ 30 ngày trở lên",
+    "Người lao động, học sinh, sinh viên thuê phòng trọ hoặc nhà nguyên căn trên địa bàn phường"
+  ],
+  "exclusions": [
+    "Đăng ký thường trú (nhập hộ khẩu gốc vào nhà sở hữu)",
+    "Trường hợp chỗ ở đang có tranh chấp khiếu nại hoặc nằm trong khu vực giải tỏa cấm cư trú",
+    "Công dân mang quốc tịch nước ngoài (thực hiện theo thủ tục khai báo tạm trú cho người nước ngoài)"
+  ],
+  "sources": [
+    {
+      "id": "src-dvc-bca",
+      "title": "Thủ tục Đăng ký tạm trú trực tuyến - Cổng Dịch vụ công Bộ Công an",
+      "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26277",
+      "publisher": "Bộ Công an",
+      "sourceDate": "2024-01-01",
+      "fetchedAt": "2026-09-18"
+    },
+    {
+      "id": "src-luat-cutru",
+      "title": "Luật Cư trú số 68/2020/QH14",
+      "url": "https://dichvucong.gov.vn/p/home/dvc-tthc-quy-dinh-phap-luat.html",
+      "publisher": "Quốc hội nước CHXHCN Việt Nam",
+      "sourceDate": "2020-11-13",
+      "fetchedAt": "2026-09-18"
+    },
+    {
+      "id": "src-congdoan-knt32",
+      "title": "Tổ công nhân tự quản khu nhà trọ số 32 trên địa bàn phường Liên Chiểu",
+      "url": "https://congdoandanang.org.vn/bai-viet/cong-doan-phuong-lien-chieu-thanh-lap-to-cong-nhan-tu-quan-khu-nha-tro",
+      "publisher": "Liên đoàn Lao động TP. Đà Nẵng",
+      "sourceDate": "2026-06-08",
+      "fetchedAt": "2026-09-18"
+    }
+  ],
+  "review": {
+    "status": "published",
+    "owner": "Đoàn TNCS Hồ Chí Minh Phường Liên Chiểu",
+    "reviewer": "Ban Chấp hành Đoàn Phường Liên Chiểu & Tổ Đề án Cuộc thi 2026",
+    "reviewedAt": "2026-09-18",
+    "reviewDue": "2026-12-31",
+    "notes": "Biên tập chính thức phục vụ cuộc thi Sáng tạo trẻ Liên Chiểu 2026"
+  },
+  "actions": [
+    {
+      "id": "act-open-portal",
+      "type": "external_link",
+      "label": "Mở Cổng Dịch vụ công Bộ Công an (Đăng ký tạm trú)",
+      "url": "https://dichvucong.bocongan.gov.vn"
+    },
+    {
+      "id": "act-view-checklist",
+      "type": "checklist_action",
+      "label": "Tạo phiếu ghi nhớ giấy tờ cần mang theo"
+    },
+    {
+      "id": "act-contact-support",
+      "type": "phone",
+      "label": "Hỏi điểm hỗ trợ số thanh niên phường",
+      "contact": "0905423233"
+    }
+  ],
+  "isSynthetic": false,
+  "body": {
+    "summary": "Quy trình chuẩn bị hồ sơ và các bước đăng ký tạm trú trực tuyến hoặc trực tiếp cho người thuê trọ tại phường Liên Chiểu.",
+    "unknownOption": {
+      "label": "Tôi chưa rõ thông tin này",
+      "guidance": "Nếu bạn chưa rõ về hợp đồng thuê nhà hoặc thông tin chủ hộ, hãy liên hệ chủ trọ hoặc Tổ công nhân tự quản để được hướng dẫn."
+    },
+    "steps": [
+      {
+        "id": "step-1-docs",
+        "stepNumber": 1,
+        "stepType": "procedural",
+        "title": "Bước 1: Chuẩn bị giấy tờ nhân thân và hợp đồng thuê trọ",
+        "description": "Chuẩn bị bản chụp hoặc bản gốc Căn cước công dân gắn chip. Kiểm tra tình trạng hợp đồng thuê nhà hoặc giấy thỏa thuận chỗ ở với chủ nhà trọ.",
+        "requiredDocs": [
+          "Căn cước công dân gắn chip (hoặc VNeID mức 2)",
+          "Hợp đồng thuê nhà/phòng trọ hoặc văn bản đồng ý cho ở của chủ hộ"
+        ],
+        "claimIds": ["claim-tt-docs"],
+        "branches": [
+          {
+            "when": {
+              "questionId": "q-housing-contract",
+              "equals": "no_contract"
+            },
+            "nextStepId": "step-support-contract",
+            "label": "Trường hợp chưa có hợp đồng: Xin xác nhận từ chủ trọ hoặc Tổ công nhân tự quản"
+          }
+        ],
+        "nextStepId": "step-2-form"
+      },
+      {
+        "id": "step-support-contract",
+        "stepNumber": 2,
+        "stepType": "procedural",
+        "title": "Bước bổ trợ: Xác nhận chỗ ở qua Tổ công nhân tự quản / Chủ trọ",
+        "description": "Nếu ở trọ chưa kịp ký hợp đồng bằng văn bản, liên hệ Tổ công nhân tự quản khu nhà trọ (như Tổ 32) hoặc chủ nhà trọ để được cấp giấy xác nhận chỗ ở hợp pháp phục vụ khai báo cư trú.",
+        "requiredDocs": [
+          "Giấy xác nhận tạm trú của chủ nhà/tổ tự quản khu trọ",
+          "Thông tin định danh của chủ hộ cho thuê"
+        ],
+        "claimIds": ["claim-tt-to32"],
+        "branches": [],
+        "nextStepId": "step-2-form"
+      },
+      {
+        "id": "step-2-form",
+        "stepNumber": 3,
+        "stepType": "procedural",
+        "title": "Bước 2: Điền tờ khai thay đổi thông tin cư trú (Mẫu CT01)",
+        "description": "Khai trực tuyến trên Cổng Dịch vụ công Bộ Công an hoặc điền mẫu CT01 giấy nếu nộp trực tiếp tại Công an phường Liên Chiểu.",
+        "requiredDocs": [
+          "Tờ khai CT01 đã điền đầy đủ thông tin",
+          "Ý kiến đồng ý của chủ hộ/chủ sở hữu chỗ ở hợp pháp"
+        ],
+        "claimIds": ["claim-tt-ct01"],
+        "branches": [],
+        "nextStepId": "step-3-submit"
+      },
+      {
+        "id": "step-3-submit",
+        "stepNumber": 4,
+        "stepType": "procedural",
+        "title": "Bước 3: Nộp hồ sơ và nhận kết quả thông báo",
+        "description": "Nộp hồ sơ trực tuyến hoặc nộp trực tiếp tại Công an phường Liên Chiểu. Thời hạn giải quyết trong vòng 03 ngày làm việc kể từ khi nhận đủ hồ sơ hợp lệ.",
+        "requiredDocs": [
+          "Mã hồ sơ trực tuyến (nếu nộp online)",
+          "Biên nhận hồ sơ (nếu nộp trực tiếp)"
+        ],
+        "claimIds": ["claim-tt-time"],
+        "branches": [],
+        "nextStepId": "step-4-guidance"
+      },
+      {
+        "id": "step-4-guidance",
+        "stepNumber": 5,
+        "stepType": "ui_guidance",
+        "title": "Bước 4: Theo dõi kết quả và lưu phiếu chuẩn bị",
+        "description": "Theo dõi trạng thái qua tin nhắn VNeID hoặc Cổng DVC. Sử dụng nút bên dưới để in hoặc lưu phiếu kiểm tra các mục đã hoàn tất.",
+        "requiredDocs": [],
+        "claimIds": [],
+        "branches": []
+      }
+    ],
+    "claimsWithSources": [
+      {
+        "id": "claim-tt-docs",
+        "claim": "Công dân chuẩn bị CCCD và giấy tờ chứng minh chỗ ở hợp pháp theo quy định Luật Cư trú 2020",
+        "sourceId": "src-luat-cutru"
+      },
+      {
+        "id": "claim-tt-to32",
+        "claim": "Tổ công nhân tự quản khu nhà trọ hỗ trợ người thuê trọ kết nối chính quyền và xác nhận chỗ ở",
+        "sourceId": "src-congdoan-knt32"
+      },
+      {
+        "id": "claim-tt-ct01",
+        "claim": "Người đăng ký tạm trú nộp tờ khai CT01 và đính kèm giấy tờ chứng minh chỗ ở",
+        "sourceId": "src-dvc-bca"
+      },
+      {
+        "id": "claim-tt-time",
+        "claim": "Thời hạn giải quyết đăng ký tạm trú là 03 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ",
+        "sourceId": "src-dvc-bca"
+      }
+    ],
+    "questions": [
+      {
+        "id": "q-housing-contract",
+        "prompt": "Bạn đã có hợp đồng thuê nhà hoặc giấy tờ xác nhận chỗ ở hợp pháp chưa?",
+        "options": [
+          {
+            "value": "has_contract",
+            "label": "Đã có hợp đồng thuê nhà có chữ ký chủ hộ"
+          },
+          {
+            "value": "no_contract",
+            "label": "Chưa có hợp đồng văn bản (đang ở trọ/ở nhờ)"
+          }
+        ],
+        "unknownOption": {
+          "value": "unknown",
+          "label": "Chưa rõ tình trạng hợp đồng",
+          "guidance": "Nếu chưa rõ, bạn nên hỏi chủ nhà trọ hoặc liên hệ Tổ tự quản khu trọ trước khi nộp hồ sơ."
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+﻿"id","version","title","intentIds","jurisdiction.id","jurisdiction.label","applicability","exclusions","review.status","review.owner","review.reviewer","review.reviewedAt","review.reviewDue","review.notes","isSynthetic","keywords","type","body.summary","body.unknownOption.label","body.unknownOption.guidance","body.missingQuestions","body.function","body.address","body.jurisdictionDetail","body.openingHours","body.contactPhone","body.story","body.locality","body.authorOrSource","body.mediaRights"
+"service-chuan-bi-tam-tru","1.0.1","Chuẩn bị thông tin đăng ký tạm trú","cu_tru-01","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Người dân và người mới đến phường Liên Chiểu
+Sinh viên, người lao động thuê trọ tại địa bàn phường","Đây là hướng dẫn chuẩn bị thông tin, chưa phải checklist hồ sơ đầy đủ đã được phường duyệt.
+Địa chỉ, giờ làm việc và điện thoại của cơ quan tiếp nhận cư trú tại phường: chưa xác minh.
+Không nhập số định danh, mật khẩu hoặc hồ sơ cá nhân vào bản demo.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","tạm trú
+thuê trọ
+người mới đến
+cư trú
+VNeID
+ký túc xá","SERVICE","Các việc cần chuẩn bị trước khi liên hệ cơ quan đăng ký cư trú; biên tập từ hướng dẫn Chính phủ tháng 7/2026.","Tôi chưa rõ","Mở nguồn bên dưới để đối chiếu trường hợp của mình; các tình huống chưa rõ cần hỏi cơ quan đăng ký cư trú.","","","","","","","","","",""
+"service-chuan-bi-thuong-tru","1.0.0","Chuẩn bị đăng ký thường trú","cu_tru-09","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Công dân chuyển từ tạm trú sang thường trú hoặc mới có chỗ ở hợp pháp tại phường Liên Chiểu","Hướng dẫn chuẩn bị hồ sơ theo quy định chung của Luật Cư trú; không thay thế quyết định thẩm duyệt của cơ quan đăng ký cư trú.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","thường trú
+chuyển khẩu
+hộ khẩu
+chỗ ở hợp pháp
+cư trú","SERVICE","Hướng dẫn các điều kiện và tài liệu cần chuẩn bị khi làm thủ tục đăng ký thường trú tại địa phương.","Tôi chưa rõ","Tham khảo hướng dẫn chi tiết trên Cổng Dịch vụ công Quốc gia hoặc liên hệ Công an phường Liên Chiểu.","","","","","","","","","",""
+"service-dang-nhap-dvc-cu-tru","1.0.0","Kênh chính thức và hỗ trợ đăng nhập cư trú","cu_tru-05","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Công dân gặp khó khăn khi đăng nhập hoặc thao tác thủ tục cư trú trực tuyến","Không cung cấp mật khẩu, mã OTP hoặc tài khoản cá nhân cho bất kỳ ai, kể cả người hỗ trợ.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","VNeID
+đăng nhập
+dịch vụ công
+định danh điện tử
+mức 2","SERVICE","Hướng dẫn sử dụng tài khoản định danh điện tử VNeID mức 2 để đăng nhập cổng dịch vụ công an toàn.","Tôi chưa rõ","Đến Điểm hỗ trợ số cộng đồng tại 68 Lạc Long Quân hoặc Công an phường để được hỗ trợ kích hoạt.","","","","","","","","","",""
+"service-tra-cuu-bo-sung-ho-so-cu-tru","1.0.0","Tra cứu và làm rõ yêu cầu bổ sung hồ sơ cư trú","cu_tru-06","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Công dân đã nộp hồ sơ cư trú trực tuyến và cần kiểm tra tiến độ hoặc nhận yêu cầu chỉnh sửa","Hệ thống demo không lưu trữ hay tra cứu trực tiếp dữ liệu cá nhân của công dân.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","tra cứu
+bổ sung hồ sơ
+tiến độ
+mã hồ sơ
+cư trú","SERVICE","Cách tra cứu tiến độ hồ sơ trực tuyến và các bước thực hiện khi cơ quan công an yêu cầu bổ sung giấy tờ.","Tôi chưa rõ","Mang mã hồ sơ đến Công an phường Liên Chiểu để được giải thích trực tiếp nội dung cần bổ sung.","","","","","","","","","",""
+"service-chuyen-truong-hoc-sinh","1.0.0","Hướng dẫn thủ tục chuyển trường phổ thông","hoc_tap-03","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Học sinh và phụ huynh chuyển chỗ ở đến phường Liên Chiểu có nhu cầu chuyển trường THCS hoặc THPT","Việc tiếp nhận chuyển trường phụ thuộc chỉ tiêu tuyển sinh và quyết định của hiệu trưởng trường nơi đến.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","chuyển trường
+học sinh
+THCS
+THPT
+học bạ","SERVICE","Quy trình và thành phần hồ sơ xin chuyển trường phổ thông khi chuyển nơi cư trú đến phường Liên Chiểu.","Tôi chưa rõ","Liên hệ trực tiếp bộ phận văn thư hoặc ban giám hiệu trường dự định chuyển đến để nắm chỉ tiêu.","","","","","","","","","",""
+"service-ho-tro-hoc-phi-da-nang","1.0.0","Chính sách hỗ trợ học phí học sinh Đà Nẵng","hoc_tap-05","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Trẻ em mầm non và học sinh phổ thông đang theo học tại các cơ sở giáo dục trên địa bàn TP. Đà Nẵng","Mức hỗ trợ và đối tượng áp dụng thực hiện theo nghị quyết chuyên đề của HĐND thành phố từng năm học.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","học phí
+hỗ trợ học phí
+miễn giảm
+mầm non
+học sinh","SERVICE","Thông tin về chính sách đặc thù của thành phố Đà Nẵng hỗ trợ 100% học phí công lập cho học sinh trên địa bàn.","Tôi chưa rõ","Hỏi giáo viên chủ nhiệm hoặc ban giám hiệu trường nơi con đang theo học.","","","","","","","","","",""
+"service-tham-gia-bhyt-ho-gia-dinh","1.0.0","Tìm thông tin tham gia bảo hiểm y tế hộ gia đình","y_te-04","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Công dân cư trú tại phường Liên Chiểu chưa tham gia BHYT theo diện bắt buộc khác","Mức giảm đóng BHYT chỉ áp dụng khi các thành viên cùng tham gia trong một năm tài chính.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","BHYT
+bảo hiểm y tế
+hộ gia đình
+mức đóng
+VssID","SERVICE","Hướng dẫn mức đóng và các điểm đăng ký tham gia bảo hiểm y tế hộ gia đình tại phường Liên Chiểu.","Tôi chưa rõ","Hỏi nhân viên bưu điện điểm thu BHXH hoặc công chức Văn hóa - Xã hội phường Liên Chiểu.","","","","","","","","","",""
+"service-phan-loai-rac-tai-nguon","1.0.0","Hướng dẫn phân loại rác tại nguồn khu dân cư","moi_truong-02","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Hộ gia đình, phòng trọ và cơ sở kinh doanh trên địa bàn phường Liên Chiểu","Rác thải cồng kềnh, phế thải xây dựng có quy định thu gom riêng, không bỏ chung vào tuyến rác sinh hoạt hàng ngày.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","phân loại rác
+rác tái chế
+môi trường
+thu gom rác
+khu dân cư","SERVICE","Quy định phân loại rác thải sinh hoạt thành 3 nhóm và thời gian chuyển giao rác đúng giờ tại khu dân cư.","Tôi chưa rõ","Hỏi tổ trưởng tổ dân phố hoặc liên hệ Đội Môi trường đô thị phục vụ khu vực.","","","","","","","","","",""
+"place-trung-tam-hanh-chinh-lien-chieu","1.0.1","Trung tâm Phục vụ hành chính công phường Liên Chiểu","dia_diem-01","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Người dân và người mới đến phường Liên Chiểu có nhu cầu giải quyết thủ tục hành chính một cửa","Địa chỉ theo công bố chính thức tháng 7/2025. Không suy ra đây là nơi tiếp nhận hồ sơ tạm trú của Công an.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","một cửa
+hành chính công
+UBND
+68 Lạc Long Quân
+Lạc Long Quân","PLACE","","","","","Địa điểm Trung tâm Phục vụ hành chính công và trụ sở UBND phường tiếp nhận thủ tục hành chính theo cơ chế một cửa.","68 đường Lạc Long Quân, phường Liên Chiểu, TP. Đà Nẵng","Trụ sở UBND và Trung tâm hành chính công phường Liên Chiểu sau sắp xếp đơn vị hành chính năm 2025.","Chưa xác minh","Chưa xác minh","","","",""
+"place-cong-an-phuong-lien-chieu","1.0.0","Công an phường Liên Chiểu","dia_diem-02","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Công dân liên hệ làm thủ tục cư trú, cấp căn cước, VNeID và phản ánh an ninh trật tự trên địa bàn phường","Không bao gồm thẩm quyền giải quyết của Công an quận Liên Chiểu cũ đối với các vụ việc ngoài địa bàn cấp xã.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","công an
+công an phường
+cư trú
+an ninh
+66 Lạc Long Quân","PLACE","","","","","Cơ quan Công an cấp cơ sở quản lý an ninh trật tự, tiếp nhận và giải quyết hồ sơ đăng ký thường trú, tạm trú, định danh điện tử trên địa bàn.","66 đường Lạc Long Quân, phường Liên Chiểu, TP. Đà Nẵng","Cơ quan công an phụ trách địa bàn phường Liên Chiểu mới.","Chưa xác minh","Chưa xác minh","","","",""
+"place-tram-y-te-lien-chieu","1.0.0","Trạm Y tế phường Liên Chiểu","dia_diem-03","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Người dân trên địa bàn phường có nhu cầu khám chữa bệnh ban đầu, tiêm chủng mở rộng và tư vấn sức khỏe","Các ca cấp cứu ngoại khoa nặng hoặc chuyên khoa sâu cần chuyển tuyến lên bệnh viện quận/thành phố.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","trạm y tế
+tiêm chủng
+khám bệnh
+178 Âu Cơ
+Âu Cơ","PLACE","","","","","Cung cấp dịch vụ chăm sóc sức khỏe ban đầu, tiêm chủng mở rộng định kỳ cho trẻ em, phụ nữ có thai và phòng chống dịch bệnh cơ sở.","178 đường Âu Cơ, phường Liên Chiểu, TP. Đà Nẵng","Cơ sở y tế công lập tuyến xã/phường thuộc Trung tâm Y tế khu vực.","Chưa xác minh","Chưa xác minh","","","",""
+"place-diem-ho-tro-so-cong-dong","1.0.0","Điểm hỗ trợ dịch vụ công số cộng đồng Liên Chiểu","dia_diem-04","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Người cao tuổi, thanh niên, người lao động cần trợ giúp thao tác điện thoại, cài VNeID, nộp hồ sơ trực tuyến","Tình nguyện viên hỗ trợ thao tác mẫu, không thay mặt công dân nộp hồ sơ hoặc giữ thông tin định danh.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","hỗ trợ số
+kỹ năng số
+tổ công nghệ số
+thanh niên
+68 Lạc Long Quân","PLACE","","","","","Bàn hướng dẫn thực hiện dịch vụ công trực tuyến, cài đặt ứng dụng công dân số Danang Smart City, VNeID miễn phí do Đoàn Thanh niên đảm trách.","68 đường Lạc Long Quân, phường Liên Chiểu, TP. Đà Nẵng","Bố trí tại sảnh tiếp đón Bộ phận một cửa UBND phường.","Chưa xác minh","Chưa xác minh","","","",""
+"place-dai-hoc-bach-khoa-da-nang","1.0.0","Trường Đại học Bách khoa – Đại học Đà Nẵng","dia_diem-05","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Sinh viên, giảng viên, nhà nghiên cứu và người dân quan tâm đến hoạt động giáo dục đại học, chuyển giao công nghệ","Khuôn viên trường mở cửa theo quy định an ninh trường học; các dịch vụ học vụ cần có thẻ sinh viên hoặc liên hệ phòng chức năng.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","Đại học Bách khoa
+Bách khoa Đà Nẵng
+DUT
+54 Nguyễn Lương Bằng
+đại học","PLACE","","","","","Trường đại học kỹ thuật hàng đầu miền Trung, đào tạo kỹ sư, cử nhân công nghệ và trung tâm đổi mới sáng tạo kỹ thuật.","54 đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng","Cơ sở giáo dục đại học công lập trọng điểm trên địa bàn phường Liên Chiểu.","Chưa xác minh","Chưa xác minh","","","",""
+"place-cao-dang-kinh-te-ke-hoach","1.0.0","Trường Cao đẳng Kinh tế - Kế hoạch Đà Nẵng","hoc_tap-06","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Học sinh tốt nghiệp THCS, THPT, người lao động có nhu cầu học nghề, liên thông cao đẳng","Thông tin tuyển sinh và học phí cụ thể theo thông báo từng khóa đào tạo của trường.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","Cao đẳng Kinh tế Kế hoạch
+học nghề
+cao đẳng
+143 Nguyễn Lương Bằng","PLACE","","","","","Đào tạo nghề nghiệp trình độ cao đẳng, trung cấp các chuyên ngành tài chính kế toán, quản trị, du lịch và công nghệ.","143 đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng","Cơ sở đào tạo giáo dục nghề nghiệp trực thuộc Bộ Kế hoạch và Đầu tư trên địa bàn phường.","Chưa xác minh","Chưa xác minh","","","",""
+"place-thpt-nguyen-trai","1.0.0","Trường Trung học phổ thông Nguyễn Trãi","dia_diem-10","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Học sinh bậc THPT trúng tuyển theo phân tuyến tuyển sinh lớp 10 của thành phố","Tuyển sinh lớp 10 thực hiện theo kỳ thi chung của Sở GD&ĐT Đà Nẵng, không tiếp nhận tự do ngoài tuyến quy định.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","THPT Nguyễn Trãi
+cấp 3
+trường học
+01 Phan Văn Định
+Phan Văn Định","PLACE","","","","","Trường trung học phổ thông công lập đào tạo chương trình giáo dục phổ thông bậc THPT cho con em nhân dân địa phương.","01 đường Phan Văn Định, phường Liên Chiểu, TP. Đà Nẵng","Cơ sở giáo dục phổ thông trực thuộc Sở Giáo dục và Đào tạo Đà Nẵng trên địa bàn phường.","Chưa xác minh","Chưa xác minh","","","",""
+"place-thcs-nguyen-luong-bang","1.0.0","Trường Trung học cơ sở Nguyễn Lương Bằng","dia_diem-10","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Học sinh độ tuổi THCS cư trú theo tuyến tuyển sinh trên địa bàn phường Liên Chiểu","Tiếp nhận học sinh theo phân tuyến địa bàn dân cư từng năm học.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","THCS Nguyễn Lương Bằng
+cấp 2
+trường học
+27 Nguyễn Lương Bằng","PLACE","","","","","Trường trung học cơ sở công lập tuyến địa bàn, đào tạo học sinh bậc trung học cơ sở từ lớp 6 đến lớp 9.","27 đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng","Trường THCS công lập phục vụ địa bàn khu dân cư phường Liên Chiểu.","Chưa xác minh","Chưa xác minh","","","",""
+"place-trung-tam-thong-tin-hoc-lieu-bach-khoa","1.0.0","Trung tâm Thông tin - Học liệu Trường ĐH Bách khoa","van_hoa-08","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Sinh viên, giảng viên, học viên sau đại học và bạn đọc có thẻ thư viện hoặc đăng ký theo quy chế","Mượn sách về nhà chỉ áp dụng cho bạn đọc nội bộ; người đọc ngoài trường cần xuất trình căn cước và đăng ký đọc tại chỗ.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","thư viện
+học liệu
+mượn sách
+đọc sách
+54 Nguyễn Lương Bằng","PLACE","","","","","Cung cấp nguồn tài nguyên sách, tạp chí khoa học kỹ thuật, phòng đọc tự học và cơ sở dữ liệu học thuật số hiện đại.","54 đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng","Nằm trong khuôn viên Trường Đại học Bách khoa, phục vụ bạn đọc học tập và nghiên cứu.","Chưa xác minh","Chưa xác minh","","","",""
+"place-trung-tam-van-hoa-the-thao-cong-nhan","1.0.0","Trung tâm Văn hóa Thể thao Công nhân KCN Hòa Khánh","dia_diem-05","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Công nhân các nhà máy KCN Hòa Khánh, thanh niên và cư dân địa bàn phường","Việc thuê sân bãi hoặc tổ chức sự kiện tập thể cần liên hệ đăng ký trước với ban quản lý thiết chế công đoàn.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","văn hóa thể thao
+công nhân
+KCN Hòa Khánh
+sân bóng
+công đoàn","PLACE","","","","","Thiết chế văn hóa công đoàn gồm sân thể thao, nhà sinh hoạt cộng đồng, điểm tổ chức các hoạt động hội thi và trợ giá cho công nhân lao động.","Đường số 2, Khu công nghiệp Hòa Khánh, phường Liên Chiểu, TP. Đà Nẵng","Điểm sinh hoạt văn hóa thể thao phục vụ công nhân và cư dân khu vực Hòa Khánh.","Chưa xác minh","Chưa xác minh","","","",""
+"discover-di-tich-b1-hong-phuoc","1.0.0","Căn cứ lõm cách mạng B1 Hồng Phước","van_hoa-04","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Nhân dân, thanh thiếu niên, sinh viên và du khách tìm hiểu lịch sử truyền thống cách mạng địa phương","Không tổ chức hoạt động cắm trại, nấu nướng tự phát trong khu vực bảo vệ di tích lịch sử.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","B1 Hồng Phước
+căn cứ lõm
+di tích lịch sử
+địa chỉ đỏ
+kháng chiến","DISCOVER","","","","","","","","","","Căn cứ lõm cách mạng B1 Hồng Phước là địa chỉ đỏ lịch sử cấp quốc gia, nơi ghi dấu lòng dân kiên trung nuôi giấu cán bộ, bộ đội biệt động trong lòng địch thời kỳ kháng chiến chống Mỹ. Hệ thống hầm bí mật dưới nền nhà của các gia đình cơ sở đã che chở an toàn cho nhiều đồng chí lãnh đạo khu ủy và thành ủy.","Khu vực Hồng Phước, phường Liên Chiểu, TP. Đà Nẵng","Biên tập từ tư liệu lịch sử Báo Đà Nẵng và Phòng Văn hóa - Thông tin","Không sử dụng ảnh do chưa có bản quyền hình ảnh lưu trữ chính thức"
+"discover-chuyen-ke-ngon-den-dau-hong-phuoc","1.0.0","Huyền thoại ngọn đèn dầu Hồng Phước","van_hoa-02","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Đoàn viên thanh niên, học sinh và cộng đồng muốn tìm hiểu những mẩu chuyện lịch sử sâu sắc của địa phương","Câu chuyện biên tập lại từ ký sự lịch sử truyền miệng của các nhân chứng; không xem là biên niên sử quân sự chính thống.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","ngọn đèn dầu
+chuyện kể
+Hồng Phước
+mẹ Nhu
+tín hiệu bí mật","DISCOVER","","","","","","","","","","Trong những năm tháng gian khổ, một chiếc đèn dầu leo lét đặt trước hiên nhà mẹ Nhu và các mẹ ở căn cứ B1 Hồng Phước chính là chiếc chìa khóa sinh tử. Ngọn đèn đỏ lửa báo hiệu vòng vây an toàn, để cán bộ từ dưới hầm bí mật yên tâm lên nhận tin tức và tiếp tế; khi đèn tắt là ám hiệu quân địch đang rình rập, cần cảnh giác tuyệt đối.","Khu vực Hồng Phước, phường Liên Chiểu, TP. Đà Nẵng","Biên tập từ ký sự Báo Công an TP. Đà Nẵng","Không sử dụng ảnh do chưa có bản quyền hình ảnh chính thức"
+"discover-dinh-lang-thanh-vinh","1.0.0","Đình làng Thanh Vinh","van_hoa-04","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Người dân và khách tham quan muốn tìm hiểu không gian văn hóa làng cổ truyền thống","Khu vực sinh hoạt tâm linh tín ngưỡng; khách tham quan cần giữ trang phục lịch sự và trật tự.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","đình làng
+Thanh Vinh
+làng cổ
+di tích
+lễ hội truyền thống","DISCOVER","","","","","","","","","","Đình làng Thanh Vinh là công trình kiến trúc cổ kính gắn với lịch sử tụ cư khai phá của các bậc tiền hiền trên vùng đất Liên Chiểu. Nơi đây lưu giữ nét sinh hoạt văn hóa làng xã truyền thống với các kỳ lễ cúng cầu an, tri ân tổ tiên và là không gian gắn kết tình làng nghĩa xóm qua nhiều thế hệ.","Khu dân cư Thanh Vinh, phường Liên Chiểu, TP. Đà Nẵng","Biên tập từ tư liệu Báo Đà Nẵng về bảo tồn đình làng cổ","Không sử dụng ảnh do chưa có bản quyền hình ảnh chính thức"
+"discover-khong-gian-cong-nhan-kcn-hoa-khanh","1.0.0","Không gian đời sống công nhân KCN Hòa Khánh","van_hoa-01","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Công nhân lao động, người mới chuyển đến sinh sống tại khu vực xung quanh các khu công nghiệp","Bài viết giới thiệu nét văn hóa cộng đồng; không phải trang thông tin tuyển dụng việc làm của các doanh nghiệp.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","công nhân
+KCN Hòa Khánh
+xóm trọ
+đời sống
+cộng đồng","DISCOVER","","","","","","","","","","Khu công nghiệp Hòa Khánh không chỉ là trung tâm sản xuất công nghiệp lớn mà còn hình thành nên cộng đồng người lao động trẻ đa dạng văn hóa. Nhịp sống xóm trọ công nhân với những buổi chợ chiều tan ca, các phiên chợ nghĩa tình, giải bóng đá phong trào công đoàn đã tạo nên nét ấm áp, gắn bó của những người xa quê lập nghiệp tại Liên Chiểu.","Khu công nghiệp Hòa Khánh, phường Liên Chiểu, TP. Đà Nẵng","Biên tập từ phóng sự đời sống người lao động Báo Lao Động","Không sử dụng ảnh do chưa có bản quyền hình ảnh chính thức"
+"discover-san-pham-ocop-ngoc-oanh-food","1.0.0","Sản phẩm OCOP Ngũ cốc Granola Ngọc Oanh Food","van_hoa-05","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Người tiêu dùng, du khách quan tâm đến các sản phẩm nông sản dinh dưỡng OCOP đạt chuẩn của địa phương","Nội dung giới thiệu sản phẩm OCOP đạt chứng nhận; không bao gồm cam kết bán hàng hoặc phân phối thương mại.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","OCOP
+Granola
+Ngọc Oanh Food
+ngũ cốc
+sản phẩm địa phương","DISCOVER","","","","","","","","","","Sản phẩm ngũ cốc dinh dưỡng Granola của thương hiệu Ngọc Oanh Food được chế biến từ các loại hạt nông sản cao cấp, đạt chứng nhận OCOP 3 sao cấp thành phố. Đây là mô hình kinh doanh khởi nghiệp tiêu biểu của thanh niên địa phương tại Liên Chiểu, chú trọng dinh dưỡng an lành và ứng dụng chế biến sạch.","856/54 Tôn Đức Thắng, phường Liên Chiểu, TP. Đà Nẵng","Biên tập từ quyết định xếp hạng sản phẩm OCOP của Sở Công Thương Đà Nẵng","Không sử dụng ảnh do chưa có bản quyền hình ảnh chính thức"
+"discover-tuyen-duong-thanh-nien-chuyen-doi-so","1.0.0","Tuyến đường thanh niên chuyển đổi số văn minh","van_hoa-10","lien-chieu-2025","Phường Liên Chiểu, TP. Đà Nẵng","Người dân, đoàn viên thanh niên và các hộ kinh doanh buôn bán trên trục đường Nguyễn Lương Bằng","Công trình thanh niên mang tính xung kích, hướng dẫn và tuyên truyền văn minh đô thị số.","published","UBND Phường Liên Chiểu","Tổ rà soát Chuyển đổi số Phường Liên Chiểu","2026-09-19","2027-09-19","Đã rà soát và phê duyệt chính thức đưa vào sử dụng phục vụ nhân dân.
+Người dùng xác nhận duyệt nội dung trong phiên làm việc 19/09/2026.","false","chuyển đổi số
+thanh niên
+tuyến đường văn minh
+Nguyễn Lương Bằng
+mã QR","DISCOVER","","","","","","","","","","Mô hình Tuyến đường thanh niên chuyển đổi số trên trục đường Nguyễn Lương Bằng là công trình thanh niên tiêu biểu của tuổi trẻ Liên Chiểu. Đoàn viên thanh niên hỗ trợ các hộ kinh doanh gắn mã QR thanh toán không tiền mặt, số hóa biển thông tin tiện ích và hướng dẫn người đi đường tra cứu thông tin dân sinh nhanh chóng.","Đường Nguyễn Lương Bằng, phường Liên Chiểu, TP. Đà Nẵng","Biên tập từ thông tin công trình thanh niên Thành đoàn Đà Nẵng","Không sử dụng ảnh do chưa có bản quyền hình ảnh chính thức"

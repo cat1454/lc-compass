@@ -1,0 +1,52 @@
+import { test, expect } from '@playwright/test';
+
+test.describe('LC Compass — Gói 04B: Danh bạ Địa điểm Thiết yếu', () => {
+  test.beforeEach(async ({ page }) => {
+    // Navigate to /places
+    await page.goto('/places');
+  });
+
+  test('Kiểm tra bố cục trang Danh bạ (Hero, Checklist)', async ({ page }) => {
+    // 1. Kiểm tra Hero section có lời chào mới
+    await expect(page.getByRole('heading', { name: /Xin chào!/i })).toBeVisible();
+    await expect(page.getByText('Bạn mới đến Liên Chiểu?')).toBeVisible();
+
+    // 2. Kiểm tra Sidebar / Checklist (Desktop)
+    // Only check if it's visible (might be hidden on narrow screens, but Playwright default is desktop)
+    await expect(page.getByRole('heading', { name: /Làm quen với khu vực/i })).toBeVisible();
+    await expect(page.getByRole('heading', { name: /Việc cần biết khi mới đến/i })).toBeVisible();
+
+    // 3. Kiểm tra danh sách thẻ địa điểm
+    await expect(page.getByRole('heading', { name: /Thông tin dành cho người mới đến/i })).toBeVisible();
+    const cards = page.locator('.responsive-cards article');
+    await expect(cards).toHaveCount(5); // Có 5 thẻ PLACE trong fixture demo
+  });
+
+  test('Luồng tương tác: Xem chi tiết địa điểm và kiểm tra PlaceDetailView', async ({ page }) => {
+    // 1. Click vào một thẻ địa điểm cụ thể
+    const card = page.getByRole('link', { name: /Công an Phường Liên Chiểu/i });
+    await expect(card).toBeVisible();
+    await card.click();
+
+    // 2. Chờ trang chi tiết tải xong
+    await expect(page).toHaveURL(/\/cards\/place-ca-lienchieu/);
+
+    // 3. Kiểm tra thông tin hiển thị trên PlaceDetailView
+    await expect(page.getByRole('heading', { name: /Công an Phường Liên Chiểu/i, exact: false }).first()).toBeVisible();
+    
+    // Kiểm tra nhãn demo hoặc chính thống
+    await expect(page.getByText('Dữ liệu mẫu (Demo)')).toBeVisible();
+
+    // Kiểm tra nội dung chi tiết
+    await expect(page.getByText('Chức năng phục vụ')).toBeVisible();
+    await expect(page.getByText('Số 02 đường Nguyễn Huy Tưởng')).toBeVisible();
+    
+    // Kiểm tra Widget Sidebar
+    await expect(page.getByRole('heading', { name: 'Thao tác nhanh' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Nguồn tham khảo' })).toBeVisible();
+    
+    // Kiểm tra các nút bấm hành động
+    await expect(page.getByRole('link', { name: /Gọi trực ban/i })).toBeVisible();
+    await expect(page.getByRole('link', { name: /Mở chỉ đường/i })).toBeVisible();
+  });
+});

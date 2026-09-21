@@ -1,0 +1,55 @@
+{
+  "accessDate": "2026-09-19",
+  "reviewStatus": "PENDING_REAL_REVIEWER",
+  "sources": [
+    {
+      "id": "residence-2026",
+      "url": "https://xaydungchinhsach.chinhphu.vn/mot-so-diem-moi-co-ban-cua-luat-cu-tru-sua-doi-va-thong-tu-116-2026-tt-bca-119260714094901372.htm",
+      "title": "Điểm mới về cư trú và Thông tư 116/2026/TT-BCA",
+      "publisher": "Báo điện tử Chính phủ",
+      "sourceDate": "2026-07-14",
+      "fetchedAt": "2026-09-19T00:00:00+07:00",
+      "relevantExcerpt": "các thông tin cơ bản […] không yêu cầu công dân nộp lại giấy tờ […] Mỗi hồ sơ được cấp một mã số"
+    },
+    {
+      "id": "temporary-residence-2026",
+      "url": "https://xaydungchinhsach.chinhphu.vn/quy-dinh-dang-ky-tam-tru-119260720101630132.htm",
+      "title": "Quy định đăng ký tạm trú",
+      "publisher": "Báo điện tử Chính phủ",
+      "sourceDate": "2026-07-21",
+      "fetchedAt": "2026-09-19T00:00:00+07:00",
+      "relevantExcerpt": "có thể thực hiện đăng ký tạm trú thông qua cơ quan, tổ chức quản lý trực tiếp chỗ ở đó"
+    },
+    {
+      "id": "ward-2025",
+      "url": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-so-1659-nq-ubtvqh15-sap-xep-cac-dvhc-cap-xa-cua-thanh-pho-da-nang-nam-2025-119250616202714604.htm",
+      "title": "Nghị quyết 1659: địa bàn phường Liên Chiểu",
+      "publisher": "Báo điện tử Chính phủ",
+      "sourceDate": "2025-06-20",
+      "fetchedAt": "2026-09-19T00:00:00+07:00",
+      "relevantExcerpt": "phường Hòa Khánh Bắc và phần còn lại của xã Hòa Liên"
+    },
+    {
+      "id": "public-center-2025",
+      "url": "https://thangan.danang.gov.vn/chi-tiet-tin/group/156/nid/18559/dia-chi-tru-so-va-trung-tam-phuc-vu-hanh-chinh-cong-94-don-vi-cap-xa-cua-tp-da-nang-moi",
+      "title": "Địa chỉ trụ sở và trung tâm phục vụ hành chính công 94 đơn vị cấp xã",
+      "publisher": "Trang thông tin điện tử xã Thăng An, TP. Đà Nẵng (đăng lại Báo Đà Nẵng)",
+      "sourceDate": "2025-07-14",
+      "fetchedAt": "2026-09-19T00:00:00+07:00",
+      "relevantExcerpt": "Trung tâm Phục vụ hành chính công tại số 68 đường Lạc Long Quân, phường Liên Chiểu."
+    }
+  ],
+  "claimLocators": {
+    "prepare-info": "residence-2026: mục Một là",
+    "shared-info": "residence-2026: mục Hai là",
+    "tracking-info": "residence-2026: cuối mục Một là",
+    "dorm-info": "temporary-residence-2026: Đăng ký tạm trú, khoản 2",
+    "ward-boundary": "ward-2025: Điều 1, khoản 9 và 10",
+    "center-address": "public-center-2025: mục 9"
+  },
+  "limitations": [
+    "Nguồn mở được và nội dung được agent đối chiếu; không tương đương phê duyệt nghiệp vụ.",
+    "Số điện thoại trong bài là đường dây nóng xử lý vướng mắc mô hình hai cấp; không tự gán thành số trực tổng đài Trung tâm.",
+    "Chưa có nội dung khám phá đủ bằng chứng trong đợt này."
+  ]
+}

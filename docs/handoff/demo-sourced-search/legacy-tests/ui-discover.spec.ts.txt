@@ -1,0 +1,52 @@
+import { test, expect } from '@playwright/test';
+
+test.describe('LC Compass — Gói 04C: Khám phá', () => {
+  test.beforeEach(async ({ page }) => {
+    // Navigate to /discover
+    await page.goto('/discover');
+  });
+
+  test('Kiểm tra bố cục trang Khám phá (Hero, Widget)', async ({ page, isMobile }) => {
+    // 1. Kiểm tra Hero section có lời chào/thông điệp mới
+    await expect(page.getByRole('heading', { name: 'Liên Chiểu Có gì thú vị?' })).toBeVisible();
+    await expect(page.getByText('Khám phá bề dày văn hóa')).toBeVisible();
+
+    // 2. Kiểm tra Sidebar / Widget (Desktop)
+    if (!isMobile) {
+      await expect(page.getByRole('heading', { name: /Chủ đề nổi bật/i })).toBeVisible();
+      await expect(page.getByText('Văn hóa Làng nghề')).toBeVisible();
+    }
+
+    // 3. Kiểm tra danh sách thẻ khám phá
+    await expect(page.getByRole('heading', { name: /Tư liệu di sản & văn hóa/i })).toBeVisible();
+    const cards = page.locator('.responsive-cards article');
+    await expect(cards).toHaveCount(2); // Có 2 thẻ DISCOVER trong fixture demo
+  });
+
+  test('Luồng tương tác: Xem chi tiết Khám phá và kiểm tra DiscoverDetailView', async ({ page }) => {
+    // 1. Click vào một thẻ Khám phá cụ thể
+    const card = page.locator('.responsive-cards').getByRole('link', { name: /Đình làng Hòa Mỹ/i });
+    await expect(card).toBeVisible();
+    await card.click();
+
+    // 2. Chờ trang chi tiết tải xong
+    await expect(page).toHaveURL(/\/cards\/discover-dinh-hoamy/);
+
+    // 3. Kiểm tra thông tin hiển thị trên DiscoverDetailView
+    await expect(page.getByRole('heading', { name: /Đình làng Hòa Mỹ/i, exact: false }).first()).toBeVisible();
+    
+    // Kiểm tra nhãn demo hoặc chính thống
+    // Thẻ discover-dinh-hoamy trong file json không có isSynthetic: true và có status: published
+    await expect(page.getByText('Thông tin chính thống')).toBeVisible();
+
+    // Kiểm tra nội dung chi tiết của DISCOVER
+    await expect(page.getByText('Câu chuyện di sản & văn hóa địa phương')).toBeVisible();
+    await expect(page.getByText('Địa bàn xác nhận')).toBeVisible();
+    await expect(page.getByText('Nguồn tài liệu')).toBeVisible();
+    await expect(page.getByText('Bản quyền & Sử dụng:')).toBeVisible();
+    
+    // Kiểm tra Widget Sidebar
+    await expect(page.getByRole('heading', { name: 'Thao tác nhanh' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Nguồn tham khảo' })).toBeVisible();
+  });
+});

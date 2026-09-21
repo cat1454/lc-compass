@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LC Compass — 10.000 phép thử thiết kế</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef4f8;color:#16344a;font:16px/1.6 system-ui,sans-serif}main{max-width:1120px;margin:auto;padding:36px 22px}h1{font-size:clamp(28px,4vw,44px);line-height:1.2;margin:12px 0}h2{font-size:20px;margin:0 0 12px}.tag{color:#006d77;font-weight:700;letter-spacing:.06em}.notice{background:#fff5d9;padding:14px 20px;border-left:4px solid #d69d21;border-radius:5px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:24px 0}.card{background:white;padding:24px;border-radius:16px;box-shadow:0 3px 16px #16344a08}label{display:block;margin:14px 0 5px;font-weight:650}select,input,button{font:inherit;padding:10px;border:1px solid #b8cbd8;border-radius:8px;max-width:100%}select{width:100%}input{width:145px}button{background:#086d9c;color:white;border:0;cursor:pointer}button:focus,select:focus,input:focus{outline:3px solid #f5b44b;outline-offset:3px}.code{font:14px ui-monospace,monospace;color:#086d9c}.result{border-top:5px solid #008a93}.muted{color:#526b7d}.metric{display:flex;gap:16px;flex-wrap:wrap;margin:20px 0}.metric span{background:#e0edf3;padding:8px 16px;border-radius:30px}p{margin:10px 0}.wide{grid-column:1/-1}a{color:#006899}@media(max-width:750px){.grid{grid-template-columns:1fr}.card{padding:18px}}@media print{body{background:white}button,.controls{display:none}.grid{display:block}.card{box-shadow:none;border:1px solid #ccc;margin:12px 0}main{padding:0}}
+</style>
+<main>
+<div class="tag">LC COMPASS / PHÒNG THỬ THIẾT KẾ</div>
+<h1>10.000 tình huống.<br>Mỗi tình huống, một cách xử lý rõ ràng.</h1>
+<p class="muted">Mô hình tương tác để kiểm tra phạm vi, hành động và cách xử lý ngoại lệ trước khi xây sản phẩm.</p>
+<p class="notice"><strong>Dữ liệu giả định.</strong> Đây là prototype kiến trúc, không hướng dẫn thủ tục thực tế. Số lượng ca không phải khảo sát người dân hay độ chính xác của AI. Chưa kết nối dịch vụ công hoặc gửi thông tin cho ai.</p>
+<div class="metric"><span>100 nhu cầu</span><span>10 hoàn cảnh</span><span>10 trạng thái</span><span>3 loại thẻ đầu ra</span></div>
+<div class="grid">
+<section class="card controls"><h2>Chọn phép thử</h2>
+<label for="intent">Nhu cầu</label><select id="intent"></select>
+<label for="profile">Hoàn cảnh người sử dụng</label><select id="profile"></select>
+<label for="stress">Tình trạng dữ liệu / hệ thống</label><select id="stress"></select>
+<label for="number">Hoặc mở ca số 1–10.000</label><input type="number" min="1" max="10000" value="1" id="number"> <button id="go">Mở ca</button>
+<p><button id="next">Ca tiếp theo →</button> <button id="print">In kết quả</button></p>
+</section>
+<section class="card result" aria-live="polite"><div class="code" id="caseId"></div><h2 id="title"></h2><p id="story"></p><p><strong>Bối cảnh:</strong> <span id="given"></span></p><p><strong>Thuộc nội dung MVP:</strong> <span id="scope"></span></p><p><strong>Loại thẻ:</strong> <span id="type"></span></p></section>
+<section class="card"><h2>Quyết định thiết kế</h2><p class="code" id="action"></p><p id="reason"></p><p id="then"></p></section>
+<section class="card"><h2>Điều kiện nghiệm thu</h2><p><strong>Giao diện:</strong> <span id="adapt"></span></p><p><strong>Lỗi cần tránh:</strong> <span id="hazard"></span></p><p class="muted">Hành động ở đây được tính bằng quy tắc trên nhãn giả định. Chưa kiểm chứng khả năng nhận diện các nhãn từ ngôn ngữ tự nhiên.</p></section>
+<section class="card wide"><h2>Kiến trúc đang chốt</h2><p>Ba lối vào: <strong>Tôi cần làm việc · Tôi mới đến · Tôi muốn khám phá</strong>.</p><p>Một lõi: xác định nhu cầu → làm rõ địa bàn và hoàn cảnh → kiểm tra nguồn → thẻ việc / thẻ địa điểm / thẻ khám phá → bước tiếp theo.</p><p>AI có thể giúp nhận diện câu hỏi; quy tắc và dữ liệu được rà soát quyết định nội dung được phép hiển thị. Khi AI ngừng hoạt động, người dùng vẫn chọn nhu cầu bằng nút.</p><p><a href="scenarios_10000.csv" download>Tải 10.000 ca CSV</a> · <a href="simulation_summary.json">Xem thống kê mô hình</a> · <a href="DECISION.md">Đọc quyết định phạm vi</a></p></section>
+</div></main>
+<script src="explorer_data.js"></script>
+<script>
+'use strict';
+const d=window.COMPASS_DATA;
+const el=id=>document.getElementById(id);
+function options(id,rows,text){rows.forEach((r,i)=>{const o=document.createElement('option');o.value=i;o.textContent=text(r);el(id).appendChild(o)})}
+options('intent',d.intents,r=>r.id+' — '+r.goal);
+options('profile',d.profiles,r=>r[0]+' — '+r[1]);
+options('stress',d.stresses,r=>r[0]+' — '+r[1]);
+function render(){const i=Number(el('intent').value),p=Number(el('profile').value),s=Number(el('stress').value);const n=i*100+p*10+s+1;const id='LC-'+String(n).padStart(5,'0');const intent=d.intents[i],profile=d.profiles[p],stress=d.stresses[s],route=d.routes[id];
+const values={caseId:id,title:intent.goal,story:'Là '+profile[1]+', tôi muốn '+intent.goal+', để '+intent.benefit+'.',given:stress[1],scope:d.summary.mvp_supported_goal_ids.includes(intent.id)?'Có, khi nội dung đạt điều kiện phát hành':'Chưa hỗ trợ nội dung; vẫn có xử lý ngoại lệ chung',type:route[3],action:route[0],reason:route[1],then:route[2],adapt:profile[3],hazard:stress[3]};Object.entries(values).forEach(([k,v])=>el(k).textContent=v);el('number').value=n}
+function jump(n){if(!Number.isInteger(n)||n<1||n>10000){el('number').reportValidity();return}n--;el('intent').value=Math.floor(n/100);el('profile').value=Math.floor(n%100/10);el('stress').value=n%10;render()}
+['intent','profile','stress'].forEach(id=>el(id).addEventListener('change',render));el('go').addEventListener('click',()=>jump(Number(el('number').value)));el('next').addEventListener('click',()=>jump(Number(el('number').value)%10000+1));el('print').addEventListener('click',()=>window.print());render();
+</script>
+</html>

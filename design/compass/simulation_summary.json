@@ -1,0 +1,162 @@
+{
+  "date": "2026-09-18",
+  "seed": "none; exhaustive Cartesian product",
+  "method": "100 goals x 10 user contexts x 10 source/system states",
+  "records": 10000,
+  "unique_base_stories": 1000,
+  "unique_contextual_stories": 10000,
+  "unique_story_state_pairs": 10000,
+  "warning": "Designed balance, not population frequency. Candidate outputs assume the SAME proposed safeguards; these are not product comparisons or success rates.",
+  "mvp_supported_goal_ids": [
+    "cu_tru-01",
+    "cu_tru-02",
+    "cu_tru-03",
+    "cu_tru-04",
+    "cu_tru-05",
+    "cu_tru-06",
+    "cu_tru-07",
+    "cu_tru-08",
+    "dia_diem-01",
+    "dia_diem-02",
+    "dia_diem-03",
+    "dia_diem-04",
+    "dia_diem-05",
+    "dia_diem-06",
+    "dia_diem-07",
+    "dia_diem-08",
+    "van_hoa-01",
+    "van_hoa-02",
+    "van_hoa-03"
+  ],
+  "domain_counts": {
+    "cu_tru": 1000,
+    "kinh_doanh": 1000,
+    "hoc_tap": 1000,
+    "y_te": 1000,
+    "an_sinh": 1000,
+    "viec_lam": 1000,
+    "moi_truong": 1000,
+    "dia_diem": 1000,
+    "van_hoa": 1000,
+    "du_lich_su_kien": 1000
+  },
+  "mvp_routing_counts": {
+    "ASK_AREA": 1000,
+    "ASK_FACT": 182,
+    "GENERAL_ONLY": 48,
+    "LANGUAGE_HELP": 38,
+    "OFFICIAL_REDIRECT": 4860,
+    "OFFLINE_VIEW": 182,
+    "OUTSIDE": 1000,
+    "PREPARE": 326,
+    "REMOVE_SENSITIVE": 1000,
+    "REVIEW_SOURCE": 364,
+    "URGENT_HELP": 1000
+  },
+  "mvp_in_scope_routing_counts": {
+    "ASK_AREA": 190,
+    "ASK_FACT": 182,
+    "GENERAL_ONLY": 48,
+    "LANGUAGE_HELP": 38,
+    "OFFLINE_VIEW": 182,
+    "OUTSIDE": 190,
+    "PREPARE": 326,
+    "REMOVE_SENSITIVE": 190,
+    "REVIEW_SOURCE": 364,
+    "URGENT_HELP": 190
+  },
+  "candidate_scope_comparison": {
+    "A_broad": {
+      "supported_goal_count": 100,
+      "synthetic_scope_rows": 10000,
+      "routing_counts": {
+        "ASK_AREA": 1000,
+        "ASK_FACT": 920,
+        "GENERAL_ONLY": 480,
+        "LANGUAGE_HELP": 200,
+        "OFFLINE_VIEW": 920,
+        "OUTSIDE": 1000,
+        "PREPARE": 1640,
+        "REMOVE_SENSITIVE": 1000,
+        "REVIEW_SOURCE": 1840,
+        "URGENT_HELP": 1000
+      }
+    },
+    "B_business": {
+      "supported_goal_count": 10,
+      "synthetic_scope_rows": 1000,
+      "routing_counts": {
+        "ASK_AREA": 1000,
+        "ASK_FACT": 90,
+        "GENERAL_ONLY": 60,
+        "LANGUAGE_HELP": 20,
+        "OFFICIAL_REDIRECT": 5400,
+        "OFFLINE_VIEW": 90,
+        "OUTSIDE": 1000,
+        "PREPARE": 160,
+        "REMOVE_SENSITIVE": 1000,
+        "REVIEW_SOURCE": 180,
+        "URGENT_HELP": 1000
+      }
+    },
+    "C_newcomer_bundle": {
+      "supported_goal_count": 30,
+      "synthetic_scope_rows": 3000,
+      "routing_counts": {
+        "ASK_AREA": 1000,
+        "ASK_FACT": 270,
+        "GENERAL_ONLY": 180,
+        "LANGUAGE_HELP": 60,
+        "OFFICIAL_REDIRECT": 4200,
+        "OFFLINE_VIEW": 270,
+        "OUTSIDE": 1000,
+        "PREPARE": 480,
+        "REMOVE_SENSITIVE": 1000,
+        "REVIEW_SOURCE": 540,
+        "URGENT_HELP": 1000
+      }
+    },
+    "D_residence_only": {
+      "supported_goal_count": 8,
+      "synthetic_scope_rows": 800,
+      "routing_counts": {
+        "ASK_AREA": 1000,
+        "ASK_FACT": 72,
+        "GENERAL_ONLY": 48,
+        "LANGUAGE_HELP": 16,
+        "OFFICIAL_REDIRECT": 5520,
+        "OFFLINE_VIEW": 72,
+        "OUTSIDE": 1000,
+        "PREPARE": 128,
+        "REMOVE_SENSITIVE": 1000,
+        "REVIEW_SOURCE": 144,
+        "URGENT_HELP": 1000
+      }
+    },
+    "E_three_entries_curated": {
+      "supported_goal_count": 19,
+      "synthetic_scope_rows": 1900,
+      "routing_counts": {
+        "ASK_AREA": 1000,
+        "ASK_FACT": 182,
+        "GENERAL_ONLY": 48,
+        "LANGUAGE_HELP": 38,
+        "OFFICIAL_REDIRECT": 4860,
+        "OFFLINE_VIEW": 182,
+        "OUTSIDE": 1000,
+        "PREPARE": 326,
+        "REMOVE_SENSITIVE": 1000,
+        "REVIEW_SOURCE": 364,
+        "URGENT_HELP": 1000
+      }
+    }
+  },
+  "verification": {
+    "record_invariant_checks": 10000,
+    "ai_outage_equivalence_pairs": 1000,
+    "combined_fault_checks": 14,
+    "status": "passed",
+    "limits": "Only the routing model is checked. No UI, live knowledge, LLM, external service, or legal correctness is verified."
+  },
+  "jsonl_sha256": "ef033ebfc9a846fb1c3a11750284eea2714a3fa9a8c596afb0634b0881950cc0"
+}
