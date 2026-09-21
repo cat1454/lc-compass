@@ -32,20 +32,19 @@ npm run dev
 
 Vercel Root Directory: `web`.
 
-## GitHub v? tri?n khai t? ??ng
+## GitHub và triển khai tự động
 
-Repository: [cat1454/lc-compass](https://github.com/cat1454/lc-compass) (ri?ng t?).
+Repository: [cat1454/lc-compass](https://github.com/cat1454/lc-compass) (riêng tư).
 
-Vercel project `lc-compass` d?ng th? m?c `web/`, Node.js 22.x, c?i b?ng `npm ci` v? build b?ng `npm run build`. Sau khi k?t n?i GitHub, m?i l?n push l?n `main` t?o b?n Production; nh?nh kh?c t?o b?n Preview.
+Vercel project `lc-compass` dùng thư mục `web/`, Node.js 22.x, cài bằng `npm ci` và build bằng `npm run build`. Mỗi lần push lên `main` tạo bản Production; nhánh khác tạo bản Preview.
 
 ```powershell
 git add .
-git commit -m "M? t? thay ??i"
+git commit -m "Update project"
 git push origin main
 ```
 
-Commit ch? n?m tr?n m?y ch?a k?ch ho?t tri?n khai; c?n push l?n GitHub. Kh?ng commit `.env.local`, kh?a API, `.vercel/` ho?c file build. C?u h?nh bi?n m?i tr??ng t?i Vercel Project Settings.
-
+Commit chỉ nằm trên máy chưa kích hoạt triển khai; cần push lên GitHub. Không commit `.env.local`, khóa API, `.vercel/` hoặc file build. Cấu hình biến môi trường tại Vercel Project Settings.
 
 ## Quy ước lưu trữ
 

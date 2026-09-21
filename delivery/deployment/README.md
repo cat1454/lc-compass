@@ -2,6 +2,19 @@
 
 ## Cấu hình
 
+### Triển khai từ GitHub
+
+Đã kết nối ngày 21/09/2026 bằng tích hợp GitHub của Vercel. Không cần deploy hook hoặc lưu Vercel token trong GitHub Actions.
+
+- Repository riêng tư: `cat1454/lc-compass`; nhánh Production: `main`.
+- Vercel project: `lc-compass`; Root Directory: `web`.
+- Push lên `main` kích hoạt Production; nhánh khác tạo Preview.
+- Theo dõi tại [Vercel Deployments](https://vercel.com/phuh15521-7825s-projects/lc-compass/deployments).
+- Biến môi trường được quản lý trên Vercel; `.env.local` và thông tin liên kết CLI không đưa lên GitHub.
+- Phần CLI bên dưới ghi lại quy trình trước khi kết nối Git. Với cấu hình mới, ưu tiên push từ thư mục gốc repo; không đặt Root Directory về `.` để deploy thủ công.
+
+### Quy trình CLI trước khi kết nối Git
+
 - CLI chạy tại `H:\LC\web`; triển khai trực tiếp thư mục này, không upload toàn bộ workspace.
 - Nếu import Git repository gốc sau này: Root Directory = `web`. Với CLI chạy trong `web`, project root là `.`; không đặt thêm `web` lần nữa.
 - Framework Next.js; Node 22.x; install `npm ci`; build `npm run build`.
