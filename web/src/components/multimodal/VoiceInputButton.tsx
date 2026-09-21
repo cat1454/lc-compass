@@ -26,11 +26,14 @@ export function VoiceInputButton({
   }, []);
 
   const startListening = useCallback(() => {
-    if (typeof window === "undefined" || !isSupported) return;
+    if (typeof window === "undefined") return;
 
     // @ts-expect-error - WebkitSpeechRecognition vendor prefix
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!SpeechRecognition) return;
+    if (!SpeechRecognition) {
+      alert("Trình duyệt hiện tại chưa hỗ trợ Web Speech API. Bạn vui lòng sử dụng Google Chrome hoặc Microsoft Edge để nói trực tiếp vào ô tìm kiếm!");
+      return;
+    }
 
     try {
       const recognition = new SpeechRecognition();
@@ -53,6 +56,9 @@ export function VoiceInputButton({
       recognition.onerror = (err: any) => {
         console.warn("Speech recognition error:", err);
         setIsListening(false);
+        if (err.error === "not-allowed") {
+          alert("Vui lòng cho phép quyền Microphone trên trình duyệt để sử dụng tìm kiếm bằng giọng nói.");
+        }
       };
 
       recognition.onend = () => {
@@ -64,11 +70,7 @@ export function VoiceInputButton({
       console.error("Speech recognition could not be started", e);
       setIsListening(false);
     }
-  }, [isSupported, onTranscript]);
-
-  if (!isSupported) {
-    return null; // Ẩn nút nhẹ nhàng nếu trình duyệt không hỗ trợ Web Speech API
-  }
+  }, [onTranscript]);
 
   return (
     <button

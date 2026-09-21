@@ -69,7 +69,7 @@ export const HOME_FEATURES_CONFIG: HomeFeaturesConfig = {
     enabled: true,
   },
   strategyBanner: {
-    enabled: true,
+    enabled: false,
   },
   quickActions: {
     enabled: true,
@@ -87,7 +87,7 @@ export const HOME_FEATURES_CONFIG: HomeFeaturesConfig = {
     showViewAllButton: true,
   },
   supportHotline: {
-    enabled: true,
+    enabled: false,
   },
   externalResearchBox: {
     enabled: false, // Đã tắt trên trang chủ để chống overload

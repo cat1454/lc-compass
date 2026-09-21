@@ -29,7 +29,12 @@ export function TextToSpeechButton({
   }, []);
 
   const handleToggleSpeak = useCallback(() => {
-    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+    if (typeof window === "undefined") return;
+
+    if (!("speechSynthesis" in window)) {
+      alert("Trình duyệt hiện tại chưa hỗ trợ tính năng Text-to-Speech tự động. Bạn vui lòng sử dụng Google Chrome, Edge hoặc Safari để nghe đọc các bước.");
+      return;
+    }
 
     if (isPlaying) {
       window.speechSynthesis.cancel();
@@ -59,10 +64,6 @@ export function TextToSpeechButton({
 
     window.speechSynthesis.speak(utterance);
   }, [isPlaying, textToRead]);
-
-  if (!isSupported) {
-    return null;
-  }
 
   return (
     <button

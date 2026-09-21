@@ -18,12 +18,12 @@ export function HomeStrategyBanner({ isLargeText }: HomeStrategyBannerProps) {
   return (
     <section
       aria-label="Hướng dẫn chuẩn bị trước khi nộp hồ sơ"
-      className="liquid-glass-card rounded-2xl border-2 border-teal-600/30 bg-gradient-to-r from-teal-900 via-slate-900 to-teal-950 text-white p-4 sm:p-6 shadow-sm space-y-4"
+      className="rounded-2xl border-2 border-teal-700/50 bg-gradient-to-r from-teal-950 via-slate-900 to-teal-950 text-white p-4 sm:p-6 shadow-md space-y-4"
     >
       <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         <div className="space-y-2 max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-300 text-xs font-bold border border-teal-400/30">
-            <FileCheck2 className="w-3.5 h-3.5 text-teal-400" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-300 text-xs font-bold border border-teal-400/40">
+            <FileCheck2 className="w-3.5 h-3.5 text-teal-300" />
             <span>TÌM HƯỚNG DẪN · CHUẨN BỊ · MỞ KÊNH CHÍNH THỨC</span>
           </div>
           <h2
@@ -33,7 +33,7 @@ export function HomeStrategyBanner({ isLargeText }: HomeStrategyBannerProps) {
           >
             Hiểu bước chuẩn bị trước khi nộp hồ sơ
           </h2>
-          <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+          <p className="text-slate-200 text-xs sm:text-sm leading-relaxed">
             Bạn đang cần làm giấy tờ nhưng chưa biết bắt đầu từ đâu?
             LC Compass giúp bạn xem hướng dẫn, ghi lại điều cần hỏi và mở kênh chính thức phù hợp với thủ tục.
           </p>

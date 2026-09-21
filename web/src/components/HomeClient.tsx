@@ -44,27 +44,12 @@ export function HomeClient({ initialCards }: HomeClientProps) {
         <HomeHeroGreeting isLargeText={isLargeText} />
       )}
 
-      {/* 2. Banner Định vị Chiến lược: Khâu Tiền Hành Chính & Cầu nối Cổng DVC / Zalo */}
-      {HOME_FEATURES_CONFIG.strategyBanner?.enabled && (
-        <HomeStrategyBanner isLargeText={isLargeText} />
-      )}
-
-      {/* 3. Lưới 6 ô lối tắt nhu cầu hàng ngày (Bấm là có) */}
+      {/* 2. Lưới 6 ô lối tắt nhu cầu hàng ngày (Bấm là có) */}
       {HOME_FEATURES_CONFIG.quickActions.enabled && (
         <QuickActionGrid isLargeText={isLargeText} />
       )}
 
-      {/* 4. Nhịp đập Liên Chiểu hôm nay (Dữ liệu sống thực địa tuần này) */}
-      {HOME_FEATURES_CONFIG.livingPulse?.enabled && (
-        <HomeLivingPulse isLargeText={isLargeText} />
-      )}
-
-      {/* 5. Khối 3 nhu cầu lớn */}
-      {HOME_FEATURES_CONFIG.threeCoreNeeds.enabled && (
-        <HomeThreeCoreNeeds isLargeText={isLargeText} />
-      )}
-
-      {/* 6. Khối tìm kiếm & Danh sách thẻ giới hạn tinh gọn (Mặc định 3 thẻ tiêu biểu) */}
+      {/* 3. Khối tìm kiếm & Danh sách thẻ (Có tích hợp Micro thu âm giọng nói) */}
       {HOME_FEATURES_CONFIG.cardSearchAndListing.enabled && (
         <HomeCardSearchSection
           cards={validCardsAtAccess}
@@ -72,6 +57,21 @@ export function HomeClient({ initialCards }: HomeClientProps) {
           defaultLimit={HOME_FEATURES_CONFIG.cardSearchAndListing.defaultLimit}
           showViewAllButton={HOME_FEATURES_CONFIG.cardSearchAndListing.showViewAllButton}
         />
+      )}
+
+      {/* 4. Banner Định vị Chiến lược: Khâu Tiền Hành Chính & Cầu nối Cổng DVC / Zalo */}
+      {HOME_FEATURES_CONFIG.strategyBanner?.enabled && (
+        <HomeStrategyBanner isLargeText={isLargeText} />
+      )}
+
+      {/* 5. Nhịp đập Liên Chiểu hôm nay (Dữ liệu sống thực địa tuần này) */}
+      {HOME_FEATURES_CONFIG.livingPulse?.enabled && (
+        <HomeLivingPulse isLargeText={isLargeText} />
+      )}
+
+      {/* 6. Khối 3 nhu cầu lớn */}
+      {HOME_FEATURES_CONFIG.threeCoreNeeds.enabled && (
+        <HomeThreeCoreNeeds isLargeText={isLargeText} />
       )}
 
       {/* 7. Khối hỗ trợ người cao tuổi / Hotline 1022 & Một cửa */}

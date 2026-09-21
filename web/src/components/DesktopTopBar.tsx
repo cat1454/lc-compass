@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Bell, Search, ChevronDown } from "lucide-react";
+import { VoiceInputButton } from "./multimodal/VoiceInputButton";
 
 export function DesktopTopBar() {
   const router = useRouter();
@@ -63,27 +64,36 @@ export function DesktopTopBar() {
         </Link>
       </div>
 
-      {/* Search Input with ⌘K matching ref_desktop_window.png */}
-      <form onSubmit={handleSearchSubmit} className="flex-1 max-w-xl relative">
-        <span
-          className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"
-          aria-hidden="true"
-        >
-          <Search className="w-4 h-4 text-slate-400" />
-        </span>
-        <input
-          id="desktop-global-search"
-          type="search"
-          value={searchVal}
-          onChange={(e) => setSearchVal(e.target.value)}
-          placeholder="Tìm dịch vụ, thủ tục, địa điểm, thông tin Liên Chiểu..."
-          style={{ fontSize: "16px" }}
-          className="w-full pl-10 pr-16 py-2 bg-slate-50/80 border border-slate-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all text-slate-800 placeholder:text-slate-400"
-          aria-label="Tìm kiếm toàn hệ thống"
+      {/* Search Input with ⌘K and Voice Microphone */}
+      <form onSubmit={handleSearchSubmit} className="flex-1 max-w-xl relative flex items-center gap-1.5">
+        <div className="relative flex-1">
+          <span
+            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"
+            aria-hidden="true"
+          >
+            <Search className="w-4 h-4 text-slate-400" />
+          </span>
+          <input
+            id="desktop-global-search"
+            type="search"
+            value={searchVal}
+            onChange={(e) => setSearchVal(e.target.value)}
+            placeholder="Tìm dịch vụ, thủ tục, địa điểm, thông tin Liên Chiểu..."
+            style={{ fontSize: "16px" }}
+            className="w-full pl-10 pr-16 py-2 bg-slate-50/80 border border-slate-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all text-slate-800 placeholder:text-slate-400"
+            aria-label="Tìm kiếm toàn hệ thống"
+          />
+          <kbd className="absolute right-3.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[10.5px] font-mono bg-white border border-slate-300 rounded text-slate-400 shadow-2xs select-none">
+            ⌘ K
+          </kbd>
+        </div>
+        <VoiceInputButton
+          onTranscript={(text) => {
+            setSearchVal(text);
+            router.push(`/?search=${encodeURIComponent(text.trim())}`);
+          }}
+          className="w-9 h-9 min-w-[36px] min-h-[36px] rounded-full border border-slate-200 shrink-0"
         />
-        <kbd className="absolute right-3.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[10.5px] font-mono bg-white border border-slate-300 rounded text-slate-400 shadow-2xs select-none">
-          ⌘ K
-        </kbd>
       </form>
 
       {/* Right Controls */}

@@ -55,6 +55,7 @@ Nhóm đề xuất 3 tác vụ cụ thể để Ban Giám khảo kiểm chứng 
 * **Kết quả kiểm chứng:**
   - Hệ thống nhận diện ý định và chuẩn hóa từ ngữ địa phương.
   - Hiển thị Thẻ hướng dẫn: Nêu rõ các bước cần chuẩn bị, căn cứ pháp lý (Điều 5 Nghị định 62/2021/NĐ-CP về văn bản cam đoan khi không có hợp đồng thuê nhà bằng văn bản).
+  - Có nút **"Nghe đọc các bước"** (Text-to-Speech): Đọc to tiêu đề và từng bước chuẩn bị bằng giọng đọc tiếng Việt với tốc độ chậm rãi, phục vụ người lớn tuổi hoặc người mắt yếu.
   - Có nút **"In phiếu hướng dẫn A5"**: Mở giao diện phiếu in tóm tắt nội dung có ô vuông $\square$ để người dân tự đánh dấu hoặc mang theo.
 
 ### Tác vụ 2: Tra cứu địa điểm hành chính sau sáp nhập Nghị quyết 1659
