@@ -12,7 +12,7 @@
 
 ---
 
-## 📁 DANH MỤC CÁC TÀI LIỆU TRONG BỘ HỒ SƠ (`delivery/submission/`)
+## I. DANH MỤC CÁC TÀI LIỆU TRONG BỘ HỒ SƠ (`delivery/submission/`)
 
 | STT | Tên tài liệu | Định dạng | Nội dung & Mục đích |
 | :---: | :--- | :---: | :--- |
@@ -24,9 +24,9 @@
 
 ---
 
-## 🖨️ HƯỚNG DẪN XUẤT FILE PDF BẢN THUYẾT MINH (A4)
+## II. HƯỚNG DẪN XUẤT FILE PDF BẢN THUYẾT MINH (A4)
 1. Mở file `02_BAN_THUYET_MINH_DU_AN.html` bằng trình duyệt web (Google Chrome, Microsoft Edge, Cốc Cốc).
-2. Bấm nút màu xanh nổi ở góc phải dưới màn hình: **"🖨️ In / Xuất file PDF Bản thuyết minh (A4)"** (hoặc bấm phím tắt `Ctrl + P`).
+2. Bấm nút màu xanh nổi ở góc phải dưới màn hình: **"In / Xuất file PDF Bản thuyết minh (A4)"** (hoặc bấm phím tắt `Ctrl + P`).
 3. Chọn máy in: **Lưu dưới dạng PDF (Save as PDF)**.
 4. Kiểm tra các tùy chọn:
    - Khổ giấy: **A4**.

@@ -17,7 +17,7 @@
 ## 1. THÔNG TIN TRUY CẬP VÀ MÃ QR TRẢI NGHIỆM
 
 - **Địa chỉ truy cập Internet (Production Live):**  
-  👉 **[https://lc-compass-xi.vercel.app](https://lc-compass-xi.vercel.app)**
+  **[https://lc-compass-xi.vercel.app](https://lc-compass-xi.vercel.app)**
 - **Môi trường hoạt động:** Ứng dụng Web di động (Mobile-First), tương thích tốt trên các trình duyệt Safari (iOS), Chrome (Android) và máy tính để bàn.
 - **Cách thức mở:** Quét mã QR hoặc truy cập đường dẫn trực tiếp, **không cần cài đặt ứng dụng từ kho tải, không yêu cầu tạo tài khoản cá nhân**.
 
