@@ -32,10 +32,12 @@ export function DesktopTopBar() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
+  const isHome = pathname === "/";
+
   return (
     <header
       aria-label="Thanh công cụ trên cùng"
-      className="hidden lg:flex items-center justify-between gap-4 px-4 h-[52px] bg-white/95 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-30 shadow-[0_1px_3px_rgba(0,0,0,0.02)]"
+      className="hidden lg:flex items-center justify-between gap-4 px-4 h-[52px] bg-white border-b border-slate-200 sticky top-0 z-50 shadow-[0_1px_3px_rgba(0,0,0,0.02)]"
     >
       {/* Brand Header on Left matching ref_desktop_web.png */}
       <div className="w-[180px] shrink-0 flex items-center gap-2 pr-2">
@@ -64,37 +66,41 @@ export function DesktopTopBar() {
         </Link>
       </div>
 
-      {/* Search Input with ⌘K and Voice Microphone */}
-      <form onSubmit={handleSearchSubmit} className="flex-1 max-w-xl relative flex items-center gap-1.5">
-        <div className="relative flex-1">
-          <span
-            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"
-            aria-hidden="true"
-          >
-            <Search className="w-4 h-4 text-slate-400" />
-          </span>
-          <input
-            id="desktop-global-search"
-            type="search"
-            value={searchVal}
-            onChange={(e) => setSearchVal(e.target.value)}
-            placeholder="Tìm dịch vụ, thủ tục, địa điểm, thông tin Liên Chiểu..."
-            style={{ fontSize: "16px" }}
-            className="w-full pl-10 pr-16 py-2 bg-slate-50/80 border border-slate-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all text-slate-800 placeholder:text-slate-400"
-            aria-label="Tìm kiếm toàn hệ thống"
+      {/* Smart Search Bar: Chỉ hiển thị ở các trang con, ẩn trên Trang chủ để tránh trùng lặp với Hero Search */}
+      {!isHome ? (
+        <form onSubmit={handleSearchSubmit} className="flex-1 max-w-xl relative flex items-center gap-1.5">
+          <div className="relative flex-1">
+            <span
+              className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"
+              aria-hidden="true"
+            >
+              <Search className="w-4 h-4 text-slate-400" />
+            </span>
+            <input
+              id="desktop-global-search"
+              type="search"
+              value={searchVal}
+              onChange={(e) => setSearchVal(e.target.value)}
+              placeholder="Tìm dịch vụ, thủ tục, địa điểm, thông tin Liên Chiểu..."
+              style={{ fontSize: "16px" }}
+              className="w-full pl-10 pr-16 py-2 bg-slate-50 border border-slate-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all text-slate-800 placeholder:text-slate-400"
+              aria-label="Tìm kiếm toàn hệ thống"
+            />
+            <kbd className="absolute right-3.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[10.5px] font-mono bg-white border border-slate-300 rounded text-slate-400 shadow-2xs select-none">
+              ⌘ K
+            </kbd>
+          </div>
+          <VoiceInputButton
+            onTranscript={(text) => {
+              setSearchVal(text);
+              router.push(`/?search=${encodeURIComponent(text.trim())}`);
+            }}
+            className="w-9 h-9 min-w-[36px] min-h-[36px] rounded-full border border-slate-200 shrink-0"
           />
-          <kbd className="absolute right-3.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[10.5px] font-mono bg-white border border-slate-300 rounded text-slate-400 shadow-2xs select-none">
-            ⌘ K
-          </kbd>
-        </div>
-        <VoiceInputButton
-          onTranscript={(text) => {
-            setSearchVal(text);
-            router.push(`/?search=${encodeURIComponent(text.trim())}`);
-          }}
-          className="w-9 h-9 min-w-[36px] min-h-[36px] rounded-full border border-slate-200 shrink-0"
-        />
-      </form>
+        </form>
+      ) : (
+        <div className="flex-1" />
+      )}
 
       {/* Right Controls */}
       <div className="flex items-center gap-5 shrink-0">

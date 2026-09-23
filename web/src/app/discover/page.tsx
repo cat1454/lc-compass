@@ -23,12 +23,15 @@ export default async function DiscoverPage() {
       {/* Khối tiêu đề SEO */}
       <div className="sr-only">
         <h1>Khám phá Liên Chiểu</h1>
-        <p>Lối vào 3: Khám phá Liên Chiểu - Di tích và tư liệu lịch sử được kiểm chứng tại Liên Chiểu</p>
+        <p>
+          Lối vào 3: Khám phá Liên Chiểu - Di tích và tư liệu lịch sử được kiểm
+          chứng tại Liên Chiểu
+        </p>
       </div>
 
       <ScenicBanner quoteText="Vùng đất của những di sản và văn hóa lâu đời" />
 
-      <div className="responsive-container py-4 sm:py-8">
+      <div className="w-full pt-4 sm:pt-6">
         {/* Layout chia 2 cột trên Desktop (giống 04A) */}
         <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-start">
           {/* CỘT TRÁI (Main Content) */}
@@ -39,7 +42,8 @@ export default async function DiscoverPage() {
                 Khám phá Liên Chiểu
               </h2>
               <p className="text-amber-900 text-xs sm:text-sm md:text-base max-w-xl leading-relaxed">
-                Khám phá bề dày văn hóa, lịch sử và những nét đặc trưng chỉ có tại Liên Chiểu qua lăng kính thông tin có nguồn tham khảo.
+                Khám phá bề dày văn hóa, lịch sử và những nét đặc trưng chỉ có
+                tại Liên Chiểu qua lăng kính thông tin có nguồn tham khảo.
               </p>
 
               {/* Quick links */}
@@ -67,12 +71,17 @@ export default async function DiscoverPage() {
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Tuyển tập các câu chuyện, tư liệu và di tích tại Liên Chiểu được tổng hợp từ nguồn chính thống.
+                Tuyển tập các câu chuyện, tư liệu và di tích tại Liên Chiểu được
+                tổng hợp từ nguồn chính thống.
               </p>
 
               {/* Cards list */}
               <div className="responsive-cards">
-                {discoverCards.length === 0 && <p className="text-sm text-slate-600">Chưa có nội dung được phát hành trong mục này.</p>}
+                {discoverCards.length === 0 && (
+                  <p className="text-sm text-slate-600">
+                    Chưa có nội dung được phát hành trong mục này.
+                  </p>
+                )}
                 {discoverCards.map((card) => (
                   <CardItem key={card.id} card={card} />
                 ))}
@@ -92,12 +101,21 @@ export default async function DiscoverPage() {
           </div>
 
           <aside className="lg:col-span-4 rounded-2xl sm:rounded-3xl border bg-white/95 backdrop-blur-sm p-5 sm:p-6 space-y-3 self-start shadow-xs mt-6 lg:mt-0">
-            <h2 className="font-bold text-slate-900 text-base">Tiếp tục khám phá</h2>
+            <h2 className="font-bold text-slate-900 text-base">
+              Tiếp tục khám phá
+            </h2>
             <div className="space-y-2 text-sm">
-              <Link className="touch-target flex items-center text-blue-600 hover:text-blue-800 underline font-medium" href="/places?category=food">
+              <Link
+                className="touch-target flex items-center text-blue-600 hover:text-blue-800 underline font-medium"
+                href="/places?category=food"
+              >
                 Ẩm thực &amp; quán ăn
               </Link>
-              <Link className="touch-target flex items-center text-blue-600 hover:text-blue-800 underline font-medium" href="/places?category=park">
+              <br />
+              <Link
+                className="touch-target flex items-center text-blue-600 hover:text-blue-800 underline font-medium"
+                href="/places?category=park"
+              >
                 Công viên &amp; không gian xanh
               </Link>
             </div>

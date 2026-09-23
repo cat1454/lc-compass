@@ -40,7 +40,7 @@ export default async function CardDetailPage({ params }: PageProps) {
   if (result.availability !== "available" || !result.card) {
     const isExpired = result.availability === "expired";
     return (
-      <div className="responsive-container py-12 max-w-2xl mx-auto space-y-6">
+      <div className="w-full py-6 max-w-2xl mx-auto space-y-6">
         <div className="p-6 rounded-2xl bg-amber-50 border-2 border-amber-300 text-amber-950 space-y-4">
           <div aria-hidden="true">
             {isExpired ? (
@@ -96,7 +96,7 @@ export default async function CardDetailPage({ params }: PageProps) {
 
   return (
     <CardAccessGuard card={card}>
-      <div className="responsive-container py-8 max-w-4xl mx-auto space-y-8">
+      <div className="w-full max-w-4xl mx-auto space-y-8">
       {/* Breadcrumb & Top Bar */}
       <nav aria-label="Đường dẫn trang" className="flex items-center gap-2 text-xs font-medium text-slate-500">
         <Link href="/" className="hover:text-teal-700">Trang chủ</Link>

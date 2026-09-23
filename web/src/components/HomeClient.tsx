@@ -38,7 +38,7 @@ export function HomeClient({ initialCards }: HomeClientProps) {
   }, [initialCards]);
 
   return (
-    <div className={`responsive-container py-6 space-y-7 ${isLargeText ? "text-lg" : "text-base"}`}>
+    <div className={`w-full space-y-7 ${isLargeText ? "text-lg" : "text-base"}`}>
       {/* Lời chào thân thiện & Tiêu đề */}
       {HOME_FEATURES_CONFIG.heroGreeting.enabled && (
         <HomeHeroGreeting isLargeText={isLargeText} />

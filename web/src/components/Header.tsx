@@ -6,7 +6,7 @@ import { Bell } from "lucide-react";
 
 export function Header() {
   return (
-    <header className="w-full h-[52px] liquid-glass sticky top-0 z-40 lg:hidden shadow-[0_2px_12px_rgba(0,0,0,0.03)] flex items-center transition-all">
+    <header className="w-full h-[52px] bg-white border-b border-slate-200 sticky top-0 z-50 lg:hidden shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex items-center transition-all">
       <div className="w-full px-3.5 flex items-center justify-between">
         {/* Brand: Logo + Title + Status Beacon */}
         <Link
