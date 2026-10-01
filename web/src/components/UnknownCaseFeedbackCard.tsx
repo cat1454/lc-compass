@@ -141,11 +141,11 @@ export function UnknownCaseFeedbackCard({
                 <span>Gọi Tổng đài 1022 (0236 1022)</span>
               </a>
               <a
-                href="tel:0905423233"
+                href="tel:02363777998"
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-purple-700 text-white rounded-lg text-xs font-bold hover:bg-purple-800 transition-transform active:scale-95 shadow-2xs"
               >
                 <Phone className="w-3.5 h-3.5" />
-                <span>Hotline CĐS Phường (0905 423 233)</span>
+                <span>Hotline UBND Phường (02363 777 998)</span>
               </a>
             </div>
           </div>
@@ -205,7 +205,7 @@ export function UnknownCaseFeedbackCard({
       <div className="hidden print:block fixed inset-0 bg-white p-8 z-50 text-slate-900">
         <div className="border-b-2 border-slate-900 pb-4 mb-6">
           <div className="text-xs uppercase font-bold tracking-wider text-slate-500">
-            ỦY BAN NHÂN DÂN PHƯỜNG LIÊN CHIỂU – TỔ CHUYỂN ĐỔI SỐ
+            LIÊN CHIỂU COMPASS – HỖ TRỢ TRA CỨU DÂN SINH
           </div>
           <h1 className="text-xl font-black mt-1">
             PHIẾU GHI NHẬN CÂU HỎI VƯỚNG MẮC DÂN SINH (MẪU DÙNG TẠI MỘT CỬA)

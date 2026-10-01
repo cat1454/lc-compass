@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 test("Danh bạ chính thức giữ bố cục và nạp các địa điểm đã thẩm định", async ({ page }) => {
   await page.goto("/places");
-  await expect(page.getByRole("heading", { name: "Địa điểm & tiện ích", level: 2 })).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Địa điểm & Tiện ích/i })).toBeVisible();
   await expect(page.locator(".responsive-cards article")).toHaveCount(10);
   await expect(page.getByRole("link", { name: /Trung tâm Phục vụ/i })).toBeVisible();
 });

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   Home,
+  Calendar,
   Search,
   ShieldCheck,
   FileText,
@@ -19,6 +20,7 @@ export function SidebarDesktop() {
   const pathname = usePathname();
 
   const isHomeActive = pathname === "/";
+  const isEventsActive = pathname.startsWith("/events");
   const isServicesActive =
     pathname.startsWith("/services") || pathname.includes("/cards/service-");
   const isPlacesActive =
@@ -48,6 +50,12 @@ export function SidebarDesktop() {
       href: "/services",
       icon: <FileText className="w-5 h-5" />,
       active: isServicesActive,
+    },
+    {
+      label: "Sự kiện sắp đến",
+      href: "/events",
+      icon: <Calendar className="w-5 h-5" />,
+      active: isEventsActive,
     },
     {
       label: "Địa điểm & tiện ích",

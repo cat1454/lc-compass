@@ -1,0 +1,203 @@
+{
+  "imported": 7,
+  "excluded": [
+    {
+      "id": "event-sang-tao-lien-chieu-2026",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Mâu thuẫn: AGENTS.md do người dùng cung cấp ghi 26/09/2026, dữ liệu cũ ghi 10/10/2026; cần thông báo chính thức giải quyết.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Chưa có bằng chứng miễn phí"
+      ]
+    },
+    {
+      "id": "event-bkdn-tech-startup-day",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates"
+      ]
+    },
+    {
+      "id": "event-digital-transformation-smart-factory",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Chưa có bằng chứng miễn phí"
+      ]
+    },
+    {
+      "id": "event-giai-bong-da-s7-lien-chieu",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa có lịch định kỳ cụ thể và thời hạn hiệu lực.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Thiếu lịch định kỳ có bằng chứng"
+      ]
+    },
+    {
+      "id": "event-thu-bay-tinh-nguyen-dvc-vneid",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa có lịch định kỳ cụ thể và thời hạn hiệu lực.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Thiếu lịch định kỳ có bằng chứng",
+        "Chưa có bằng chứng miễn phí"
+      ]
+    },
+    {
+      "id": "event-hien-mau-nhan-dao-giot-hong-bach-khoa",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates"
+      ]
+    },
+    {
+      "id": "event-ve-nguon-b1-hong-phuoc",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Chưa có bằng chứng miễn phí"
+      ]
+    },
+    {
+      "id": "event-lam-sach-bien-xuan-thieu",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa có lịch định kỳ cụ thể và thời hạn hiệu lực.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Thiếu lịch định kỳ có bằng chứng"
+      ]
+    },
+    {
+      "id": "event-cho-dem-hoa-khanh-nightlife",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa có lịch định kỳ cụ thể và thời hạn hiệu lực.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Thiếu lịch định kỳ có bằng chứng"
+      ]
+    },
+    {
+      "id": "event-le-hoi-cau-ngu-nam-o",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa chứng minh địa điểm thuộc phường Liên Chiểu hiện nay; không suy từ quận Liên Chiểu cũ.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates"
+      ]
+    },
+    {
+      "id": "event-dut-first-aid-20261003",
+      "reasons": [
+        "Nguồn ghi hoãn; chưa có lịch thay thế. Giữ thông báo, không đưa vào lịch hoạt động.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Đã hoãn/hủy; lưu hồ sơ, không nhập lịch đang diễn ra"
+      ]
+    },
+    {
+      "id": "online-running",
+      "reasons": [
+        "Hoạt động trực tuyến ở mọi nơi, không có địa điểm tổ chức cố định trong phường.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu/sai trường id",
+        "Thiếu/sai trường summary",
+        "Thiếu/sai trường category",
+        "Thiếu/sai trường categoryLabel",
+        "Thiếu/sai trường venueName",
+        "Thiếu/sai trường address",
+        "Thiếu/sai trường ward",
+        "Thiếu/sai trường coordinates",
+        "Thiếu/sai trường startAt",
+        "Thiếu/sai trường datePrecision",
+        "Thiếu/sai trường organizer",
+        "Thiếu/sai trường sourceUrl",
+        "Thiếu/sai trường sourcePublisher",
+        "Thiếu/sai trường evidenceText"
+      ]
+    },
+    {
+      "id": "robotics-june",
+      "reasons": [
+        "Ngoài khoảng 01/10–30/12/2026.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu/sai trường id",
+        "Thiếu/sai trường summary",
+        "Thiếu/sai trường category",
+        "Thiếu/sai trường categoryLabel",
+        "Thiếu/sai trường venueName",
+        "Thiếu/sai trường address",
+        "Thiếu/sai trường ward",
+        "Thiếu/sai trường coordinates",
+        "Thiếu/sai trường startAt",
+        "Thiếu/sai trường datePrecision",
+        "Thiếu/sai trường organizer",
+        "Thiếu/sai trường sourceUrl",
+        "Thiếu/sai trường sourcePublisher",
+        "Thiếu/sai trường evidenceText"
+      ]
+    }
+  ],
+  "duplicates": []
+}

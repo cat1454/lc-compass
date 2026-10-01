@@ -33,7 +33,7 @@ export function AppShell({ children }: AppShellProps) {
         {/* Cột nội dung chính */}
         <div className="flex-1 flex flex-col min-w-0 w-full">
           {/* Vùng nội dung trang chuẩn hóa max-w-screen-xl mx-auto px-4 py-6 */}
-          <main className="w-full max-w-screen-xl mx-auto px-4 py-6 flex-1 pb-40 lg:pb-8">{children}</main>
+          <main className="w-full max-w-screen-xl mx-auto px-4 py-6 flex-1 pb-6 lg:pb-8">{children}</main>
 
           {/* 3 Trụ cột cam kết từ image.png */}
           <PillarsFooter />

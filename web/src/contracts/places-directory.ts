@@ -23,6 +23,7 @@ export const CommunityPlaceItemSchema = z.object({
   notes: z.string().optional(),
   source: z.string().min(1),
   verificationMethod: z.literal("boundary_confirmed"),
+  evidence: z.string().optional(),
   coordinates: z
     .object({
       lat: z.number(),

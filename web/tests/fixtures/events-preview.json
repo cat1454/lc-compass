@@ -1,0 +1,386 @@
+{
+  "version": "test-only",
+  "asOfDate": "2026-10-01",
+  "ward": "Phường Liên Chiểu",
+  "totalEvents": 7,
+  "events": [
+    {
+      "id": "fixture-community-1",
+      "title": "KIỂM THỬ — Hội sách cộng đồng",
+      "summary": "Dữ liệu mô phỏng chỉ dùng kiểm thử giao diện, không phải sự kiện thật.",
+      "category": "event_education",
+      "categoryLabel": "Cộng đồng",
+      "venueName": "Địa điểm mô phỏng — không dùng chỉ đường thực tế",
+      "address": "Địa chỉ kiểm thử tại phường Liên Chiểu",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.08,
+        "lng": 108.12
+      },
+      "startAt": "2026-10-01T08:30:00+07:00",
+      "endAt": "2026-10-01T11:30:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Ban tổ chức mô phỏng",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://events.example.invalid/events/1",
+      "sourcePublisher": "Nguồn kiểm thử",
+      "evidenceText": "Chỉ là fixture tự động, không chứng minh hoạt động thực tế.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "checkedAt": "2026-10-01T09:00:00+07:00",
+      "coordinatePrecision": "venue",
+      "coordinateNote": "Tọa độ mô phỏng cho kiểm thử.",
+      "image": {
+        "src": "https://events.example.invalid/photo/1.svg",
+        "alt": "Ảnh kiểm thử — không phải poster thật",
+        "kind": "event",
+        "sourceUrl": "https://events.example.invalid/events/1",
+        "credit": "Ảnh fixture do dự án tạo để kiểm thử",
+        "checkedAt": "2026-10-01T09:00:00+07:00"
+      },
+      "sources": [
+        {
+          "url": "https://events.example.invalid/events/1",
+          "title": "Nguồn mô phỏng",
+          "publisher": "Nguồn kiểm thử",
+          "kind": "organizer",
+          "accessStatus": "read",
+          "checkedAt": "2026-10-01T09:00:00+07:00",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "ward",
+            "coordinates"
+          ],
+          "evidence": "Dữ liệu kiểm thử, không phải minh chứng thật."
+        }
+      ]
+    },
+    {
+      "id": "fixture-community-2",
+      "title": "KIỂM THỬ — Đọc sách thiếu nhi",
+      "summary": "Dữ liệu mô phỏng chỉ dùng kiểm thử giao diện, không phải sự kiện thật.",
+      "category": "event_education",
+      "categoryLabel": "Cộng đồng",
+      "venueName": "Địa điểm mô phỏng — không dùng chỉ đường thực tế",
+      "address": "Địa chỉ kiểm thử tại phường Liên Chiểu",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.08,
+        "lng": 108.12
+      },
+      "startAt": "2026-10-01T08:30:00+07:00",
+      "endAt": "2026-10-01T11:30:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Ban tổ chức mô phỏng",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://events.example.invalid/events/2",
+      "sourcePublisher": "Nguồn kiểm thử",
+      "evidenceText": "Chỉ là fixture tự động, không chứng minh hoạt động thực tế.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "checkedAt": "2026-10-01T09:00:00+07:00",
+      "coordinatePrecision": "venue",
+      "coordinateNote": "Tọa độ mô phỏng cho kiểm thử.",
+      "image": {
+        "src": "https://events.example.invalid/photo/2.svg",
+        "alt": "Ảnh kiểm thử — không phải poster thật",
+        "kind": "venue",
+        "sourceUrl": "https://events.example.invalid/events/2",
+        "credit": "Ảnh fixture do dự án tạo để kiểm thử",
+        "checkedAt": "2026-10-01T09:00:00+07:00"
+      },
+      "sources": [
+        {
+          "url": "https://events.example.invalid/events/2",
+          "title": "Nguồn mô phỏng",
+          "publisher": "Nguồn kiểm thử",
+          "kind": "organizer",
+          "accessStatus": "read",
+          "checkedAt": "2026-10-01T09:00:00+07:00",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "ward",
+            "coordinates"
+          ],
+          "evidence": "Dữ liệu kiểm thử, không phải minh chứng thật."
+        }
+      ]
+    },
+    {
+      "id": "fixture-community-3",
+      "title": "KIỂM THỬ — Tập huấn cộng đồng",
+      "summary": "Dữ liệu mô phỏng chỉ dùng kiểm thử giao diện, không phải sự kiện thật.",
+      "category": "event_education",
+      "categoryLabel": "Cộng đồng",
+      "venueName": "Địa điểm mô phỏng — không dùng chỉ đường thực tế",
+      "address": "Địa chỉ kiểm thử tại phường Liên Chiểu",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.08,
+        "lng": 108.12
+      },
+      "startAt": "2026-10-02T08:30:00+07:00",
+      "endAt": "2026-10-02T11:30:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Ban tổ chức mô phỏng",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://events.example.invalid/events/3",
+      "sourcePublisher": "Nguồn kiểm thử",
+      "evidenceText": "Chỉ là fixture tự động, không chứng minh hoạt động thực tế.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "checkedAt": "2026-10-01T09:00:00+07:00",
+      "coordinatePrecision": "venue",
+      "coordinateNote": "Tọa độ mô phỏng cho kiểm thử.",
+      "image": {
+        "src": "https://events.example.invalid/photo/3.svg",
+        "alt": "Ảnh kiểm thử — không phải poster thật",
+        "kind": "event",
+        "sourceUrl": "https://events.example.invalid/events/3",
+        "credit": "Ảnh fixture do dự án tạo để kiểm thử",
+        "checkedAt": "2026-10-01T09:00:00+07:00"
+      },
+      "sources": [
+        {
+          "url": "https://events.example.invalid/events/3",
+          "title": "Nguồn mô phỏng",
+          "publisher": "Nguồn kiểm thử",
+          "kind": "organizer",
+          "accessStatus": "read",
+          "checkedAt": "2026-10-01T09:00:00+07:00",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "ward",
+            "coordinates"
+          ],
+          "evidence": "Dữ liệu kiểm thử, không phải minh chứng thật."
+        }
+      ]
+    },
+    {
+      "id": "fixture-community-4",
+      "title": "KIỂM THỬ — Kỹ năng số",
+      "summary": "Dữ liệu mô phỏng chỉ dùng kiểm thử giao diện, không phải sự kiện thật.",
+      "category": "event_education",
+      "categoryLabel": "Cộng đồng",
+      "venueName": "Địa điểm mô phỏng — không dùng chỉ đường thực tế",
+      "address": "Địa chỉ kiểm thử tại phường Liên Chiểu",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.08,
+        "lng": 108.12
+      },
+      "startAt": "2026-10-02T08:30:00+07:00",
+      "endAt": "2026-10-02T11:30:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Ban tổ chức mô phỏng",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://events.example.invalid/events/4",
+      "sourcePublisher": "Nguồn kiểm thử",
+      "evidenceText": "Chỉ là fixture tự động, không chứng minh hoạt động thực tế.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "checkedAt": "2026-10-01T09:00:00+07:00",
+      "coordinatePrecision": "venue",
+      "coordinateNote": "Tọa độ mô phỏng cho kiểm thử.",
+      "image": {
+        "src": "https://events.example.invalid/photo/4.svg",
+        "alt": "Ảnh kiểm thử — không phải poster thật",
+        "kind": "event",
+        "sourceUrl": "https://events.example.invalid/events/4",
+        "credit": "Ảnh fixture do dự án tạo để kiểm thử",
+        "checkedAt": "2026-10-01T09:00:00+07:00"
+      },
+      "sources": [
+        {
+          "url": "https://events.example.invalid/events/4",
+          "title": "Nguồn mô phỏng",
+          "publisher": "Nguồn kiểm thử",
+          "kind": "organizer",
+          "accessStatus": "read",
+          "checkedAt": "2026-10-01T09:00:00+07:00",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "ward",
+            "coordinates"
+          ],
+          "evidence": "Dữ liệu kiểm thử, không phải minh chứng thật."
+        }
+      ]
+    },
+    {
+      "id": "fixture-community-5",
+      "title": "KIỂM THỬ — Ngày chạy bộ",
+      "summary": "Dữ liệu mô phỏng chỉ dùng kiểm thử giao diện, không phải sự kiện thật.",
+      "category": "event_sports",
+      "categoryLabel": "Thể thao",
+      "venueName": "Địa điểm mô phỏng — không dùng chỉ đường thực tế",
+      "address": "Địa chỉ kiểm thử tại phường Liên Chiểu",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.08,
+        "lng": 108.12
+      },
+      "startAt": "2026-10-03T08:30:00+07:00",
+      "endAt": "2026-10-03T11:30:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Ban tổ chức mô phỏng",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://events.example.invalid/events/5",
+      "sourcePublisher": "Nguồn kiểm thử",
+      "evidenceText": "Chỉ là fixture tự động, không chứng minh hoạt động thực tế.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "checkedAt": "2026-10-01T09:00:00+07:00",
+      "coordinatePrecision": "venue",
+      "coordinateNote": "Tọa độ mô phỏng cho kiểm thử.",
+      "image": {
+        "src": "https://events.example.invalid/photo/5.svg",
+        "alt": "Ảnh kiểm thử — không phải poster thật",
+        "kind": "event",
+        "sourceUrl": "https://events.example.invalid/events/5",
+        "credit": "Ảnh fixture do dự án tạo để kiểm thử",
+        "checkedAt": "2026-10-01T09:00:00+07:00"
+      },
+      "sources": [
+        {
+          "url": "https://events.example.invalid/events/5",
+          "title": "Nguồn mô phỏng",
+          "publisher": "Nguồn kiểm thử",
+          "kind": "organizer",
+          "accessStatus": "read",
+          "checkedAt": "2026-10-01T09:00:00+07:00",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "ward",
+            "coordinates"
+          ],
+          "evidence": "Dữ liệu kiểm thử, không phải minh chứng thật."
+        }
+      ]
+    },
+    {
+      "id": "fixture-community-6",
+      "title": "KIỂM THỬ — Triển lãm văn hóa",
+      "summary": "Dữ liệu mô phỏng chỉ dùng kiểm thử giao diện, không phải sự kiện thật.",
+      "category": "event_education",
+      "categoryLabel": "Cộng đồng",
+      "venueName": "Địa điểm mô phỏng — không dùng chỉ đường thực tế",
+      "address": "Địa chỉ kiểm thử tại phường Liên Chiểu",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.08,
+        "lng": 108.12
+      },
+      "startAt": "2026-10-03T08:30:00+07:00",
+      "endAt": "2026-10-03T11:30:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Ban tổ chức mô phỏng",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://events.example.invalid/events/6",
+      "sourcePublisher": "Nguồn kiểm thử",
+      "evidenceText": "Chỉ là fixture tự động, không chứng minh hoạt động thực tế.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "checkedAt": "2026-10-01T09:00:00+07:00",
+      "coordinatePrecision": "venue",
+      "coordinateNote": "Tọa độ mô phỏng cho kiểm thử.",
+      "image": {
+        "src": "https://events.example.invalid/photo/6.svg",
+        "alt": "Ảnh kiểm thử — không phải poster thật",
+        "kind": "event",
+        "sourceUrl": "https://events.example.invalid/events/6",
+        "credit": "Ảnh fixture do dự án tạo để kiểm thử",
+        "checkedAt": "2026-10-01T09:00:00+07:00"
+      },
+      "sources": [
+        {
+          "url": "https://events.example.invalid/events/6",
+          "title": "Nguồn mô phỏng",
+          "publisher": "Nguồn kiểm thử",
+          "kind": "organizer",
+          "accessStatus": "read",
+          "checkedAt": "2026-10-01T09:00:00+07:00",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "ward",
+            "coordinates"
+          ],
+          "evidence": "Dữ liệu kiểm thử, không phải minh chứng thật."
+        }
+      ]
+    },
+    {
+      "id": "fixture-community-7",
+      "title": "KIỂM THỬ — Giao lưu văn hóa",
+      "summary": "Dữ liệu mô phỏng chỉ dùng kiểm thử giao diện, không phải sự kiện thật.",
+      "category": "event_education",
+      "categoryLabel": "Cộng đồng",
+      "venueName": "Địa điểm mô phỏng — không dùng chỉ đường thực tế",
+      "address": "Địa chỉ kiểm thử tại phường Liên Chiểu",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.08,
+        "lng": 108.12
+      },
+      "startAt": "2026-10-04T08:30:00+07:00",
+      "endAt": "2026-10-04T11:30:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Ban tổ chức mô phỏng",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://events.example.invalid/events/7",
+      "sourcePublisher": "Nguồn kiểm thử",
+      "evidenceText": "Chỉ là fixture tự động, không chứng minh hoạt động thực tế.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "checkedAt": "2026-10-01T09:00:00+07:00",
+      "coordinatePrecision": "venue",
+      "coordinateNote": "Tọa độ mô phỏng cho kiểm thử.",
+      "image": {
+        "src": "https://events.example.invalid/photo/7.svg",
+        "alt": "Ảnh kiểm thử — không phải poster thật",
+        "kind": "event",
+        "sourceUrl": "https://events.example.invalid/events/7",
+        "credit": "Ảnh fixture do dự án tạo để kiểm thử",
+        "checkedAt": "2026-10-01T09:00:00+07:00"
+      },
+      "sources": [
+        {
+          "url": "https://events.example.invalid/events/7",
+          "title": "Nguồn mô phỏng",
+          "publisher": "Nguồn kiểm thử",
+          "kind": "organizer",
+          "accessStatus": "read",
+          "checkedAt": "2026-10-01T09:00:00+07:00",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "ward",
+            "coordinates"
+          ],
+          "evidence": "Dữ liệu kiểm thử, không phải minh chứng thật."
+        }
+      ]
+    }
+  ]
+}

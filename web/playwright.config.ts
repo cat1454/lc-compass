@@ -6,6 +6,8 @@ const baseURL = process.env.PLAYWRIGHT_TEST_BASE_URL || `http://localhost:${port
 export default defineConfig({
   testDir: "./tests",
   testMatch: "**/*.spec.ts",
+  // Popup scenarios need the explicitly labelled preview catalog/server.
+  testIgnore: "**/ui-events.spec.ts",
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,

@@ -10,7 +10,7 @@ import {
 
 export function Footer() {
   return (
-    <footer className="w-full bg-slate-900 text-slate-300 py-10 mt-16 border-t border-slate-800">
+    <footer className="w-full bg-slate-900 text-slate-300 pt-8 sm:pt-10 pb-28 lg:pb-10 mt-8 sm:mt-14 border-t border-slate-800">
       <div className="responsive-container space-y-8">
         <div className="flex flex-wrap justify-between gap-6">
           {/* Cột 1: Thông tin nền tảng */}

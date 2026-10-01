@@ -1,0 +1,45 @@
+{
+  "status": "verified",
+  "note": "Hình chữ nhật mô phỏng cho kiểm thử, KHÔNG PHẢI địa giới thật.",
+  "sourceUrl": "https://events.example.invalid/test-boundary",
+  "checkedAt": "2026-10-01T09:00:00+07:00",
+  "version": "test-only",
+  "geojson": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "TEST ONLY"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                108.1,
+                16.07
+              ],
+              [
+                108.14,
+                16.07
+              ],
+              [
+                108.14,
+                16.11
+              ],
+              [
+                108.1,
+                16.11
+              ],
+              [
+                108.1,
+                16.07
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

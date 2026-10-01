@@ -72,6 +72,10 @@ export function VoiceInputButton({
     }
   }, [onTranscript]);
 
+  if (!isSupported) {
+    return null;
+  }
+
   return (
     <button
       type="button"

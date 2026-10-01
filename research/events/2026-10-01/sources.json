@@ -1,0 +1,205 @@
+[
+  {
+    "id": "dut-week8",
+    "url": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+    "title": "Lịch công tác tuần 8, bắt đầu 28/09/2026",
+    "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+    "checkedAt": "2026-10-01T08:23:52+00:00",
+    "accessStatus": "read",
+    "kind": "organizer",
+    "supports": [
+      "time",
+      "venue",
+      "organizer",
+      "status"
+    ],
+    "evidence": "Lịch tuần và phụ lục ghi hoạt động 01–03/10; sơ cấp cứu có ghi hoãn.",
+    "sha256": "c94d7041cc3b397cdef10ad97609e83a5b2383058cdd8568b216e2ab462453dd",
+    "accessNote": "curl HTTPS; nội dung đã đọc"
+  },
+  {
+    "id": "dut-english",
+    "url": "https://dut.udn.vn/Tintuc/Thongbao/id/12264",
+    "title": "Thông báo xếp lớp tiếng Anh khóa 2026",
+    "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+    "checkedAt": "2026-10-01T08:23:52+00:00",
+    "accessStatus": "read",
+    "kind": "organizer",
+    "supports": [
+      "time",
+      "venue",
+      "organizer"
+    ],
+    "evidence": "Kiểm tra sáng 04/10/2026, 07:00–10:45 tại giảng đường F và H.",
+    "publishedAt": "2026-09-15T08:16:00+07:00",
+    "sha256": "2150fd72bf6671965da7fcf042c7e4b0c95c438d89746086da0a8a82ac2f1536",
+    "accessNote": "curl HTTPS; nội dung đã đọc"
+  },
+  {
+    "id": "dut-address",
+    "url": "https://ts.udn.vn/files/2026/2026_3_27_20_15_453_2026.3.27_thong_tin_tuyen_sinh_dh_chinh_quy_-_gui_ban_dao_tao.pdf",
+    "title": "Thông tin tuyển sinh đại học chính quy 2026, trang 1",
+    "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+    "checkedAt": "2026-10-01T08:23:53+00:00",
+    "accessStatus": "read",
+    "kind": "organizer",
+    "supports": [
+      "ward",
+      "venue"
+    ],
+    "evidence": "Trang 1: cơ sở 54 Nguyễn Lương Bằng thuộc phường Liên Chiểu, Đà Nẵng.",
+    "sha256": "b4b526c5f83ab052e4253c569575f5a39b978d0071aa3b9b1a61925fa3f2526b",
+    "accessNote": "curl HTTPS; nội dung đã đọc"
+  },
+  {
+    "id": "dut-campus-map",
+    "url": "https://mapcarta.com/W968341228",
+    "title": "Điểm đại diện Đại học Bách khoa Đà Nẵng, OSM way 968341228",
+    "publisher": "Mapcarta / OpenStreetMap contributors",
+    "checkedAt": "2026-10-01T08:23:53+00:00",
+    "accessStatus": "read",
+    "kind": "map",
+    "supports": [
+      "coordinates"
+    ],
+    "evidence": "Điểm khuôn viên: 16.07498, 108.15264; không phải tọa độ phòng. Không dùng địa danh quận cũ trên bản đồ để xác nhận phường.",
+    "sha256": "caf4d6c89dc5069c684adee85c7d1fad362fd60914b3a0faf398eddb60ada481",
+    "accessNote": "curl HTTPS; nội dung đã đọc"
+  },
+  {
+    "id": "irace",
+    "url": "https://app.irace.vn/buoc-chay-song-khoe-2026",
+    "title": "Bước chạy Sống khỏe 2026 trực tuyến",
+    "publisher": "iRace",
+    "checkedAt": "2026-10-01T08:23:54+00:00",
+    "accessStatus": "read",
+    "kind": "platform",
+    "supports": [
+      "time"
+    ],
+    "evidence": "Chạy trực tuyến 26/09–24/11/2026; không có địa điểm cố định tại phường.",
+    "sha256": "0dfc84337bf6dabb00c315712cf26b63b58cd186affb173aff8ec493453aaf0c",
+    "accessNote": "curl HTTPS; nội dung đã đọc"
+  },
+  {
+    "id": "robotics",
+    "url": "https://thanhdoandanang.org.vn/news/sac-mau-co-so/cuoc-thi-sang-tao-robotics-phuong-lien-chieu-lan-thu-i-nam-2026-khoi-day-dam-me-khoa-hoc-cong-nghe-trong-hoc-sinh-863.html",
+    "title": "Cuộc thi Robotics phường Liên Chiểu lần I",
+    "publisher": "Thành đoàn Đà Nẵng",
+    "checkedAt": "2026-10-01T08:23:55+00:00",
+    "accessStatus": "read",
+    "kind": "organizer",
+    "supports": [
+      "time",
+      "venue"
+    ],
+    "evidence": "Hoạt động ngày 15/06/2026; ngoài khoảng thu thập.",
+    "publishedAt": "2026-06-16",
+    "sha256": "aa69745f96af99fa1b17db5fba30482e11a8ee0b4ffa0df8c018b441ab2cbfef",
+    "accessNote": "curl HTTPS; nội dung đã đọc"
+  },
+  {
+    "id": "dut-map-unavailable",
+    "url": "https://maps.dut.udn.vn",
+    "title": "Bản đồ cơ sở DUT",
+    "publisher": "Trường Đại học Bách khoa",
+    "checkedAt": "2026-10-01T08:23:58+00:00",
+    "accessStatus": "blocked",
+    "kind": "map",
+    "supports": [],
+    "evidence": "Không đọc/xác nhận được nội dung trong lần truy cập này.",
+    "sha256": "385b55b4a1d179b843fd658fffa6604bd4a18ecc898480b1fa8d6944550b0c6c",
+    "accessNote": "Nội dung không khớp tài liệu cần kiểm tra"
+  },
+  {
+    "id": "osm-api-unavailable",
+    "url": "https://api.openstreetmap.org/api/0.6/way/968341228/full",
+    "title": "OSM way 968341228",
+    "publisher": "OpenStreetMap",
+    "checkedAt": "2026-10-01T08:23:58+00:00",
+    "accessStatus": "blocked",
+    "kind": "map",
+    "supports": [],
+    "evidence": "Không đọc/xác nhận được nội dung trong lần truy cập này.",
+    "sha256": null,
+    "accessNote": "curl: (35) Recv failure: Connection was reset"
+  },
+  {
+    "id": "legacy-source-1",
+    "url": "https://danang.gov.vn",
+    "title": "Nguồn được bản ghi cũ khai báo",
+    "publisher": "Đoàn TNCS Hồ Chí Minh phường Liên Chiểu",
+    "checkedAt": "2026-10-01T08:24:01+00:00",
+    "accessStatus": "read",
+    "kind": "media",
+    "supports": [],
+    "evidence": "Đã mở đường dẫn nhưng không tìm thấy minh chứng thời gian và địa điểm cho bản ghi cũ trong nội dung được kiểm tra.",
+    "sha256": "0061691f801d87fd31e4082917c77a8770dd75b6fa52335d9717045efd06643a",
+    "accessNote": "curl HTTPS; nội dung đã đọc"
+  },
+  {
+    "id": "legacy-source-2",
+    "url": "https://dut.udn.vn",
+    "title": "Nguồn được bản ghi cũ khai báo",
+    "publisher": "Trường Đại học Bách khoa – ĐH Đà Nẵng",
+    "checkedAt": "2026-10-01T08:24:03+00:00",
+    "accessStatus": "read",
+    "kind": "media",
+    "supports": [],
+    "evidence": "Đã mở đường dẫn nhưng không tìm thấy minh chứng thời gian và địa điểm cho bản ghi cũ trong nội dung được kiểm tra.",
+    "sha256": "cfab9f54eb902045b63c03b655fb86ca47b20387f6726937702fa769d61e4ccc",
+    "accessNote": "curl HTTPS; nội dung đã đọc"
+  },
+  {
+    "id": "legacy-source-3",
+    "url": "https://baodanang.vn/van-hoa-the-thao",
+    "title": "Nguồn được bản ghi cũ khai báo",
+    "publisher": "Báo Đà Nẵng & Trung tâm Thể thao Liên Chiểu Sport Center",
+    "checkedAt": "2026-10-01T08:24:04+00:00",
+    "accessStatus": "blocked",
+    "kind": "media",
+    "supports": [],
+    "evidence": "Không đọc/xác nhận được nội dung trong lần truy cập này.",
+    "sha256": null,
+    "accessNote": "curl: (22) The requested URL returned error: 403"
+  },
+  {
+    "id": "legacy-source-4",
+    "url": "https://thanhdoan.danang.gov.vn",
+    "title": "Nguồn được bản ghi cũ khai báo",
+    "publisher": "Thành đoàn Đà Nẵng & Đoàn phường Liên Chiểu",
+    "checkedAt": "2026-10-01T08:24:04+00:00",
+    "accessStatus": "blocked",
+    "kind": "media",
+    "supports": [],
+    "evidence": "Không đọc/xác nhận được nội dung trong lần truy cập này.",
+    "sha256": null,
+    "accessNote": "curl: (6) Could not resolve host: thanhdoan.danang.gov.vn"
+  },
+  {
+    "id": "legacy-source-5",
+    "url": "https://baodanang.vn/van-hoa-the-thao/202307/can-cu-lom-b1-hong-phuoc-dia-chi-do-giao-duc-truyen-thong-3950412/",
+    "title": "Nguồn được bản ghi cũ khai báo",
+    "publisher": "Báo Đà Nẵng & Quận Đoàn Liên Chiểu",
+    "checkedAt": "2026-10-01T08:24:04+00:00",
+    "accessStatus": "blocked",
+    "kind": "media",
+    "supports": [],
+    "evidence": "Không đọc/xác nhận được nội dung trong lần truy cập này.",
+    "sha256": null,
+    "accessNote": "curl: (22) The requested URL returned error: 403"
+  },
+  {
+    "id": "legacy-source-6",
+    "url": "https://bienphong.com.vn",
+    "title": "Nguồn được bản ghi cũ khai báo",
+    "publisher": "Báo Biên phòng & Thành đoàn Đà Nẵng",
+    "checkedAt": "2026-10-01T08:24:05+00:00",
+    "accessStatus": "blocked",
+    "kind": "media",
+    "supports": [],
+    "evidence": "Không đọc/xác nhận được nội dung trong lần truy cập này.",
+    "sha256": "e9f9f60960108d49f8e95b5bc05cfa104737583e13f1f7d18ef104e3a709bdf9",
+    "accessNote": "Nội dung không khớp tài liệu cần kiểm tra"
+  }
+]

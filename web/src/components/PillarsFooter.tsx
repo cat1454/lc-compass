@@ -54,7 +54,7 @@ export function PillarsFooter() {
 
         {/* Hand-lettered style tagline */}
         <div className="shrink-0 text-center md:text-right">
-          <div className="text-xl md:text-2xl font-serif italic font-bold text-teal-700 tracking-tight">
+          <div className="text-xl md:text-2xl font-sans font-extrabold text-teal-800 tracking-tight">
             Một chạm Liên Chiểu
           </div>
           <div className="text-[10px] text-slate-400 font-sans uppercase tracking-wider">

@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, FileText, MapPin, Compass } from "lucide-react";
+import { Home, Calendar, FileText, MapPin, Compass } from "lucide-react";
 
 export function BottomNavMobile() {
   const pathname = usePathname();
 
   const isHomeActive = pathname === "/";
+  const isEventsActive = pathname.startsWith("/events");
   const isServicesActive =
     pathname.startsWith("/services") || pathname.includes("/cards/service-");
   const isPlacesActive = pathname.startsWith("/places") || pathname.includes("/cards/place-");
@@ -22,6 +23,18 @@ export function BottomNavMobile() {
         <Home className={`w-5 h-5 ${active ? "stroke-[2.5]" : "stroke-[1.8]"}`} />
       ),
       active: isHomeActive,
+    },
+    {
+      label: "Sự kiện",
+      fullLabel: "Cầu nối sự kiện",
+      href: "/events",
+      icon: (active: boolean) => (
+        <span className="relative flex items-center justify-center">
+          <Calendar className={`w-5 h-5 ${active ? "stroke-[2.5] text-teal-600" : "stroke-[1.8]"}`} />
+          <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
+        </span>
+      ),
+      active: isEventsActive,
     },
     {
       label: "Thủ tục",

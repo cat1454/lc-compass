@@ -1,0 +1,454 @@
+{
+  "imported": 0,
+  "excluded": [
+    {
+      "id": "event-sang-tao-lien-chieu-2026",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Mâu thuẫn: AGENTS.md do người dùng cung cấp ghi 26/09/2026, dữ liệu cũ ghi 10/10/2026; cần thông báo chính thức giải quyết.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Chưa có bằng chứng miễn phí"
+      ]
+    },
+    {
+      "id": "event-bkdn-tech-startup-day",
+      "reasons": [
+        "Ngoài phạm vi mới: hoạt động liên quan Đại học Bách khoa.",
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Hoạt động Bách khoa ngoài phạm vi sự kiện cộng đồng đã chọn",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates"
+      ]
+    },
+    {
+      "id": "event-digital-transformation-smart-factory",
+      "reasons": [
+        "Ngoài phạm vi mới: hoạt động liên quan Đại học Bách khoa.",
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Hoạt động Bách khoa ngoài phạm vi sự kiện cộng đồng đã chọn",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Chưa có bằng chứng miễn phí"
+      ]
+    },
+    {
+      "id": "event-giai-bong-da-s7-lien-chieu",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa có lịch định kỳ cụ thể và thời hạn hiệu lực.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Thiếu lịch định kỳ có bằng chứng"
+      ]
+    },
+    {
+      "id": "event-thu-bay-tinh-nguyen-dvc-vneid",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa có lịch định kỳ cụ thể và thời hạn hiệu lực.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Thiếu lịch định kỳ có bằng chứng",
+        "Chưa có bằng chứng miễn phí"
+      ]
+    },
+    {
+      "id": "event-hien-mau-nhan-dao-giot-hong-bach-khoa",
+      "reasons": [
+        "Ngoài phạm vi mới: hoạt động liên quan Đại học Bách khoa.",
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Hoạt động Bách khoa ngoài phạm vi sự kiện cộng đồng đã chọn",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates"
+      ]
+    },
+    {
+      "id": "event-ve-nguon-b1-hong-phuoc",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Chưa có bằng chứng miễn phí"
+      ]
+    },
+    {
+      "id": "event-lam-sach-bien-xuan-thieu",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa có lịch định kỳ cụ thể và thời hạn hiệu lực.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Thiếu lịch định kỳ có bằng chứng"
+      ]
+    },
+    {
+      "id": "event-cho-dem-hoa-khanh-nightlife",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa có lịch định kỳ cụ thể và thời hạn hiệu lực.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates",
+        "Thiếu lịch định kỳ có bằng chứng"
+      ]
+    },
+    {
+      "id": "event-le-hoi-cau-ngu-nam-o",
+      "reasons": [
+        "Chưa có bài gốc chứng minh lịch 2026; nhãn source_verified cũ không phải kết quả đối soát.",
+        "Tọa độ cũ chưa có nguồn đối chiếu.",
+        "Chưa chứng minh địa điểm thuộc phường Liên Chiểu hiện nay; không suy từ quận Liên Chiểu cũ.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung",
+        "Thiếu độ chính xác và giải thích tọa độ",
+        "Thiếu bài/lịch cụ thể của đơn vị tổ chức",
+        "Thiếu bằng chứng ward",
+        "Thiếu bằng chứng coordinates"
+      ]
+    },
+    {
+      "id": "event-dut-lgd-morning-20261001",
+      "reasons": [
+        "Ngoài phạm vi mới: hoạt động liên quan Đại học Bách khoa.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Hoạt động Bách khoa ngoài phạm vi sự kiện cộng đồng đã chọn",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung"
+      ]
+    },
+    {
+      "id": "event-dut-lgd-interview-20261001",
+      "reasons": [
+        "Ngoài phạm vi mới: hoạt động liên quan Đại học Bách khoa.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Hoạt động Bách khoa ngoài phạm vi sự kiện cộng đồng đã chọn",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung"
+      ]
+    },
+    {
+      "id": "event-dut-energy-training-20261002",
+      "reasons": [
+        "Ngoài phạm vi mới: hoạt động liên quan Đại học Bách khoa.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Hoạt động Bách khoa ngoài phạm vi sự kiện cộng đồng đã chọn",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung"
+      ]
+    },
+    {
+      "id": "event-dut-fpt-assessment-20261002",
+      "reasons": [
+        "Ngoài phạm vi mới: hoạt động liên quan Đại học Bách khoa.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Hoạt động Bách khoa ngoài phạm vi sự kiện cộng đồng đã chọn",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung"
+      ]
+    },
+    {
+      "id": "event-dut-healthy-run-20261003",
+      "reasons": [
+        "Ngoài phạm vi mới: hoạt động liên quan Đại học Bách khoa.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Hoạt động Bách khoa ngoài phạm vi sự kiện cộng đồng đã chọn",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung"
+      ]
+    },
+    {
+      "id": "event-dut-sea-islands-20261003",
+      "reasons": [
+        "Ngoài phạm vi mới: hoạt động liên quan Đại học Bách khoa.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Hoạt động Bách khoa ngoài phạm vi sự kiện cộng đồng đã chọn",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung"
+      ]
+    },
+    {
+      "id": "event-dut-first-aid-20261003",
+      "reasons": [
+        "Ngoài phạm vi mới: hoạt động liên quan Đại học Bách khoa.",
+        "Nguồn ghi hoãn; chưa có lịch thay thế. Giữ thông báo, không đưa vào lịch hoạt động.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Hoạt động Bách khoa ngoài phạm vi sự kiện cộng đồng đã chọn",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung",
+        "Đã hoãn/hủy; lưu hồ sơ, không nhập lịch đang diễn ra"
+      ]
+    },
+    {
+      "id": "event-dut-english-placement-20261004",
+      "reasons": [
+        "Ngoài phạm vi mới: hoạt động liên quan Đại học Bách khoa.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Hoạt động Bách khoa ngoài phạm vi sự kiện cộng đồng đã chọn",
+        "Thiếu ảnh sự kiện hoặc ảnh địa điểm đã xác minh",
+        "Cần tọa độ địa điểm tổ chức, không dùng điểm đại diện khuôn viên chung"
+      ]
+    },
+    {
+      "id": "online-running",
+      "reasons": [
+        "Hoạt động trực tuyến ở mọi nơi, không có địa điểm tổ chức cố định trong phường.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu/sai trường id",
+        "Thiếu/sai trường summary",
+        "Thiếu/sai trường category",
+        "Thiếu/sai trường categoryLabel",
+        "Thiếu/sai trường venueName",
+        "Thiếu/sai trường address",
+        "Thiếu/sai trường ward",
+        "Thiếu/sai trường coordinates",
+        "Thiếu/sai trường startAt",
+        "Thiếu/sai trường datePrecision",
+        "Thiếu/sai trường organizer",
+        "Thiếu/sai trường sourceUrl",
+        "Thiếu/sai trường sourcePublisher",
+        "Thiếu/sai trường evidenceText"
+      ]
+    },
+    {
+      "id": "robotics-june",
+      "reasons": [
+        "Ngoài khoảng 01/10–30/12/2026.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu/sai trường id",
+        "Thiếu/sai trường summary",
+        "Thiếu/sai trường category",
+        "Thiếu/sai trường categoryLabel",
+        "Thiếu/sai trường venueName",
+        "Thiếu/sai trường address",
+        "Thiếu/sai trường ward",
+        "Thiếu/sai trường coordinates",
+        "Thiếu/sai trường startAt",
+        "Thiếu/sai trường datePrecision",
+        "Thiếu/sai trường organizer",
+        "Thiếu/sai trường sourceUrl",
+        "Thiếu/sai trường sourcePublisher",
+        "Thiếu/sai trường evidenceText"
+      ]
+    },
+    {
+      "id": "community-digital-day",
+      "reasons": [
+        "Mới có lịch họp triển khai 29/09; chưa có lịch sự kiện, địa điểm, tọa độ và ảnh.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu/sai trường id",
+        "Thiếu/sai trường summary",
+        "Thiếu/sai trường category",
+        "Thiếu/sai trường categoryLabel",
+        "Thiếu/sai trường venueName",
+        "Thiếu/sai trường address",
+        "Thiếu/sai trường ward",
+        "Thiếu/sai trường coordinates",
+        "Thiếu/sai trường startAt",
+        "Thiếu/sai trường datePrecision",
+        "Thiếu/sai trường organizer",
+        "Thiếu/sai trường sourceUrl",
+        "Thiếu/sai trường sourcePublisher",
+        "Thiếu/sai trường evidenceText"
+      ]
+    },
+    {
+      "id": "community-camp",
+      "reasons": [
+        "Đầu mối từ cuộc họp triển khai; không lấy ngày họp làm ngày hội trại. Thiếu lịch, địa điểm, tọa độ và ảnh.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu/sai trường id",
+        "Thiếu/sai trường summary",
+        "Thiếu/sai trường category",
+        "Thiếu/sai trường categoryLabel",
+        "Thiếu/sai trường venueName",
+        "Thiếu/sai trường address",
+        "Thiếu/sai trường ward",
+        "Thiếu/sai trường coordinates",
+        "Thiếu/sai trường startAt",
+        "Thiếu/sai trường datePrecision",
+        "Thiếu/sai trường organizer",
+        "Thiếu/sai trường sourceUrl",
+        "Thiếu/sai trường sourcePublisher",
+        "Thiếu/sai trường evidenceText"
+      ]
+    },
+    {
+      "id": "community-startup-training",
+      "reasons": [
+        "Thông báo đăng ký nhu cầu không xác nhận thời gian/địa điểm lớp học; thiếu tọa độ và ảnh.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu/sai trường id",
+        "Thiếu/sai trường summary",
+        "Thiếu/sai trường category",
+        "Thiếu/sai trường categoryLabel",
+        "Thiếu/sai trường venueName",
+        "Thiếu/sai trường address",
+        "Thiếu/sai trường ward",
+        "Thiếu/sai trường coordinates",
+        "Thiếu/sai trường startAt",
+        "Thiếu/sai trường datePrecision",
+        "Thiếu/sai trường organizer",
+        "Thiếu/sai trường sourceUrl",
+        "Thiếu/sai trường sourcePublisher",
+        "Thiếu/sai trường evidenceText"
+      ]
+    },
+    {
+      "id": "community-security-model",
+      "reasons": [
+        "Lịch đăng ký hội trường ghi 03/10 08:00; chưa có thông báo gốc chi tiết về đối tượng tham gia, ảnh và nguồn tọa độ.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu/sai trường id",
+        "Thiếu/sai trường summary",
+        "Thiếu/sai trường category",
+        "Thiếu/sai trường categoryLabel",
+        "Thiếu/sai trường address",
+        "Thiếu/sai trường ward",
+        "Thiếu/sai trường coordinates",
+        "Thiếu/sai trường sourceUrl",
+        "Thiếu/sai trường sourcePublisher",
+        "Thiếu/sai trường evidenceText"
+      ]
+    },
+    {
+      "id": "hai-van-badminton",
+      "reasons": [
+        "Địa điểm Thanh Đàm 10, phường Hải Vân; ngoài địa bàn.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu/sai trường id",
+        "Thiếu/sai trường summary",
+        "Thiếu/sai trường category",
+        "Thiếu/sai trường categoryLabel",
+        "Thiếu/sai trường venueName",
+        "Thiếu/sai trường address",
+        "Thiếu/sai trường ward",
+        "Thiếu/sai trường coordinates",
+        "Thiếu/sai trường organizer",
+        "Thiếu/sai trường sourceUrl",
+        "Thiếu/sai trường sourcePublisher",
+        "Thiếu/sai trường evidenceText"
+      ]
+    },
+    {
+      "id": "hoa-xuan-digital-festival",
+      "reasons": [
+        "Địa điểm 48 Võ An Ninh, phường Hòa Xuân; ngoài địa bàn.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu/sai trường id",
+        "Thiếu/sai trường summary",
+        "Thiếu/sai trường category",
+        "Thiếu/sai trường categoryLabel",
+        "Thiếu/sai trường venueName",
+        "Thiếu/sai trường address",
+        "Thiếu/sai trường ward",
+        "Thiếu/sai trường coordinates",
+        "Thiếu/sai trường organizer",
+        "Thiếu/sai trường sourceUrl",
+        "Thiếu/sai trường sourcePublisher",
+        "Thiếu/sai trường evidenceText"
+      ]
+    },
+    {
+      "id": "golden-hills-restart",
+      "reasons": [
+        "Lịch nguồn ghi phường Hải Vân; không suy từ tên Liên Chiểu cũ.",
+        "Chưa được duyệt",
+        "Còn lý do chưa đạt",
+        "Thiếu/sai trường id",
+        "Thiếu/sai trường summary",
+        "Thiếu/sai trường category",
+        "Thiếu/sai trường categoryLabel",
+        "Thiếu/sai trường venueName",
+        "Thiếu/sai trường address",
+        "Thiếu/sai trường ward",
+        "Thiếu/sai trường coordinates",
+        "Thiếu/sai trường organizer",
+        "Thiếu/sai trường sourceUrl",
+        "Thiếu/sai trường sourcePublisher",
+        "Thiếu/sai trường evidenceText"
+      ]
+    }
+  ],
+  "duplicates": []
+}

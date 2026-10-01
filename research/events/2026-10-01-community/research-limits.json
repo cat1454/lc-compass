@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-10-01T09:11:54+00:00",
+  "searchTool": "Không sử dụng được công cụ web search: lỗi 401 token_revoked; không coi tìm kiếm đã bao quát.",
+  "fallback": "Đọc trực tiếp cổng phường, Thành đoàn, du lịch; đọc PDF đính kèm, lịch UBND và ảnh bản đồ.",
+  "searchAttempts": [
+    "Google Search HTML: chỉ trả trang chuyển tiếp",
+    "Bing query Liên Chiểu 10/2026: kết quả không liên quan, không dùng làm bằng chứng"
+  ],
+  "boundary": "Có ảnh chính thức, chưa có GeoJSON có nguồn và độ chính xác xác nhận được. Không số hóa phỏng đoán.",
+  "images": "Chưa có sự kiện mới đủ điều kiện để duyệt ảnh event/venue. Không dùng ảnh của bản ghi Bách khoa."
+}

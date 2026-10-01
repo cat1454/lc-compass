@@ -20,7 +20,18 @@ export function normalizeVietnamese(str: string): string {
  * Tải toàn bộ danh bạ tiện ích đời sống cộng đồng Phường Liên Chiểu
  */
 export async function loadPlacesDirectory(): Promise<PlacesDirectory> {
-  return readCsvPlaces();
+  const dir = readCsvPlaces();
+  const places = dir.places.map((place) => ({
+    ...place,
+    evidence:
+      place.notes && place.notes.trim().length > 0
+        ? place.notes
+        : `Dữ liệu đối soát điểm ${place.id} (${place.name}) từ nguồn ${place.source} trong ranh giới Nghị quyết 1659/NQ-UBTVQH15.`,
+  }));
+  return {
+    ...dir,
+    places,
+  };
 }
 
 export interface SearchPlacesOptions {

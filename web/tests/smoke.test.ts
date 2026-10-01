@@ -1,4 +1,12 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
+
+vi.mock("next/font/google", () => ({
+  Be_Vietnam_Pro: () => ({
+    className: "font-be-vietnam-pro",
+    variable: "--font-be-vietnam-pro",
+  }),
+}));
+
 import { metadata, viewport } from "../src/app/layout";
 import HomePage from "../src/app/page";
 import { EntryPointSchema } from "../src/contracts/navigation";
@@ -24,5 +32,10 @@ describe("Smoke Test - Ứng dụng & Nền tảng (Package 00)", () => {
 
   it("Kiểm tra Component HomePage được định nghĩa và là React function component", () => {
     expect(typeof HomePage).toBe("function");
+  });
+
+  it("Kiểm tra Component EventsPage được định nghĩa và là React function component", async () => {
+    const { default: EventsPage } = await import("../src/app/events/page");
+    expect(typeof EventsPage).toBe("function");
   });
 });

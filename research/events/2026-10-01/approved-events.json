@@ -1,0 +1,505 @@
+{
+  "version": "2.0.0",
+  "asOfDate": "2026-10-01",
+  "ward": "Phường Liên Chiểu",
+  "totalEvents": 7,
+  "events": [
+    {
+      "id": "event-dut-lgd-morning-20261001",
+      "title": "Học bổng LGD Track 2026",
+      "summary": "Sinh viên đăng ký và sinh viên quan tâm.",
+      "category": "event_education",
+      "categoryLabel": "Học tập & Việc làm",
+      "venueName": "Phòng S01.01 – Đại học Bách khoa",
+      "address": "54 Nguyễn Lương Bằng, phường Liên Chiểu, Đà Nẵng",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.07498,
+        "lng": 108.15264
+      },
+      "startAt": "2026-10-01T08:30:00+07:00",
+      "endAt": "2026-10-01T11:30:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Phòng Công tác Sinh viên DUT",
+      "targetAudience": "Sinh viên đăng ký và sinh viên quan tâm.",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+      "sourcePublisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+      "evidenceText": "01/10/2026 08:30–11:30; Phòng S01.01.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "sources": [
+        {
+          "url": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+          "title": "Lịch công tác tuần 8, bắt đầu 28/09/2026",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:52+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "status"
+          ],
+          "evidence": "01/10/2026 08:30–11:30; Phòng S01.01."
+        },
+        {
+          "url": "https://ts.udn.vn/files/2026/2026_3_27_20_15_453_2026.3.27_thong_tin_tuyen_sinh_dh_chinh_quy_-_gui_ban_dao_tao.pdf",
+          "title": "Thông tin tuyển sinh đại học chính quy 2026, trang 1",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "ward",
+            "venue"
+          ],
+          "evidence": "Trang 1: cơ sở 54 Nguyễn Lương Bằng thuộc phường Liên Chiểu, Đà Nẵng."
+        },
+        {
+          "url": "https://mapcarta.com/W968341228",
+          "title": "Điểm đại diện Đại học Bách khoa Đà Nẵng, OSM way 968341228",
+          "publisher": "Mapcarta / OpenStreetMap contributors",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "map",
+          "supports": [
+            "coordinates"
+          ],
+          "evidence": "Điểm khuôn viên: 16.07498, 108.15264; không phải tọa độ phòng. Không dùng địa danh quận cũ trên bản đồ để xác nhận phường."
+        }
+      ],
+      "checkedAt": "2026-10-01T08:24:05+00:00",
+      "coordinatePrecision": "campus",
+      "coordinateNote": "Điểm đại diện khuôn viên theo Mapcarta / © OpenStreetMap contributors; xem tên phòng trong chi tiết, không phải vị trí cửa vào phòng."
+    },
+    {
+      "id": "event-dut-lgd-interview-20261001",
+      "title": "Phỏng vấn học bổng LGD Track 2026",
+      "summary": "Sinh viên tham gia phỏng vấn học bổng.",
+      "category": "event_education",
+      "categoryLabel": "Học tập & Việc làm",
+      "venueName": "Phòng S02.02 – Đại học Bách khoa",
+      "address": "54 Nguyễn Lương Bằng, phường Liên Chiểu, Đà Nẵng",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.07498,
+        "lng": 108.15264
+      },
+      "startAt": "2026-10-01T13:30:00+07:00",
+      "endAt": "2026-10-01T16:30:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Phòng Công tác Sinh viên DUT",
+      "targetAudience": "Sinh viên tham gia phỏng vấn học bổng.",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+      "sourcePublisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+      "evidenceText": "01/10/2026 13:30–16:30; Phòng S02.02.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "sources": [
+        {
+          "url": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+          "title": "Lịch công tác tuần 8, bắt đầu 28/09/2026",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:52+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "status"
+          ],
+          "evidence": "01/10/2026 13:30–16:30; Phòng S02.02."
+        },
+        {
+          "url": "https://ts.udn.vn/files/2026/2026_3_27_20_15_453_2026.3.27_thong_tin_tuyen_sinh_dh_chinh_quy_-_gui_ban_dao_tao.pdf",
+          "title": "Thông tin tuyển sinh đại học chính quy 2026, trang 1",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "ward",
+            "venue"
+          ],
+          "evidence": "Trang 1: cơ sở 54 Nguyễn Lương Bằng thuộc phường Liên Chiểu, Đà Nẵng."
+        },
+        {
+          "url": "https://mapcarta.com/W968341228",
+          "title": "Điểm đại diện Đại học Bách khoa Đà Nẵng, OSM way 968341228",
+          "publisher": "Mapcarta / OpenStreetMap contributors",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "map",
+          "supports": [
+            "coordinates"
+          ],
+          "evidence": "Điểm khuôn viên: 16.07498, 108.15264; không phải tọa độ phòng. Không dùng địa danh quận cũ trên bản đồ để xác nhận phường."
+        }
+      ],
+      "checkedAt": "2026-10-01T08:24:05+00:00",
+      "coordinatePrecision": "campus",
+      "coordinateNote": "Điểm đại diện khuôn viên theo Mapcarta / © OpenStreetMap contributors; xem tên phòng trong chi tiết, không phải vị trí cửa vào phòng."
+    },
+    {
+      "id": "event-dut-energy-training-20261002",
+      "title": "Bồi dưỡng quản trị và kiểm toán năng lượng",
+      "summary": "Giảng viên, sinh viên quan tâm.",
+      "category": "event_education",
+      "categoryLabel": "Học tập & Việc làm",
+      "venueName": "Hội trường S02.01 – Đại học Bách khoa",
+      "address": "54 Nguyễn Lương Bằng, phường Liên Chiểu, Đà Nẵng",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.07498,
+        "lng": 108.15264
+      },
+      "startAt": "2026-10-02T07:00:00+07:00",
+      "endAt": "2026-10-02T17:00:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Trung tâm Ứng dụng KHCN và Tiêu chuẩn Đo lường Chất lượng Đà Nẵng; Trung tâm Nghiên cứu và Ứng dụng năng lượng thay thế",
+      "targetAudience": "Giảng viên, sinh viên quan tâm.",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+      "sourcePublisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+      "evidenceText": "02/10/2026 07:00–17:00; Hội trường S02.01.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "sources": [
+        {
+          "url": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+          "title": "Lịch công tác tuần 8, bắt đầu 28/09/2026",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:52+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "status"
+          ],
+          "evidence": "02/10/2026 07:00–17:00; Hội trường S02.01."
+        },
+        {
+          "url": "https://ts.udn.vn/files/2026/2026_3_27_20_15_453_2026.3.27_thong_tin_tuyen_sinh_dh_chinh_quy_-_gui_ban_dao_tao.pdf",
+          "title": "Thông tin tuyển sinh đại học chính quy 2026, trang 1",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "ward",
+            "venue"
+          ],
+          "evidence": "Trang 1: cơ sở 54 Nguyễn Lương Bằng thuộc phường Liên Chiểu, Đà Nẵng."
+        },
+        {
+          "url": "https://mapcarta.com/W968341228",
+          "title": "Điểm đại diện Đại học Bách khoa Đà Nẵng, OSM way 968341228",
+          "publisher": "Mapcarta / OpenStreetMap contributors",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "map",
+          "supports": [
+            "coordinates"
+          ],
+          "evidence": "Điểm khuôn viên: 16.07498, 108.15264; không phải tọa độ phòng. Không dùng địa danh quận cũ trên bản đồ để xác nhận phường."
+        }
+      ],
+      "checkedAt": "2026-10-01T08:24:05+00:00",
+      "coordinatePrecision": "campus",
+      "coordinateNote": "Điểm đại diện khuôn viên theo Mapcarta / © OpenStreetMap contributors; xem tên phòng trong chi tiết, không phải vị trí cửa vào phòng."
+    },
+    {
+      "id": "event-dut-fpt-assessment-20261002",
+      "title": "Đánh giá năng lực FPT Talent Assessment",
+      "summary": "Sinh viên đã đăng ký.",
+      "category": "event_education",
+      "categoryLabel": "Học tập & Việc làm",
+      "venueName": "Phòng P202 – Đại học Bách khoa",
+      "address": "54 Nguyễn Lương Bằng, phường Liên Chiểu, Đà Nẵng",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.07498,
+        "lng": 108.15264
+      },
+      "startAt": "2026-10-02T13:00:00+07:00",
+      "endAt": "2026-10-02T17:00:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Khoa Điện tử và Trí tuệ nhân tạo DUT; FPT Software",
+      "targetAudience": "Sinh viên đã đăng ký.",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+      "sourcePublisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+      "evidenceText": "02/10/2026 13:00–17:00; Phòng P202.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "sources": [
+        {
+          "url": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+          "title": "Lịch công tác tuần 8, bắt đầu 28/09/2026",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:52+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "status"
+          ],
+          "evidence": "02/10/2026 13:00–17:00; Phòng P202."
+        },
+        {
+          "url": "https://ts.udn.vn/files/2026/2026_3_27_20_15_453_2026.3.27_thong_tin_tuyen_sinh_dh_chinh_quy_-_gui_ban_dao_tao.pdf",
+          "title": "Thông tin tuyển sinh đại học chính quy 2026, trang 1",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "ward",
+            "venue"
+          ],
+          "evidence": "Trang 1: cơ sở 54 Nguyễn Lương Bằng thuộc phường Liên Chiểu, Đà Nẵng."
+        },
+        {
+          "url": "https://mapcarta.com/W968341228",
+          "title": "Điểm đại diện Đại học Bách khoa Đà Nẵng, OSM way 968341228",
+          "publisher": "Mapcarta / OpenStreetMap contributors",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "map",
+          "supports": [
+            "coordinates"
+          ],
+          "evidence": "Điểm khuôn viên: 16.07498, 108.15264; không phải tọa độ phòng. Không dùng địa danh quận cũ trên bản đồ để xác nhận phường."
+        }
+      ],
+      "checkedAt": "2026-10-01T08:24:05+00:00",
+      "coordinatePrecision": "campus",
+      "coordinateNote": "Điểm đại diện khuôn viên theo Mapcarta / © OpenStreetMap contributors; xem tên phòng trong chi tiết, không phải vị trí cửa vào phòng."
+    },
+    {
+      "id": "event-dut-healthy-run-20261003",
+      "title": "Bước chạy Sống khỏe 2026 tại DUT",
+      "summary": "Viên chức, người lao động, sinh viên trường đã đăng ký.",
+      "category": "event_sports",
+      "categoryLabel": "Thể thao",
+      "venueName": "Khuôn viên trường – Đại học Bách khoa",
+      "address": "54 Nguyễn Lương Bằng, phường Liên Chiểu, Đà Nẵng",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.07498,
+        "lng": 108.15264
+      },
+      "startAt": "2026-10-03T05:00:00+07:00",
+      "endAt": "2026-10-03T10:00:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Ban tổ chức chương trình tại DUT",
+      "targetAudience": "Viên chức, người lao động, sinh viên trường đã đăng ký.",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+      "sourcePublisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+      "evidenceText": "03/10/2026 05:00–10:00; Khuôn viên trường.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "sources": [
+        {
+          "url": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+          "title": "Lịch công tác tuần 8, bắt đầu 28/09/2026",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:52+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "status"
+          ],
+          "evidence": "03/10/2026 05:00–10:00; Khuôn viên trường."
+        },
+        {
+          "url": "https://ts.udn.vn/files/2026/2026_3_27_20_15_453_2026.3.27_thong_tin_tuyen_sinh_dh_chinh_quy_-_gui_ban_dao_tao.pdf",
+          "title": "Thông tin tuyển sinh đại học chính quy 2026, trang 1",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "ward",
+            "venue"
+          ],
+          "evidence": "Trang 1: cơ sở 54 Nguyễn Lương Bằng thuộc phường Liên Chiểu, Đà Nẵng."
+        },
+        {
+          "url": "https://mapcarta.com/W968341228",
+          "title": "Điểm đại diện Đại học Bách khoa Đà Nẵng, OSM way 968341228",
+          "publisher": "Mapcarta / OpenStreetMap contributors",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "map",
+          "supports": [
+            "coordinates"
+          ],
+          "evidence": "Điểm khuôn viên: 16.07498, 108.15264; không phải tọa độ phòng. Không dùng địa danh quận cũ trên bản đồ để xác nhận phường."
+        }
+      ],
+      "checkedAt": "2026-10-01T08:24:05+00:00",
+      "coordinatePrecision": "campus",
+      "coordinateNote": "Điểm đại diện khuôn viên theo Mapcarta / © OpenStreetMap contributors; xem tên phòng trong chi tiết, không phải vị trí cửa vào phòng."
+    },
+    {
+      "id": "event-dut-sea-islands-20261003",
+      "title": "Triển lãm và chuyên đề về biển đảo",
+      "summary": "Sinh viên quan tâm.",
+      "category": "event_culture",
+      "categoryLabel": "Văn hóa",
+      "venueName": "Hội trường S02.01 – Đại học Bách khoa",
+      "address": "54 Nguyễn Lương Bằng, phường Liên Chiểu, Đà Nẵng",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.07498,
+        "lng": 108.15264
+      },
+      "startAt": "2026-10-03T07:30:00+07:00",
+      "endAt": "2026-10-03T11:00:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Đoàn trường DUT",
+      "targetAudience": "Sinh viên quan tâm.",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+      "sourcePublisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+      "evidenceText": "03/10/2026 07:30–11:00; Hội trường S02.01.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "sources": [
+        {
+          "url": "https://lichtuan.dut.udn.vn/home?week=2026-09-28&year=2026-2027",
+          "title": "Lịch công tác tuần 8, bắt đầu 28/09/2026",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:52+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "time",
+            "venue",
+            "organizer",
+            "status"
+          ],
+          "evidence": "03/10/2026 07:30–11:00; Hội trường S02.01."
+        },
+        {
+          "url": "https://ts.udn.vn/files/2026/2026_3_27_20_15_453_2026.3.27_thong_tin_tuyen_sinh_dh_chinh_quy_-_gui_ban_dao_tao.pdf",
+          "title": "Thông tin tuyển sinh đại học chính quy 2026, trang 1",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "ward",
+            "venue"
+          ],
+          "evidence": "Trang 1: cơ sở 54 Nguyễn Lương Bằng thuộc phường Liên Chiểu, Đà Nẵng."
+        },
+        {
+          "url": "https://mapcarta.com/W968341228",
+          "title": "Điểm đại diện Đại học Bách khoa Đà Nẵng, OSM way 968341228",
+          "publisher": "Mapcarta / OpenStreetMap contributors",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "map",
+          "supports": [
+            "coordinates"
+          ],
+          "evidence": "Điểm khuôn viên: 16.07498, 108.15264; không phải tọa độ phòng. Không dùng địa danh quận cũ trên bản đồ để xác nhận phường."
+        }
+      ],
+      "checkedAt": "2026-10-01T08:24:05+00:00",
+      "coordinatePrecision": "campus",
+      "coordinateNote": "Điểm đại diện khuôn viên theo Mapcarta / © OpenStreetMap contributors; xem tên phòng trong chi tiết, không phải vị trí cửa vào phòng."
+    },
+    {
+      "id": "event-dut-english-placement-20261004",
+      "title": "Kiểm tra tiếng Anh đầu vào khóa 2026",
+      "summary": "Sinh viên khóa tuyển sinh 2026 theo thông báo xếp lớp.",
+      "category": "event_education",
+      "categoryLabel": "Học tập & Việc làm",
+      "venueName": "Giảng đường F và H – Đại học Bách khoa",
+      "address": "54 Nguyễn Lương Bằng, phường Liên Chiểu, Đà Nẵng",
+      "ward": "Phường Liên Chiểu",
+      "coordinates": {
+        "lat": 16.07498,
+        "lng": 108.15264
+      },
+      "startAt": "2026-10-04T07:00:00+07:00",
+      "endAt": "2026-10-04T10:45:00+07:00",
+      "datePrecision": "exact",
+      "organizer": "Phòng Đào tạo và Bảo đảm chất lượng DUT",
+      "targetAudience": "Sinh viên khóa tuyển sinh 2026 theo thông báo xếp lớp.",
+      "priceText": "Chưa có thông tin chi phí",
+      "sourceUrl": "https://dut.udn.vn/Tintuc/Thongbao/id/12264",
+      "sourcePublisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+      "evidenceText": "04/10/2026 07:00–10:45; Giảng đường F và H.",
+      "verificationStatus": "source_verified",
+      "status": "scheduled",
+      "isFeatured": false,
+      "sources": [
+        {
+          "url": "https://dut.udn.vn/Tintuc/Thongbao/id/12264",
+          "title": "Thông báo xếp lớp tiếng Anh khóa 2026",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "publishedAt": "2026-09-15T08:16:00+07:00",
+          "checkedAt": "2026-10-01T08:23:52+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "time",
+            "venue",
+            "organizer"
+          ],
+          "evidence": "04/10/2026 07:00–10:45; Giảng đường F và H."
+        },
+        {
+          "url": "https://ts.udn.vn/files/2026/2026_3_27_20_15_453_2026.3.27_thong_tin_tuyen_sinh_dh_chinh_quy_-_gui_ban_dao_tao.pdf",
+          "title": "Thông tin tuyển sinh đại học chính quy 2026, trang 1",
+          "publisher": "Trường Đại học Bách khoa – Đại học Đà Nẵng",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "organizer",
+          "supports": [
+            "ward",
+            "venue"
+          ],
+          "evidence": "Trang 1: cơ sở 54 Nguyễn Lương Bằng thuộc phường Liên Chiểu, Đà Nẵng."
+        },
+        {
+          "url": "https://mapcarta.com/W968341228",
+          "title": "Điểm đại diện Đại học Bách khoa Đà Nẵng, OSM way 968341228",
+          "publisher": "Mapcarta / OpenStreetMap contributors",
+          "checkedAt": "2026-10-01T08:23:53+00:00",
+          "accessStatus": "read",
+          "kind": "map",
+          "supports": [
+            "coordinates"
+          ],
+          "evidence": "Điểm khuôn viên: 16.07498, 108.15264; không phải tọa độ phòng. Không dùng địa danh quận cũ trên bản đồ để xác nhận phường."
+        }
+      ],
+      "checkedAt": "2026-10-01T08:24:05+00:00",
+      "coordinatePrecision": "campus",
+      "coordinateNote": "Điểm đại diện khuôn viên theo Mapcarta / © OpenStreetMap contributors; xem tên phòng trong chi tiết, không phải vị trí cửa vào phòng."
+    }
+  ]
+}

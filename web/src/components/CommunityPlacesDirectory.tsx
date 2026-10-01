@@ -1,7 +1,7 @@
 "use client";
 
 import { useUrlFilters } from "../lib/use-url-filters";
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import {
   Check,
   Copy,
@@ -30,12 +30,12 @@ interface CategoryMeta {
 const CATEGORIES: CategoryMeta[] = [
   { key: "all", label: "Tất cả", icon: <MapPin className="w-3.5 h-3.5" /> },
   { key: "community", label: "Hành chính", icon: <Landmark className="w-3.5 h-3.5" /> },
-  { key: "healthcare", label: "Y tế", icon: <HeartPulse className="w-3.5 h-3.5" /> },
-  { key: "education", label: "Trường học", icon: <GraduationCap className="w-3.5 h-3.5" /> },
+  { key: "healthcare", label: "Y tế & Nhà thuốc", icon: <HeartPulse className="w-3.5 h-3.5" /> },
+  { key: "education", label: "Giáo dục & Trường học", icon: <GraduationCap className="w-3.5 h-3.5" /> },
   { key: "market", label: "Chợ & Mua sắm", icon: <ShoppingBag className="w-3.5 h-3.5" /> },
   { key: "food", label: "Ẩm thực", icon: <UtensilsCrossed className="w-3.5 h-3.5" /> },
   { key: "park", label: "Công viên", icon: <Trees className="w-3.5 h-3.5" /> },
-  { key: "living_service", label: "Tiện ích", icon: <Wrench className="w-3.5 h-3.5" /> },
+  { key: "living_service", label: "Tiện ích đời sống", icon: <Wrench className="w-3.5 h-3.5" /> },
 ];
 
 const TOP_STREETS = [
@@ -67,14 +67,24 @@ export function CommunityPlacesDirectory({
   availableStreets,
 }: Props) {
   const { params, update } = useUrlFilters();
-  const query = params.get("search") || "";
+  const urlQuery = params.get("search") || "";
+  const [localQuery, setLocalQuery] = useState(urlQuery);
+  const query = localQuery;
+
+  useEffect(() => {
+    setLocalQuery(urlQuery);
+  }, [urlQuery]);
+
   const rawCategory = params.get("category") || "all";
   const selectedCategory = CATEGORIES.some((c) => c.key === rawCategory) ? rawCategory : "all";
   const rawStreet = params.get("street") || "all";
   const selectedStreet = availableStreets.includes(rawStreet) ? rawStreet : "all";
   const onlyWithNotes = params.get("notes") === "true";
 
-  const setQuery = (search: string) => update({ search });
+  const setQuery = (search: string) => {
+    setLocalQuery(search);
+    update({ search });
+  };
   const setSelectedCategory = (category: string) => update({ category });
   const setSelectedStreet = (street: string) => update({ street });
   const setOnlyWithNotes = (val: boolean) => update({ notes: val ? "true" : "" });
@@ -187,7 +197,7 @@ export function CommunityPlacesDirectory({
                 setQuery(e.target.value);
                 setDisplayLimit(30);
               }}
-              placeholder="Chợ, tiệm thuốc, trường học, UBND, quán ăn..."
+              placeholder="Tìm chợ, công viên, tiệm thuốc, trường học, quán ăn..."
               style={{ fontSize: "16px" }}
               className="touch-target w-full pl-10 pr-10 py-3 bg-slate-50 border border-slate-200 rounded-xl
                          focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white focus:border-teal-400

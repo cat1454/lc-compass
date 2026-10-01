@@ -1,0 +1,11 @@
+{
+  "status": "pending",
+  "note": "Đã có bản đồ hành chính dạng ảnh từ cổng phường, nhưng chưa có tọa độ ranh giới đủ căn cứ để vẽ. Nhãn địa giới trên nền chưa được đối soát.",
+  "sourceUrl": "https://lienchieu.danang.gov.vn/documents/20121/42772/bandolienchieu.jpg",
+  "checkedAt": "2026-10-01T09:11:45+00:00",
+  "version": "official-raster-observed-2026-10-01",
+  "geojson": {
+    "type": "FeatureCollection",
+    "features": []
+  }
+}

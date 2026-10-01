@@ -1,0 +1,59 @@
+{
+  "searchedOn": "2026-10-01",
+  "timezone": "Asia/Bangkok",
+  "method": "Tìm web theo nhóm truy vấn; mở bài gốc; curl HTTPS và SHA-256 phản hồi đọc được. Không lưu giờ giả định cho từng truy vấn.",
+  "queries": [
+    "\"phường Liên Chiểu\" \"2026\" \"tháng 10\"",
+    "\"Liên Chiểu\" \"2026\" \"tháng 11\" sự kiện",
+    "\"Liên Chiểu\" \"2026\" \"tháng 12\" sự kiện",
+    "site.dut.udn.vn \"2026\" \"10\" \"hội thảo\"",
+    "site.facebook.com \"Liên Chiểu\" \"10/2026\"",
+    "\"Liên Chiểu\" \"2026\" \"Grand X\"",
+    "\"Liên Chiểu\" \"2026\" \"10/10\" \"sáng tạo\"",
+    "\"Nam Ô\" \"Cầu ngư\" \"2026\"",
+    "\"Liên Chiểu\" \"2026\" \"thứ bảy\" \"VNeID\"",
+    "\"Liên Chiểu\" \"2026\" \"tháng 10\" site:facebook.com/events",
+    "\"Liên Chiểu\" \"2026\" site:ticketbox.vn",
+    "\"Liên Chiểu\" \"2026\" site:ticketgo.vn",
+    "\"Bước chạy Sống khoẻ 2026\"",
+    "site.dut.udn.vn \"Bước chạy\" \"2026\"",
+    "site.dut.udn.vn \"LGD\" \"2026\"",
+    "\"Liên Chiểu\" \"11/2026\" OR \"12/2026\" hội thảo lễ hội",
+    "\"Liên Chiểu\" \"2026\" \"workshop\" tháng10",
+    "\"Liên Chiểu\" \"2026\" \"ngày hội\" \"tháng11\"",
+    "site.dut.udn.vn \"54 Nguyễn Lương Bằng\" \"phường Liên Chiểu\"",
+    "site.lienchieu.danang.gov.vn \"2026\" \"tháng 10\" sự kiện",
+    "\"Đại học Bách khoa\" \"Đà Nẵng\" \"16.\" \"108.\" tọa độ"
+  ],
+  "coverage": [
+    "Website trường và Đoàn",
+    "Mạng xã hội công khai qua tìm kiếm",
+    "Nền tảng vé/đăng ký",
+    "Doanh nghiệp, CLB/cộng đồng qua kết quả tìm kiếm",
+    "Báo chí, thông tin địa phương"
+  ],
+  "outcomes": {
+    "qualified": "7 lịch có nguồn tổ chức, địa bàn và tọa độ khuôn viên",
+    "social": "Chưa đọc được bài gốc mạng xã hội đủ điều kiện; kết quả tìm kiếm không phải xác minh",
+    "ticketing": "Chưa có lịch địa phương đủ điều kiện từ Ticketbox/Ticketgo",
+    "recurring": "Không có hoạt động định kỳ đủ lịch và thời hạn hiệu lực",
+    "novemberDecember": "Chưa tìm được sự kiện đủ bằng chứng; không kết luận địa phương không có sự kiện"
+  },
+  "discoveryOnly": [
+    {
+      "url": "https://baovietbank.vn/vn/tin-khuyen-mai/chi-tiet/cham-se-chia-trao-hy-vong-2026",
+      "status": "search_snippet_only",
+      "note": "Đầu mối nhà tài trợ; không dùng chứng minh ngày/địa điểm campus."
+    },
+    {
+      "url": "https://thuviennhadat.vn/thi-truong-bat-dong-san/da-nang-mo-ban-1180-can-nha-o-xa-hoi-ecohome-hoa-hiep-719043.html",
+      "status": "search_snippet_only",
+      "note": "Dịch vụ nhận hồ sơ nhà ở; chưa có bài gốc, chưa xác định là sự kiện."
+    },
+    {
+      "url": "https://jobs.dut.udn.vn/job-fair/",
+      "status": "search_snippet_only",
+      "note": "Lịch tháng 4; không dùng cho tháng 10."
+    }
+  ]
+}

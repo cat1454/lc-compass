@@ -25,7 +25,7 @@ export default async function PlacesPage() {
             Địa điểm &amp; Tiện ích
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 mt-1">
-            Danh bạ{" "}
+            Tra cứu Tiện ích &amp; Đời sống Phường Liên Chiểu · Danh bạ{" "}
             <span className="font-semibold text-teal-700">
               {placesDir.totalPlaces.toLocaleString("vi-VN")}
             </span>{" "}

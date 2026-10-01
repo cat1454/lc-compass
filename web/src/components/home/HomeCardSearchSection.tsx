@@ -524,6 +524,7 @@ export function HomeCardSearchSection({
 
       <div className="pt-2 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs">
         <Link
+          aria-label="Tìm từ khóa này trong danh bạ tiện ích"
           className="touch-target inline-flex items-center gap-1.5 text-blue-800 hover:text-blue-950 font-bold underline transition-colors"
           href={`/places?search=${encodeURIComponent(searchQuery)}`}
         >

@@ -1,6 +1,14 @@
 import type { Metadata, Viewport } from "next";
+import { Be_Vietnam_Pro } from "next/font/google";
 import { AppShell } from "../components/AppShell";
 import "./globals.css";
+
+const beVietnamPro = Be_Vietnam_Pro({
+  weight: ["300", "400", "500", "600", "700", "800"],
+  subsets: ["latin", "vietnamese"],
+  display: "swap",
+  variable: "--font-be-vietnam-pro",
+});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -22,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi">
-      <body className="text-slate-900 min-h-screen antialiased">
+    <html lang="vi" className={beVietnamPro.variable}>
+      <body className={`${beVietnamPro.className} font-sans text-slate-900 min-h-screen antialiased`}>
         <AppShell>{children}</AppShell>
       </body>
     </html>

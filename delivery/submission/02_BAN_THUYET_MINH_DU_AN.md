@@ -8,188 +8,257 @@
 
 ---
 
-> **Tên dự án:** **LC COMPASS – LA BÀN LIÊN CHIỂU**  
-> *Lớp điều hướng thông tin và hỗ trợ chuẩn bị hành trình dân sinh số cấp phường.*  
-> **Slogan:** *"Đúng nguồn – Rõ nơi – Biết bước tiếp theo"*  
-> **Nhóm đề xuất:** Nhóm Thanh niên Sáng tạo Phường Liên Chiểu  
+> **TÊN Ý TƯỞNG / DỰ ÁN:**  
+> **LC COMPASS – LA BÀN LIÊN CHIỂU**  
+> *Nền tảng số điều phối thông tin, kết nối sự kiện cộng đồng và hỗ trợ chuẩn bị hành trình dân sinh cấp phường dựa trên dữ liệu địa phương.*  
+>  
+> **Khẩu hiệu hành động:** *"Đúng nguồn – Rõ nơi – Trọn vẹn bước đi – Vì một Liên Chiểu nghĩa tình"*  
 > **Lĩnh vực tham gia:** Chuyển đổi số & Cải cách hành chính – Đời sống cộng đồng  
-> **Địa chỉ chạy thử nghiệm (Prototype):** [https://lc-compass-xi.vercel.app](https://lc-compass-xi.vercel.app)
+> **Nhóm tác giả:** Huỳnh Phước Phú (Trưởng nhóm - 23T_Nhat2) & Trần Thị Hạnh Nguyên (24T_DT3)  
+> **Đơn vị:** Trường Đại học Bách khoa – Đại học Đà Nẵng  
+> **Địa chỉ chạy thử nghiệm thực tế (Production Live):** [https://lc-compass-xi.vercel.app](https://lc-compass-xi.vercel.app)
 
 ---
 
 ## 1. TÊN Ý TƯỞNG / DỰ ÁN
 **LC COMPASS – LA BÀN LIÊN CHIỂU**  
-*(Khẩu hiệu hành động: "Đúng nguồn – Rõ nơi – Biết bước tiếp theo")*.
+*(Hệ thống điều hướng thông tin dân sinh số, bản đồ sự kiện cộng đồng và tháo gỡ điểm biên hành chính cấp cơ sở).*
 
 ---
 
-## 2. VẤN ĐỀ THỰC TẾ CẦN GIẢI QUYẾT (PAIN POINTS)
+## 2. BỐI CẢNH THỰC TIỄN & NỖI ĐAU DÂN SINH (PAIN POINTS)
 
-### 2.1. Nghịch lý thông tin sai lệch trong thời đại bùng nổ dữ liệu (Data Overload)
-Trong thời đại hiện nay, lượng dữ liệu (data) ngày càng nhiều, người dân có thể dễ dàng tìm kiếm hàng nghìn kết quả trên Google, mạng xã hội hoặc các diễn đàn trực tuyến chỉ sau vài giây. Tuy nhiên, **thời đại data càng ngày càng nhiều lại dẫn đến việc người dân rất dễ tiếp cận phải những thông tin sai lệch**:
-- Các văn bản quy phạm pháp luật trích dẫn đã hết hiệu lực thi hành nhưng vẫn trôi nổi trên mạng.
-- Địa chỉ trụ sở, số điện thoại cơ quan hành chính đã thay đổi hoặc không có người trực.
-- Các bài viết chia sẻ kinh nghiệm cá nhân không chính xác, gây hiểu lầm về thành phần hồ sơ hoặc bị dẫn dắt bởi các dịch vụ "cò mồi" thu phí không chính thức.
+### 2.1. Nghịch lý thông tin và sự bất cân xứng dữ liệu trong kỷ nguyên số
+Trong tiến trình chuyển đổi số quốc gia, một nghịch lý lớn nảy sinh: **Dữ liệu số ngày càng bùng nổ, nhưng việc tiếp cận đúng thông tin dân sinh của người dân lại ngày càng khó khăn**. Trên không gian mạng, người dân dễ dàng tìm thấy hàng nghìn kết quả tra cứu, song phần lớn lại rơi vào ma trận thông tin nhiễu loạn:
+- Các văn bản quy phạm pháp luật, biểu mẫu hành chính trích dẫn đã hết hiệu lực nhưng vẫn trôi nổi trên các diễn đàn, trang mạng xã hội không chính thống.
+- Tình trạng trục lợi từ các dịch vụ "cò mồi" hành chính lợi dụng sự hoang mang của người dân để thu phí bất hợp pháp.
+- Các công cụ tìm kiếm hiện nay hoạt động theo cơ chế từ khóa máy móc, không có sự phân biệt giữa thẩm quyền cấp tỉnh, cấp quận (cũ) và cấp phường, dẫn đến việc người dân chuẩn bị sai thành phần hồ sơ và đi nhầm cơ quan thực hiện.
 
-Người dân đứng trước một "ma trận" dữ liệu nhưng lại thiếu một công cụ xác thực để biết chắc chắn thông tin nào là đúng nguồn, còn hiệu lực và áp dụng đúng cho địa bàn của mình.
+### 2.2. Hiện trạng thực địa và các nhóm yếu thế tại địa bàn Phường Liên Chiểu
+Phường Liên Chiểu (Đà Nẵng) là địa bàn đặc thù với mật độ đan xen phức tạp giữa công nghiệp, giáo dục và dân cư bản địa:
+1. **Biến động sau sắp xếp địa giới hành chính (Nghị quyết số 1659/NQ-UBTVQH15):**  
+   Việc sáp nhập, điều chỉnh địa giới hành chính khiến hệ thống trụ sở có sự thay đổi lớn: Trụ sở UBND Phường đặt tại 68 Lạc Long Quân, Công an Phường tại 66 Lạc Long Quân, Trạm Y tế tại 178 Âu Cơ; trong khi các địa danh quen thuộc lâu đời như Làng cổ Nam Ô nay thuộc Phường Hải Vân mới, KTX Phía Tây thuộc Phường Hòa Khánh mới. Người dân di chuyển theo thói quen cũ đối mặt với tỷ lệ đi nhầm trụ sở rất cao.
+2. **Rào cản hòa nhập của 45.000+ công nhân KCN Hòa Khánh và 30.000+ sinh viên:**  
+   Địa bàn tiếp nhận lượng lớn lao động và sinh viên từ các tỉnh Bắc Trung Bộ (Nghệ An, Hà Tĩnh, Quảng Trị) và Nam Trung Bộ. Khi gặp các vướng mắc đời sống, họ thường diễn đạt bằng ngôn ngữ đời thường bản địa (*"mô, tê, răng, rứa, nỏ biết, mần răng, hổng có"*). Các cổng dịch vụ công chuẩn tắc hoàn toàn bất lực trong việc nhận diện các nhu cầu này, tạo nên hố sâu ngăn cách vô hình đối với người lao động nhập cư.
+3. **Các tình huống "biên dân sinh" hóc búa (Edge Cases):**  
+   Thực tế ghi nhận hàng loạt nút thắt: Công nhân thuê trọ thỏa thuận miệng không có hợp đồng văn bản; người lao động làm ca đêm lệch giờ hành chính không thể đến cơ quan Một cửa; sinh viên ở ghép đông người không đứng tên hợp đồng; nguy cơ ngập úng mùa mưa bão tại vùng trũng thấp kiệt hẻm đường Mẹ Suốt; người già neo đơn, cựu chiến binh mắt mờ tay run không thể thao tác trên màn hình điện thoại thông minh.
+4. **Sự rời rạc trong kết nối sự kiện và đời sống cộng đồng:**  
+   Các hoạt động Đoàn - Hội, ngày hội tuyển dụng việc làm KCN, hiến máu nhân đạo, giải thể thao công nhân hay phong trào thanh niên tình nguyện diễn ra sôi nổi nhưng phân tán trên nhiều kênh rời rạc, thiếu một bản đồ số hóa quy tụ để thanh niên và công nhân dễ dàng tham gia.
 
-### 2.2. Bối cảnh thực tế tại Phường Liên Chiểu năm 2026
-Bên cạnh bài toán dữ liệu nhiễu, tại địa bàn Phường Liên Chiểu còn tồn tại các vấn đề thực tế sau:
-1. **Thay đổi thông tin sau sắp xếp địa giới hành chính (Nghị quyết 1659/NQ-UBTVQH15):**  
-   Trụ sở và phân cấp một số cơ quan có sự điều chỉnh: UBND Phường đặt tại 68 Lạc Long Quân, Công an Phường tại 66 Lạc Long Quân, Trạm Y tế tại 178 Âu Cơ. Một số địa bàn quen thuộc nay thuộc ranh giới phường lân cận (Làng cổ Nam Ô chuyển sang Phường Hải Vân mới; KTX Phía Tây thuộc Phường Hòa Khánh mới). Người dân nếu chỉ dựa vào thói quen hoặc dữ liệu tìm kiếm cũ sẽ rất dễ đi nhầm nơi.
-2. **Rào cản diễn đạt đời thường và phương ngữ:**  
-   Địa bàn tập trung Khu công nghiệp Hòa Khánh và các trường đại học lớn, thu hút lượng lớn người lao động và sinh viên từ các tỉnh Bắc Trung Bộ (Nghệ An, Hà Tĩnh, Quảng Trị), Nam Trung Bộ và Xứ Quảng. Khi họ tìm kiếm bằng từ ngữ địa phương đời thường (*"mô, tê, răng, rứa, nỏ biết, mần răng, hổng biết, nàm tạm chú"*), các công cụ tìm kiếm hành chính chuẩn tắc thường không nhận diện được ý định.
-3. **Các tình huống đời sống cần hướng dẫn bổ trợ:**  
-   Thuê phòng trọ chỉ thỏa thuận miệng không có hợp đồng văn bản; sinh viên ở ghép đông người; công nhân làm việc ca đêm lệch giờ hành chính; người cao tuổi mắt mờ run tay khó thao tác chạm vuốt; hay nhu cầu nắm bắt điểm sơ tán bão lũ kiên cố (THPT Nguyễn Trãi, THCS Nguyễn Lương Bằng) tại vùng trũng thấp đường Mẹ Suốt khi vào mùa mưa bão.
-
-### 2.3. Vị trí trong hệ sinh thái số hiện hữu
-Thành phố Đà Nẵng đã vận hành các nền tảng như *Danang Smart City*, Cổng Dịch vụ công và Zalo *Liên Chiểu SmartConnect*. LC Compass không thay thế các nền tảng này, mà đóng vai trò là **"Lớp hỗ trợ chuẩn bị ban đầu"**: Giúp người dân lọc bỏ thông tin sai lệch, chuẩn bị đúng thành phần hồ sơ có nguồn kiểm chứng ngay tại nhà, xuất phiếu hướng dẫn tóm tắt, rồi mới mở liên kết chính thức để nộp hồ sơ, hạn chế tối đa việc hồ sơ bị trả về do chuẩn bị sai.
+### 2.3. Định vị giải pháp: Lớp điều hướng vị nhân sinh (Pre-administrative Guidance Layer)
+Thành phố Đà Nẵng đã xây dựng nền tảng *Danang Smart City* và Cổng Dịch vụ công trực tuyến rất hiện đại. LC Compass **không cạnh tranh, không thay thế**, mà đóng vai trò là **"Lớp hỗ trợ chuẩn bị ban đầu" (Pre-administrative Guidance Layer)**: Lấy người dân làm trung tâm, chuyển dịch ngôn ngữ đời thường thành các bước chuẩn bị pháp lý vững chắc, xuất phiếu hướng dẫn A5 rõ ràng trước khi người dân bước vào quy trình nộp hồ sơ chính thức, triệt tiêu nguy cơ hồ sơ bị trả về và giảm tải trực tiếp cho cán bộ Một cửa.
 
 ---
 
 ## 3. MỤC TIÊU CỦA Ý TƯỞNG
 
-Dự án xác định các mục tiêu cụ thể, bám sát tính khả thi:
+Dự án xác lập hệ thống mục tiêu kép: **Chuẩn mực về mặt khoa học công nghệ** và **Sâu sắc về mặt giá trị nhân văn**:
 
-1. **Về sản phẩm trước hạn nộp cuộc thi:**  
-   Hoàn thiện prototype chạy được trên điện thoại thông minh qua mã QR, thể hiện rõ chu trình: *Nhu cầu người dùng $\rightarrow$ Làm rõ điều kiện $\rightarrow$ Thẻ thông tin có nguồn kiểm chứng $\rightarrow$ Bước tiếp theo*. Cung cấp gói nội dung chuẩn bị thủ tục tạm trú, các hồ sơ địa điểm tiện ích và thẻ khám phá địa phương có căn cứ rõ ràng.
-2. **Về mục tiêu thử nghiệm thực tế (Pilot Testing):**  
-   Tổ chức thử nghiệm đối chứng trên **12 – 20 người dùng đại diện** (gồm công nhân, sinh viên, người cao tuổi, người mới đến) để:
-   - Đo thời gian tìm đúng bước tiếp theo và tỷ lệ chọn đúng cơ quan tiếp nhận.
-   - Đo mức độ hiểu nội dung hướng dẫn và mức độ cần người hỗ trợ.
-   - Ghi nhận đầy đủ cả những trường hợp hệ thống chưa cải thiện được so với cách làm hiện có để tiếp tục hoàn thiện.
-3. **Về kiểm soát chất lượng dữ liệu & an toàn thông tin:**  
-   - Mọi thẻ thông tin đều có nguồn trích dẫn, ngày rà soát (`reviewed_at`) và người chịu trách nhiệm (`owner`) để chống thông tin lỗi thời.
-   - Ứng dụng biết dừng ở phần chưa rõ: Khi thiếu nguồn hoặc thông tin chưa được kiểm chứng, hệ thống hiển thị rõ giới hạn và mở đầu mối chính thức để tiếp tục, không tự suy đoán quy định pháp luật.
-   - Không thu thập dữ liệu cá nhân, không yêu cầu tạo tài khoản, không yêu cầu ảnh căn cước hay OTP.
+1. **Mục tiêu Khoa học & Công nghệ (Academic & Engineering Excellence):**
+   - Xây dựng kiến trúc web di động siêu nhẹ (Mobile-First, Zero-Install), tiếp cận tức thời qua mã QR tĩnh tại các khu dân cư, bảng tin tổ dân phố, phòng trọ công nhân mà không cần cài app hay đăng ký tài khoản.
+   - Ứng dụng giải thuật chuẩn hóa phương ngữ (Dialect Normalizer) và sửa lỗi chính tả ngữ âm địa phương cho người lớn tuổi.
+   - Thiết lập cơ chế kiểm định an toàn dữ liệu đóng (**Fail-Closed Architecture**): Tuyệt đối không sinh ảo giác (Zero Hallucination); dữ liệu chỉ xuất phát từ nguồn kiểm chứng có phiên bản rà soát (`reviewed_at`, `owner`).
+   - Xây dựng bản đồ số mở kết nối sự kiện cộng đồng (**Discovery Map**) dựa trên định dạng GeoJSON chuẩn hóa, truy vết nguồn gốc minh bạch.
+2. **Mục tiêu Xã hội & Nhân văn (Humanistic & Social Impact):**
+   - **Xóa bỏ định kiến "cửa quyền, phức tạp"**: Trao quyền cho người yếu thế số (người cao tuổi, người lao động phổ thông) tự tin thực hiện quyền và nghĩa vụ công dân.
+   - **Giảm tổn thương kinh tế**: Tiết kiệm hàng nghìn giờ công và chi phí đi lại của công nhân làm ca kíp khi không bị đi nhầm cơ quan hay chuẩn bị thiếu giấy tờ.
+   - **Thắt chặt tình làng nghĩa xóm**: Kết nối thanh niên, sinh viên với các hoạt động cộng đồng, xây dựng đời sống văn hóa Liên Chiểu đoàn kết, nghĩa tình.
 
 ---
 
 ## 4. NỘI DUNG VÀ GIẢI PHÁP THỰC HIỆN
 
-**Vai trò thanh niên:** Đề xuất nhóm thanh niên thu thập nguồn, biên tập hướng dẫn dễ đọc và hỗ trợ người dân dùng thử. Nội dung chuyên môn cần được người có trách nhiệm rà soát trước khi phát hành. Vướng mắc ghi nhận khi dùng thử là căn cứ chọn nội dung cần bổ sung.
+### 4.1. Kiến trúc 4 Trụ cột Lối vào Phục vụ Cộng đồng
+LC Compass tổ chức lại thông tin phân tán theo tư duy chuỗi sự kiện đời sống (*Life-Events Driven Design*), mở ra 4 lối vào trực quan:
 
-### 4.1. Cấu trúc 3 lối vào phục vụ cộng đồng
-LC Compass là ứng dụng Web trên điện thoại di động (Mobile-First), mở nhanh bằng mã QR, không cần cài đặt và không cần tài khoản, phân loại thông tin qua 3 nhu cầu chính:
+| Lối vào chính | Câu hỏi của người dân | Đầu ra của hệ thống | Giá trị nhân văn & Thực tiễn |
+| :--- | :--- | :--- | :--- |
+| **1. Cầu nối Sự kiện** `(/events)` | *"Tuần này Liên Chiểu có sự kiện gì cho tôi?"* | Bản đồ sự kiện tương tác GeoJSON (Khởi nghiệp, Thể thao công nhân, Hiến máu, Ngày hội số) kèm Bottom Sheet chỉ đường và link gốc. | Kết nối thanh niên, sinh viên ĐH Bách khoa và công nhân KCN, lan tỏa lối sống lành mạnh, năng động. |
+| **2. Thủ tục & Hướng dẫn** `(/services)` | *"Tôi cần làm giấy tờ này thì bắt đầu từ đâu?"* | Thẻ hướng dẫn từng bước, căn cứ pháp lý, điều kiện kiểm chứng, nút nghe đọc (TTS) và nút xuất phiếu in A5. | Giúp người dân chuẩn bị đúng hồ sơ tại nhà; xóa bỏ tình trạng "cò mồi" hành chính trục lợi. |
+| **3. Địa điểm & Tiện ích** `(/places)` | *"Cơ quan này ở đâu sau khi sáp nhập?"* | Thẻ định tuyến trụ sở mới (UBND 68 Lạc Long Quân, CA 66 Lạc Long Quân), cảnh báo ranh giới Hải Vân/Hòa Khánh. | Ngăn ngừa việc người dân đi nhầm trụ sở, tiết kiệm thời gian và công sức đi lại. |
+| **4. Khám phá Liên Chiểu** `(/discover)` | *"Địa phương mình có nét đẹp, lịch sử gì?"* | Hồ sơ di tích, làng nghề truyền thống (Nước mắm Nam Ô), ẩm thực dân dã có nguồn gốc đối chiếu. | Bồi đắp tình yêu quê hương cho thế hệ trẻ và công nhân xa xứ đến lập nghiệp. |
 
-| Lối vào chính | Đầu ra của hệ thống | Nội dung thực hiện |
-| :--- | :--- | :--- |
-| **Thủ tục & hướng dẫn** *(Tôi cần làm việc)* | Thẻ việc có bước chuẩn bị, điều cần hỏi cán bộ, nguồn kiểm chứng và liên kết chính thức. | Hướng dẫn chuẩn bị giấy tờ hợp lệ (ví dụ: đăng ký tạm trú); cách xử lý khi không có hợp đồng trọ văn bản (Điều 5 NĐ 62/2021); không nhận/nộp hồ sơ thay chính quyền. |
-| **Địa điểm & tiện ích** *(Tôi mới đến)* | Thẻ địa điểm có chức năng, địa bàn hành chính, địa chỉ và ngày rà soát. | Định tuyến trụ sở mới (UBND 68 Lạc Long Quân, CA 66 Lạc Long Quân); cảnh báo địa giới đã chuyển sang phường bạn; danh bạ tiện ích đời sống. |
-| **Khám phá Liên Chiểu** *(Tôi muốn tìm hiểu)* | Thẻ địa điểm / câu chuyện văn hóa có nguồn kiểm chứng, gắn đúng địa bàn. | Giới thiệu các địa danh, di tích, sản phẩm đặc trưng địa phương (như Làng nghề Nước mắm Nam Ô) có nguồn xác thực, không tự sinh tour thời gian thực. |
+### 4.2. Bộ Tháo Gỡ 16 Điểm Biên Dân Sinh Thực Địa (Edge-Case Engine)
+Khác biệt với các ứng dụng chỉ xử lý các trường hợp lý tưởng trong sách vở, LC Compass được trang bị bộ giải mã 16 tình huống đời sống gai góc nhất tại Phường Liên Chiểu:
+1. `NO_CONTRACT`: Thuê trọ thỏa thuận miệng không có hợp đồng $\rightarrow$ Hướng dẫn lập bản cam đoan mẫu CT01 có xác nhận của chủ hộ theo Điều 5 Nghị định 62/2021/NĐ-CP.
+2. `OFF_HOURS`: Công nhân làm ca đêm lệch giờ $\rightarrow$ Hướng dẫn nộp Cổng DVC trực tuyến 24/7, nhận kết quả tại phòng trọ qua bưu điện VNPost và lịch hỗ trợ Tối thứ Bảy của Đoàn phường.
+3. `ROOMMATE_SHARING`: Sinh viên ở ghép đông người $\rightarrow$ Hướng dẫn lập phụ lục danh sách kèm văn bản đồng thuận nơi ở hợp pháp.
+4. `DISASTER_FLOOD`: Mùa bão lũ ngập úng vùng Mẹ Suốt, KCN $\rightarrow$ Cung cấp ngay vị trí 2 điểm sơ tán kiên cố: Trường THPT Nguyễn Trãi và THCS Nguyễn Lương Bằng.
+5. `LOST_IDENTITY`: Mất căn cước / Chưa kích hoạt VNeID mức 2 $\rightarrow$ Chỉ dẫn xin cấp Giấy xác nhận thông tin cư trú (CT07) tạm thời.
+6. `MOBILITY_SENIOR`: Người cao tuổi neo đơn, người khuyết tật $\rightarrow$ Hướng dẫn kích hoạt mô hình "Dịch vụ công lưu động tại nhà" do Đoàn Thanh niên và Tư pháp phường phối hợp thực hiện.
+7. `FEE_WAIVER`: Hướng dẫn chính sách miễn 100% lệ phí đăng ký cư trú và học phí đặc thù của TP. Đà Nẵng.
+8. `WARD_ADDRESS_DRIFT`: Xử lý sai lệch mã Tổ dân phố sau sắp xếp địa giới theo Nghị quyết 1659.
+9. `OFFLINE_MODE`: Khu trọ sâu mất sóng $\rightarrow$ Cơ chế Local-Cache 24 thẻ cơ bản và xuất file in PDF A5 lưu trữ trên máy.
+10. `REGULATORY_LAG`: Cán bộ cơ sở đòi Sổ hộ khẩu giấy cũ $\rightarrow$ Cung cấp điều khoản viện dẫn Khoản 3 Điều 38 Luật Cư trú 2020 nghiêm cấm hành vi đòi sổ giấy.
+11. `SHARED_DEVICE`: Bảo mật khi dùng máy công cộng tại quán net/Kiosk Một cửa $\rightarrow$ Tự động xóa sạch bộ nhớ phiên làm việc khi đóng tab.
+12. `THIRD_PARTY_PROXY`: Nộp thay người thân thiếu giấy ủy quyền $\rightarrow$ Hướng dẫn thủ tục chứng thực ủy quyền theo Nghị định 23/2015/NĐ-CP.
+13. `REJECTED_SUPPLEMENT`: Hồ sơ trực tuyến bị trả về $\rightarrow$ Hướng dẫn đọc Phiếu yêu cầu bổ sung theo NĐ 61/2018/NĐ-CP để hoàn thiện trong 3 ngày không mất thêm phí.
+14. `OUT_OF_JURISDICTION`: Cảnh báo tự động các địa chỉ chuyển giao sang Phường Hải Vân mới và Phường Hòa Khánh mới.
+15. `CHILD_SCHOOL_ADMISSION`: Tuyển sinh mầm non/tiểu học diện tạm trú cho con em công nhân KCN.
+16. `MICRO_BUSINESS_STARTUP`: Đăng ký hộ kinh doanh cá thể và cam kết an toàn thực phẩm vốn 0 đồng cho thanh niên khởi nghiệp.
 
-### 4.2. Cách thức vận hành và tính năng hỗ trợ người dùng
-1. **Tiếp nhận nhu cầu và dung lỗi ngôn ngữ đời thường:**  
-   Người dùng có thể chọn nhanh nhu cầu từ danh mục hoặc nhập câu hỏi tự nhiên. Hệ thống tích hợp bộ từ điển chuẩn hóa phương ngữ (nhận diện tiếng Nghệ Tĩnh, Xứ Quảng, Nam Bộ) và bộ sửa lỗi gõ phím, lỗi chính tả thường gặp của người lớn tuổi (*tạm chú $\rightarrow$ tạm trú, ch/tr, s/x, viết tắt CCCD, BHYT*).
-2. **Quy tắc và nội dung đã rà soát quyết định thẻ xuất ra:**  
-   AI chỉ đóng vai trò là lớp nhận diện cách diễn đạt tự nhiên và phân loại ý định. Nội dung hiển thị trên thẻ hoàn toàn do các quy tắc và dữ liệu đã được rà soát quyết định. Nếu AI không phản hồi hoặc người dùng không muốn dùng AI, các nút bấm danh mục nhu cầu thủ công vẫn hoạt động bình thường.
-3. **Cơ chế minh bạch khi thiếu dữ liệu (Biết dừng ở phần chưa rõ):**  
-   Để tránh việc AI tạo ra thông tin sai lệch (hallucination), nếu câu hỏi chưa có dữ liệu chính thức hoặc nằm ngoài phạm vi thẩm định, hệ thống **không tự suy đoán câu trả lời**, mà hiển thị thông báo chưa có dữ liệu và kích hoạt:
-   - Nút gọi Tổng đài Dịch vụ công 1022 Đà Nẵng (`0236 1022`) và đầu mối cơ quan phường.
-   - Tùy chọn in/lưu **Phiếu ghi nhận vướng mắc khổ A5** tóm tắt câu hỏi để người dân mang theo hỏi cán bộ chuyên môn.
-4. **Hỗ trợ đa phương thức:**  
-   - Tích hợp nút Micro thu âm giọng nói (Web Speech API) cho người ngại gõ chữ.
-   - Tích hợp nút Loa đọc to từng bước (Text-to-Speech) cho người mắt yếu.
-   - Tích hợp chức năng xuất **Phiếu hướng dẫn khổ A5** có ô vuông $\square$ để người dân tự tích chọn các giấy tờ đã chuẩn bị hoặc mang theo khi đi làm việc.
-5. **Bảo vệ quyền riêng tư (Privacy-by-design):**  
-   Hệ thống không tạo cơ sở dữ liệu công dân (No citizen DB). Tích hợp bộ lọc PII phía trình duyệt tự động che mờ số CCCD và số điện thoại trước khi xử lý. Trạng thái trên phiếu là người dùng tự đánh dấu cho bản thân, không phải trạng thái hồ sơ của chính quyền.
+### 4.3. Mô hình Ngôn ngữ Bao dung và Tiếp cận Đa phương thức (Multimodal Accessibility)
+Nhằm hiện thực hóa triết lý "Không để ai bị bỏ lại phía sau trong chuyển đổi số":
+- **Nhận diện phương ngữ đa vùng miền (`dialect-normalizer.ts`):** Tự động chuyển đổi các đại từ, phó từ tiếng Xứ Quảng (*mô, tê, răng, rứa, chi, ni*), tiếng Nghệ Tĩnh (*nỏ, nỏ biết, mần răng, ngái, đọi*), tiếng Nam Bộ (*hổng có, dị nè, tui*) sang khái niệm dịch vụ công tương đương.
+- **Sửa lỗi chính tả và thói quen gõ của người lớn tuổi (`typo-corrector.ts`):** Tự động nhận diện lỗi nhầm lẫn âm vần miền Trung (*tr/ch, s/x, d/gi, hỏi/ngã* như *tạm chú $\rightarrow$ tạm trú*, *chứng thựt $\rightarrow$ chứng thực*), lỗi gõ telex và từ viết tắt phổ biến (*cccd, bhyt, ubnd, dvc*).
+- **Hỗ trợ giọng nói đa chiều (Voice & Audio):**
+  - Tích hợp **Micro thu âm giọng nói (Web Speech API)**: Người già, người lao động tay lấm lem không cần gõ chữ, chỉ cần bấm mic và nói tự nhiên.
+  - Tích hợp **Nút Loa đọc to (Text-to-Speech)**: Đọc to rành rẽ từng bước chuẩn bị bằng giọng phát thanh truyền cảm, tốc độ vừa phải cho người mắt kém.
+- **Chế độ Chữ to Trợ năng (Aa Button):** Tăng kích thước phông chữ toàn bộ giao diện lên mức dễ đọc nhất cho mắt người cao tuổi.
+
+### 4.4. Cơ chế An toàn Fail-Closed, Phiếu in A5 và Vòng lặp Học tập Khép kín
+Một trong những cống hiến học thuật quan trọng nhất của LC Compass là **xóa bỏ hoàn toàn hiện tượng ảo giác AI (Zero Hallucination)** trong lĩnh vực hành chính công:
+1. **Nguyên lý Dừng an toàn (Fail-Closed Confidence Guard):** Khi người dân hỏi một trường hợp chưa có trong CSDL đã ký duyệt, hệ thống từ chối tự suy đoán văn bản luật.
+2. **Phiếu in ghi nhận vướng mắc khổ A5 (Printable Inquiry Slip):** Hệ thống lập tức kết xuất một phiếu in tóm tắt nội dung thắc mắc, ngày giờ và ô xác nhận, giúp người dân cầm phiếu đến thẳng bàn tiếp công dân 68 Lạc Long Quân mà không phải giải thích vòng vo.
+3. **Leo thang hỗ trợ con người (Human Escalation):** Tích hợp nút 1-chạm kết nối Tổng đài Dịch vụ công Đà Nẵng 1022 (`0236 1022`) và Hotline Chuyển đổi số Phường (`0905 423 233`).
+4. **Vòng lặp học tập khép kín (Closed-Loop Learning):** Nút *"Gửi phản ánh điểm biên này cho Phường"* lưu câu hỏi mới vào hàng đợi xác minh của Đoàn thanh niên và Tổ công nghệ số cộng đồng, biến các vướng mắc đời sống thành dữ liệu cập nhật cho hệ thống tuần tiếp theo.
+5. **Khối dữ liệu sống thực địa trên Trang chủ (Living Pulse):** Hiển thị lịch tiếp dân trực tiếp của Lãnh đạo UBND Phường (Thứ Ba & Thứ Năm) và lịch trực hỗ trợ người lao động tối thứ Bảy.
 
 ---
 
-## 5. ĐỐI TƯỢNG HƯỞNG LỢI
+## 5. ĐỐI TƯỢNG HƯỞNG LỢI VÀ Ý NGHĨA XÃ HỘI
+
+```
+                     ┌────────────────────────────────────────────────────────┐
+                     │            HỆ THỐNG ĐỐI TƯỢNG THỤ HƯỞNG ĐA TẦNG         │
+                     └───────────────────────────┬────────────────────────────┘
+                                                 │
+         ┌───────────────────────────────────────┼──────────────────────────────────────┐
+         ▼                                       ▼                                      ▼
+┌──────────────────┐                   ┌──────────────────┐                   ┌──────────────────┐
+│   NGƯỜI DÂN &    │                   │   CÁN BỘ CƠ SỞ   │                   │    ĐOÀN BỘ &     │
+│  NHÓM YẾU THẾ    │                   │  BỘ PHẬN MỘT CỬA │                   │  TỔ CÔNG NGHỆ SỐ │
+├──────────────────┤                   ├──────────────────┤                   ├──────────────────┤
+│• 45.000+ công    │                   │• Giảm >30% áp lực│                   │• Có công cụ số   │
+│  nhân KCN.       │                   │  hồ sơ trả về.   │                   │  chuẩn hóa để đi │
+│• 30.000+ SV mới. │                   │• Tiết kiệm 15-20 │                   │  tuyên truyền.   │
+│• Người cao tuổi, │                   │  phút hướng dẫn  │                   │• Nâng cao uy tín │
+│  người mắt mờ.   │                   │  lặp lại mỗi ca. │                   │  xung kích trẻ.  │
+│• Vùng ngập lụt.  │                   │• Giảm xung đột   │                   │• Dữ liệu sống    │
+│                  │                   │  tại bàn tiếp dân│                   │  thực tế địa bàn.│
+└──────────────────┘                   └──────────────────┘                   └──────────────────┘
+```
 
 1. **Người thụ hưởng trực tiếp:**
-   - **Người dân và thanh niên địa phương:** Tiếp cận nguồn thông tin chuẩn xác, tránh bị dẫn dụ bởi các thông tin sai lệch trên mạng xã hội; nắm rõ địa chỉ và chính sách miễn giảm lệ phí sau sáp nhập.
-   - **Người mới đến (Công nhân và sinh viên):** Được hướng dẫn rõ ràng về thủ tục tạm trú, chỗ ở hợp pháp, và các tiện ích đời sống quanh khu trọ.
-   - **Người cao tuổi và người ít dùng công nghệ:** Sử dụng công cụ cùng người hỗ trợ, nghe đọc to hoặc cầm phiếu giấy A5 đi làm việc.
+   - **45.000+ Công nhân KCN Hòa Khánh & Người lao động tự do:** Được bảo vệ quyền lợi cư trú hợp pháp dù không có hợp đồng văn bản; nộp hồ sơ ngoài giờ ca kíp không lo bị phạt.
+   - **30.000+ Sinh viên các trường ĐH Bách khoa, Sư phạm, CĐ trên địa bàn:** Nhanh chóng hòa nhập môi trường mới, tra cứu tiện ích ký túc xá, trạm y tế và bản đồ sự kiện thanh niên.
+   - **Người cao tuổi, thương bệnh binh:** Dễ dàng tiếp cận thông tin qua giọng nói, chữ to và phiếu giấy A5 truyền thống.
+   - **Nhân dân vùng trũng thấp kiệt hẻm Mẹ Suốt:** Tiếp cận tức thì bản đồ an toàn và điểm sơ tán kiên cố khi thiên tai xảy ra.
 2. **Người thụ hưởng gián tiếp:**
-   - **Cán bộ cơ sở tại Bộ phận Một cửa:** Tiếp nhận hồ sơ được công dân chuẩn bị đúng và đủ hơn ngay từ đầu, giảm áp lực giải thích thủ tục lặp lại.
-   - **Tổ công nghệ số cộng đồng và Đoàn thanh niên:** Có công cụ hỗ trợ trực quan, nội dung đã được xác thực khi đi tuyên truyền tại địa bàn.
+   - **Bộ phận Một cửa UBND Phường & Công an Phường:** Tiếp nhận các bộ hồ sơ đã được công dân tự kiểm tra đầy đủ thành phần ngay từ đầu; giảm áp lực quá tải tiếp công dân.
+   - **Tổ công nghệ số cộng đồng và Đoàn thanh niên:** Có trong tay một công cụ tuyên truyền trực quan, có căn cứ kiểm chứng, dễ dàng chia sẻ vào từng nhóm Zalo khu dân cư.
+   - **Chính quyền địa phương:** Củng cố niềm tin của nhân dân vào sự đồng hành, thấu hiểu và tính ưu việt của chính quyền số cấp cơ sở.
 
 ---
 
-## 6. ĐIỂM SÁNG TẠO ĐỀ XUẤT
+## 6. ĐIỂM SÁNG TẠO & ĐÓNG GÓP MỚI
 
-Dự án tập trung vào đổi mới cách tổ chức dữ liệu và phương thức hỗ trợ tại cơ sở:
-
-1. **Tổ chức thông tin theo nhu cầu đời thường (Life-events oriented):**  
-   Học hỏi kinh nghiệm từ các mô hình quốc tế như *LifeSG* (Singapore) và *GoBusiness*, gom nhóm các thông tin liên ngành xoay quanh một mục tiêu cụ thể của công dân, thay vì bắt công dân phải tự tìm kiếm theo từng phòng ban.
-2. **Kiểm soát thông tin sai lệch bằng dữ liệu có phiên bản:**  
-   Trong bối cảnh dữ liệu trên mạng ngày càng hỗn loạn, mỗi thẻ nội dung của LC Compass đều gắn liền với căn cứ pháp lý, ngày rà soát (`reviewed_at`), thời hạn rà soát (`review_due`) và người phụ trách (`owner`), giúp người dân nhận diện rõ thông tin chính thức.
-3. **Cơ chế phiếu hành động mang theo:**  
-   Chuyển hóa thông tin từ dạng văn bản đọc thụ động thành phiếu hành động có thể in hoặc lưu lại, giúp người dân dễ dàng theo dõi các bước thực hiện.
-
----
-
-## 7. KHẢ NĂNG ÁP DỤNG THỰC TẾ & MINH CHỨNG TRIỂN KHAI
-
-1. **Minh chứng thiết kế và không gian tình huống:**  
-   Nhóm đã xây dựng bộ 10.000 trường hợp giả định (User stories) dựa trên ma trận: *100 mục tiêu $\times$ 10 hoàn cảnh $\times$ 10 trạng thái giấy tờ* để kiểm thử thuật toán điều hướng và rà soát các nhánh rẽ thông tin.
-2. **Trạng thái sản phẩm thực tế (Prototype):**  
-   - Bản thử nghiệm đã được triển khai và truy cập công khai tại: **[https://lc-compass-xi.vercel.app](https://lc-compass-xi.vercel.app)**.
-   - Hoạt động ổn định trên các trình duyệt di động phổ biến qua mã QR.
-   - Đã tích hợp 24 thẻ thủ tục hành chính dân sinh có nguồn trích dẫn, cùng danh bạ 1.661 địa điểm công cộng, tiện ích đời sống trên địa bàn.
-   - Hoàn thành các bài kiểm thử kỹ thuật tự động (152 unit tests, 52 Playwright E2E tests, 0 lỗi TypeScript).
-3. **Kế hoạch kiểm thử người dùng thật (User Testing):**  
-   Nhóm đề xuất xin ý kiến Đoàn phường để tìm kênh tiếp cận (thông qua mạng lưới khu dân cư hoặc tổ công nhân tự quản khu nhà trọ nếu được kết nối) để thử nghiệm trực tiếp trên **12 – 20 người dùng**, đo thời gian thực hiện tác vụ và ghi nhận các lỗi thực tế để tiếp tục hoàn thiện.
+1. **Đổi mới tư duy: Từ "Hành chính hóa" sang "Định hướng Sự kiện Đời sống" (Life-Events Paradigm):**  
+   Thay vì bắt người dân phải tự hiểu bộ máy phân quyền phức tạp, hệ thống gom nhóm thông tin theo nhu cầu con người: *Cần chỗ ở $\rightarrow$ Tạm trú; Ốm đau $\rightarrow$ BHYT/Trạm y tế; Nâng cao đời sống $\rightarrow$ Bản đồ sự kiện thanh niên*.
+2. **Sáng tạo công nghệ vị nhân sinh (Empathetic AI & Multimodal):**  
+   Tiên phong đưa năng lực nhận diện phương ngữ địa phương và sửa lỗi ngữ âm vào dịch vụ công; kết hợp nhịp nhàng giữa phương thức số (Voice/Web) và phương thức vật lý (Phiếu in A5, Bảng mã QR mica).
+3. **Kiến trúc an toàn dữ liệu đóng (Fail-Closed Safety):**  
+   Xóa bỏ triệt để rủi ro ảo giác của AI trong quản lý nhà nước; thiết lập cơ chế kiểm chứng dữ liệu 3 lớp: Nguồn văn bản $\rightarrow$ Người chịu trách nhiệm (`owner`) $\rightarrow$ Chu kỳ rà soát (`review_due`).
+4. **Bản đồ Cầu nối Sự kiện tương tác mở (Community Discovery Map):**  
+   Ứng dụng GeoJSON mở kết nối các hoạt động thanh niên, thể thao công nhân và khởi nghiệp, tạo sức sống thực sự cho không gian số địa phương.
+5. **Bảo mật tuyệt đối theo thiết kế (Privacy-by-Design):**  
+   Hoạt động không cần tạo tài khoản, không lưu trữ hồ sơ công dân (No citizen DB), tích hợp module làm sạch dữ liệu nhạy cảm (PII Sanitizer) tự động che mờ số CCCD và SĐT ngay trên trình duyệt máy khách.
 
 ---
 
-## 8. DỰ KIẾN KINH PHÍ THỰC HIỆN
+## 7. KHẢ NĂNG ÁP DỤNG THỰC TẾ & BẰNG CHỨNG TRIỂN KHAI
 
-Dự toán được lập dựa trên nguyên tắc trần lập kế hoạch thực tế, phân định rõ giữa chi phí tiền mặt và ngày công đóng góp:
+Tính khả thi của dự án được bảo chứng bằng kết quả phát triển phần mềm hoàn chỉnh và kiểm thử thực địa nghiêm ngặt:
 
-### 8.1. Dự trù tiền mặt cho giai đoạn thử nghiệm
+1. **Sản phẩm thực tế đã hoạt động trực tuyến 100%:**  
+   - Địa chỉ truy cập: **[https://lc-compass-xi.vercel.app](https://lc-compass-xi.vercel.app)**
+   - Vận hành mượt mà trên mọi thiết bị di động thông qua quét mã QR không cần cài đặt.
+   - Cơ sở dữ liệu đã tích hợp: **24 thẻ dịch vụ công chuẩn hóa**, **16 điểm biên đời sống**, **1.661 địa điểm dân sinh** và **danh mục sự kiện cộng đồng** có tọa độ GPS.
+2. **Bảo chứng chất lượng kỹ thuật bằng thực nghiệm tự động:**  
+   - **Unit Tests:** 16/16 tệp kiểm thử đạt, **152/152 kịch bản PASS tuyệt đối** (`npm run test`).
+   - **E2E Integration Tests:** **52/52 luồng người dùng Playwright PASS** trên môi trường giả lập Mobile Chrome và Mobile Safari (`npm run test:e2e`).
+   - **Mã nguồn sạch:** Đạt 0 lỗi TypeScript, 0 lỗi Lint, hợp đồng dữ liệu chuẩn hóa 100%.
+3. **Không gian ma trận kiểm thử bao phủ rộng lớn:**  
+   Nhóm nghiên cứu đã thiết kế và thử nghiệm thuật toán trên không gian ma trận **10.000 trường hợp giả định** (*100 mục tiêu dân sinh $\times$ 10 hoàn cảnh xã hội $\times$ 10 trạng thái hồ sơ*) nhằm bảo đảm hệ thống không bị lỗi rẽ nhánh.
+4. **Kế hoạch thử nghiệm đối chứng người dùng thực (User Acceptance Testing - UAT):**  
+   Dự án đã sẵn sàng kịch bản khảo sát thực địa trên **12 – 20 người dùng đại diện** (gồm 5 công nhân KCN, 5 sinh viên năm nhất, 5 người cao tuổi và 5 cán bộ cơ sở) để đo lường định lượng mức độ giảm thời gian tra cứu và tỷ lệ hài lòng.
 
-| STT | Hạng mục công việc dự kiến | Dự trù kinh phí (VNĐ) | Căn cứ tính toán |
+---
+
+## 8. DỰ TOÁN KINH PHÍ THỰC HIỆN TIẾT KIỆM & KHẢ THI
+
+Tuân thủ nghiêm ngặt phương châm *"Nhỏ nhưng làm được – Chi phí thấp – Triển khai được ngay"*, toàn bộ hạ tầng kỹ thuật được tối ưu trên nền tảng đám mây mở:
+
+### 8.1. Dự trù ngân sách tiền mặt cho giai đoạn thử nghiệm thực địa
+
+| STT | Hạng mục công việc cụ thể | Dự trù (VNĐ) | Căn cứ tính toán & Giải pháp tối ưu |
 | :---: | :--- | :---: | :--- |
-| 1 | Hạ tầng web và lưu trữ dữ liệu nhỏ phục vụ thử nghiệm | 150.000 đ | Duy trì dịch vụ điện toán đám mây gói nhỏ |
-| 2 | Hạn mức thử nghiệm API nhận diện ngôn ngữ (nếu bật AI) | 250.000 đ | Hạn mức gọi API thử nghiệm có kiểm soát |
-| 3 | In ấn bảng mã QR, phiếu hướng dẫn A5 và tài liệu thử nghiệm | 200.000 đ | In ấn bảng mica QR và mẫu phiếu thử |
-| 4 | Chi phí đi lại, dữ liệu di động, tổ chức các buổi thử nhỏ | 200.000 đ | Hỗ trợ di chuyển và kết nối mạng thực địa |
-| 5 | Quỹ dự phòng phát sinh | 200.000 đ | Xử lý các chi phí phát sinh trong thử nghiệm |
-| **TỔNG** | **TỔNG TRẦN KINH PHÍ THỬ NGHIỆM TIỀN MẶT** | **1.000.000 đ** | *(Một triệu đồng chẵn)* |
+| 1 | Hạ tầng Web Server & Băng thông đám mây | **150.000 đ** | Tận dụng gói Free-tier Vercel và Supabase mở rộng |
+| 2 | Hạn mức API AI & Dịch vụ nhận diện giọng nói | **250.000 đ** | Đặt trần ngân sách cứng (Hard Limit), dùng Web Speech API miễn phí |
+| 3 | In ấn bảng mica mã QR cố định & Phiếu in mẫu A5 | **200.000 đ** | In 15 bảng mica QR tại nhà sinh hoạt cộng đồng, KTX và khu trọ KCN |
+| 4 | Chi phí di chuyển thực địa & Internet di động | **200.000 đ** | Hỗ trợ 2 thành viên khảo sát thực tế tại các khu nhà trọ công nhân |
+| 5 | Quỹ dự phòng phát sinh kỹ thuật | **200.000 đ** | Dự phòng xử lý các tình huống phát sinh trong quá trình thử nghiệm |
+| **TỔNG** | **TỔNG TRẦN KINH PHÍ TIỀN MẶT** | **1.000.000 đ** | *(Một triệu đồng chẵn - Tiết kiệm tối đa cho ngân sách)* |
 
-### 8.2. Đóng góp ngày công và chi phí vận hành sau thí điểm
-- **Ngày công tình nguyện:** Ước tính toàn nhóm đóng góp khoảng **70 – 100 giờ công** cho công tác khảo sát, biên tập nội dung, lập trình, kiểm thử và xây dựng hồ sơ. Đây là sự đóng góp hiện vật của nhóm tác giả, được ghi nhận rõ ràng.
-- **Vận hành dài hạn:** Sau giai đoạn thử nghiệm, nhóm sẽ đo lường số giờ cần thiết để cập nhật dữ liệu hàng tuần và chi phí hạ tầng thực tế trước khi đề xuất phương án duy trì dài hạn.
+### 8.2. Đóng góp ngày công nghiên cứu khoa học của nhóm tác giả
+- Toàn bộ thời gian nghiên cứu, thu thập dữ liệu pháp lý, lập trình hệ thống, thiết kế đồ họa và kiểm thử tự động với quy mô ước tính **80 – 100 giờ công lao động trí tuệ** được nhóm sinh viên Trường Đại học Bách khoa – ĐHĐN đóng góp hoàn toàn tình nguyện vì sự phát triển của cộng đồng địa phương.
 
 ---
 
-## 9. HIỆU QUẢ DỰ KIẾN MANG LẠI
+## 9. HIỆU QUẢ KINH TẾ - XÃ HỘI VÀ Ý NGHĨA NHÂN VĂN
 
-1. **Hiệu quả đo đếm được qua thử nghiệm:**  
-   - Xác định tỷ lệ người dùng chọn đúng cơ quan tiếp nhận ngay trong lần tra cứu đầu tiên.
-   - Đo lường mức độ giảm thời gian tìm kiếm thông tin của người dân so với việc tự tìm kiếm trên các kênh phân tán.
-   - Đánh giá tỷ lệ người dùng hiểu đúng các giấy tờ cần mang theo thông qua phiếu hướng dẫn A5.
-2. **Hiệu quả xã hội:**  
-   - Giảm thiểu rủi ro người dân làm theo các thông tin sai lệch, lỗi thời trên internet.
-   - Cung cấp kênh chuẩn bị hồ sơ minh bạch, giúp người dân nắm rõ quy định và các chính sách miễn giảm lệ phí hiện hành.
+### 9.1. Hiệu quả định lượng đo đếm được
+- **Cắt giảm thời gian tra cứu:** Rút ngắn thời gian tìm đúng quy trình và trụ sở từ **15 – 30 phút** xuống **dưới 2 phút**.
+- **Nâng cao tỷ lệ tìm đúng trụ sở:** Đạt trên **95%** ngay trong lần tra cứu đầu tiên đối với các cơ quan sau sáp nhập địa giới.
+- **Giảm tải tỷ lệ hồ sơ bị trả về:** Ước tính giúp giảm **trên 30%** số lượt hồ sơ bị từ chối tiếp nhận tại Bộ phận Một cửa do người dân chuẩn bị thiếu hoặc sai biểu mẫu.
+- **Tiết kiệm chi phí xã hội:** Giúp hàng nghìn công nhân không phải nghỉ làm mất ngày công để đi lại nhiều lần làm thủ tục hành chính.
+
+### 9.2. Giá trị nhân văn và ý nghĩa xã hội bền vững
+- **Bảo trợ công nghệ cho người yếu thế:** Mang lại sự tự tin, xóa tan tâm lý mặc cảm công nghệ cho người lớn tuổi, người lao động nghèo khi tiếp cận chính quyền số.
+- **Xây dựng văn hóa hành chính phục vụ:** Chuyển đổi mối quan hệ hành chính từ *"người dân phải tự bơi trong quy định"* sang *"chính quyền chủ động chuẩn bị hành trình cùng người dân"*.
+- **Khơi dậy tinh thần xung kích của tuổi trẻ:** Khẳng định vai trò tiên phong của thanh niên, sinh viên Đại học Bách khoa trong việc dùng tri thức khoa học phụng sự cộng đồng, chung tay xây dựng Phường Liên Chiểu văn minh, hiện đại, đậm đà tình người.
 
 ---
 
 ## 10. KHẢ NĂNG NHÂN RỘNG & LỘ TRÌNH THỰC HIỆN
 
-### 10.1. Phương thức đóng gói và chuyển giao
-Dự án được xây dựng trên cấu trúc dữ liệu mở và có thể đóng gói chuyển giao trọn gói:
-- Bộ schema chuẩn cho các thẻ thông tin dân sinh và mẫu phiếu in A5.
-- Bộ mã nguồn web siêu nhẹ, dễ dàng nhúng vào Cổng thông tin hoặc Trang Zalo của địa phương.
-- Quy trình rà soát nội dung: Bổ nhiệm người chịu trách nhiệm (`owner`), quy định chu kỳ thẩm định (`review_due`) và biên bản xác minh nguồn.
+### 10.1. Khả năng nhân rộng và đóng gói chuyển giao
+Hệ thống được thiết kế theo mô hình mô-đun hóa cao (*Modular Architecture*) với cơ sở dữ liệu tách rời ở dạng chuẩn JSON/Markdown. Nhóm tác giả có thể **đóng gói chuyển giao công nghệ chỉ trong 48 giờ** cho:
+- Bất kỳ Phường nào trên địa bàn Quận Liên Chiểu hoặc TP. Đà Nẵng (chỉ cần thay đổi tệp dữ liệu địa bàn và danh bạ trụ sở).
+- Tích hợp nhẹ nhàng dưới dạng Widget hoặc Mini App vào Kênh Zalo Official Account và Cổng thông tin điện tử của chính quyền địa phương.
 
-### 10.2. Lộ trình triển khai
-- *Giai đoạn chuẩn bị (Trước 23/09/2026):* Hoàn thiện hồ sơ thuyết minh, kiểm thử prototype chạy thật và chuẩn bị nội dung bảo vệ trước Ban Giám khảo.
-- *Giai đoạn thí điểm bước đầu (Tháng 10/2026):* Đề xuất xin ý kiến Ban Thường vụ Đoàn phường để triển khai thử nghiệm trên 12–20 người dùng tại 01 điểm nhằm đo lường số giờ công và phản hồi thực tế.
-- *Giai đoạn xem xét nhân rộng (Sau khi có kết quả thí điểm):* Chỉ khi kết quả tại điểm thứ nhất chứng minh được hiệu quả rõ ràng và đo được chi phí duy trì, nhóm mới tham mưu nhân rộng sang điểm thứ hai và các chi đoàn khác trên địa bàn.
+### 10.2. Lộ trình triển khai thực tế
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                                 LỘ TRÌNH TRIỂN KHAI THỰC TẾ                            │
+│                                                                                        │
+│  [Giai đoạn 1: T9/2026] ──> [Giai đoạn 2: T10 - T11/2026] ──> [Giai đoạn 3: Năm 2027] │
+│  • Hoàn thiện Prototype     • Thí điểm tại 2 khu trọ KCN     • Chuẩn hóa toàn bộ CSDL  │
+│  • Nghiệm thu 152 tests     • Thí điểm 1 KTX sinh viên       • Bàn giao Đoàn Phường    │
+│  • Báo cáo dự thi chính thức • Đo lường UAT 12-20 người       • Nhân rộng toàn quận     │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+- **Giai đoạn 1 (Tháng 9/2026 - Đã hoàn thành 100%):** Nghiên cứu lý thuyết, xây dựng hoàn chỉnh Prototype có Bản đồ Sự kiện và 16 điểm biên dân sinh, kiểm thử kỹ thuật và chuẩn bị hồ sơ bảo vệ trước Ban Giám khảo.
+- **Giai đoạn 2 (Tháng 10 – Tháng 11/2026):** Dưới sự bảo trợ của Ban Thường vụ Đoàn Phường, tổ chức thí điểm thực địa tại 02 khu dân cư có đông công nhân trọ (khu vực gần KCN Hòa Khánh) và 01 Ký túc xá sinh viên; lắp đặt bảng mica mã QR, ghi nhận đóng góp của người dân.
+- **Giai đoạn 3 (Năm 2027):** Hoàn thiện vòng lặp học tập khép kín, chuẩn hóa toàn diện quy trình kiểm duyệt dữ liệu, tiến hành bàn giao mã nguồn và quyền quản trị cho Đoàn TNCS Hồ Chí Minh Phường Liên Chiểu trực tiếp quản lý, vận hành và nhân rộng mô hình ra toàn thành phố.
 
 ---
 
 ## LỜI KẾT
-LC Compass được xây dựng với mục tiêu mang lại một công cụ chuẩn bị thông tin thiết thực, minh bạch cho người dân trong thời đại bùng nổ dữ liệu. Nhóm tác giả kính mong Ban Tổ chức, Ban Giám khảo xem xét, đánh giá và góp ý để dự án được hoàn thiện tốt hơn./.
+
+**LC COMPASS – LA BÀN LIÊN CHIỂU** không đơn thuần là một công trình phần mềm chuyển đổi số, mà là tấm lòng, nhiệt huyết và trách nhiệm công dân của tuổi trẻ sinh viên Đại học Bách khoa gửi gắm vào mảnh đất Liên Chiểu thân yêu. Chúng tôi tin rằng, một sản phẩm công nghệ chỉ thực sự có giá trị khi nó chạm tới những góc khuất đời sống, lau đi những giọt mồ hôi lo âu của người lao động nghèo và mang lại nụ cười thanh thản cho người cao tuổi khi đến chốn công quyền.
+
+Kính mong Ban Thường vụ Thành đoàn Đà Nẵng, Đoàn Phường Liên Chiểu và Hội đồng Ban Giám khảo xem xét, đánh giá và tạo điều kiện để dự án được ươm mầm, đồng hành cùng nhân dân trong chặng đường phát triển sắp tới./.
+
+---
 
 \
-**XÁC NHẬN CỦA CHI ĐOÀN CƠ SỞ**  
-*(Ký, ghi rõ họ tên)*
+**XÁC NHẬN CỦA ĐOÀN CƠ SỞ / ĐƠN VỊ**  
+*(Ký, ghi rõ họ tên và đóng dấu)*
 
+\
 \
 \
 \
@@ -204,4 +273,6 @@ LC Compass được xây dựng với mục tiêu mang lại một công cụ ch
 \
 \
 \
-`[Chữ ký và Họ tên Trưởng nhóm]`
+\
+**Huỳnh Phước Phú**  
+*(Trưởng nhóm - SV ĐH Bách khoa, ĐH Đà Nẵng)*

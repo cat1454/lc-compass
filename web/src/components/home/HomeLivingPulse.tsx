@@ -43,12 +43,12 @@ export function HomeLivingPulse({ isLargeText }: HomeLivingPulseProps) {
       badge: "Đoàn Thanh Niên",
       badgeColor: "bg-teal-50 text-teal-800 border-teal-200",
       icon: <Users className="w-4 h-4 text-teal-600" />,
-      title: "Tối Thứ Bảy Tình Nguyện: Hỗ trợ DVC cho Công nhân KCN",
-      time: "19h00 - 21h30 Thứ Bảy hàng tuần",
-      location: "Nhà văn hóa Lao động KCN Hòa Khánh & Nhà trọ Tổ 32",
+      title: "Hỗ trợ Dịch vụ công trực tuyến cho Người lao động & Sinh viên",
+      time: "Theo kế hoạch Đoàn phường & giờ tiếp nhận DVC",
+      location: "Bộ phận Một cửa (68 Lạc Long Quân) & Các điểm lưu động",
       description:
-        "Đội thanh niên số cắm chốt tại các khu trọ, hỗ trợ cài đặt VNeID, làm thủ tục tạm trú không cần nghỉ làm mất ca, hướng dẫn miễn 100% lệ phí cư trú.",
-      actionText: "Xem hướng dẫn công nhân làm ca kíp",
+        "Đội thanh niên số hỗ trợ cài đặt VNeID, làm thủ tục tạm trú không cần nghỉ làm mất ca, hướng dẫn quy trình dịch vụ công trực tuyến miễn phí.",
+      actionText: "Xem hướng dẫn thủ tục tạm trú",
       actionHref: "/cards/service-chuan-bi-tam-tru",
     },
     {
@@ -57,13 +57,13 @@ export function HomeLivingPulse({ isLargeText }: HomeLivingPulseProps) {
       badge: "Cảnh Báo Dân Sinh",
       badgeColor: "bg-amber-50 text-amber-900 border-amber-200",
       icon: <AlertTriangle className="w-4 h-4 text-amber-600" />,
-      title: "Vùng trũng thấp đường Mẹ Suốt & Điểm sơ tán bão lũ",
-      time: "Sẵn sàng 24/7 trong mùa mưa bão",
-      location: "THPT Nguyễn Trãi & THCS Nguyễn Lương Bằng",
+      title: "Khuyến cáo phòng chống ngập lụt vùng trũng thấp",
+      time: "Theo dõi bản tin PCTT & TKCN trong mùa mưa bão",
+      location: "Khu vực trũng thấp đường Mẹ Suốt và dọc tuyến thoát nước",
       description:
-        "Bà con các tổ dân phố trũng thấp dọc kênh thoát nước đường Mẹ Suốt khi có báo động ngập lụt chủ động di chuyển về 2 điểm sơ tán kiên cố có bộ phận hỗ trợ y tế.",
-      actionText: "Gọi Đội phản ứng nhanh cứu hộ (0905 423 233)",
-      actionHref: "tel:0905423233",
+        "Bà con nhân dân tại khu vực trũng thấp chủ động theo dõi cảnh báo thời tiết từ chính quyền; liên hệ đường dây nóng UBND phường hoặc Tổng đài 1022 khi cần trợ giúp.",
+      actionText: "Gọi Đường dây nóng UBND Phường (02363 777 998)",
+      actionHref: "tel:02363777998",
     },
   ];
 
@@ -79,9 +79,9 @@ export function HomeLivingPulse({ isLargeText }: HomeLivingPulseProps) {
     >
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
         <div className="space-y-1">
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-red-50 text-red-700 text-xs font-bold border border-red-200">
-            <span className="w-2 h-2 rounded-full bg-red-500 animate-ping" />
-            <span>DỮ LIỆU THỰC ĐỊA TUẦN NÀY</span>
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 text-xs font-bold border border-blue-200">
+            <span className="w-2 h-2 rounded-full bg-blue-500 animate-ping" />
+            <span>THÔNG TIN ĐIỀU HÀNH &amp; DÂN SINH</span>
           </div>
           <h2
             className={`font-black text-slate-900 flex items-center gap-2 ${
@@ -92,7 +92,7 @@ export function HomeLivingPulse({ isLargeText }: HomeLivingPulseProps) {
             <span>Nhịp đập Liên Chiểu hôm nay</span>
           </h2>
           <p className="text-xs text-slate-500 font-medium">
-            Thông tin điều hành, lịch tiếp dân và cảnh báo dân sinh do Đoàn Thanh niên &amp; Tổ CĐS Phường cập nhật trực tiếp.
+            Thông tin điều hành, lịch tiếp công dân và khuyến cáo dân sinh đối chiếu từ Cổng thông tin điện tử phường Liên Chiểu.
           </p>
         </div>
 
@@ -202,6 +202,33 @@ export function HomeLivingPulse({ isLargeText }: HomeLivingPulseProps) {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Banner Cầu nối Sự kiện Liên Chiểu */}
+      <div className="p-3.5 rounded-2xl bg-gradient-to-r from-teal-700 via-teal-800 to-slate-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 shadow-sm border border-teal-600/30">
+        <div className="flex items-center gap-2.5">
+          <div className="w-8 h-8 rounded-xl bg-teal-500/20 text-teal-300 flex items-center justify-center shrink-0 border border-teal-400/20">
+            <Calendar className="w-4 h-4" />
+          </div>
+          <div className="text-xs">
+            <div className="font-bold text-white flex items-center gap-1.5">
+              <span>Cầu nối Sự kiện Liên Chiểu</span>
+              <span className="text-[10px] px-2 py-0.2 rounded-full bg-teal-500/20 text-teal-200 border border-teal-400/30 font-semibold">
+                Mới
+              </span>
+            </div>
+            <p className="text-teal-200/90 text-[11px] mt-0.5">
+              Khám phá các cuộc thi sáng tạo CĐS, giải bóng đá phong trào, ngày hội hiến máu và hội thảo công nghệ trên bản đồ di động.
+            </p>
+          </div>
+        </div>
+        <Link
+          href="/events"
+          className="touch-target px-4 py-2 rounded-xl bg-teal-400 hover:bg-teal-300 text-slate-950 font-bold text-xs transition-colors inline-flex items-center justify-center gap-1.5 shrink-0 shadow-sm"
+        >
+          <span>Xem Bản đồ Sự kiện</span>
+          <ArrowRight className="w-3.5 h-3.5" />
+        </Link>
       </div>
     </section>
   );

@@ -72,7 +72,7 @@ export const HOME_FEATURES_CONFIG: HomeFeaturesConfig = {
     enabled: false,
   },
   quickActions: {
-    enabled: false, // Đã tích hợp thành dải nút tinh gọn dính liền mép dưới Hero Banner
+    enabled: true,
     limit: 6,
   },
   livingPulse: {

@@ -1,0 +1,88 @@
+[
+  {
+    "id": "ward-week40",
+    "url": "https://lienchieu.danang.gov.vn/web/guest/lich-cong-tac-ubnd",
+    "title": "Lịch UBND phường, 28/09–04/10/2026",
+    "publisher": "Cổng thông tin phường Liên Chiểu",
+    "kind": "government",
+    "checkedAt": "2026-10-01T09:11:44+00:00",
+    "accessStatus": "read",
+    "supports": [],
+    "evidence": "Lịch có họp chuẩn bị ngày hội/hội trại 29/09; không phải ngày tổ chức. Cầu lông 03/10 ở Hải Vân, Festival 04/10 ở Hòa Xuân.",
+    "sha256": "ecadd68040a799f16b0782166957e6df1e4385a015df0cf5fb2ce4aa9d298a42"
+  },
+  {
+    "id": "training-1045",
+    "url": "https://lienchieu.danang.gov.vn/chi-tiet-tin-tuc?d=1045&c=7",
+    "title": "Đăng ký nhu cầu tập huấn khởi nghiệp",
+    "publisher": "Cổng thông tin phường Liên Chiểu",
+    "kind": "government",
+    "checkedAt": "2026-10-01T09:11:45+00:00",
+    "accessStatus": "read",
+    "supports": [],
+    "evidence": "Thông báo đăng ký nhu cầu, chưa xác định lịch/địa điểm tổ chức.",
+    "publishedAt": "2026-09-29",
+    "sha256": "dabe3f2dcb879e33dada02bcfa92d3a501d73f7618f04d7f59be501f4469e80b"
+  },
+  {
+    "id": "training-attachment",
+    "url": "https://lienchieu.danang.gov.vn/documents/20121/46426/3128.UBND.VHXH.24.09.2026.signed.signed.signed.signed%20%281%29%20%281%29_29092026050942.pdf",
+    "title": "Công văn 3128/UBND-VHXH",
+    "publisher": "Cổng thông tin phường Liên Chiểu",
+    "kind": "government",
+    "checkedAt": "2026-10-01T09:11:45+00:00",
+    "accessStatus": "read",
+    "supports": [],
+    "evidence": "Đã đọc PDF: hạn tổng hợp nhu cầu 25/09/2026; không phải ngày sự kiện. Không có lịch/địa điểm tập huấn cụ thể.",
+    "publishedAt": "2026-09-24",
+    "sha256": "5522058570d7878c1370e9773a70bd93af7fad0187057a7cf3520e84c534cdb8"
+  },
+  {
+    "id": "boundary-raster",
+    "url": "https://lienchieu.danang.gov.vn/documents/20121/42772/bandolienchieu.jpg",
+    "title": "Bản đồ hành chính phường (ảnh)",
+    "publisher": "Cổng thông tin phường Liên Chiểu",
+    "kind": "government",
+    "checkedAt": "2026-10-01T09:11:45+00:00",
+    "accessStatus": "read",
+    "supports": [],
+    "evidence": "Đã xem ảnh, thể hiện phường Liên Chiểu 41,19 km². Chỉ là raster, không kèm tọa độ polygon hoặc hệ quy chiếu để nhập GeoJSON.",
+    "sha256": "c2bb46a168535180322d132168f2140a59359a2b7a4c8405a3ac6912d2408aa2"
+  },
+  {
+    "id": "ward-discovery",
+    "url": "https://lienchieu.danang.gov.vn/",
+    "title": "Trang phường — tìm đầu mối",
+    "publisher": "Cổng thông tin phường Liên Chiểu",
+    "kind": "government",
+    "checkedAt": "2026-10-01T09:11:46+00:00",
+    "accessStatus": "read",
+    "supports": [],
+    "evidence": "Chỉ tìm đầu mối bài và lịch, không dùng trang chủ làm minh chứng sự kiện.",
+    "sha256": "0d1c76a609be0175bd6e0fd08089ad8fbe14aa3622037380938c08abac743119"
+  },
+  {
+    "id": "youth-discovery",
+    "url": "https://thanhdoandanang.org.vn/",
+    "title": "Thành đoàn — tìm đầu mối",
+    "publisher": "Đơn vị đăng theo tên miền",
+    "kind": "government",
+    "checkedAt": "2026-10-01T09:11:47+00:00",
+    "accessStatus": "read",
+    "supports": [],
+    "evidence": "Không tìm được thông báo đủ ngày/địa điểm tại phường trong các trang đã đọc.",
+    "sha256": "9a2a67007293a4ec96a0bb2e8e09fd4ec83316614a1ccef05e89f2dad4857334"
+  },
+  {
+    "id": "tourism-discovery",
+    "url": "https://danangfantasticity.com/su-kien",
+    "title": "Danh mục sự kiện du lịch",
+    "publisher": "Đơn vị đăng theo tên miền",
+    "kind": "government",
+    "checkedAt": "2026-10-01T09:11:54+00:00",
+    "accessStatus": "read",
+    "supports": [],
+    "evidence": "Chưa có sự kiện địa bàn Liên Chiểu đủ điều kiện từ trang đã đọc.",
+    "sha256": "a90817517a9294705e9e25dae17597c95eadd4573b5b1ab514a1eacd8e3ecbce"
+  }
+]

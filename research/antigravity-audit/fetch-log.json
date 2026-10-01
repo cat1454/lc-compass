@@ -1,0 +1,111 @@
+[
+  {
+    "id": "ward-calendar",
+    "url": "https://lienchieu.danang.gov.vn/web/guest/lich-cong-tac-ubnd",
+    "checkedAt": "2026-10-01T15:50:13.460468+00:00",
+    "status": 200,
+    "finalUrl": "https://lienchieu.danang.gov.vn/web/guest/lich-cong-tac-ubnd",
+    "contentType": "text/html;charset=UTF-8",
+    "sha256": "e21340424ed3d96335ae4aa15f0019e7a2f1e0623b0cda327d77acfffb09652b",
+    "characters": 10961,
+    "artifact": "ward-calendar.txt"
+  },
+  {
+    "id": "startup-notice",
+    "url": "https://lienchieu.danang.gov.vn/chi-tiet-tin-tuc?d=1045&c=7",
+    "checkedAt": "2026-10-01T15:50:13.467836+00:00",
+    "status": 200,
+    "finalUrl": "https://lienchieu.danang.gov.vn/chi-tiet-tin-tuc?d=1045&c=7",
+    "contentType": "text/html;charset=UTF-8",
+    "sha256": "2b1fe0baeca635d1256fdc8c4b3206c9cbf1de7cceb0d674270ec9a03bc8ce52",
+    "characters": 6756,
+    "artifact": "startup-notice.txt"
+  },
+  {
+    "id": "ward-home",
+    "url": "https://lienchieu.danang.gov.vn/",
+    "checkedAt": "2026-10-01T15:50:13.467836+00:00",
+    "status": 200,
+    "finalUrl": "https://lienchieu.danang.gov.vn/",
+    "contentType": "text/html;charset=UTF-8",
+    "sha256": "90cd9329a8cb5c5c0765cb1c8e1425d441addc675104971e882b56ac49388175",
+    "characters": 13275,
+    "artifact": "ward-home.txt"
+  },
+  {
+    "id": "ward-map",
+    "url": "https://lienchieu.danang.gov.vn/documents/20121/42772/bandolienchieu.jpg",
+    "checkedAt": "2026-10-01T15:50:13.470199+00:00",
+    "status": 200,
+    "finalUrl": "https://lienchieu.danang.gov.vn/documents/20121/42772/bandolienchieu.jpg",
+    "contentType": "image/jpeg",
+    "sha256": "c2bb46a168535180322d132168f2140a59359a2b7a4c8405a3ac6912d2408aa2",
+    "artifact": "ward-map.jpg"
+  },
+  {
+    "id": "youth-union",
+    "url": "https://thanhdoandanang.org.vn/",
+    "checkedAt": "2026-10-01T15:50:13.470199+00:00",
+    "status": 200,
+    "finalUrl": "https://thanhdoandanang.org.vn/",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "d15f0eac12a7ed2f67c612622e3f7198c745b2968b68db67b935753bfb0773cb",
+    "characters": 35305,
+    "artifact": "youth-union.txt"
+  },
+  {
+    "id": "google-digital",
+    "url": "https://www.google.com/search?q=site%3Alienchieu.danang.gov.vn%20%22ng%C3%A0y%20h%E1%BB%99i%22%20%22chuy%E1%BB%83n%20%C4%91%E1%BB%95i%20s%E1%BB%91%22%20%222026%22",
+    "checkedAt": "2026-10-01T15:50:14.670769+00:00",
+    "status": 200,
+    "finalUrl": "https://www.google.com/search?q=site%3Alienchieu.danang.gov.vn%20%22ng%C3%A0y%20h%E1%BB%99i%22%20%22chuy%E1%BB%83n%20%C4%91%E1%BB%95i%20s%E1%BB%91%22%20%222026%22",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "2d5f65195ec8edfded180e1d6027cdaa58619a0bf8f74128f295d430ebeceb33",
+    "characters": 537,
+    "artifact": "google-digital.txt"
+  },
+  {
+    "id": "google-camp",
+    "url": "https://www.google.com/search?q=%22Li%C3%AAn%20Chi%E1%BB%83u%22%20%22h%E1%BB%99i%20tr%E1%BA%A1i%22%20%222026%22",
+    "checkedAt": "2026-10-01T15:50:14.738160+00:00",
+    "status": 200,
+    "finalUrl": "https://www.google.com/search?q=%22Li%C3%AAn%20Chi%E1%BB%83u%22%20%22h%E1%BB%99i%20tr%E1%BA%A1i%22%20%222026%22",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "121363a1a2423ace4923a679d7ad6acc4e76204f2cea68dabea124c2f3df2ea2",
+    "characters": 492,
+    "artifact": "google-camp.txt"
+  },
+  {
+    "id": "google-startup",
+    "url": "https://www.google.com/search?q=%22Li%C3%AAn%20Chi%E1%BB%83u%22%20%22t%E1%BA%ADp%20hu%E1%BA%A5n%22%20%22kh%E1%BB%9Fi%20nghi%E1%BB%87p%22%20%222026%22",
+    "checkedAt": "2026-10-01T15:50:14.870332+00:00",
+    "status": 200,
+    "finalUrl": "https://www.google.com/search?q=%22Li%C3%AAn%20Chi%E1%BB%83u%22%20%22t%E1%BA%ADp%20hu%E1%BA%A5n%22%20%22kh%E1%BB%9Fi%20nghi%E1%BB%87p%22%20%222026%22",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "df3104c2b459c4a02c9e1638c232f930ed2aac53b7a4d7caa367abad0a76391d",
+    "characters": 526,
+    "artifact": "google-startup.txt"
+  },
+  {
+    "id": "google-security",
+    "url": "https://www.google.com/search?q=%22Li%C3%AAn%20Chi%E1%BB%83u%22%20%22d%C3%A2n%20ph%C3%B2ng%22%20%2203/10/2026%22",
+    "checkedAt": "2026-10-01T15:50:15.032052+00:00",
+    "status": 200,
+    "finalUrl": "https://www.google.com/search?q=%22Li%C3%AAn%20Chi%E1%BB%83u%22%20%22d%C3%A2n%20ph%C3%B2ng%22%20%2203/10/2026%22",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "78e152c2eead17aca0d2689a4d49411b973b51a988c1e2c82fa583d392879194",
+    "characters": 493,
+    "artifact": "google-security.txt"
+  },
+  {
+    "id": "google-boundary",
+    "url": "https://www.google.com/search?q=%22ph%C6%B0%E1%BB%9Dng%20Li%C3%AAn%20Chi%E1%BB%83u%22%20%22ranh%20gi%E1%BB%9Bi%22%20GeoJSON",
+    "checkedAt": "2026-10-01T15:50:15.112904+00:00",
+    "status": 200,
+    "finalUrl": "https://www.google.com/search?q=%22ph%C6%B0%E1%BB%9Dng%20Li%C3%AAn%20Chi%E1%BB%83u%22%20%22ranh%20gi%E1%BB%9Bi%22%20GeoJSON",
+    "contentType": "text/html; charset=UTF-8",
+    "sha256": "c5a738012aab9a0991a58ca794ea0ec2486f3d6a8770b6568c5bda756c8188a1",
+    "characters": 502,
+    "artifact": "google-boundary.txt"
+  }
+]

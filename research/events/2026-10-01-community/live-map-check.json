@@ -1,0 +1,42 @@
+[
+  {
+    "preview": false,
+    "width": 390,
+    "tileLoaded": true,
+    "statuses": [
+      200
+    ],
+    "horizontalOverflow": false,
+    "screenshot": "actual-catalog-live-maptiler-390.png"
+  },
+  {
+    "preview": false,
+    "width": 1280,
+    "tileLoaded": true,
+    "statuses": [
+      200
+    ],
+    "horizontalOverflow": false,
+    "screenshot": "actual-catalog-live-maptiler-1280.png"
+  },
+  {
+    "preview": true,
+    "width": 390,
+    "tileLoaded": true,
+    "statuses": [
+      200
+    ],
+    "horizontalOverflow": false,
+    "screenshot": "preview-popup-live-maptiler-390.png"
+  },
+  {
+    "preview": true,
+    "width": 1280,
+    "tileLoaded": true,
+    "statuses": [
+      200
+    ],
+    "horizontalOverflow": false,
+    "screenshot": "preview-popup-live-maptiler-1280.png"
+  }
+]
