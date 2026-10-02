@@ -1,14 +1,16 @@
 "use client";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import type { Map as LibreMap, Popup, GeoJSONSource } from "maplibre-gl";
+import type { Map as LibreMap, GeoJSONSource } from "maplibre-gl";
 import {
   Calendar,
+  Check,
   ChevronLeft,
   ChevronRight,
   ExternalLink,
   Globe,
   ListFilter,
+  Loader2,
   MapPin,
   Maximize2,
   Minimize2,
@@ -87,29 +89,108 @@ export function EventMapView({
   const [ready, setReady] = useState(false);
   const [pointsReady, setPointsReady] = useState(false);
   const [mapError, setMapError] = useState(false);
-  const [popupNode, setPopupNode] = useState<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<LibreMap | null>(null);
-  const popupRef = useRef<Popup | null>(null);
+  const popupRef = useRef<import("maplibre-gl").Popup | null>(null);
+  const [popupNode, setPopupNode] = useState<HTMLDivElement | null>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   const listButtonRef = useRef<HTMLButtonElement>(null);
   const calendarButtonRef = useRef<HTMLButtonElement>(null);
   const fullscreenButtonRef = useRef<HTMLButtonElement>(null);
   const detailTriggerRef = useRef<HTMLElement | null>(null);
+  const userMarkerRef = useRef<import("maplibre-gl").Marker | null>(null);
   const [isDemoMode, setIsDemoMode] = useState(false);
   const [userCoords, setUserCoords] = useState<{ lat: number; lng: number } | null>(null);
+  const [isLocating, setIsLocating] = useState(false);
+  const [locationMsg, setLocationMsg] = useState<string | null>(null);
+  const [showLocationGuide, setShowLocationGuide] = useState(false);
+
+  const handleLocationSuccess = useCallback((lat: number, lng: number, isManual = false) => {
+    setIsLocating(false);
+    setUserCoords({ lat, lng });
+    try {
+      localStorage.setItem("lc_user_coords", JSON.stringify({ lat, lng, time: Date.now() }));
+    } catch {}
+    if (isManual) {
+      setLocationMsg("Đã xác định vị trí của bạn thành công! Khoảng cách tới các sự kiện đã được cập nhật.");
+      setTimeout(() => setLocationMsg(null), 5000);
+    }
+    if (mapRef.current) {
+      mapRef.current.flyTo({
+        center: [lng, lat],
+        zoom: 14.5,
+        duration: 600,
+      });
+    }
+  }, []);
+
+  const locateUser = useCallback(
+    (isManual = true) => {
+      if (typeof navigator === "undefined" || !("geolocation" in navigator)) {
+        if (isManual) alert("Trình duyệt của bạn không hỗ trợ định vị GPS.");
+        return;
+      }
+      setIsLocating(true);
+      setLocationMsg(null);
+
+      // Tier 1: Thử lấy GPS độ chính xác cao
+      navigator.geolocation.getCurrentPosition(
+        pos => {
+          handleLocationSuccess(pos.coords.latitude, pos.coords.longitude, isManual);
+        },
+        err => {
+          if (err.code === 1) {
+            // PERMISSION_DENIED
+            setIsLocating(false);
+            if (isManual) setShowLocationGuide(true);
+            return;
+          }
+          // Tier 2: Dự phòng lấy vị trí mạng sóng (cell tower / wifi)
+          navigator.geolocation.getCurrentPosition(
+            fallbackPos => {
+              handleLocationSuccess(fallbackPos.coords.latitude, fallbackPos.coords.longitude, isManual);
+            },
+            fallbackErr => {
+              setIsLocating(false);
+              if (isManual) {
+                if (fallbackErr.code === 1) {
+                  setShowLocationGuide(true);
+                } else {
+                  setLocationMsg("Không lấy được tín hiệu GPS. Đang dùng mốc Trung tâm Phường Liên Chiểu.");
+                  setTimeout(() => setLocationMsg(null), 4000);
+                }
+              }
+            },
+            { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 }
+          );
+        },
+        { enableHighAccuracy: true, timeout: 8000, maximumAge: 60000 }
+      );
+    },
+    [handleLocationSuccess]
+  );
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      try {
+        const cached = localStorage.getItem("lc_user_coords");
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          if (parsed.lat && parsed.lng && Date.now() - (parsed.time || 0) < 6 * 3600 * 1000) {
+            setUserCoords({ lat: parsed.lat, lng: parsed.lng });
+            return;
+          }
+        }
+      } catch {}
+    }
     if (typeof navigator !== "undefined" && "geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(
         pos => {
           setUserCoords({ lat: pos.coords.latitude, lng: pos.coords.longitude });
         },
-        () => {
-          /* Fallback smoothly to WARD_CENTER */
-        },
-        { enableHighAccuracy: false, timeout: 5000 }
+        () => {},
+        { enableHighAccuracy: false, timeout: 6000 }
       );
     }
   }, []);
@@ -226,14 +307,22 @@ export function EventMapView({
         const bounds = boundaryBounds(boundary);
         if (bounds) map.fitBounds(bounds, { padding: 32, duration: 0 });
         map.addControl(new lib.NavigationControl({ showCompass: true }), "top-left");
-        map.addControl(
-          new lib.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true }),
-          "top-left"
-        );
+        const geolocate = new lib.GeolocateControl({
+          positionOptions: { enableHighAccuracy: false, timeout: 15000, maximumAge: 60000 },
+          trackUserLocation: true,
+          showUserLocation: true,
+        });
+        geolocate.on("geolocate", (e: any) => {
+          if (e.coords) {
+            handleLocationSuccess(e.coords.latitude, e.coords.longitude, true);
+          }
+        });
+        map.addControl(geolocate, "top-left");
         popupRef.current = new lib.Popup({
           closeButton: false,
           closeOnClick: false,
-          offset: 12,
+          offset: 14,
+          anchor: "bottom",
           maxWidth: "none",
           className: styles.nativePopup,
         });
@@ -279,8 +368,8 @@ export function EventMapView({
           }
         });
         observer = new ResizeObserver(() => {
-          const height = stageRef.current?.clientHeight || 340;
-          stageRef.current?.style.setProperty("--popup-max-height", `${Math.max(96, height - 80)}px`);
+          const height = stageRef.current?.clientHeight || 360;
+          stageRef.current?.style.setProperty("--popup-max-height", `${Math.max(160, height - 32)}px`);
           map?.resize();
         });
         observer.observe(canvasRef.current);
@@ -294,10 +383,38 @@ export function EventMapView({
       observer?.disconnect();
       popupRef.current?.remove();
       popupRef.current = null;
+      userMarkerRef.current?.remove();
+      userMarkerRef.current = null;
       mapRef.current = null;
       map?.remove();
     };
-  }, [boundary]);
+  }, [boundary, handleLocationSuccess]);
+
+  // User location marker on the map
+  useEffect(() => {
+    let cancelled = false;
+    if (ready && userCoords && mapRef.current) {
+      void import("maplibre-gl").then(lib => {
+        if (cancelled || !mapRef.current) return;
+        if (!userMarkerRef.current) {
+          const el = document.createElement("div");
+          el.className = styles.userLocationMarker;
+          el.title = "Vị trí của bạn";
+          const pulse = document.createElement("div");
+          pulse.className = styles.userLocationPulse;
+          el.appendChild(pulse);
+          userMarkerRef.current = new lib.Marker({ element: el })
+            .setLngLat([userCoords.lng, userCoords.lat])
+            .addTo(mapRef.current);
+        } else {
+          userMarkerRef.current.setLngLat([userCoords.lng, userCoords.lat]);
+        }
+      });
+    }
+    return () => {
+      cancelled = true;
+    };
+  }, [userCoords, ready]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -341,50 +458,12 @@ export function EventMapView({
   }, [selectedId, selected]);
 
   useEffect(() => {
-    const map = mapRef.current,
-      popup = popupRef.current;
-    if (!map || !popup || !popupNode || !ready || !selected) {
-      popup?.remove();
-      return;
-    }
+    const map = mapRef.current;
+    if (!map || !ready || !selected) return;
     stageRef.current?.scrollIntoView({ block: "nearest", behavior: "instant" });
     const coords: [number, number] = [selected.coordinates.lng, selected.coordinates.lat];
-    const fit = () => {
-      const stage = stageRef.current?.getBoundingClientRect();
-      const card = popup.getElement()?.getBoundingClientRect();
-      if (!stage || !card) return;
-      const dx =
-        card.left < stage.left + 8
-          ? card.left - stage.left - 8
-          : card.right > stage.right - 8
-          ? card.right - stage.right + 8
-          : 0;
-      const nav = document.querySelector<HTMLElement>('nav[aria-label="Thanh điều hướng dưới màn hình di động"]');
-      const navHeight = nav && getComputedStyle(nav).display !== "none" ? nav.getBoundingClientRect().height : 0;
-      const isFull = stageRef.current?.parentElement?.classList.contains(styles.fullscreen);
-      const bottom = Math.min(stage.bottom - 76, window.innerHeight - (isFull ? 0 : navHeight) - 8);
-      const top = Math.max(stage.top + 8, isFull ? 8 : 60);
-      const dy = card.top < top ? card.top - top : card.bottom > bottom ? card.bottom - bottom : 0;
-      if (Math.abs(dx) > 1 || Math.abs(dy) > 1) map.panBy([dx, dy], { duration: 0 });
-    };
-    const open = () => {
-      popup.setLngLat(coords).setDOMContent(popupNode).addTo(map);
-      fit();
-    };
-    map.stop();
-    popup.remove();
-    map.once("moveend", open);
-    map.flyTo({ center: coords, zoom: 15.2, duration: 350, offset: [0, 90] });
-    const observer = new ResizeObserver(fit);
-    observer.observe(popupNode);
-    map.on("resize", fit);
-    return () => {
-      map.off("moveend", open);
-      map.off("resize", fit);
-      observer.disconnect();
-      popup.remove();
-    };
-  }, [selected, popupNode, ready]);
+    map.flyTo({ center: coords, zoom: 15.2, duration: 350, offset: [0, -50] });
+  }, [selected, ready]);
 
   const closeDetail = useCallback(() => {
     setDetail(null);
@@ -488,18 +567,31 @@ export function EventMapView({
       </button>
       <EventPhoto key={selected.id} image={selected.image} />
       <div className={styles.cardBody}>
+        <div className={styles.cardBadgeRow}>
+          <span className={styles.badge}>{selected.categoryLabel}</span>
+          <span className={styles.priceBadge}>{selected.priceText || "Miễn phí"}</span>
+          <span className={styles.popupDistance}>
+            <Navigation size={12} className="inline text-teal-600 mr-1" />
+            <span>{getDistanceLabel(selected.coordinates)}</span>
+          </span>
+        </div>
         <h3>{selected.title}</h3>
-        <p className={styles.host}>{selected.organizer}</p>
-        <p>{dateLabel(selected)}</p>
-        <p>
-          <strong>{selected.venueName}</strong>
-          <br />
-          {selected.address}
+        {selected.organizer && (
+          <p className={styles.host}>
+            <strong>Đơn vị tổ chức:</strong> {selected.organizer}
+          </p>
+        )}
+        <p className={styles.popupTime}>
+          <Calendar size={13} className="shrink-0 text-teal-600 mt-0.5 mr-1.5" />
+          <span>{dateLabel(selected)}</span>
         </p>
-        <p className={styles.popupDistance}>
-          <Navigation size={12} className="inline text-teal-600 mr-1" />
-          <span>{getDistanceLabel(selected.coordinates)}</span>
+        <p className={styles.popupVenue}>
+          <MapPin size={13} className="shrink-0 text-teal-600 mt-0.5 mr-1.5" />
+          <span>
+            <strong>{selected.venueName}</strong> — {selected.address}
+          </span>
         </p>
+        {selected.summary && <p className={styles.popupSummary}>{selected.summary}</p>}
         <div className={styles.actions}>
           <a
             className={styles.mapLink}
@@ -733,6 +825,16 @@ export function EventMapView({
               <ListFilter size={18} />
             </button>
           )}
+          <button
+            type="button"
+            aria-label={isLocating ? "Đang xác định vị trí..." : userCoords ? "Vị trí của bạn (Đã bật)" : "Định vị vị trí của tôi"}
+            title={isLocating ? "Đang xác định vị trí..." : "Định vị vị trí của tôi"}
+            onClick={() => locateUser(true)}
+            className={`${styles.locateBtn} ${userCoords ? styles.locateBtnActive : ""} ${isLocating ? styles.locateBtnLoading : ""}`}
+            disabled={isLocating}
+          >
+            {isLocating ? <Loader2 size={18} className={styles.spin} /> : <Navigation size={18} />}
+          </button>
           <button aria-label="Đổi lớp bản đồ" aria-pressed={satellite} onClick={switchStyle} disabled={!ready}>
             <Globe size={18} />
           </button>
@@ -759,8 +861,21 @@ export function EventMapView({
             )}
           </div>
         )}
-        {popupNode && ready && selected && createPortal(card, popupNode)}
-        {selected && !ready && <div className={styles.fallbackCard}>{card}</div>}
+        {locationMsg && (
+          <div className={styles.locationToast} role="status">
+            <Check size={16} className="text-teal-600 shrink-0" />
+            <span>{locationMsg}</span>
+            <button
+              type="button"
+              aria-label="Đóng thông báo"
+              onClick={() => setLocationMsg(null)}
+              className={styles.toastClose}
+            >
+              <X size={14} />
+            </button>
+          </div>
+        )}
+        {selected && <div className={styles.cardOverlay}>{card}</div>}
       </div>
 
       {/* ── 3. Event List Section (Directly after Map) ── */}
@@ -1042,6 +1157,79 @@ export function EventMapView({
           </div>,
           document.body
         )}
+
+      {/* ── Location Guide Modal Dialog ── */}
+      {showLocationGuide && (
+        <div className={styles.guideBackdrop} onClick={() => setShowLocationGuide(false)}>
+          <div
+            className={styles.guideDialog}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="loc-guide-title"
+            onClick={e => e.stopPropagation()}
+          >
+            <div className={styles.guideHeader}>
+              <div className={styles.guideIconWrap}>
+                <Navigation size={20} className="text-teal-600" />
+              </div>
+              <h3 id="loc-guide-title">Bật quyền định vị vị trí</h3>
+              <button
+                type="button"
+                aria-label="Đóng hướng dẫn"
+                onClick={() => setShowLocationGuide(false)}
+                className={styles.guideClose}
+              >
+                <X size={18} />
+              </button>
+            </div>
+            <div className={styles.guideContent}>
+              <p className={styles.guideIntro}>
+                Để hiển thị chính xác khoảng cách từ bạn đến từng địa điểm sự kiện tại Liên Chiểu, vui lòng cho phép quyền truy cập vị trí trên trình duyệt:
+              </p>
+              <div className={styles.guideSteps}>
+                <div className={styles.guideStepItem}>
+                  <span className={styles.stepNum}>1</span>
+                  <div>
+                    <strong>Trên iPhone (Safari):</strong>
+                    <p>
+                      Nhấn vào biểu tượng <code>aA</code> ở góc trái thanh địa chỉ &gt; Chọn <strong>Cài đặt trang web (Website Settings)</strong> &gt; <strong>Vị trí (Location)</strong> &gt; Chọn <strong>Cho phép (Allow)</strong>.
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.guideStepItem}>
+                  <span className={styles.stepNum}>2</span>
+                  <div>
+                    <strong>Trên điện thoại Android (Chrome):</strong>
+                    <p>
+                      Nhấn vào biểu tượng ổ khóa hoặc cài đặt trên thanh địa chỉ &gt; <strong>Quyền (Permissions)</strong> &gt; <strong>Vị trí</strong> &gt; Chọn <strong>Cho phép</strong>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.guideActions}>
+              <button
+                type="button"
+                className={styles.guideRetryBtn}
+                onClick={() => {
+                  setShowLocationGuide(false);
+                  locateUser(true);
+                }}
+              >
+                <RotateCcw size={16} />
+                <span>Thử lại định vị</span>
+              </button>
+              <button
+                type="button"
+                className={styles.guideDismissBtn}
+                onClick={() => setShowLocationGuide(false)}
+              >
+                Đã hiểu
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
